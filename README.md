@@ -1,9 +1,16 @@
-# Magisk Module Template
+# DNSCrypt Proxy 2 for Android
 
-This `README.md` will be shown in Magisk Manager. Place any information / changelog / notes you like.
+A flexible DNS proxy, with support for modern encrypted DNS protocols such as [DNSCrypt v2](https://github.com/DNSCrypt/dnscrypt-protocol/blob/master/DNSCRYPT-V2-PROTOCOL.txt) and [DNS-over-HTTP/2](https://tools.ietf.org/html/draft-ietf-doh-dns-over-https-03).
 
-**Please update `README.md` if you want to submit your module to the online repo!**
+## Magisk Module
+- Download zip file and flash it in Magisk Manager App or in Recovery.
+- arm and arm64 are supported.
+- All binary files are downloaded from [https://github.com/jedisct1/dnscrypt-proxy/releases](https://github.com/jedisct1/dnscrypt-proxy/releases)
 
-Github has its own online markdown editor with a preview feature, you can use it to update your `README.md`! If you need more advanced syntax, check the [Markdown Cheat Sheet](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet).
+## Changelog
+### v1.0 - 2.27.2018
+* Initial release
+* dnscrypt-proxy v2.0.5
 
-For more information about modules and repos, please check the [official documentations](https://github.com/topjohnwu/Magisk/blob/master/docs/modules.md)
+## Credit
+[jedisct1](https://github.com/jedisct1)
