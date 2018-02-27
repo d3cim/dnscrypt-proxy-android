@@ -11,6 +11,8 @@ A flexible DNS proxy, with support for modern encrypted DNS protocols such as [D
 ### v1.0 - 2.27.2018
 * Initial release
 * dnscrypt-proxy v2.0.5
+### v1.1 - 2.27.2018
+* Change listen port to 5353 (avoid conflict while tethering)
 
 ## Credit
 [jedisct1](https://github.com/jedisct1)
