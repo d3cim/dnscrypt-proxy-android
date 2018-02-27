@@ -1,6 +1,6 @@
 id=dnscrypt-proxy
 name=DNSCrypt-Proxy 2
-version=v1
+version=v1.0
 versionCode=1
 author=bluemeda
 description=A flexible DNS proxy, with support for modern encrypted DNS protocols such as DNSCrypt v2 and DNS-over-HTTP/2.
