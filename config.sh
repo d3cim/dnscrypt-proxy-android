@@ -105,7 +105,8 @@ install_dnscrypt_proxy(){
     BINARY_PATH=$INSTALLER/binary/dnscrypt-proxy-arm64
   fi
 
-  CONFIG_FILE=$MODDIR/system/etc/dnscrypt-proxy/dnscrypt-proxy.toml
+  OLD_CONFIG_FILE=$MODDIR/system/etc/dnscrypt-proxy/dnscrypt-proxy.toml
+  NEW_CONFIG_FILE=$MODPATH/system/etc/dnscrypt-proxy/dnscrypt-proxy.toml
   CONFIG_PATH=$INSTALLER/config
 
   if [ -f "$CONFIG_FILE" ]; then
@@ -135,14 +136,14 @@ install_dnscrypt_proxy(){
     abort "Config file is missing!"
   fi
 
-  if [ ! -f "$CONFIG_FILE" ]; then
+  if [ ! -f "$OLD_CONFIG_FILE" ]; then
     ui_print "* Copying config files"
-    cp -af $CONFIG_PATH/example-dnscrypt-proxy.toml $CONFIG_FILE
-    sed -i -e 's/127.0.0.1:53/127.0.0.1:5353/g' $CONFIG_FILE
-    sed -i -e 's/\[::1\]:53/\[::1\]:5353/g' $CONFIG_FILE
+    cp -af $CONFIG_PATH/example-dnscrypt-proxy.toml $NEW_CONFIG_FILE
+    sed -i -e 's/127.0.0.1:53/127.0.0.1:5353/g' $NEW_CONFIG_FILE
+    sed -i -e 's/\[::1\]:53/\[::1\]:5353/g' $NEW_CONFIG_FILE
   else
     ui_print "* Restoring config files"
-    cp -af $TMPDIR/dnscrypt-proxy.toml $CONFIG_FILE
+    cp -af $TMPDIR/dnscrypt-proxy.toml $NEW_CONFIG_FILE
   fi
 
 }
