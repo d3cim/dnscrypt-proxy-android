@@ -1,7 +1,7 @@
 id=dnscrypt-proxy
 name=DNSCrypt-Proxy 2
 version=v2.0
-versionCode=4
+versionCode=5
 author=bluemeda
 description=A flexible DNS proxy, with support for modern encrypted DNS protocols such as DNSCrypt v2 and DNS-over-HTTP/2.
 minMagisk=1500
