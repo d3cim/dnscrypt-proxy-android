@@ -105,7 +105,13 @@ install_dnscrypt_proxy(){
     BINARY_PATH=$INSTALLER/binary/dnscrypt-proxy-arm64
   fi
 
+  CONFIG_FILE=$MODPATH/system/etc/dnscrypt-proxy/dnscrypt-proxy.toml
   CONFIG_PATH=$INSTALLER/config
+
+  if [ ! -f "$CONFIG_FILE"]; then
+    cp $CONFIG_FILE $TMPDIR
+  fi
+
   unzip -o "$ZIP" 'config/*' 'binary/*' -d $INSTALLER 2>/dev/null
 
   ui_print "* Creating binary path"
@@ -128,8 +134,11 @@ install_dnscrypt_proxy(){
     abort "Config file is missing!"
   fi
 
-  if [ ! -f "$MODPATH/system/etc/dnscrypt-proxy/dnscrypt-proxy.toml"]; then
+  if [ ! -f $CONFIG_FILE]; then
     ui_print "copying config files"
-    cp -af $CONFIG_PATH/example-dnscrypt-proxy.toml $MODPATH/system/etc/dnscrypt-proxy
+    cp -af $CONFIG_PATH/example-dnscrypt-proxy.toml $MODPATH/system/etc/dnscrypt-proxy/dnscrypt-proxy.toml
+  else
+    cp -af $TMPDIR/dnscrypt-proxy.toml $MODPATH/system/etc/dnscrypt-proxy.toml
   fi
+
 }
