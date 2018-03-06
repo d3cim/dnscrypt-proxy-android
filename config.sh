@@ -122,10 +122,14 @@ install_dnscrypt_proxy(){
   fi
 
   if [ -d "$CONFIG_PATH" ]; then
-    ui_print "Copying config files"
+    ui_print "Copying example and license files"
     cp -af $CONFIG_PATH/* $MODPATH/system/etc/dnscrypt-proxy
   else
     abort "Config file is missing!"
   fi
 
+  if [ ! -f "$MODPATH/system/etc/dnscrypt-proxy/dnscrypt-proxy.toml"]; then
+    ui_print "copying config files"
+    cp -af $CONFIG_PATH/example-dnscrypt-proxy.toml $MODPATH/system/etc/dnscrypt-proxy
+  fi
 }
