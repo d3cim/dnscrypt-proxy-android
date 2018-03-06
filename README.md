@@ -7,6 +7,11 @@ A flexible DNS proxy, with support for modern encrypted DNS protocols such as [D
 - arm and arm64 are supported.
 - All binary files are downloaded from [https://github.com/jedisct1/dnscrypt-proxy/releases](https://github.com/jedisct1/dnscrypt-proxy/releases)
 
+
+## Configuration (post-installing)
+- Configuration located on `/system/etc/dnscrypt-proxy/dnscrypt-proxy.toml`
+- For more detailed configuration please refer to [official documentation](https://github.com/jedisct1/dnscrypt-proxy/wiki/Basic-dnscrypt-proxy.toml-editing)
+
 ## Changelog
 ### v1.0 - 2.27.2018
 * Initial release
