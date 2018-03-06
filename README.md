@@ -13,11 +13,15 @@ A flexible DNS proxy, with support for modern encrypted DNS protocols such as [D
 - For more detailed configuration please refer to [official documentation](https://github.com/jedisct1/dnscrypt-proxy/wiki/Basic-dnscrypt-proxy.toml-editing)
 
 ## Changelog
+### v2.0 - 3.07.2018
+* Resolve download.dnscrypt.info first before executing `iptables`
+* Don't override dnscrypt-proxy.toml if exist
+* Update binary files to v2.0.6
+### v1.1 - 2.27.2018
+* Change listen port to 5353 (avoid conflict while tethering)
 ### v1.0 - 2.27.2018
 * Initial release
 * dnscrypt-proxy v2.0.5
-### v1.1 - 2.27.2018
-* Change listen port to 5353 (avoid conflict while tethering)
 
 ## Credit
 [jedisct1](https://github.com/jedisct1)
