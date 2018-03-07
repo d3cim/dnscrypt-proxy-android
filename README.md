@@ -13,6 +13,8 @@ A flexible DNS proxy, with support for modern encrypted DNS protocols such as [D
 - For more detailed configuration please refer to [official documentation](https://github.com/jedisct1/dnscrypt-proxy/wiki/Basic-dnscrypt-proxy.toml-editing)
 
 ## Changelog
+### v2.1.1 - 3.07.2018
+* Bug fixes
 ### v2.1 - 3.07.2018
 * Bug fixes
 ### v2.0 - 3.07.2018
