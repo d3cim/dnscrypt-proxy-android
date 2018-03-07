@@ -109,9 +109,9 @@ install_dnscrypt_proxy(){
   NEW_CONFIG_FILE=$MODPATH/system/etc/dnscrypt-proxy/dnscrypt-proxy.toml
   CONFIG_PATH=$INSTALLER/config
 
-  if [ -f "$CONFIG_FILE" ]; then
+  if [ -f "$OLD_CONFIG_FILE" ]; then
     ui_print "* Backing up config file"
-    cp $CONFIG_FILE $TMPDIR
+    cp $OLD_CONFIG_FILE $TMPDIR
   fi
 
   unzip -o "$ZIP" 'config/*' 'binary/*' -d $INSTALLER 2>/dev/null
