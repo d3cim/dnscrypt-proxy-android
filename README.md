@@ -15,7 +15,7 @@ A flexible DNS proxy, with support for modern encrypted DNS protocols such as [D
 ## Changelog
 ### v2.1.3 - 03.18.2018
 * Fix Tethering Client cannot Resolve DNSCrypt
-* Fix Chromecast devices not showing (jedisct1/dnscrypt-proxy#226)[https://github.com/jedisct1/dnscrypt-proxy/issues/226]
+* Fix Chromecast devices not showing [jedisct1/dnscrypt-proxy#226](https://github.com/jedisct1/dnscrypt-proxy/issues/226)
 * Add binary files for x86 and x86_64 (test)
 ### v2.1.2 - 03.07.2018
 * Bug Fixes
