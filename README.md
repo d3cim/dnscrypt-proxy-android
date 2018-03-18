@@ -4,7 +4,7 @@ A flexible DNS proxy, with support for modern encrypted DNS protocols such as [D
 
 ## Magisk Module
 - Download zip file and flash it in Magisk Manager App or in Recovery.
-- arm and arm64 are supported.
+- arm, arm64, x86 and x86_64 are supported.
 - All binary files are downloaded from [https://github.com/jedisct1/dnscrypt-proxy/releases](https://github.com/jedisct1/dnscrypt-proxy/releases)
 
 
@@ -13,6 +13,10 @@ A flexible DNS proxy, with support for modern encrypted DNS protocols such as [D
 - For more detailed configuration please refer to [official documentation](https://github.com/jedisct1/dnscrypt-proxy/wiki/Basic-dnscrypt-proxy.toml-editing)
 
 ## Changelog
+### v2.1.3 - 03.18.2018
+* Fix Tethering Client cannot Resolve DNSCrypt
+* Fix Chromecast devices not showing jedisct1/dnscrypt-proxy#226
+* Add binary files for x86 and x86_64 (test)
 ### v2.1.2 - 03.07.2018
 * Bug Fixes
 ### v2.1.1 - 03.07.2018
