@@ -103,6 +103,10 @@ install_dnscrypt_proxy(){
     BINARY_PATH=$INSTALLER/binary/dnscrypt-proxy-arm
   elif [ "$ARCH" == "arm64" ];then
     BINARY_PATH=$INSTALLER/binary/dnscrypt-proxy-arm64
+  elif [ "$ARCH" == "x86" ];then
+    BINARY_PATH=$INSTALLER/binary/dnscrypt-proxy-x86
+  elif [ "$ARCH" == "x64" ];then
+    BINARY_PATH=$INSTALLER/binary/dnscrypt-proxy-x86_64
   fi
 
   OLD_CONFIG_FILE=$MODDIR/system/etc/dnscrypt-proxy/dnscrypt-proxy.toml
