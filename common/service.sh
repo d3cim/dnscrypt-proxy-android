@@ -15,9 +15,7 @@ do
 		$MODDIR/system/xbin/dnscrypt-proxy -config $MODDIR/system/etc/dnscrypt-proxy/dnscrypt-proxy.toml &
 		sleep 5
 		iptables -t nat -A OUTPUT -p tcp --dport 53 -j DNAT --to-destination 127.0.0.1:5354
-		iptables -t nat -A OUTPUT -p udp --dport 53 -j DNAT --to-destination 127.0.0.1:5354
-		iptables -t nat -A INPUT -p tcp --dport 53 -j DNAT --to-destination 127.0.0.1:5354
-		iptables -t nat -A INPUT -p udp --dport 53 -j DNAT --to-destination 127.0.0.1:5354
+		iptables -t nat -A OUTPUT -p udp --dport 53 -j DNAT --
 		break;
 	else
 		sleep 5
