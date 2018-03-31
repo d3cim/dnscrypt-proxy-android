@@ -26,7 +26,7 @@
 
 
 ## List of local addresses and ports to listen to. Can be IPv4 and/or IPv6.
-## To only use systemd activation sockets, use an empty set: []
+## Note: When using systemd socket activation, choose an empty set (i.e. [] ).
 
 listen_addresses = ['127.0.0.1:53', '[::1]:53']
 
@@ -109,6 +109,8 @@ cert_refresh_delay = 240
 ## don't include host names without IP addresses.
 ## It will not be used if the configured system DNS works.
 ## A resolver supporting DNSSEC is recommended. This may become mandatory.
+##
+## People in China may need to use 114.114.114.114:53 here.
 
 fallback_resolver = '9.9.9.9:53'
 
@@ -117,6 +119,18 @@ fallback_resolver = '9.9.9.9:53'
 ## fallback resolver.
 
 ignore_system_dns = false
+
+
+## Automatic log files rotation
+
+# Maximum log files size in MB
+log_files_max_size = 10
+
+# How long to keep backup files, in days
+log_files_max_age = 7
+
+# Maximum log files backups to keep (or 0 to keep all backups)
+log_files_max_backups = 1
 
 
 
@@ -349,7 +363,7 @@ cache_neg_ttl = 60
 ## different servers. In that case, names listed in `server_names`
 ## must include the prefixes.
 ##
-## If the `url` property is missing, cache files and valid signatures
+## If the `urls` property is missing, cache files and valid signatures
 ## must be already present; This doesn't prevent these cache files from
 ## expiring after `refresh_delay` hours.
 
@@ -358,7 +372,7 @@ cache_neg_ttl = 60
   ## An example of a remote source
 
   [sources.'public-resolvers']
-  url = 'https://download.dnscrypt.info/resolvers-list/v2/public-resolvers.md'
+  urls = ['https://raw.githubusercontent.com/DNSCrypt/dnscrypt-resolvers/master/v2/public-resolvers.md', 'https://download.dnscrypt.info/resolvers-list/v2/public-resolvers.md']
   cache_file = 'public-resolvers.md'
   minisign_key = 'RWQf6LRCGA9i53mlYecO4IzT51TGPpvWucNSCh1CBM0QTaLn73Y7GFO3'
   refresh_delay = 72
@@ -368,7 +382,7 @@ cache_neg_ttl = 60
   ## This is a subset of the `public-resolvers` list, so enabling both is useless
 
   #  [sources.'parental-control']
-  #  url = 'https://download.dnscrypt.info/resolvers-list/v2/parental-control.md'
+  #  urls = ['https://raw.githubusercontent.com/DNSCrypt/dnscrypt-resolvers/master/v2/parental-control.md', 'https://download.dnscrypt.info/resolvers-list/v2/parental-control.md']
   #  cache_file = 'parental-control.md'
   #  minisign_key = 'RWQf6LRCGA9i53mlYecO4IzT51TGPpvWucNSCh1CBM0QTaLn73Y7GFO3'
 
