@@ -11,7 +11,7 @@ for i in 1 2 3 4 5 6 7 8 9 10 11 12; do
 	if [[ $? == 0 ]];
 	then
 		$MODDIR/system/xbin/dnscrypt-proxy -config $MODDIR/system/etc/dnscrypt-proxy/dnscrypt-proxy.toml &
-		sleep 5
+		sleep 15
 		iptables -t nat -A OUTPUT -p tcp --dport 53 -j DNAT --to-destination 127.0.0.1:5354
 		iptables -t nat -A OUTPUT -p udp --dport 53 -j DNAT --to-destination 127.0.0.1:5354
 		break;
