@@ -17,12 +17,17 @@
 ##################################
 
 ## List of servers to use
+##
+## Servers from the "public-resolvers" source (see down below) can
+## be viewed here: https://dnscrypt.info/public-servers
+##
 ## If this line is commented, all registered servers matching the require_* filters
-## will be used
+## will be used.
+##
 ## The proxy will automatically pick the fastest, working servers from the list.
 ## Remove the leading # first to enable this; lines starting with # are ignored.
 
-# server_names = ['scaleway-fr', 'google', 'yandex']
+# server_names = ['scaleway-fr', 'google', 'yandex', 'cloudflare']
 
 
 ## List of local addresses and ports to listen to. Can be IPv4 and/or IPv6.
@@ -74,6 +79,11 @@ force_tcp = false
 timeout = 2500
 
 
+## Keepalive for HTTP (HTTPS, HTTP/2) queries, in seconds
+
+keepalive = 30
+
+
 ## Load-balancing strategy: 'p2' (default), 'ph', 'fastest' or 'random'
 
 # lb_strategy = 'p2'
@@ -99,6 +109,34 @@ timeout = 2500
 cert_refresh_delay = 240
 
 
+## DNSCrypt: Create a new, unique key for every single DNS query
+## This may improve privacy but can also have a significant impact on CPU usage
+## Only enable if you don't have a lot of network load
+
+# dnscrypt_ephemeral_keys = false
+
+
+## DoH: Disable TLS session tickets - increases privacy but also latency
+
+# tls_disable_session_tickets = false
+
+
+## DoH: Use a specific cipher suite instead of the server preference
+## 49199 = TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256
+## 49195 = TLS_ECDHE_ECDSA_WITH_AES_128_GCM_SHA256
+## 52392 = TLS_ECDHE_RSA_WITH_CHACHA20_POLY1305
+## 52393 = TLS_ECDHE_ECDSA_WITH_CHACHA20_POLY1305
+##
+## On non-Intel CPUs such as MIPS routers and ARM systems (Android, Raspberry Pi...),
+## the following suite improves performance.
+## This may also help on Intel CPUs running 32-bit operating systems.
+##
+## Keep tls_cipher_suite empty if you have issues fetching sources or
+## connecting to some DoH servers. Google and Cloudflare are fine with it.
+
+# tls_cipher_suite = [52392, 49199]
+
+
 ## Fallback resolver
 ## This is a normal, non-encrypted DNS resolver, that will be only used
 ## for one-shot queries when retrieving the initial resolvers list, and
@@ -111,6 +149,7 @@ cert_refresh_delay = 240
 ## A resolver supporting DNSSEC is recommended. This may become mandatory.
 ##
 ## People in China may need to use 114.114.114.114:53 here.
+## Other popular options include 8.8.8.8 and 1.1.1.1.
 
 fallback_resolver = '9.9.9.9:53'
 
@@ -153,7 +192,7 @@ block_ipv6 = false
 
 ## Example map entries (one entry per line):
 ## example.com 9.9.9.9
-## example.net 9.9.9.9,8.8.8.8
+## example.net 9.9.9.9,8.8.8.8,1.1.1.1
 
 # forwarding_rules = 'forwarding-rules.txt'
 
@@ -186,7 +225,7 @@ cache = true
 
 ## Cache size
 
-cache_size = 256
+cache_size = 512
 
 
 ## Minimum TTL for cached entries
@@ -257,6 +296,7 @@ cache_neg_ttl = 60
 ## Blacklists are made of one pattern per line. Example of valid patterns:
 ##
 ##   example.com
+##   =example.com
 ##   *sex*
 ##   ads.*
 ##   ads*.example.*
@@ -312,6 +352,34 @@ cache_neg_ttl = 60
 
 
 
+######################################################
+#   Pattern-based whitelisting (blacklists bypass)   #
+######################################################
+
+## Whitelists support the same patterns as blacklists
+## If a name matches a whitelist entry, the corresponding session
+## will bypass names and IP filters.
+##
+## Time-based rules are also supported to make some websites only accessible at specific times of the day.
+
+[whitelist]
+
+  ## Path to the file of whitelisting rules (absolute, or relative to the same directory as the executable file)
+
+  # whitelist_file = 'whitelist.txt'
+
+
+  ## Optional path to a file logging whitelisted queries
+
+  # log_file = 'whitelisted.log'
+
+
+  ## Optional log format: tsv or ltsv (default: tsv)
+
+  # log_format = 'tsv'
+
+
+
 ##########################################
 #        Time access restrictions        #
 ##########################################
@@ -322,7 +390,7 @@ cache_neg_ttl = 60
 ##
 ## For example, the following rule in a blacklist file:
 ## *.youtube.* @time-to-sleep
-## would block access to Youtube only during the days, and period of the days
+## would block access to YouTube only during the days, and period of the days
 ## define by the 'time-to-sleep' schedule.
 ##
 ## {after='21:00', before= '7:00'} matches 0:00-7:00 and 21:00-0:00
@@ -369,7 +437,7 @@ cache_neg_ttl = 60
 
 [sources]
 
-  ## An example of a remote source
+  ## An example of a remote source from https://github.com/DNSCrypt/dnscrypt-resolvers
 
   [sources.'public-resolvers']
   urls = ['https://raw.githubusercontent.com/DNSCrypt/dnscrypt-resolvers/master/v2/public-resolvers.md', 'https://download.dnscrypt.info/resolvers-list/v2/public-resolvers.md']
@@ -394,4 +462,4 @@ cache_neg_ttl = 60
 [static]
 
   # [static.'google']
-  # stamp = 'sdns://AgUAAAAAAAAAACDyXGrcc5eNecJ8nomJCJ-q6eCLTEn6bHic0hWGUwYQaA5kbnMuZ29vZ2xlLmNvbQ0vZXhwZXJpbWVudGFs'
+  # stamp = 'sdns://AgUAAAAAAAAAAAAOZG5zLmdvb2dsZS5jb20NL2V4cGVyaW1lbnRhbA'

@@ -3,14 +3,13 @@
 ################################
 
 # The following example rules force "safe" (without adult content) search
-# results from Google, Bing and Youtube.
+# results from Google, Bing and YouTube.
 #
 # This has to be enabled with the `cloaking_rules` parameter in the main
 # configuration file
 
 
-www.google.com           forcesafesearch.google.com
-www.google.fr            forcesafesearch.google.com
+www.google.*             forcesafesearch.google.com
 
 www.bing.com             strict.bing.com
 
@@ -20,3 +19,4 @@ youtubei.googleapis.com  restrictmoderate.youtube.com
 youtube.googleapis.com   restrictmoderate.youtube.com
 www.youtube-nocookie.com restrictmoderate.youtube.com
 
+localhost                127.0.0.1
