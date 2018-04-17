@@ -41,7 +41,11 @@ LATESTARTSERVICE=true
 
 print_modname() {
   ui_print "*******************************"
-  ui_print "     Magisk Module Template    "
+  ui_print "        DNSCrypt-Proxy2        "
+  ui_print "         Magisk Module         "
+  ui_print "*******************************"
+  ui_print "             v2.3.0            "
+  ui_print "            bluemeda           "
   ui_print "*******************************"
 }
 
@@ -149,5 +153,7 @@ install_dnscrypt_proxy(){
     ui_print "* Restoring config files"
     cp -af $TMPDIR/dnscrypt-proxy.toml $NEW_CONFIG_FILE
   fi
+
+  . $INSTALLER/common/install.sh
 
 }
