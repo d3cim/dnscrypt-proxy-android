@@ -8,11 +8,11 @@ A flexible DNS proxy, with support for modern encrypted DNS protocols such as [D
 - All binary files are downloaded from [https://github.com/jedisct1/dnscrypt-proxy/releases](https://github.com/jedisct1/dnscrypt-proxy/releases)
 
 ## Installation
-- Download [.zip module](https://github.com/Magisk-Modules-Repo/dnscrypt-proxy-magisk/releases) and flash it in Magisk Manager App or in Recovery.
+- Download [.zip module](https://github.com/Magisk-Modules-Repo/dnscrypt-proxy-magisk/releases), flash it in Magisk Manager App or in Recovery and follow the instructions.
 - There are two option in installation progress. 
 ### Auto redirect DNS queries using `iptables`
 Just flash and forget.
-### Set DNS server manually with 3rd-party app
+### Set DNS server manually with 3rd-party app (not included in this module)
 - DNS server address is 127.0.0.1:53 for ipv4 and [::1]:53 for ipv6
 - If you use AfWall, you can write this enter custom script
   ```
