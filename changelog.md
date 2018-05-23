@@ -1,4 +1,6 @@
 # Changelog
+## v2.4.0
+* Update binary files to 2.0.14
 ## v2.3.0
 * Update binary files to 2.0.8
 * Add option to choose auto redirect DNS or manually set with 3rd-party app.

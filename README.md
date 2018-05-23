@@ -34,6 +34,8 @@ Just flash and forget.
 - For more detailed configuration please refer to [official documentation](https://github.com/jedisct1/dnscrypt-proxy/wiki/Basic-dnscrypt-proxy.toml-editing)
 
 ## Changelog
+### v2.4.0
+- Update binary files to 2.0.14
 ### v2.3.0
 - Update binary files to 2.0.10 ([changelog](https://github.com/jedisct1/dnscrypt-proxy/blob/master/ChangeLog))
 - Add option to choose auto redirect DNS or manually set with 3rd-party app.
