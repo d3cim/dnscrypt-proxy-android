@@ -16,17 +16,17 @@ Just flash and forget.
 - DNS server address is 127.0.0.1:53 for ipv4 and [::1]:53 for ipv6
 - If you use AfWall, you can write this enter custom script
   ```
-  iptables -t nat -A OUTPUT -p tcp --dport 53 -j DNAT --to-destination 127.0.0.1:53
-  iptables -t nat -A OUTPUT -p udp --dport 53 -j DNAT --to-destination 127.0.0.1:53
-  ip6tables -t nat -A OUTPUT -p tcp --dport 53 -j DNAT --to-destination [::1]:53
-  ip6tables -t nat -A OUTPUT -p udp --dport 53 -j DNAT --to-destination [::1]:53
+  iptables -t nat -A OUTPUT -p tcp ! -d 1.1.1.1 --dport 53 -j DNAT --to-destination 127.0.0.1:53
+  iptables -t nat -A OUTPUT -p udp ! -d 1.1.1.1 --dport 53 -j DNAT --to-destination 127.0.0.1:53
+  ip6tables -t nat -A OUTPUT -p tcp ! -d 1.1.1.1 --dport 53 -j DNAT --to-destination [::1]:53
+  ip6tables -t nat -A OUTPUT -p udp ! -d 1.1.1.1 --dport 53 -j DNAT --to-destination [::1]:53
   ```
   and this shutdown script
   ```
-  iptables -t nat -D OUTPUT -p tcp --dport 53 -j DNAT --to-destination 127.0.0.1:53
-  iptables -t nat -D OUTPUT -p udp --dport 53 -j DNAT --to-destination 127.0.0.1:53
-  ip6tables -t nat -D OUTPUT -p tcp --dport 53 -j DNAT --to-destination [::1]:53
-  ip6tables -t nat -D OUTPUT -p udp --dport 53 -j DNAT --to-destination [::1]:53
+  iptables -t nat -D OUTPUT -p tcp ! -d 1.1.1.1 --dport 53 -j DNAT --to-destination 127.0.0.1:53
+  iptables -t nat -D OUTPUT -p udp ! -d 1.1.1.1 --dport 53 -j DNAT --to-destination 127.0.0.1:53
+  ip6tables -t nat -D OUTPUT -p tcp ! -d 1.1.1.1 --dport 53 -j DNAT --to-destination [::1]:53
+  ip6tables -t nat -D OUTPUT -p udp ! -d 1.1.1.1 --dport 53 -j DNAT --to-destination [::1]:53
   ```
 
 ## Configuration (post-installing)
@@ -34,6 +34,9 @@ Just flash and forget.
 - For more detailed configuration please refer to [official documentation](https://github.com/jedisct1/dnscrypt-proxy/wiki/Basic-dnscrypt-proxy.toml-editing)
 
 ## Changelog
+### v2.5.0
+- Update binary files to 2.0.16
+- add exception for cloudflare fallback resolver.
 ### v2.4.0
 - Update binary files to 2.0.14
 ### v2.3.0
