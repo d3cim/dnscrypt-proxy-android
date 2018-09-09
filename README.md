@@ -49,3 +49,4 @@ Just flash and forget.
 - DNSCrypt-Proxy2 upstream | [jedisct1](https://github.com/jedisct1/dnscrypt-proxy)
 - Keycheck binary | [someone755](https://github.com/someone755/kerneller/tree/master/extract/tools)
 - Idea for keycheck code implementation | [Zappo @xda-developers](https://forum.xda-developers.com/showpost.php?p=71016567&postcount=98)
+- [Affif Mukhlashin (bluemeda)](https://github.com/bluemeda)
