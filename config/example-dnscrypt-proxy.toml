@@ -27,7 +27,7 @@
 ## The proxy will automatically pick the fastest, working servers from the list.
 ## Remove the leading # first to enable this; lines starting with # are ignored.
 
-# server_names = ['scaleway-fr', 'google', 'yandex', 'cloudflare']
+# server_names = ['cloudflare', 'google']
 
 
 ## List of local addresses and ports to listen to. Can be IPv4 and/or IPv6.
@@ -39,6 +39,18 @@ listen_addresses = ['127.0.0.1:53', '[::1]:53']
 ## Maximum number of simultaneous client connections to accept
 
 max_clients = 250
+
+
+## Switch to a non-privileged system user after listening sockets have been created.
+## Two processes will be running.
+## The first one will keep root privileges, but is only a supervisor, that does nothing
+## except create the sockets, manage the service, and restart it if it crashes.
+## The second process is the service itself, and that one will always run as a different
+## user.
+## Note (1): this feature is currently unsupported on Windows.
+## Note (2): this feature is not compatible with systemd socket activation.
+
+# user_name = 'nobody'
 
 
 ## Require servers (from static + remote sources) to satisfy specific properties
@@ -75,6 +87,14 @@ require_nofilter = true
 ## only increase latency.
 
 force_tcp = false
+
+
+## HTTP / SOCKS proxy
+## Uncomment the following line to route all TCP connections to a local Tor node
+## Tor doesn't support UDP, so set `force_tcp` to `true` as well.
+
+# proxy = "socks5://127.0.0.1:9050"
+
 
 
 ## How long a DNS query will wait for a response, in milliseconds
@@ -154,7 +174,7 @@ cert_refresh_delay = 240
 ## People in China may need to use 114.114.114.114:53 here.
 ## Other popular options include 8.8.8.8 and 1.1.1.1.
 
-fallback_resolver = '9.9.9.9:53'
+fallback_resolver = '1.1.1.1:53'
 
 
 ## Never let dnscrypt-proxy try to use the system DNS settings;
@@ -170,6 +190,13 @@ ignore_system_dns = false
 ## Use 0 to disable.
 
 netprobe_timeout = 30
+
+
+## Offline mode - Do not use any remote encrypted servers.
+## The proxy will remain fully functional to respond to queries that
+## plugins can handle directly (forwarding, cloaking, ...)
+
+# offline_mode = false
 
 
 ## Automatic log files rotation
