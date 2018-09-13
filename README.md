@@ -36,7 +36,8 @@ Just flash and forget.
 ## Changelog
 ### v2.5.0
 - Update binary files to 2.0.16
-- add exception for cloudflare fallback resolver.
+- Add exception for cloudflare fallback resolver.
+- Update Magisk Module Template 17000
 ### v2.4.0
 - Update binary files to 2.0.14
 ### v2.3.0
