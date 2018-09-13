@@ -1,4 +1,8 @@
 # Changelog
+## Changelog
+### v2.5.0
+- Update binary files to 2.0.16
+- add exception for cloudflare fallback resolver.
 ## v2.4.0
 * Update binary files to 2.0.14
 ## v2.3.0
