@@ -33,12 +33,12 @@
 ## List of local addresses and ports to listen to. Can be IPv4 and/or IPv6.
 ## Note: When using systemd socket activation, choose an empty set (i.e. [] ).
 
-listen_addresses = ['127.0.0.1:53', '[::1]:53']
+listen_addresses = ['127.0.0.1:5354', '[::1]:5354']
 
 
 ## Maximum number of simultaneous client connections to accept
 
-max_clients = 250
+max_clients = 100
 
 
 ## Switch to a different system user after listening sockets have been created.
@@ -55,7 +55,7 @@ max_clients = 250
 ipv4_servers = true
 
 # Use servers reachable over IPv6 -- Do not enable if you don't have IPv6 connectivity
-ipv6_servers = false
+ipv6_servers = true
 
 # Use servers implementing the DNSCrypt protocol
 dnscrypt_servers = true
@@ -103,7 +103,7 @@ force_tcp = false
 
 ## How long a DNS query will wait for a response, in milliseconds
 
-timeout = 2500
+timeout = 1500
 
 
 ## Keepalive for HTTP (HTTPS, HTTP/2) queries, in seconds
@@ -168,7 +168,7 @@ cert_refresh_delay = 240
 ## Keep tls_cipher_suite empty if you have issues fetching sources or
 ## connecting to some DoH servers. Google and Cloudflare are fine with it.
 
-# tls_cipher_suite = [52392, 49199]
+tls_cipher_suite = [52392, 49199]
 
 
 ## Fallback resolver
@@ -213,7 +213,7 @@ netprobe_timeout = 60
 ## Automatic log files rotation
 
 # Maximum log files size in MB
-log_files_max_size = 10
+log_files_max_size = 1
 
 # How long to keep backup files, in days
 log_files_max_age = 7
