@@ -38,7 +38,7 @@ listen_addresses = ['127.0.0.1:53', '[::1]:53']
 
 ## Maximum number of simultaneous client connections to accept
 
-max_clients = 100
+max_clients = 150
 
 
 ## Switch to a different system user after listening sockets have been created.
@@ -55,7 +55,7 @@ max_clients = 100
 ipv4_servers = true
 
 # Use servers reachable over IPv6 -- Do not enable if you don't have IPv6 connectivity
-ipv6_servers = true
+ipv6_servers = false
 
 # Use servers implementing the DNSCrypt protocol
 dnscrypt_servers = true
