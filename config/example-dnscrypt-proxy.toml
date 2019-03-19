@@ -27,7 +27,7 @@
 ## The proxy will automatically pick the fastest, working servers from the list.
 ## Remove the leading # first to enable this; lines starting with # are ignored.
 
-# server_names = ['cloudflare', 'google']
+# server_names = ['scaleway-fr', 'google', 'yandex', 'cloudflare']
 
 
 ## List of local addresses and ports to listen to. Can be IPv4 and/or IPv6.
@@ -38,17 +38,13 @@ listen_addresses = ['127.0.0.1:53', '[::1]:53']
 
 ## Maximum number of simultaneous client connections to accept
 
-max_clients = 250
+max_clients = 150
 
 
-## Switch to a non-privileged system user after listening sockets have been created.
-## Two processes will be running.
-## The first one will keep root privileges, but is only a supervisor, that does nothing
-## except create the sockets, manage the service, and restart it if it crashes.
-## The second process is the service itself, and that one will always run as a different
-## user.
+## Switch to a different system user after listening sockets have been created.
 ## Note (1): this feature is currently unsupported on Windows.
 ## Note (2): this feature is not compatible with systemd socket activation.
+## Note (3): when using -pidfile, the PID file directory must be writable by the new user
 
 # user_name = 'nobody'
 
@@ -79,9 +75,12 @@ require_nolog = true
 # Server must not enforce its own blacklist (for parental control, ads blocking...)
 require_nofilter = true
 
+# Server names to avoid even if they match all criteria
+disabled_server_names = []
+
 
 ## Always use TCP to connect to upstream servers.
-## This can be can be useful if you need to route everything through Tor.
+## This can be useful if you need to route everything through Tor.
 ## Otherwise, leave this to `false`, as it doesn't improve security
 ## (dnscrypt-proxy will always encrypt everything even using UDP), and can
 ## only increase latency.
@@ -89,22 +88,34 @@ require_nofilter = true
 force_tcp = false
 
 
-## HTTP / SOCKS proxy
+## SOCKS proxy
 ## Uncomment the following line to route all TCP connections to a local Tor node
 ## Tor doesn't support UDP, so set `force_tcp` to `true` as well.
 
 # proxy = "socks5://127.0.0.1:9050"
 
 
+## HTTP/HTTPS proxy
+## Only for DoH servers
+
+# http_proxy = "http://127.0.0.1:8888"
+
 
 ## How long a DNS query will wait for a response, in milliseconds
 
-timeout = 2500
+timeout = 1500
 
 
 ## Keepalive for HTTP (HTTPS, HTTP/2) queries, in seconds
 
 keepalive = 30
+
+
+## Use the REFUSED return code for blocked responses
+## Setting this to `false` means that some responses will be lies.
+## Unfortunately, `false` appears to be required for Android 8+
+
+refused_code_in_responses = false
 
 
 ## Load-balancing strategy: 'p2' (default), 'ph', 'fastest' or 'random'
@@ -157,7 +168,7 @@ cert_refresh_delay = 240
 ## Keep tls_cipher_suite empty if you have issues fetching sources or
 ## connecting to some DoH servers. Google and Cloudflare are fine with it.
 
-# tls_cipher_suite = [52392, 49199]
+tls_cipher_suite = [52392, 49199]
 
 
 ## Fallback resolver
@@ -174,7 +185,7 @@ cert_refresh_delay = 240
 ## People in China may need to use 114.114.114.114:53 here.
 ## Other popular options include 8.8.8.8 and 1.1.1.1.
 
-fallback_resolver = '1.1.1.1:53'
+fallback_resolver = '9.9.9.9:53'
 
 
 ## Never let dnscrypt-proxy try to use the system DNS settings;
@@ -189,7 +200,7 @@ ignore_system_dns = false
 ## connectivity is not guaranteed to be immediately available.
 ## Use 0 to disable.
 
-netprobe_timeout = 30
+netprobe_timeout = 60
 
 
 ## Offline mode - Do not use any remote encrypted servers.
@@ -202,7 +213,7 @@ netprobe_timeout = 30
 ## Automatic log files rotation
 
 # Maximum log files size in MB
-log_files_max_size = 10
+log_files_max_size = 1
 
 # How long to keep backup files, in days
 log_files_max_age = 7
@@ -490,6 +501,15 @@ cache_neg_max_ttl = 600
   minisign_key = 'RWQf6LRCGA9i53mlYecO4IzT51TGPpvWucNSCh1CBM0QTaLn73Y7GFO3'
   refresh_delay = 72
   prefix = ''
+
+  ## Quad9 over DNSCrypt - https://quad9.net/
+
+  # [sources.quad9-resolvers]
+  # urls = ["https://www.quad9.net/quad9-resolvers.md"]
+  # minisign_key = "RWQBphd2+f6eiAqBsvDZEBXBGHQBJfeG6G+wJPPKxCZMoEQYpmoysKUN"
+  # cache_file = "quad9-resolvers.md"
+  # refresh_delay = 72
+  # prefix = "quad9-"
 
   ## Another example source, with resolvers censoring some websites not appropriate for children
   ## This is a subset of the `public-resolvers` list, so enabling both is useless
