@@ -34,6 +34,8 @@ Just flash and forget.
 - For more detailed configuration please refer to [official documentation](https://github.com/jedisct1/dnscrypt-proxy/wiki/Basic-dnscrypt-proxy.toml-editing)
 
 ## Changelog
+### v2.8.0
+ - Update binary files to 2.0.22
 ### v2.7.0
  - Update binary files to 2.0.21
 ### v2.6.0
