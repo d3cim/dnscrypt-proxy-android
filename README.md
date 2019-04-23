@@ -34,21 +34,14 @@ Just flash and forget.
 - For more detailed configuration please refer to [official documentation](https://github.com/jedisct1/dnscrypt-proxy/wiki/Basic-dnscrypt-proxy.toml-editing)
 
 ## Changelog
+### v2.8.1
+ - Update Magisk 18100 requirements
 ### v2.8.0
  - Update binary files to 2.0.22
 ### v2.7.0
  - Update binary files to 2.0.21
 ### v2.6.0
  - Update binary files to 2.0.19
-### v2.5.0
-- Update binary files to 2.0.16
-- Add exception for cloudflare fallback resolver.
-- Update Magisk Module Template 17000
-### v2.4.0
-- Update binary files to 2.0.14
-### v2.3.0
-- Update binary files to 2.0.10 ([changelog](https://github.com/jedisct1/dnscrypt-proxy/blob/master/ChangeLog))
-- Add option to choose auto redirect DNS or manually set with 3rd-party app.
 
 [older version changelog](changelog.md)
 
