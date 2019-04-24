@@ -160,14 +160,14 @@ on_install() {
   unzip -o "$ZIP" 'config/*' 'binary/*' -d $TMPDIR 2>/dev/null
 
   ui_print "* Creating binary path"
-  mkdir -p $MODPATH/system/xbin 2>/dev/null
+  mkdir -p $MODPATH/system/bin 2>/dev/null
 
   ui_print "* Creating config path"
   mkdir -p $MODPATH/system/etc/dnscrypt-proxy 2>/dev/null
 
   if [ -f "$BINARY_PATH" ]; then
     ui_print "* Copying binary for $ARCH"
-    cp -af $BINARY_PATH $MODPATH/system/xbin/dnscrypt-proxy
+    cp -af $BINARY_PATH $MODPATH/system/bin/dnscrypt-proxy
   else
     abort "Binary file for $ARCH is missing!"
   fi
