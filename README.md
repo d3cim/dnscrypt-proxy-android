@@ -31,7 +31,7 @@ Just flash and forget.
 
 ## Configuration (post-installing)
 - Configuration located on `/system/etc/dnscrypt-proxy/dnscrypt-proxy.toml`
-- For more detailed configuration please refer to [official documentation](https://github.com/jedisct1/dnscrypt-proxy/wiki/Basic-dnscrypt-proxy.toml-editing)
+- For more detailed configuration please refer to [official documentation](https://github.com/jedisct1/dnscrypt-proxy/wiki/Configuration)
 
 ## Changelog
 ### v2.8.1
