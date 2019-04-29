@@ -34,6 +34,8 @@ Just flash and forget.
 - For more detailed configuration please refer to [official documentation](https://github.com/jedisct1/dnscrypt-proxy/wiki/Configuration)
 
 ## Changelog
+### v2.8.2
+ - Fix "binary file is missing"
 ### v2.8.1
  - Update Magisk 18100 requirements
 ### v2.8.0

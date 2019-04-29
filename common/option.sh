@@ -40,7 +40,7 @@ chooseportold() {
 }
 
 # Keycheck binary by someone755 @Github, idea for code below by Zappo @xda-developers
-KEYCHECK=$TMPDIR/common/keycheck
+KEYCHECK=$TMPDIR/keycheck
 chmod 755 $KEYCHECK
 
 if keytest; then
@@ -69,6 +69,6 @@ else
   ui_print " "
   ui_print " Manual mode"
   ui_print " deleting iptables rules"
-  sed -i -e '/for/,$d' $TMPDIR/common/service.sh
+  sed -i -e '/for/,$d' $TMPDIR/service.sh
   sed -i -e "s/'127.0.0.1.*'/'127.0.0.1:53', '[::1]:53'/g" $MODPATH/system/etc/dnscrypt-proxy/dnscrypt-proxy.toml
 fi

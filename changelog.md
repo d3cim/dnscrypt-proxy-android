@@ -1,5 +1,7 @@
 # Changelog
 ## Changelog
+### v2.8.2
+- Fix "binary file is missing"
 ### v2.8.1
 - Update Magisk 18100 requirements
 ### v2.8.0

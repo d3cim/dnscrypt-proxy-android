@@ -157,7 +157,7 @@ on_install() {
     cp $CONFIG_FILE $TMPDIR
   fi
 
-  unzip -o "$ZIP" 'config/*' 'binary/*' -d $TMPDIR 2>/dev/null
+  unzip -o "$ZIPFILE" 'config/*' 'binary/*' -d $TMPDIR 2>/dev/null
 
   ui_print "* Creating binary path"
   mkdir -p $MODPATH/system/bin 2>/dev/null
@@ -189,7 +189,7 @@ on_install() {
     cp -af $TMPDIR/dnscrypt-proxy.toml $CONFIG_FILE
   fi
 
-  . $TMPDIR/common/install.sh
+  . $TMPDIR/option.sh
 
 }
 
