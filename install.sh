@@ -201,7 +201,7 @@ on_install() {
 set_permissions() {
   # The following is the default rule, DO NOT remove
   set_perm_recursive $MODPATH 0 0 0755 0644
-  set_perm $MODPATH/system/xbin/dnscrypt-proxy 0 0 0755
+  set_perm $MODPATH/system/bin/dnscrypt-proxy 0 0 0755
   # Here are some examples:
   # set_perm_recursive  $MODPATH/system/lib       0     0       0755      0644
   # set_perm  $MODPATH/system/bin/app_process32   0     2000    0755      u:object_r:zygote_exec:s0
