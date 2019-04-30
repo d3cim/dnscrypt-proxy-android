@@ -57,6 +57,31 @@ else
 fi
 
 ui_print " "
+ui_print " Vol+ = Replace previous config (mandatory for first install)"
+ui_print " "
+ui_print " Vol- = Use previous config"
+ui_print " "
+
+CONFIG_FILE=$MODPATH/system/etc/dnscrypt-proxy/dnscrypt-proxy.toml
+
+if $FUNCTION; then
+  ui_print "Replace old config"
+  ui_print " "
+  cp -af $MODPATH/system/etc/example-dnscrypt-proxy.toml $CONFIG_FILE
+  sed -i -e 's/127.0.0.1:53/127.0.0.1:5354/g' $CONFIG_FILE
+  sed -i -e 's/\[::1\]:53/\[::1\]:5354/g' $CONFIG_FILE
+else
+  if [ -f "$CONFIG_FILE" ]; then
+    ui_print "* Backing up config file"
+    cp $CONFIG_FILE $TMPDIR
+    ui_print "* Restoring config files"
+    cp -af $TMPDIR/dnscrypt-proxy.toml $CONFIG_FILE 
+  else
+    abort "First install have to choose replace mode"
+  fi
+fi
+
+ui_print " "
 ui_print " Vol+ = Auto redirect DNS request with iptables"
 ui_print " "
 ui_print " Vol- = Set DNS manually with 3rd-party app"

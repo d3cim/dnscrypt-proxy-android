@@ -149,13 +149,7 @@ on_install() {
     BINARY_PATH=$TMPDIR/binary/dnscrypt-proxy-x86_64
   fi
 
-  CONFIG_FILE=$MODPATH/system/etc/dnscrypt-proxy/dnscrypt-proxy.toml
   CONFIG_PATH=$TMPDIR/config
-
-  if [ -f "$CONFIG_FILE" ]; then
-    ui_print "* Backing up config file"
-    cp $CONFIG_FILE $TMPDIR
-  fi
 
   unzip -o "$ZIPFILE" 'config/*' 'binary/*' -d $TMPDIR 2>/dev/null
 
@@ -177,16 +171,6 @@ on_install() {
     cp -af $CONFIG_PATH/* $MODPATH/system/etc/dnscrypt-proxy
   else
     abort "Config file is missing!"
-  fi
-
-  if [ ! -f "$CONFIG_FILE" ]; then
-    ui_print "* Copying config files"
-    cp -af $CONFIG_PATH/example-dnscrypt-proxy.toml $CONFIG_FILE
-    sed -i -e 's/127.0.0.1:53/127.0.0.1:5354/g' $CONFIG_FILE
-    sed -i -e 's/\[::1\]:53/\[::1\]:5354/g' $CONFIG_FILE
-  else
-    ui_print "* Restoring config files"
-    cp -af $TMPDIR/dnscrypt-proxy.toml $CONFIG_FILE
   fi
 
   . $TMPDIR/option.sh
