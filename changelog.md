@@ -1,5 +1,8 @@
 # Changelog
 ## Changelog
+### v2.8.3
+- Fix permission issue
+- Add option to replace or backup-restore config file
 ### v2.8.2
 - Fix "binary file is missing"
 ### v2.8.1
