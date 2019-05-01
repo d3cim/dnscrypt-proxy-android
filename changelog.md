@@ -1,5 +1,7 @@
 # Changelog
 ## Changelog
+### v2.8.4
+- Fix failed to copy or backup config file
 ### v2.8.3
 - Fix permission issue
 - Add option to replace or backup-restore config file
