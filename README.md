@@ -34,6 +34,8 @@ Just flash and forget.
 - For more detailed configuration please refer to [official documentation](https://github.com/jedisct1/dnscrypt-proxy/wiki/Configuration)
 
 ## Changelog
+### v2.8.5
+ - Fix #40
 ### v2.8.4
  - Fix failed to copy or backup config file
 ### v2.8.3

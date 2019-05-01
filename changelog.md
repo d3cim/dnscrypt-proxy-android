@@ -1,5 +1,7 @@
 # Changelog
 ## Changelog
+### v2.8.5
+- Fix #40
 ### v2.8.4
 - Fix failed to copy or backup config file
 ### v2.8.3
