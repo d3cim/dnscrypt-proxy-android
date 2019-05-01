@@ -63,8 +63,6 @@ ui_print " Vol- = Use previous config"
 ui_print " "
 
 CONFIG_FILE=$MODPATH/system/etc/dnscrypt-proxy/dnscrypt-proxy.toml
-OLD_CONFIG_FILE=$(echo $CONFIG_FILE|sed s/modules_update/modules/)
-
 
 if $FUNCTION; then
   ui_print "Replace old config"
@@ -73,11 +71,11 @@ if $FUNCTION; then
   sed -i -e 's/127.0.0.1:53/127.0.0.1:5354/g' $CONFIG_FILE
   sed -i -e 's/\[::1\]:53/\[::1\]:5354/g' $CONFIG_FILE
 else
-  if [ -f "$OLD_CONFIG_FILE" ]; then
+  if [ -f "$CONFIG_FILE" ]; then
     ui_print "* Backing up config file"
-    cp $CONFIG_FILE $TMPDIR
+    cp -af $CONFIG_FILE $TMPDIR
     ui_print "* Restoring config files"
-    cp -af OLD_CONFIG_FILE $CONFIG_FILE 
+    cp -af $TMPDIR/dnscrypt-proxy.toml $CONFIG_FILE 
   else
     abort "First install have to choose replace mode"
   fi
