@@ -1,9 +1,20 @@
 # Changelog
 ## Changelog
+### v2.8.5
+- Fix #40
+### v2.8.4
+- Fix failed to copy or backup config file
+### v2.8.3
+- Fix permission issue
+- Add option to replace or backup-restore config file
+### v2.8.2
+- Fix "binary file is missing"
+### v2.8.1
+- Update Magisk 18100 requirements
 ### v2.8.0
- - Update binary files 2.0.22
+- Update binary files 2.0.22
 ### v2.7.0
- - Update binary files 2.0.21
+- Update binary files 2.0.21
 ### v2.6.0
 - Update binary files to 2.0.19
 ### v2.5.0
@@ -12,7 +23,7 @@
 ## v2.4.0
 * Update binary files to 2.0.14
 ## v2.3.0
-* Update binary files to 2.0.8
+* Update binary files to 2.0.10 
 * Add option to choose auto redirect DNS or manually set with 3rd-party app.
 ## v2.2.0
 * Update binary files to 2.0.8

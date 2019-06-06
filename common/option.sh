@@ -1,19 +1,19 @@
 keytest() {
   ui_print " - Vol Key Test -"
   ui_print "   Press Vol Up:"
-  (/system/bin/getevent -lc 1 2>&1 | /system/bin/grep VOLUME | /system/bin/grep " DOWN" > $INSTALLER/events) || return 1
+  (/system/bin/getevent -lc 1 2>&1 | /system/bin/grep VOLUME | /system/bin/grep " DOWN" > $TMPDIR/events) || return 1
   return 0
 }
 
 chooseport() {
   #note from chainfire @xda-developers: getevent behaves weird when piped, and busybox grep likes that even less than toolbox/toybox grep
   while (true); do
-    /system/bin/getevent -lc 1 2>&1 | /system/bin/grep VOLUME | /system/bin/grep " DOWN" > $INSTALLER/events
-    if (`cat $INSTALLER/events 2>/dev/null | /system/bin/grep VOLUME >/dev/null`); then
+    /system/bin/getevent -lc 1 2>&1 | /system/bin/grep VOLUME | /system/bin/grep " DOWN" > $TMPDIR/events
+    if (`cat $TMPDIR/events 2>/dev/null | /system/bin/grep VOLUME >/dev/null`); then
       break
     fi
   done
-  if (`cat $INSTALLER/events 2>/dev/null | /system/bin/grep VOLUMEUP >/dev/null`); then
+  if (`cat $TMPDIR/events 2>/dev/null | /system/bin/grep VOLUMEUP >/dev/null`); then
     return 0
   else
     return 1
@@ -40,7 +40,7 @@ chooseportold() {
 }
 
 # Keycheck binary by someone755 @Github, idea for code below by Zappo @xda-developers
-KEYCHECK=$INSTALLER/common/keycheck
+KEYCHECK=$TMPDIR/keycheck
 chmod 755 $KEYCHECK
 
 if keytest; then
@@ -57,6 +57,31 @@ else
 fi
 
 ui_print " "
+ui_print " Vol+ = Replace previous config (mandatory for first install)"
+ui_print " "
+ui_print " Vol- = Use previous config"
+ui_print " "
+
+CONFIG_FILE=$MODPATH/system/etc/dnscrypt-proxy/dnscrypt-proxy.toml
+
+if $FUNCTION; then
+  ui_print "Replace old config"
+  ui_print " "
+  cp -af $MODPATH/system/etc/dnscrypt-proxy/example-dnscrypt-proxy.toml $CONFIG_FILE
+  sed -i -e 's/127.0.0.1:53/127.0.0.1:5354/g' $CONFIG_FILE
+  sed -i -e 's/\[::1\]:53/\[::1\]:5354/g' $CONFIG_FILE
+else
+  if [ -f "$CONFIG_FILE" ]; then
+    ui_print "* Backing up config file"
+    cp -af $CONFIG_FILE $TMPDIR
+    ui_print "* Restoring config files"
+    cp -af $TMPDIR/dnscrypt-proxy.toml $CONFIG_FILE 
+  else
+    abort "First install have to choose replace mode"
+  fi
+fi
+
+ui_print " "
 ui_print " Vol+ = Auto redirect DNS request with iptables"
 ui_print " "
 ui_print " Vol- = Set DNS manually with 3rd-party app"
@@ -69,6 +94,6 @@ else
   ui_print " "
   ui_print " Manual mode"
   ui_print " deleting iptables rules"
-  sed -i -e '/for/,$d' $INSTALLER/common/service.sh
+  sed -i -e '/for/,$d' $TMPDIR/service.sh
   sed -i -e "s/'127.0.0.1.*'/'127.0.0.1:53', '[::1]:53'/g" $MODPATH/system/etc/dnscrypt-proxy/dnscrypt-proxy.toml
 fi
