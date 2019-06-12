@@ -95,5 +95,5 @@ else
   ui_print " Manual mode"
   ui_print " deleting iptables rules"
   sed -i -e '/#IPTABLES/,$d' $TMPDIR/service.sh
-#  sed -i -e "s/'127.0.0.1.*'/'127.0.0.1:53', '[::1]:53'/g" /data/media/0/dnscrypt-proxy/dnscrypt-proxy.toml
+  sed -i -e "s/'127.0.0.1.*'/'127.0.0.1:53', '[::1]:53'/g" /data/media/0/dnscrypt-proxy/dnscrypt-proxy.toml
 fi
