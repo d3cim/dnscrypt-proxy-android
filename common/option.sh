@@ -62,12 +62,12 @@ ui_print " "
 ui_print " Vol- = Use previous config"
 ui_print " "
 
-CONFIG_FILE=$MODPATH/system/etc/dnscrypt-proxy/dnscrypt-proxy.toml
+CONFIG_FILE=/data/media/0/dnscrypt-proxy/dnscrypt-proxy.toml
 
 if $FUNCTION; then
   ui_print "Replace old config"
   ui_print " "
-  cp -af $MODPATH/system/etc/dnscrypt-proxy/example-dnscrypt-proxy.toml $CONFIG_FILE
+  cp -af /data/media/0/dnscrypt-proxy/example-dnscrypt-proxy.toml $CONFIG_FILE
   sed -i -e 's/127.0.0.1:53/127.0.0.1:5354/g' $CONFIG_FILE
   sed -i -e 's/\[::1\]:53/\[::1\]:5354/g' $CONFIG_FILE
 else
@@ -94,6 +94,6 @@ else
   ui_print " "
   ui_print " Manual mode"
   ui_print " deleting iptables rules"
-  sed -i -e '/for/,$d' $TMPDIR/service.sh
-  sed -i -e "s/'127.0.0.1.*'/'127.0.0.1:53', '[::1]:53'/g" $MODPATH/system/etc/dnscrypt-proxy/dnscrypt-proxy.toml
+  sed -i -e '/#IPTABLES/,$d' $TMPDIR/service.sh
+#  sed -i -e "s/'127.0.0.1.*'/'127.0.0.1:53', '[::1]:53'/g" /data/media/0/dnscrypt-proxy/dnscrypt-proxy.toml
 fi
