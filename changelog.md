@@ -1,5 +1,8 @@
 # Changelog
 ## Changelog
+### v2.8.6
+-changed path of configuration file [dnscrypt-toml] from /system/etc to /data/media/0/dnscrypt-proxy [for which /sdcard is the soft link]
+-uploaded example-dnscrypt-proxy2.toml [the configuration used by lindroidux]
 ### v2.8.5
 - Fix #40
 ### v2.8.4
