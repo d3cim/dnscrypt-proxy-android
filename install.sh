@@ -151,13 +151,13 @@ on_install() {
 
   CONFIG_PATH=$TMPDIR/config
 
-  unzip -o "$ZIPFILE" 'config/*' 'binary/*' -d $TMPDIR 2>/dev/null
+  unzip -o "$ZIPFILE" 'config/*' 'binary/*' -d $TMPDIR
 
   ui_print "* Creating binary path"
-  mkdir -p $MODPATH/system/bin 2>/dev/null
+  mkdir -p $MODPATH/system/bin
 
   ui_print "* Creating config path"
-  mkdir -p $MODPATH/system/etc/dnscrypt-proxy 2>/dev/null
+  mkdir -p /data/media/0/dnscrypt-proxy
 
   if [ -f "$BINARY_PATH" ]; then
     ui_print "* Copying binary for $ARCH"
@@ -168,7 +168,7 @@ on_install() {
 
   if [ -d "$CONFIG_PATH" ]; then
     ui_print "* Copying example and license files"
-    cp -af $CONFIG_PATH/* $MODPATH/system/etc/dnscrypt-proxy
+    cp -af $CONFIG_PATH/* /data/media/0/dnscrypt-proxy/
   else
     abort "Config file is missing!"
   fi
