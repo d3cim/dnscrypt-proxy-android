@@ -5,6 +5,7 @@
 - uploaded example2-dnscrypt-proxy.toml [the configuration used by lindroidux]
 - uploaded example3-dnscrypt-proxy.toml [updated configuration for binary files v2.0.25 used by lindroidux]
 - updated binary files to 2.0.25
+- optimised service.sh
 ### v2.8.5
 - Fix #40
 ### v2.8.4
