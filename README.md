@@ -9,31 +9,36 @@ A flexible DNS proxy, with support for modern encrypted DNS protocols such as [D
 
 ## Installation
 - Download [.zip module](https://github.com/Magisk-Modules-Repo/dnscrypt-proxy-magisk/releases), flash it in Magisk Manager App or in Recovery and follow the instructions.
-- There are two option in installation progress. 
-### Auto redirect DNS queries using `iptables`
-Just flash and forget.
+
 ### Set DNS server manually with 3rd-party app (not included in this module)
-- DNS server address is 127.0.0.1:53 for ipv4 and [::1]:53 for ipv6
+- DNS server address is 127.0.0.1:5354 for ipv4 and [::1]:5354 for ipv6
 - If you use AfWall, you can write this enter custom script
   ```
-  iptables -t nat -A OUTPUT -p tcp ! -d 9.9.9.9 --dport 53 -j DNAT --to-destination 127.0.0.1:53
-  iptables -t nat -A OUTPUT -p udp ! -d 9.9.9.9 --dport 53 -j DNAT --to-destination 127.0.0.1:53
-  ip6tables -t nat -A OUTPUT -p tcp ! -d 9.9.9.9 --dport 53 -j DNAT --to-destination [::1]:53
-  ip6tables -t nat -A OUTPUT -p udp ! -d 9.9.9.9 --dport 53 -j DNAT --to-destination [::1]:53
+  iptables -t nat -A OUTPUT -p tcp ! -d 9.9.9.9 --dport 53 -j DNAT --to-destination 127.0.0.1:5354
+  iptables -t nat -A OUTPUT -p udp ! -d 9.9.9.9 --dport 53 -j DNAT --to-destination 127.0.0.1:5354
+  ip6tables -t nat -A OUTPUT -p tcp ! -d 9.9.9.9 --dport 53 -j DNAT --to-destination [::1]:5354
+  ip6tables -t nat -A OUTPUT -p udp ! -d 9.9.9.9 --dport 53 -j DNAT --to-destination [::1]:5354
   ```
   and this shutdown script
   ```
-  iptables -t nat -D OUTPUT -p tcp ! -d 9.9.9.9 --dport 53 -j DNAT --to-destination 127.0.0.1:53
-  iptables -t nat -D OUTPUT -p udp ! -d 9.9.9.9 --dport 53 -j DNAT --to-destination 127.0.0.1:53
-  ip6tables -t nat -D OUTPUT -p tcp ! -d 9.9.9.9 --dport 53 -j DNAT --to-destination [::1]:53
-  ip6tables -t nat -D OUTPUT -p udp ! -d 9.9.9.9 --dport 53 -j DNAT --to-destination [::1]:53
+  iptables -t nat -D OUTPUT -p tcp ! -d 9.9.9.9 --dport 53 -j DNAT --to-destination 127.0.0.1:5354
+  iptables -t nat -D OUTPUT -p udp ! -d 9.9.9.9 --dport 53 -j DNAT --to-destination 127.0.0.1:5354
+  ip6tables -t nat -D OUTPUT -p tcp ! -d 9.9.9.9 --dport 53 -j DNAT --to-destination [::1]:5354
+  ip6tables -t nat -D OUTPUT -p udp ! -d 9.9.9.9 --dport 53 -j DNAT --to-destination [::1]:5354
   ```
 
 ## Configuration (post-installing)
-- Configuration located on `/system/etc/dnscrypt-proxy/dnscrypt-proxy.toml`
+- Configuration located on `/sdcard/dnscrypt-proxy/dnscrypt-proxy.toml` [or /data/media/0/dnscrypt-proxy/dnscrypt-proxy.toml]
 - For more detailed configuration please refer to [official documentation](https://github.com/jedisct1/dnscrypt-proxy/wiki/Configuration)
 
 ## Changelog
+### v2.8.7
+- changed path of configuration file [dnscrypt-toml] from /system/etc to /data/media/0/dnscrypt-proxy [for which /sdcard is the soft link]
+- uploaded example2-dnscrypt-proxy.toml [the configuration used by lindroidux]
+- uploaded example3-dnscrypt-proxy.toml [updated configuration for binary files v2.0.25 used by lindroidux]
+- updated configuration files to 2.0.25
+- updated binary files to 2.0.25
+- Removed automatic redirection of dns-request and let dnscrypt-proxy do its job only.
 ### v2.8.5
  - Fix #40
 ### v2.8.4
