@@ -12,8 +12,7 @@ MODDIR=${0%/*}
 # till network is available & start dnscrypt-proxy.
 
 	while ! [ `pgrep -x dnscrypt-proxy` ] ; do
-		$MODDIR/system/bin/dnscrypt-proxy -config  /data/media/0/dnscrypt-proxy/dnscrypt-proxy.toml;
-		sleep 15;
+		$MODDIR/system/bin/dnscrypt-proxy -config  /data/media/0/dnscrypt-proxy/dnscrypt-proxy.toml && sleep 15;
 	done
 
 #IPTABLES
