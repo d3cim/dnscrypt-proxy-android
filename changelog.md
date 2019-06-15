@@ -1,7 +1,7 @@
 # Changelog
 ## Changelog
 ### v2.8.7
-- changed path of configuration file [dnscrypt-toml] from /system/etc/ to /data/media/0/ [or /sdcard]
+- changed path of configuration file [dnscrypt.toml] from /system/etc/ to /data/media/0/ [or /sdcard]
 - updated binary & configuration files to 2.0.25
 - Removed automatic redirection of dns-request and let dnscrypt-proxy do its job only.
 ### v2.8.5
