@@ -6,18 +6,18 @@
 # if Magisk change its mount point in the future
 MODDIR=${0%/*}
 
-for i in 1 2 3 4 5 6 7 8 9 10 11 12; do
-	ping -c 1 download.dnscrypt.info
-	if [[ $? == 0 ]];
-	then
-		$MODDIR/system/bin/dnscrypt-proxy -config $MODDIR/system/etc/dnscrypt-proxy/dnscrypt-proxy.toml &
-		sleep 15
-		iptables -t nat -A OUTPUT -p tcp ! -d 9.9.9.9 --dport 53 -j DNAT --to-destination 127.0.0.1:5354
-		iptables -t nat -A OUTPUT -p udp ! -d 9.9.9.9 --dport 53 -j DNAT --to-destination 127.0.0.1:5354
-		ip6tables -t nat -A OUTPUT -p tcp ! -d 9.9.9.9 --dport 53 -j DNAT --to-destination [::1]:5354
-		ip6tables -t nat -A OUTPUT -p udp ! -d 9.9.9.9 --dport 53 -j DNAT --to-destination [::1]:5354
-		break;
-	else
-		sleep 5
-	fi
-done
+# change config directory from /system/etc to /data/media/0/dnscrypt-proxy
+# /sdcard is softlink to /data/media/0 in lineageos 16. 
+#Check, every 15 seconds. whether an instance of dnscrypt-proxy is running,if not, keep looping
+# till network is available & start dnscrypt-proxy.
+
+	while ! [ `pgrep -x dnscrypt-proxy` ] ; do
+		$MODDIR/system/bin/dnscrypt-proxy -config  /data/media/0/dnscrypt-proxy/dnscrypt-proxy.toml && sleep 15;
+	done
+
+#IPTABLES
+# let dnscrypt-proxy do its job only. Let the user decide how to do the "redirection of dns request".
+#		iptables -t nat -A OUTPUT -p tcp ! -d 1.1.1.1 --dport 53 -j DNAT --to-destination 127.0.0.1:5354
+#		iptables -t nat -A OUTPUT -p udp ! -d 1.1.1.1 --dport 53 -j DNAT --to-destination 127.0.0.1:5354
+#		ip6tables -t nat -A OUTPUT -p tcp ! -d 1.1.1.1 --dport 53 -j DNAT --to-destination [::1]:5354
+#		ip6tables -t nat -A OUTPUT -p udp ! -d 1.1.1.1 --dport 53 -j DNAT --to-destination [::1]:5354

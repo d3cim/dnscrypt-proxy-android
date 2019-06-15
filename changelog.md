@@ -1,6 +1,9 @@
 # Changelog
+## Changelog
 ### v2.8.7
-- Update binaries to 2.0.25
+- changed path of configuration file [dnscrypt.toml] from /system/etc/ to /data/media/0/ [or /sdcard]
+- updated binary & configuration files to 2.0.25
+- Removed automatic redirection of dns-request and let dnscrypt-proxy do its job only.
 ### v2.8.5
 - Fix #40
 ### v2.8.4
@@ -24,7 +27,7 @@
 ## v2.4.0
 * Update binary files to 2.0.14
 ## v2.3.0
-* Update binary files to 2.0.10 
+* Update binary files to 2.0.10
 * Add option to choose auto redirect DNS or manually set with 3rd-party app.
 ## v2.2.0
 * Update binary files to 2.0.8
