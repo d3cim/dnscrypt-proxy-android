@@ -1,5 +1,6 @@
 # Changelog
-## Changelog
+### v2.8.7
+- Update binaries to 2.0.25
 ### v2.8.5
 - Fix #40
 ### v2.8.4
