@@ -32,6 +32,9 @@ A flexible DNS proxy, with support for modern encrypted DNS protocols such as [D
 - For more detailed configuration please refer to [official documentation](https://github.com/jedisct1/dnscrypt-proxy/wiki/Configuration)
 
 ## Changelog
+### v2.9.0
+- updated binary & configuration files to 2.0.27
+- updated configuration file [dnscrypt.toml] according to the revision https://github.com/DNSCrypt/dnscrypt-proxy/releases/tag/2.0.27
 ### v2.8.7
 - changed path of configuration file [dnscrypt-toml] from /system/etc/ to /data/media/0/ [or /sdcard]
 - updated binary & configuration files to 2.0.25
