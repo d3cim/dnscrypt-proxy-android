@@ -1,5 +1,8 @@
 # Changelog
 ## Changelog
+### v2.9.0
+- updated binary & configuration files to 2.0.27
+- updated configuration file [dnscrypt.toml] according to the revision https://github.com/DNSCrypt/dnscrypt-proxy/releases/tag/2.0.27
 ### v2.8.7
 - changed path of configuration file [dnscrypt.toml] from /system/etc/ to /data/media/0/ [or /sdcard]
 - updated binary & configuration files to 2.0.25
