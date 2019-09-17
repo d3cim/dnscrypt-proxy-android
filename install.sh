@@ -124,7 +124,7 @@ REPLACE="
 print_modname() {
   ui_print " "
   ui_print "*******************************"
-  ui_print "*       DNSCrypt-Proxy v2     *"
+  ui_print "*     dnscrypt-proxy-fresh    *"
   ui_print "*        Magisk Module        *"
   ui_print "*******************************"
   ui_print "*            v1.0.0           *"
