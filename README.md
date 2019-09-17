@@ -40,5 +40,5 @@ A flexible DNS proxy, with support for modern encrypted DNS protocols such as [D
 
 ## Credit
 - DNSCrypt-Proxy2 upstream | [jedisct1](https://github.com/jedisct1/dnscrypt-proxy)
-- [bluemeda] (https://github.com/bluemeda)
+- [bluemeda](https://github.com/bluemeda) for the original module
 - [All contributor](https://github.com/Magisk-Modules-Repo/dnscrypt-proxy/graphs/contributors)
