@@ -1,6 +1,6 @@
 # Changelog
 
-### v1.0.27 - quindecim
+### v2.0.27 - quindecim
 
 * new maintainer
 * updated binary & configuration files to 2.0.27
