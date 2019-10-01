@@ -10,7 +10,7 @@ A flexible DNS proxy, with support for modern encrypted DNS protocols such as [D
 ## Installation
 1. Download and latest `.zip` module from here or from [MY TELEGRAM CHANNEL](https://t.me/dnscrypt_proxy) and then flash it in Magisk Manager App or in Recovery.
 2. Reboot.
-3. Edit `dnscrypt-proxy.toml` as you wish in `/data/media/0/dnscrypt-proxy` folder.
+3. Edit `dnscrypt-proxy.toml` as you wish located on `/sdcard/dnscrypt-proxy/dnscrypt-proxy.toml` [or /data/media/0/dnscrypt-proxy/dnscrypt-proxy.toml]
 4. Reboot.
 5. Open AFWall+ and set custom script:
 *(remember to modify the fallback resolver with the one you chose previously in the .toml file)*
@@ -32,12 +32,14 @@ ip6tables -t nat -D OUTPUT -p udp ! -d 9.9.9.9 --dport 53 -j DNAT --to-destinati
 ```
 
 ## Configuration (post-installing)
-- Configuration located on `/sdcard/dnscrypt-proxy/dnscrypt-proxy.toml` [or /data/media/0/dnscrypt-proxy/dnscrypt-proxy.toml]
+
 - For more detailed configuration please refer to [official documentation](https://github.com/jedisct1/dnscrypt-proxy/wiki/Configuration)
+
+- FOR MORE SUPPORT ON A GOOD PRIVACY-ORIENTED SETUP, JOIN [MY TELEGRAM CHAT](https://t.me/qd_invitation)
 
 ## Changelog
 
-#### v1.0.27 - quindecim
+#### v2.0.27 - quindecim
 
 * new maintainer
 * updated binary & configuration files to 2.0.27
