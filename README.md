@@ -17,7 +17,7 @@ A flexible DNS proxy, with support for modern encrypted DNS protocols such as [D
 - ✅ Ephemeral keys (create a new, unique key for every single DNS query)
 - ℹ️ Set DNS query max. response time from `2500` to `1500`, in ms.
 - ℹ️ Use [UncensoredDNS](https://blog.uncensoreddns.org/dns-servers/) as fallback resolver *(address used to initializing connection to the other resolvers)*
-- ℹ️ Use `dnscrypt.uk` (UK), `dnscrypt.eu` (DK/NL), `dnswarden` (DE), `charis` (IT) and `suami` (IT) 
+- ℹ️ Use `dnscrypt.nl` (NL), `dnscrypt.uk` (UK), `dnscrypt.eu` (DK/NL), `dnswarden` (DE), `charis` (DE) and `suami` (FR) 
 
 
 
