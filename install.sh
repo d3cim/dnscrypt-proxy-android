@@ -127,7 +127,7 @@ print_modname() {
   ui_print "*    dnscrypt-proxy-android   *"
   ui_print "*        Magisk Module        *"
   ui_print "*******************************"
-  ui_print "*            v2.0.27          *"
+  ui_print "*            v2.0.28          *"
   ui_print "*           quindecim         *"
   ui_print "*******************************"
   ui_print " "
