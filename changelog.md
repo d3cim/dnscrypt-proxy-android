@@ -1,5 +1,10 @@
 # Changelog
 
+### v2.0.28 - quindecim
+
+* updated binary files to 2.0.28
+
+
 ### v2.0.27 - quindecim
 
 * new maintainer
