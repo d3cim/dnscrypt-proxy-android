@@ -46,10 +46,9 @@ iptables -t nat -D OUTPUT -p udp ! -d 91.239.100.100 --dport 53 -j DNAT --to-des
 
 ## Changelog
 
-#### v2.0.27
+#### v2.0.28
 
-* updated binary & configuration files to 2.0.27 | jedisct1
-* uploaded privacy config to 2.0.27 | quindecim
+* updated binary files to v2.0.28 | jedisct1
 
 [Full changelog](changelog.md)
 
