@@ -31,7 +31,6 @@
 
 
 ## List of local addresses and ports to listen to. Can be IPv4 and/or IPv6.
-## Note: When using systemd socket activation, choose an empty set (i.e. [] ).
 
 listen_addresses = ['127.0.0.1:53', '[::1]:53']
 
@@ -101,9 +100,12 @@ force_tcp = false
 # http_proxy = 'http://127.0.0.1:8888'
 
 
-## How long a DNS query will wait for a response, in milliseconds
+## How long a DNS query will wait for a response, in milliseconds.
+## If you have a network with *a lot* of latency, you may need to
+## increase this. Startup may be slower if you do so.
+## Don't increase it too much. 10000 is the highest reasonable value.
 
-timeout = 2500
+timeout = 5000
 
 
 ## Keepalive for HTTP (HTTPS, HTTP/2) queries, in seconds
@@ -240,7 +242,7 @@ netprobe_address = '9.9.9.9:53'
 
 ## Automatic log files rotation
 
-# Maximum log files size in MB
+# Maximum log files size in MB - Set to 0 for unlimited.
 log_files_max_size = 10
 
 # How long to keep backup files, in days
@@ -262,6 +264,12 @@ log_files_max_backups = 1
 ## of the proxy.
 
 block_ipv6 = false
+
+
+## TTL for synthetic responses sent when a request has been blocked (due to
+## IPv6 or blacklists).
+
+reject_ttl = 600
 
 
 
@@ -291,6 +299,9 @@ block_ipv6 = false
 
 # cloaking_rules = 'cloaking-rules.txt'
 
+## TTL used when serving entries in cloaking-rules.txt
+
+# cloak_ttl = 600
 
 
 ###########################
@@ -337,6 +348,7 @@ cache_neg_max_ttl = 600
 [query_log]
 
   ## Path to the query log file (absolute, or relative to the same directory as the executable file)
+  ## Can be /dev/stdout to log to the standard output (and set log_files_max_size to 0)
 
   # file = 'query.log'
 
@@ -529,6 +541,15 @@ cache_neg_max_ttl = 600
   minisign_key = 'RWQf6LRCGA9i53mlYecO4IzT51TGPpvWucNSCh1CBM0QTaLn73Y7GFO3'
   prefix = ''
 
+  ## Anonymized DNS relays
+
+  [sources.'relays']
+  urls = ['https://github.com/DNSCrypt/dnscrypt-resolvers/raw/master/v2/relays.md', 'https://download.dnscrypt.info/resolvers-list/v2/relays.md']
+  cache_file = 'relays.md'
+  minisign_key = 'RWQf6LRCGA9i53mlYecO4IzT51TGPpvWucNSCh1CBM0QTaLn73Y7GFO3'
+  refresh_delay = 72
+  prefix = ''
+
   ## Quad9 over DNSCrypt - https://quad9.net/
 
   # [sources.quad9-resolvers]
@@ -546,6 +567,37 @@ cache_neg_max_ttl = 600
   #  minisign_key = 'RWQf6LRCGA9i53mlYecO4IzT51TGPpvWucNSCh1CBM0QTaLn73Y7GFO3'
 
 
+################################
+#        Anonymized DNS        #
+################################
+
+[anonymized_dns]
+
+## Routes are indirect ways to reach DNSCrypt servers.
+##
+## A route maps a server name ("server_name") to one or more relays that will be
+## used to connect to that server.
+##
+## A relay can be specified as a DNS Stamp (either a relay stamp, or a
+## DNSCrypt stamp), an IP:port, a hostname:port, or a server name.
+##
+## The following example routes "comodo-02" via `anon-kama` or `anon-ibksturm`,
+## and "quad9-dnscrypt-ip4-nofilter-pri" via the relay whose relay DNS stamp
+## is "sdns://gRIxMzcuNzQuMjIzLjIzNDo0NDM".
+## These are just example routes. Review the list of available relays from the
+## "relays.md` file, and, for each server you want to use, define the relays you
+## want connections to go through.
+##
+## Carefully choose relays and servers so that the are run by different entities.
+##
+## "server_name" can also be set to "*" to define a default route, but this is not
+## recommended. if you do so, keep "server_names" short and distinct from relays.
+
+# routes = [
+#    { server_name='comodo-02', via=['anon-kama', 'anon-ibksturm'] },
+#    { server_name='quad9-dnscrypt-ip4-nofilter-pri', via=['sdns://gRIxMzcuNzQuMjIzLjIzNDo0NDM'] }
+# ]
+
 
 ## Optional, local, static list of additional servers
 ## Mostly useful for testing your own servers.
@@ -554,3 +606,4 @@ cache_neg_max_ttl = 600
 
   # [static.'myserver']
   # stamp = 'sdns:AQcAAAAAAAAAAAAQMi5kbnNjcnlwdC1jZXJ0Lg'
+
