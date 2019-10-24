@@ -53,7 +53,7 @@ iptables -t nat -D OUTPUT -p udp ! -d 91.239.100.100 --dport 53 -j DNAT --to-des
 
 - You can edit `dnscrypt-proxy.toml` as you wish located on `/sdcard/dnscrypt-proxy/dnscrypt-proxy.toml` [or /data/media/0/dnscrypt-proxy/dnscrypt-proxy.toml]
 - For more detailed configuration please refer to [official documentation](https://github.com/jedisct1/dnscrypt-proxy/wiki/Configuration)
-- FOR MORE SUPPORT ON A GOOD PRIVACY-ORIENTED SETUP, JOIN [MY TELEGRAM CHAT](https://t.me/qd_invitation)
+- FOR MORE SUPPORT ON A GOOD PRIVACY-ORIENTED SETUP, JOIN [dnscrypt-proxy-android | CHAT](https://t.me/qd_invitation) ON TELEGRAM
 
 
 ## Changelog
