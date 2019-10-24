@@ -1,2 +1,0 @@
-@ The file "public-resolvers.md" is the cache file which gets updated dynamically.
-#This file is only a placeholder for reference to developer(s) of previous versions.
