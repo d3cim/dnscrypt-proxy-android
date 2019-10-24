@@ -12,11 +12,11 @@ A flexible DNS proxy, with support for modern encrypted DNS protocols such as [D
 ## Differences between default DNSCrypt Proxy project
 
 #### CONFIG. FILE: *(dnscrypt-proxy.toml)*
-- ✅ Required DNSSEC
+- ✅ `DNSSEC` required
 - ✅ Enabled `dnscrypt_ephemeral_keys` *(create a new, unique key for every single DNS query)*
 - ✅ Enabled `anonymized_dns` *(each resolver has 2 relay)*
-- ⛔️ Disabled DoH
-- ⛔️ Disabled IPv6
+- ⛔️ Disabled `DoH`
+- ⛔️ Disabled `IPv6`
 - ℹ️ Set`refused` as response to blocked queries
 - ℹ️ Set DNS query max. response time from `5000` to `1500`, in ms.
 - ℹ️ Use [UncensoredDNS](https://blog.uncensoreddns.org/) as fallback resolver instead CloudFlare
