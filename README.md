@@ -33,7 +33,7 @@ Up-to-date, pre-built binaries are available for:
 
 
 ## Installation
-1. Download latest `.zip` file from here or from [MY TELEGRAM CHANNEL](https://t.me/dnscrypt_proxy) and then flash it in Magisk Manager App or in Recovery.
+1. Download latest `.zip` file from here or from [dnscrypt-proxy-android | CHANNEL](https://t.me/dnscrypt_proxy) on Telegram and flash it with Magisk Manager App or with your Recovery.
 2. Reboot.
 3. Open AFWall+ and set custom script:
 
