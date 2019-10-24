@@ -20,13 +20,14 @@ Up-to-date, pre-built binaries are available for:
 
 ## Differences between default DNSCrypt Proxy project
 
-#### CONFIG. FILE: *(dnscrypt-proxy.toml)*
+##### **- CONFIG. FILE:** *(dnscrypt-proxy.toml)*
+
 - ✅ `DNSSEC` required
-- ✅ Enabled `dnscrypt_ephemeral_keys` *(create a new, unique key for every single DNS query)*
-- ✅ Enabled `anonymized_dns` *(each resolver has 2 relay)*
-- ⛔️ Disabled `DoH`
-- ⛔️ Disabled `IPv6`
-- ℹ️ Set`refused` as response to blocked queries
+- ✅ Enabled `dnscrypt_ephemeral_keys` feature *(create a new, unique key for every single DNS query)*
+- ✅ Enabled `anonymized_dns` feature *(each resolver has 2 relay)*
+- ⛔️ `DoH` disabled
+- ⛔️ `IPv6` disabled
+- ℹ️ Set`refused` response to blocked queries
 - ℹ️ Set DNS query max. response time from `5000` to `1500`, in ms.
 - ℹ️ Use [UncensoredDNS](https://blog.uncensoreddns.org/) as fallback resolver instead CloudFlare
 - ℹ️ Use dnscrypt.nl (NL), dnscrypt.uk (UK), dnscrypt.eu (DK/NL), dnswarden (DE), charis (DE), scaleway-fr (FR) and suami (FR)
