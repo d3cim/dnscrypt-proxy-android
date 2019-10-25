@@ -61,8 +61,18 @@ iptables -t nat -D OUTPUT -p udp ! -d 91.239.100.100 --dport 53 -j DNAT --to-des
 
 #### 2.0.29-beta.3
 
-* Updated binary files to 2.0.29-beta.3 | jedisct1
-* Updated config files to 2.0.29-beta.3 | quindecim
+##### Updated binary files to 2.0.29-beta.3 | jedisct1
+* Support for Anonymized DNSCrypt has been added.
+* Latency with large responses has actually been reduced.
+* DNSCrypt certificates can now be retrieved over Tor, proxies, and DNS relays.
+* Improved server error reporting (thanks to Alison Winters)
+* Quite a lot of internal improvements and bug fixes have been made, thanks to Markus Linnala.
+* Improved logging
+* Added a workaround for DNS servers using a non-standard provider name.
+
+##### Updated config files to 2.0.29-beta.3 | quindecim
+* ✅ Enabled `anonymized_dns` feature *(each resolver has 2 relays)*
+* ✅ Added `scaleway-fr` resolver *(DNSSEC/Non-logged/Uncensored - Maintained by Frank Denis - https://fr.dnscrypt.info)*
 
 [Full changelog](changelog.md)
 
