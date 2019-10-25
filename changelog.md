@@ -3,20 +3,20 @@
 
 ### 2.0.29-beta.3
 
-* updated binaries files to 2.0.29-beta.3 | jedisct1
-* updated config files to 2.0.29-beta.3 | quindecim
+* Updated binary files to 2.0.29-beta.3 | jedisct1
+* Updated config files to 2.0.29-beta.3 | quindecim
 
 
 ### 2.0.28
 
-* updated binaries files to 2.0.28 | jedisct1
+* Updated binary files to 2.0.28 | jedisct1
 
 
 ### 2.0.27
 
-* updated binaries files to 2.0.27 | jedisct1
-* new maintainer | quindecim
-* updated config files to 2.0.27 | quindecim
+* Updated binary files to 2.0.27 | jedisct1
+* New maintainer | quindecim
+* Updated config files to 2.0.27 | quindecim
 
 
 -----

@@ -61,8 +61,8 @@ iptables -t nat -D OUTPUT -p udp ! -d 91.239.100.100 --dport 53 -j DNAT --to-des
 
 #### 2.0.29-beta.3
 
-* updated binaries files to 2.0.29-beta.3 | jedisct1
-* updated config files to 2.0.29-beta.3 | quindecim
+* Updated binary files to 2.0.29-beta.3 | jedisct1
+* Updated config files to 2.0.29-beta.3 | quindecim
 
 [Full changelog](changelog.md)
 
