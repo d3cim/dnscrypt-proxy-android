@@ -27,7 +27,7 @@
 ## The proxy will automatically pick the fastest, working servers from the list.
 ## Remove the leading # first to enable this; lines starting with # are ignored.
 
-server_names = ['dnscrypt.nl-ns0', 'dnscrypt.uk-ipv4', 'dnscrypt.eu-dk', 'dnscrypt.eu-nl', 'dnswarden-dc1', 'dnswarden-dc2', 'charis', 'publicarray-au', 'publicarray-au2', 'scaleway-fr', 'suami']
+server_names = ['charis', 'dnscrypt.nl-ns0', 'dnscrypt.uk-ipv4', 'dnscrypt.eu-dk', 'dnscrypt.eu-nl', 'dnswarden-dc1', 'dnswarden-dc2', 'publicarray-au', 'publicarray-au2', 'scaleway-fr', 'suami']
 
 
 ## List of local addresses and ports to listen to. Can be IPv4 and/or IPv6.
