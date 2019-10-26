@@ -27,7 +27,7 @@
 ## The proxy will automatically pick the fastest, working servers from the list.
 ## Remove the leading # first to enable this; lines starting with # are ignored.
 
-server_names = ['dnscrypt.nl-ns0', 'dnscrypt.uk-ipv4', 'dnscrypt.eu-dk', 'dnscrypt.eu-nl', 'dnswarden-dc1', 'dnswarden-dc2', 'charis', 'scaleway-fr', 'suami']
+server_names = ['dnscrypt.nl-ns0', 'dnscrypt.uk-ipv4', 'dnscrypt.eu-dk', 'dnscrypt.eu-nl', 'dnswarden-dc1', 'dnswarden-dc2', 'charis', 'publicarray-au', 'publicarray-au2', 'scaleway-fr', 'suami']
 
 
 ## List of local addresses and ports to listen to. Can be IPv4 and/or IPv6.
@@ -585,15 +585,17 @@ cache_neg_max_ttl = 600
 ## recommended. if you do so, keep "server_names" short and distinct from relays.
 
  routes = [
-    { server_name='dnscrypt.nl-ns0', via=['anon-kama', 'anon-charis'] },
+    { server_name='dnscrypt.nl-ns0', via=['anon-charis', 'anon-kama'] },
     { server_name='dnscrypt.uk-ipv4', via=['anon-kama', 'anon-suami'] },
-    { server_name='dnscrypt.eu-dk', via=['anon-kama', 'anon-charis'] },
+    { server_name='dnscrypt.eu-dk', via=['anon-charis', 'anon-kama'] },
     { server_name='dnscrypt.eu-nl', via=['anon-charis', 'anon-suami'] },
-    { server_name='dnswarden-dc1', via=['anon-kama', 'anon-charis'] },
-    { server_name='dnswarden-dc2', via=['anon-kama', 'anon-charis'] },
+    { server_name='dnswarden-dc1', via=['anon-charis', 'anon-kama'] },
+    { server_name='dnswarden-dc2', via=['anon-charis', 'anon-kama'] },
     { server_name='charis', via=['anon-kama', 'anon-suami'] },
+    { server_name='publicarray-au', via=['anon-charis', 'anon-tiarap'] },
+    { server_name='publicarray-au2', via=['anon-charis', 'anon-tiarap'] },
     { server_name='scaleway-fr', via=['anon-kama', 'anon-suami'] },
-    { server_name='suami', via=['anon-ibksturm', 'anon-kama'] }
+    { server_name='suami', via=['anon-kama', 'anon-scaleway'] }
 #    { server_name='quad9-dnscrypt-ip4-nofilter-pri', via=['sdns://gRIxMzcuNzQuMjIzLjIzNDo0NDM'] }
  ]
 
