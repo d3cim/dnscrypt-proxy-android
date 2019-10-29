@@ -125,7 +125,7 @@ print_modname() {
   ui_print " "
   ui_print "*******************************"
   ui_print "*    dnscrypt-proxy-android   *"
-  ui_print "*        2.0.29-beta.3        *"
+  ui_print "*            2.0.29           *"
   ui_print "*******************************"
   ui_print "*          quindecim          *"
   ui_print "*******************************"

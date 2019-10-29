@@ -59,20 +59,27 @@ iptables -t nat -D OUTPUT -p udp ! -d 91.239.100.100 --dport 53 -j DNAT --to-des
 
 ## Changelog
 
-#### 2.0.29-beta.3
+#### 2.0.29
 
-##### Updated binary files to 2.0.29-beta.3 | jedisct1
-* Support for Anonymized DNSCrypt has been added.
-* Latency with large responses has actually been reduced.
-* DNSCrypt certificates can now be retrieved over Tor, proxies, and DNS relays.
-* Improved server error reporting (thanks to Alison Winters)
-* Quite a lot of internal improvements and bug fixes have been made, thanks to Markus Linnala.
-* Improved logging
-* Added a workaround for DNS servers using a non-standard provider name.
+##### Updated binary files to 2.0.29 | jedisct1
+* Support for Anonymized DNS has been added!
+* Wait before stopping, fixing an issue with Unbound (thanks to Vladimir Bauer)
+* DNS stamps are now included in the `-list-all -json` ouptut
+* The `netprobe_timeout` setting from the configuration file or command-line was ignored. This has been fixed.
+* The TTL or cloaked entries can now be adjusted (thanks to Markus Linnala)
+* Cached IP address from DoH servers now expire (thanks to Markus Linnala)
+* DNSCrypt certificates can be fetched over Tor and SOCKS proxies
+* Retries over TCP are faster
+* Improved logging (thanks to Alison Winters)
+* Ignore non-TXT records in certificate responses (thanks to Vladimir Bauer)
+* A lot of internal cleanups, thanks to Markus Linnala
 
-##### Updated config files to 2.0.29-beta.3 | quindecim
+##### Updated config files to 2.0.29 | quindecim
 * ✅ Enabled `anonymized_dns` feature *(each resolver has 2 relays)*
-* ✅ Added `scaleway-fr` resolver *(DNSSEC/Non-logged/Uncensored - Maintained by Frank Denis - https://fr.dnscrypt.info)*
+* ✅ Added `scaleway-fr` resolver *(DNSSEC/Non-logging/Uncensored - Maintained by Frank Denis - https://fr.dnscrypt.info)*
+* ✅ Added `publicarray-au` resolver Australia, *(DNSSEC/OpenNIC/Non-logging/Uncensored - hosted on vultr.com maintained by publicarray - https://dns.seby.io)*
+* ✅ Added `publicarray-au2` resolver Australia, *(DNSSEC/OpenNIC/Non-logging/Uncensored - hosted on ovh.com.au maintained by publicarray - https://dns.seby.io)*
+* ✅ Optimized relays based on geolocation
 
 [Full changelog](changelog.md)
 
@@ -80,4 +87,4 @@ iptables -t nat -D OUTPUT -p udp ! -d 91.239.100.100 --dport 53 -j DNAT --to-des
 ## Credit
 - DNSCrypt-Proxy2 upstream | [jedisct1](https://github.com/jedisct1/dnscrypt-proxy)
 - [bluemeda](https://github.com/bluemeda) for the original module
-- [All contributor](https://github.com/Magisk-Modules-Repo/dnscrypt-proxy/graphs/contributors)
+- [All contributors](https://github.com/Magisk-Modules-Repo/dnscrypt-proxy/graphs/contributors)
