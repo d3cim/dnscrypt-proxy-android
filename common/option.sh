@@ -13,7 +13,7 @@ CONFIG_FILE="/data/media/0/dnscrypt-proxy/dnscrypt-proxy.toml"
     # sed -i -e 's/\[::1\]:53/\[::1\]:5354/g' $CONFIG_FILE
 
 ## quindecim
-    cp -afv  $CONFIG_FILE ${CONFIG_FILE}-backup-`date +%Y%m%d%H%M`
+    cp -afv  $CONFIG_FILE ${CONFIG_FILE}-`date +%Y%m%d%H%M`.bak
   fi
 
     cp -afv /data/media/0/dnscrypt-proxy/my-dnscrypt-proxy.toml $CONFIG_FILE
