@@ -59,27 +59,14 @@ iptables -t nat -D OUTPUT -p udp ! -d 91.239.100.100 --dport 53 -j DNAT --to-des
 
 ## Changelog
 
-#### 2.0.29
+#### 2.0.31
 
-##### Updated binary files to 2.0.29 | jedisct1
-* Support for Anonymized DNS has been added!
-* Wait before stopping, fixing an issue with Unbound (thanks to Vladimir Bauer)
-* DNS stamps are now included in the `-list-all -json` ouptut
-* The `netprobe_timeout` setting from the configuration file or command-line was ignored. This has been fixed.
-* The TTL or cloaked entries can now be adjusted (thanks to Markus Linnala)
-* Cached IP address from DoH servers now expire (thanks to Markus Linnala)
-* DNSCrypt certificates can be fetched over Tor and SOCKS proxies
-* Retries over TCP are faster
-* Improved logging (thanks to Alison Winters)
-* Ignore non-TXT records in certificate responses (thanks to Vladimir Bauer)
-* A lot of internal cleanups, thanks to Markus Linnala
+##### Updated binary files to 2.0.31 | jedisct1
+* This version fixes a startup issue introduced in version 2.0.29, on systems for which the service cannot be automatically installed (such as OpenBSD and FreeBSD). Reported by @5ch17 and Vinícius Zavam, and fixed by Will Elwood, thanks!
+* This version fixes two regressions introduced in version 2.0.29: DoH server couldn't be reached over IPv6 any more, and the proxy couldn't be interrupted while servers were being benchmarked.
 
-##### Updated config files to 2.0.29 | quindecim
-* ✅ Enabled `anonymized_dns` feature *(each resolver has 2 relays)*
-* ✅ Added `scaleway-fr` resolver *(DNSSEC/Non-logging/Uncensored - Maintained by Frank Denis - https://fr.dnscrypt.info)*
-* ✅ Added `publicarray-au` resolver Australia, *(DNSSEC/OpenNIC/Non-logging/Uncensored - hosted on vultr.com maintained by publicarray - https://dns.seby.io)*
-* ✅ Added `publicarray-au2` resolver Australia, *(DNSSEC/OpenNIC/Non-logging/Uncensored - hosted on ovh.com.au maintained by publicarray - https://dns.seby.io)*
-* ✅ Optimized relays based on geolocation
+##### Updated config files to 2.0.31 | quindecim
+* ℹ️ Changed the way to backup an existing .toml file. The old configuration is now backed up with `year-month-day-hour-minute.bak` suffix (thanks to @lindroidux)
 
 [Full changelog](changelog.md)
 

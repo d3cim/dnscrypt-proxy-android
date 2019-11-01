@@ -1,5 +1,15 @@
 # Changelog
 
+## 2.0.31
+
+#### Updated binary files to 2.0.31 | jedisct1
+* This version fixes a startup issue introduced in version 2.0.29, on systems for which the service cannot be automatically installed (such as OpenBSD and FreeBSD). Reported by @5ch17 and Vinícius Zavam, and fixed by Will Elwood, thanks!
+* This version fixes two regressions introduced in version 2.0.29: DoH server couldn't be reached over IPv6 any more, and the proxy couldn't be interrupted while servers were being benchmarked.
+
+#### Updated config files to 2.0.31 | quindecim
+* ℹ️ Changed the way to backup an existing .toml file. The old configuration is now backed up with `year-month-day-hour-minute.bak` suffix (thanks to @lindroidux)
+
+
 ## 2.0.29
 
 #### Updated binary files to 2.0.29 | jedisct1
