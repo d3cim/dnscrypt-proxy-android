@@ -8,7 +8,8 @@ MODDIR=${0%/*}
 
 # change config directory from /system/etc to /data/media/0/dnscrypt-proxy
 # /sdcard is softlink to /data/media/0 in LineageOS 16. 
-#Check, every 15 seconds. whether an instance of dnscrypt-proxy is running, if not, keep looping till network is available & start dnscrypt-proxy.
+# Check, every 15 seconds. whether an instance of dnscrypt-proxy is running,
+# if not, keep looping till network is available & start dnscrypt-proxy.
 
 	while ! [ `pgrep -x dnscrypt-proxy` ] ; do
 		$MODDIR/system/bin/dnscrypt-proxy -config  /data/media/0/dnscrypt-proxy/dnscrypt-proxy.toml && sleep 15;
