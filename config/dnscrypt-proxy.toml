@@ -596,18 +596,18 @@ cache_neg_max_ttl = 600
 ## recommended. if you do so, keep "server_names" short and distinct from relays.
 
  routes = [
-    { server_name='charis', via=['anon-kama', 'anon-suami'] },
+    { server_name='charis', via=['anon-kama', 'anon-scaleway'] },
     { server_name='dnscrypt.nl-ns0', via=['anon-charis', 'anon-kama'] },
-    { server_name='dnscrypt.uk-ipv4', via=['anon-kama', 'anon-v.dnscrypt.uk-ipv4'] },
+    { server_name='dnscrypt.uk-ipv4', via=['anon-kama', 'anon-suami'] },
     { server_name='dnscrypt.eu-dk', via=['anon-charis', 'anon-kama'] },
     { server_name='dnscrypt.eu-nl', via=['anon-charis', 'anon-suami'] },
     { server_name='dnswarden-dc1', via=['anon-charis', 'anon-kama'] },
     { server_name='dnswarden-dc2', via=['anon-charis', 'anon-kama'] },
     { server_name='publicarray-au', via=['anon-charis', 'anon-tiarap'] },
     { server_name='publicarray-au2', via=['anon-charis', 'anon-tiarap'] },
-    { server_name='scaleway-fr', via=['anon-kama', 'anon-suami'] },
+    { server_name='scaleway-fr', via=['anon-charis', 'anon-suami'] },
     { server_name='suami', via=['anon-kama', 'anon-scaleway'] },
-    { server_name='v.dnscrypt.uk-ipv4', via=['anon-dnscrypt.uk-ipv4', 'anon-suami'] }
+    { server_name='v.dnscrypt.uk-ipv4', via=['anon-kama', 'anon-suami'] }
 #    { server_name='example-server-2', via=['sdns://gRIxMzcuNzQuMjIzLjIzNDo0NDM'] }
  ]
 
