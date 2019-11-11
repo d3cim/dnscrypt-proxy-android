@@ -27,7 +27,7 @@
 ## The proxy will automatically pick the fastest, working servers from the list.
 ## Remove the leading # first to enable this; lines starting with # are ignored.
 
-server_names = ['charis', 'dnscrypt.nl-ns0', 'dnscrypt.uk-ipv4', 'dnscrypt.eu-dk', 'dnscrypt.eu-nl', 'dnswarden-dc1', 'dnswarden-dc2', 'publicarray-au', 'publicarray-au2', 'scaleway-fr', 'suami']
+server_names = ['charis', 'dnscrypt.nl-ns0', 'dnscrypt.uk-ipv4', 'dnscrypt.eu-dk', 'dnscrypt.eu-nl', 'dnswarden-dc1', 'dnswarden-dc2', 'publicarray-au', 'publicarray-au2', 'scaleway-fr', 'suami', 'v.dnscrypt.uk-ipv4']
 
 
 ## List of local addresses and ports to listen to. Can be IPv4 and/or IPv6.
@@ -544,7 +544,8 @@ cache_neg_max_ttl = 600
   ## Anonymized DNS relays
 
   [sources.'relays']
-   urls = ['https://raw.githubusercontent.com/DNSCrypt/dnscrypt-resolvers/master/v2/relays.md', 'https://download.dnscrypt.info/resolvers-list/v2/relays.md']  cache_file = 'relays.md'
+ urls = ['https://raw.githubusercontent.com/DNSCrypt/dnscrypt-resolvers/master/v2/relays.md', 'https://download.dnscrypt.info/resolvers-list/v2/relays.md']
+  cache_file = 'relays.md'
   minisign_key = 'RWQf6LRCGA9i53mlYecO4IzT51TGPpvWucNSCh1CBM0QTaLn73Y7GFO3'
   refresh_delay = 72
   prefix = ''
@@ -597,7 +598,7 @@ cache_neg_max_ttl = 600
  routes = [
     { server_name='charis', via=['anon-kama', 'anon-suami'] },
     { server_name='dnscrypt.nl-ns0', via=['anon-charis', 'anon-kama'] },
-    { server_name='dnscrypt.uk-ipv4', via=['anon-kama', 'anon-suami'] },
+    { server_name='dnscrypt.uk-ipv4', via=['anon-kama', 'anon-v.dnscrypt.uk-ipv4'] },
     { server_name='dnscrypt.eu-dk', via=['anon-charis', 'anon-kama'] },
     { server_name='dnscrypt.eu-nl', via=['anon-charis', 'anon-suami'] },
     { server_name='dnswarden-dc1', via=['anon-charis', 'anon-kama'] },
@@ -605,7 +606,8 @@ cache_neg_max_ttl = 600
     { server_name='publicarray-au', via=['anon-charis', 'anon-tiarap'] },
     { server_name='publicarray-au2', via=['anon-charis', 'anon-tiarap'] },
     { server_name='scaleway-fr', via=['anon-kama', 'anon-suami'] },
-    { server_name='suami', via=['anon-kama', 'anon-scaleway'] }
+    { server_name='suami', via=['anon-kama', 'anon-scaleway'] },
+    { server_name='v.dnscrypt.uk-ipv4', via=['anon-dnscrypt.uk-ipv4', 'anon-suami'] }
 #    { server_name='example-server-2', via=['sdns://gRIxMzcuNzQuMjIzLjIzNDo0NDM'] }
  ]
 
