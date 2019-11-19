@@ -1,6 +1,6 @@
 id=dnscrypt-proxy-android
 name=DNSCrypt-Proxy 2
-version=2.0.31
-versionCode=31
+version=2.0.33
+versionCode=33
 author=quindecim
-description=A flexible DNS proxy, with support for modern encrypted DNS protocols such as DNSCrypt v2, DNS-over-HTTPS and Anonymized DNSCrypt. Using dnscrypt-proxy 2.0.31
+description=A flexible DNS proxy, with support for modern encrypted DNS protocols such as DNSCrypt v2, DNS-over-HTTPS and Anonymized DNSCrypt. Using dnscrypt-proxy 2.0.33

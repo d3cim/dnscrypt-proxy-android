@@ -1,5 +1,37 @@
 # Changelog
 
+## 2.0.33
+
+#### Updated binary files to 2.0.33 | jedisct1
+* Fixes an issue that caused some valid queries to return `PARSE_ERROR`.
+* On certificate errors, the server name is now logged instead of the
+provider name, which is generally more useful.
+* IP addresses for DoH servers that require DNS lookups are now cached
+for at least 12 hours.
+* `ignore_system_dns` is now set to `true` by default.
+* A workaround for a bug in Cisco servers has been implemented.
+* A corrupted or incomplete resolvers list is now ignored, keeping the
+last good known cached list until the next update. In addition, logging was
+improved and unit tests were also added. Awesome contribution from William
+Elwood, thanks!
+* On Windows, the network probe immediately returned instead of blocking
+if `netprobe_timeout` was set to `-1`. This has been fixed.
+* Expired cached IP addresses now have a grace period, to avoid breaking the
+service if they temporarily can't be refreshed.
+* On Windows, the service now returns immediately, solving a long-standing
+issue when initialization took more than 30 seconds ("The service did not
+respond to the start or control request in a timely fashion"). Fantastic
+work by Alison Winters, thanks!
+* The `SERVER_ERROR` error code has been split into two new error codes:
+`NETWORK_ERROR` (self-explanatory) and `SERVFAIL` (a response was returned,
+but it includes a `SERVFAIL` error code).
+* Responses are now always compressed.
+
+#### Updated config files to 2.0.33 | quindecim
+* ✅ Added `v.dnscrypt.uk-ipv4` - DNSCrypt v2, no logs, uncensored, DNSSEC. Hosted in London UK on Vultr - https://www.dnscrypt.uk
+* ✅ Optimized relays based on geolocation and set to use other providers different from the main one 
+
+
 ## 2.0.31
 
 #### Updated binary files to 2.0.31 | jedisct1

@@ -30,7 +30,7 @@ Up-to-date, pre-built binaries are available for:
 - ℹ️ Set`refused` response to blocked queries
 - ℹ️ Set DNS query max. response time from `5000` to `1500`, in ms.
 - ℹ️ Use [UncensoredDNS](https://blog.uncensoreddns.org/) as fallback resolver instead CloudFlare
-- ℹ️ Use `charis` (DE), `dnscrypt.nl-ns0` (NL), `dnscrypt.uk-ipv4` (UK), `dnscrypt.eu-dk` (DK), `dnscrypt.eu-nl` (NL), `dnswarden-dc1` (DE), `dnswarden-dc1` (DE), `publicarray-au` (AUS), `publicarray-au2` (AUS), `scaleway-fr` (FR) and `suami` (FR)
+- ℹ️ Use `charis` (DE), `dnscrypt.nl-ns0` (NL), `dnscrypt.uk-ipv4` (UK), `dnscrypt.eu-dk` (DK), `dnscrypt.eu-nl` (NL), `dnswarden-dc1` (DE), `dnswarden-dc1` (DE), `publicarray-au` (AUS), `publicarray-au2` (AUS), `scaleway-fr` (FR), `suami` (FR) and `v.dnscrypt.uk-ipv4` (UK)
 
 
 ## Installation
@@ -58,15 +58,6 @@ iptables -t nat -D OUTPUT -p udp ! -d 91.239.100.100 --dport 53 -j DNAT --to-des
 
 
 ## Changelog
-
-#### 2.0.31
-
-##### Updated binary files to 2.0.31 | jedisct1
-* This version fixes a startup issue introduced in version 2.0.29, on systems for which the service cannot be automatically installed (such as OpenBSD and FreeBSD). Reported by @5ch17 and Vinícius Zavam, and fixed by Will Elwood, thanks!
-* This version fixes two regressions introduced in version 2.0.29: DoH server couldn't be reached over IPv6 any more, and the proxy couldn't be interrupted while servers were being benchmarked.
-
-##### Updated config files to 2.0.31 | quindecim
-* ℹ️ Changed the way to backup an existing .toml file. The old configuration is now backed up with `year-month-day-hour-minute.bak` suffix (thanks to @lindroidux)
 
 [Full changelog](changelog.md)
 
