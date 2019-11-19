@@ -190,7 +190,7 @@ cert_refresh_delay = 240
 ## It will never be used if lists have already been cached, and if stamps
 ## don't include host names without IP addresses.
 ## It will not be used if the configured system DNS works.
-## A resolver supporting DNSSEC is recommended. This may become mandatory.
+## A resolver supporting DNSSEC is recommended.
 ##
 ## People in China may need to use 114.114.114.114:53 here.
 ## Other popular options include 8.8.8.8 and 1.1.1.1.
@@ -198,10 +198,9 @@ cert_refresh_delay = 240
 fallback_resolver = '9.9.9.9:53'
 
 
-## Never let dnscrypt-proxy try to use the system DNS settings;
-## unconditionally use the fallback resolver.
+## Always use the fallback resolver before the system DNS settings
 
-ignore_system_dns = false
+ignore_system_dns = true
 
 
 ## Maximum time (in seconds) to wait for network connectivity before
@@ -544,7 +543,8 @@ cache_neg_max_ttl = 600
   ## Anonymized DNS relays
 
   [sources.'relays']
- urls = ['https://raw.githubusercontent.com/DNSCrypt/dnscrypt-resolvers/master/v2/relays.md', 'https://download.dnscrypt.info/resolvers-list/v2/relays.md']  cache_file = 'relays.md'
+  urls = ['https://raw.githubusercontent.com/DNSCrypt/dnscrypt-resolvers/master/v2/relays.md', 'https://download.dnscrypt.info/resolvers-list/v2/relays.md']
+  cache_file = 'relays.md'
   minisign_key = 'RWQf6LRCGA9i53mlYecO4IzT51TGPpvWucNSCh1CBM0QTaLn73Y7GFO3'
   refresh_delay = 72
   prefix = ''
@@ -564,6 +564,25 @@ cache_neg_max_ttl = 600
   #  urls = ['https://raw.githubusercontent.com/DNSCrypt/dnscrypt-resolvers/master/v2/parental-control.md', 'https://download.dnscrypt.info/resolvers-list/v2/parental-control.md']
   #  cache_file = 'parental-control.md'
   #  minisign_key = 'RWQf6LRCGA9i53mlYecO4IzT51TGPpvWucNSCh1CBM0QTaLn73Y7GFO3'
+
+
+
+
+#########################################
+#        Servers with known bugs        #
+#########################################
+
+[broken_implementations]
+
+# Cisco servers currently cannot handle queries larger than 1472 bytes, and don't
+# truncate reponses larger than questions as expected by the DNSCrypt protocol.
+# This prevents large responses from being received, and breaks relaying.
+# A workaround for the first issue will be applied to servers in list below.
+# Do not change that list until the bugs are fixed server-side.
+
+broken_query_padding = ['cisco', 'cisco-ipv6', 'cisco-familyshield']
+
+
 
 
 ################################
