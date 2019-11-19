@@ -198,10 +198,9 @@ dnscrypt_ephemeral_keys = true
 fallback_resolver = '91.239.100.100:53'
 
 
-## Never let dnscrypt-proxy try to use the system DNS settings;
-## unconditionally use the fallback resolver.
+## Always use the fallback resolver before the system DNS settings
 
-ignore_system_dns = false
+ignore_system_dns = true
 
 
 ## Maximum time (in seconds) to wait for network connectivity before
@@ -544,7 +543,7 @@ cache_neg_max_ttl = 600
   ## Anonymized DNS relays
 
   [sources.'relays']
- urls = ['https://raw.githubusercontent.com/DNSCrypt/dnscrypt-resolvers/master/v2/relays.md', 'https://download.dnscrypt.info/resolvers-list/v2/relays.md']
+  urls = ['https://raw.githubusercontent.com/DNSCrypt/dnscrypt-resolvers/master/v2/relays.md', 'https://download.dnscrypt.info/resolvers-list/v2/relays.md']
   cache_file = 'relays.md'
   minisign_key = 'RWQf6LRCGA9i53mlYecO4IzT51TGPpvWucNSCh1CBM0QTaLn73Y7GFO3'
   refresh_delay = 72
@@ -565,6 +564,25 @@ cache_neg_max_ttl = 600
   #  urls = ['https://raw.githubusercontent.com/DNSCrypt/dnscrypt-resolvers/master/v2/parental-control.md', 'https://download.dnscrypt.info/resolvers-list/v2/parental-control.md']
   #  cache_file = 'parental-control.md'
   #  minisign_key = 'RWQf6LRCGA9i53mlYecO4IzT51TGPpvWucNSCh1CBM0QTaLn73Y7GFO3'
+
+
+
+
+#########################################
+#        Servers with known bugs        #
+#########################################
+
+[broken_implementations]
+
+# Cisco servers currently cannot handle queries larger than 1472 bytes, and don't
+# truncate reponses larger than questions as expected by the DNSCrypt protocol.
+# This prevents large responses from being received, and breaks relaying.
+# A workaround for the first issue will be applied to servers in list below.
+# Do not change that list until the bugs are fixed server-side.
+
+broken_query_padding = ['cisco', 'cisco-ipv6', 'cisco-familyshield']
+
+
 
 
 ################################
