@@ -1,0 +1,33 @@
+
+###########################
+#        Blacklist        #
+###########################
+
+## Author    : quindecim   : https://git.nixnet.xyz/quindecim
+##                           https://git.lushka.al/quindecim   | MIRROR
+##                           https://git.lelux.fi/quindecim    | MIRROR
+##
+##
+## Based on  : dnswarden   : https://github.com/dnswarden/blocklist/blob/master/test/block-3rd-party-cnames.txt
+##             NextDNS     : https://github.com/nextdns/cname-cloaking-blocklist/blob/master/domains
+
+*.2o7.net
+*.a88045584548111e997c60ac8a4ec150-1610510072.eu-central-1.elb.amazonaws.com
+*.afc4d9aa2a91d11e997c60ac8a4ec150-2082092489.eu-central-1.elb.amazonaws.com
+*.affex.org
+*.at-o.net
+*.atinternet.com
+*.commandersact.com
+*.criteo.com
+*.criteo.net
+*.demdex.net
+*.dnsdelegation.io
+*.eulerian.com
+*.eulerian.net
+*.keyade.com
+*.keyade.net
+*.omtrdc.net
+*.storetail.io
+*.tagcommander.com
+*.wizaly.com
+*.xiti.com
