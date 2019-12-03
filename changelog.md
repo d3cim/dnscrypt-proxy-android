@@ -1,5 +1,21 @@
 # Changelog
 
+## 2.0.34
+
+#### Updated binary files to 2.0.34 | jedisct1
+* Blacklisted names are now also blocked if they appear in `CNAME`
+pointers.
+* `dnscrypt-proxy` can now act as a local DoH *server*. Firefox can
+be configured to use it, so that ESNI can be enabled without bypassing
+your DNS proxy.
+
+#### Updated config files to 2.0.34 | quindecim
+* ✅ Added `ibksturm` - dnscrypt-server (nginx - encrypted-dns - unbound backend), DNSSEC / Non-Logged / Uncensored, OpenNIC and Root DNS-Zone - Hosted in Switzerland by ibksturm, aka Andreas Ziegler)
+* ✅ Enabled `blacklist.txt` file to prevent `CNAME Cloaking` tracking feature
+* ✅ Optimized relays based on geolocation
+* ⛔️ Removed `charis` and `suami` resolvers and their relays
+
+
 ## 2.0.33
 
 #### Updated binary files to 2.0.33 | jedisct1
