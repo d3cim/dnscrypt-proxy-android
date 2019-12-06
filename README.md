@@ -24,7 +24,8 @@ Up-to-date, pre-built binaries are available for:
 
 - ✅ `DNSSEC` required
 - ✅ Enabled `dnscrypt_ephemeral_keys` feature *(create a new, unique key for every single DNS query)*
-- ✅ Enabled `anonymized_dns` feature *(each resolver has 2 relay)*
+- ✅ Enabled `anonymized_dns` feature *(each resolver has 2 relays)*
+- ✅ Enabled `blacklist` file to prevent `CNAME Cloaking` tracking feature
 - ⛔️ `DoH` disabled
 - ⛔️ `IPv6` disabled
 - ℹ️ Set`refused` response to blocked queries
