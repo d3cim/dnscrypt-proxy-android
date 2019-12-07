@@ -165,8 +165,17 @@ on_install() {
     abort "Binary file for $ARCH is missing!"
   fi
 
+# Backup an existing config file before proceed | quindecim
+
+CONFIG_FILE="/data/media/0/dnscrypt-proxy/dnscrypt-proxy.toml"
+
+  if [ -f "$CONFIG_FILE" ]; then
+    ui_print "* Backing up config file"
+    cp -afv  $CONFIG_FILE ${CONFIG_FILE}-`date +%Y%m%d%H%M`.bak
+  fi
+
   if [ -d "$CONFIG_PATH" ]; then
-    ui_print "* Copying example and license files"
+    ui_print "* Copying config, example and license files"
     cp -af $CONFIG_PATH/* /data/media/0/dnscrypt-proxy/
   else
     abort "Config file is missing!"
