@@ -1,10 +1,10 @@
 
-CONFIG_FILE="/data/media/0/dnscrypt-proxy/dnscrypt-proxy.toml"
+# CONFIG_FILE="/data/media/0/dnscrypt-proxy/dnscrypt-proxy.toml"
 
-  if [ -f "$CONFIG_FILE" ]; then
+  # if [ -f "$CONFIG_FILE" ]; then
 
 ## bluemeda
-    ui_print "* Backing up config file"
+    # ui_print "* Backing up config file"
     # cp -afv $CONFIG_FILE $TMPDIR
     # ui_print "* Restoring config files"
     # cp -af $TMPDIR/dnscrypt-proxy.toml $CONFIG_FILE     
@@ -13,5 +13,5 @@ CONFIG_FILE="/data/media/0/dnscrypt-proxy/dnscrypt-proxy.toml"
     # sed -i -e 's/\[::1\]:53/\[::1\]:5354/g' $CONFIG_FILE
 
 ## quindecim
-    cp -afv  $CONFIG_FILE ${CONFIG_FILE}-`date +%Y%m%d%H%M`.bak
-  fi
+    # cp -afv  $CONFIG_FILE ${CONFIG_FILE}-`date +%Y%m%d%H%M`.bak
+  # fi
