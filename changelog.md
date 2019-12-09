@@ -1,5 +1,28 @@
 # Changelog
 
+## 2.0.35
+
+#### Updated binary files to 2.0.35 | jedisct1
+ - New option: `block_unqualified` to block `A`/`AAAA` queries with
+unqualified host names. These will very rarely get an answer from upstream
+resolvers, but can leak private information to these, as well as to root
+servers.
+ - When a `CNAME` pointer is blocked, the original query name is now logged
+along with the pointer. This makes it easier to know what the original
+query name, so it can be whitelisted, or what the pointer was, so it
+can be removed from the blacklist.
+
+#### Updated config files to 2.0.35 | quindecim
+* ✅ Added `scaleway-ams` resolver (DNSSEC/Non-logged/Uncensored in Amsterdam - ARM server donated by Scaleway.com)
+Maintained by Frank Denis - https://fr.dnscrypt.info)
+* ✅ Added `ffmuc.net` resolver
+(An open DNSCrypt resolver operated by Freifunk Munich with nodes in DE.
+https://ffmuc.net/)
+* ✅ Fixed backup an existing `.toml` file before proceed with the installation
+* ✅ Optimized relays based on geolocation
+* ✅ Updated `blacklist.txt` to `2019-12-09`
+
+
 ## 2.0.34
 
 #### Updated binary files to 2.0.34 | jedisct1
@@ -210,4 +233,3 @@ but it includes a `SERVFAIL` error code).
 
 * Initial release
 * dnscrypt-proxy v2.0.5
-
