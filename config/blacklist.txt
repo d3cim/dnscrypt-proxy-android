@@ -14,7 +14,7 @@
 ##             NextDNS     : https://github.com/nextdns/cname-cloaking-blocklist/blob/master/domains
 ##
 ##
-## Generated : 2019-12-15
+## Generated : 2019-12-16
 
 
 ########## Blacklist from https://raw.githubusercontent.com/dnswarden/blocklist/master/test/block-3rd-party-cnames.txt ##########
@@ -821,6 +821,7 @@ tracker.uprinting.com
 analytics.upworthy.com
 repdata.usatoday.com
 sp.usatoday.com
+collect.usefathom.com
 stats.uswitch.com
 analytics.vadio.com
 sp.vcstar.com
@@ -1078,6 +1079,7 @@ tracking.adweb.co.kr
 stat.kbs.co.kr
 ctl.mobitrack.co.kr
 trk.performanceplay.co.kr
+wwwlog.thebell.co.kr
 statistics.news1.kr
 analytics.carambo.la
 logging.carambo.la
@@ -1125,6 +1127,7 @@ d1gp8joe0evc8s.cloudfront.net
 d1l6p2sc9645hc.cloudfront.net
 d1lm7kd3bd3yo9.cloudfront.net
 d1m6l9dfulcyw7.cloudfront.net
+d1miwkthq39xj8.cloudfront.net
 d1nh2vjpqpfnin.cloudfront.net
 d1qpxk1wfeh8v1.cloudfront.net
 d1r27qvpjiaqj3.cloudfront.net
@@ -10813,3 +10816,4 @@ metric.vodacom.co.za
 
 
 ########## Blacklist from file:domains-blacklist-local-additions.txt ##########
+
