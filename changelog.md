@@ -1,5 +1,24 @@
 # Changelog
 
+## 2.0.36
+
+#### Updated binary files to 2.0.36 | jedisct1
+ - New option: `block_undelegated`. When enabled, `dnscrypt-proxy` will
+directly respond to queries for locally-served zones (https://sk.tl/2QqB971U)
+and nonexistent zones that should have been kept local, but are frequently
+leaked. This reduces latency and improves privacy.
+ - Conformance: the `DO` bit is now set in synthetic responses if it was
+set in a question, and the `AD` bit is cleared.
+ - The `miegkg/dns` module was updated to version 1.1.26, that fixes a
+security issue affecting non-encrypted/non-authenticated DNS traffic. In
+`dnscrypt-proxy`, this only affects the forwarding feature.
+
+#### Updated config files to 2.0.36 | quindecim
+* ✅ Added `dnscrypt.one` resolver (DNSSEC / no logs / uncensored, Germany (Nuremberg), https://dnscrypt.one/)
+* ✅ Optimized relays based on geolocation
+* ✅ Updated `blacklist.txt` to `2019-12-22`
+
+
 ## 2.0.35
 
 #### Updated binary files to 2.0.35 | jedisct1
@@ -233,3 +252,4 @@ but it includes a `SERVFAIL` error code).
 
 * Initial release
 * dnscrypt-proxy v2.0.5
+
