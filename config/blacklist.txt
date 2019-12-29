@@ -14,12 +14,12 @@
 ##             NextDNS     : https://github.com/nextdns/cname-cloaking-blocklist/blob/master/domains
 ##
 ##
-## Generated : 2019-12-28
+## Generated : 2019-12-29
 
 
 ########## Blacklist from https://hostfiles.frogeye.fr/firstparty-trackers.txt ##########
 
-# Ignored duplicates: 26327
+# Ignored duplicates: 26481
 
 metrics.abbott
 smetrics.abbott
@@ -388,7 +388,6 @@ sadobe.autoscout24.be
 secureanalytics.avis.be
 tr.bati-partner.be
 tr.bati-partners.be
-tr.bel-pros.be
 eulerian.belambra.be
 smtx.belfius.be
 text.benefitsatwork.be
@@ -414,7 +413,6 @@ securedata.colruyt.be
 metrics.delhaizedirect.be
 nmu3.destinia.be
 tr.devis-companeo.be
-tr.devis-express.be
 tr.news.devisdirect.be
 sw88.disney.be
 securedata.dreambaby.be
@@ -486,9 +484,6 @@ swa.postnl.be
 tr.pro-renov.be
 trackingssl.pronto-broker.be
 smetrics.proximus.be
-tr.mijnaanbieding.renowizz.be
-tr.monoffre.renowizz.be
-tr.renowizze.be
 tr.renowizzpro.be
 secmetrics.schaefer-shop.be
 smetrics.seat.be
@@ -511,7 +506,6 @@ trackingssl.vivay.be
 vbe.voyage-prive.be
 k.voyageursdumonde.be
 tr.fleetmatics.vraaguwofferte.be
-tr.news.vraaguwofferte.be
 tdapi.wickey.be
 sstats.yaya.be
 trackingssl.yongo.be
@@ -885,7 +879,6 @@ geygin.bonprix.ch
 compare-im.bravofly.ch
 img.buch.ch
 tr.emailing.canalplus.ch
-tr.emailing.canalsat.ch
 collect.cap.ch
 target.cap.ch
 ea.centerparcs.ch
@@ -1024,7 +1017,6 @@ msz3.destinia.cn
 somni.holidaycheck.cn
 smetrics.hollisterco.cn
 oms.hotels.cn
-txcontent.iherb.cn
 starget.intel.cn
 www91.intel.cn
 smetrics.kone.cn
@@ -1039,7 +1031,6 @@ wbtrkk.teufel-audio.cn
 sstats.thermoscientific.cn
 smetrics.tiffany.cn
 sskzeu.ayads.co
-tr.batiweb.co
 tm.clearmatch.co
 tk.airfrance.com.co
 smetrics.amway-qas.com.co
@@ -1159,7 +1150,6 @@ smetrics.academy.com
 adchb.accenture.com
 somni.accenture.com
 ea.access-moto.com
-tr.news.accessmastertour.com
 tr.news.accessmbatour.com
 www2s.accessoriesgiant.com
 tr.accomplir-fraikin.com
@@ -1240,7 +1230,6 @@ visit.affymetrix.com
 rsx.afterpay.com
 smetrics.afvclub.com
 tr.agefiseminaires.com
-tr.emailing.agencereference.com
 smetrics.agentprovocateur.com
 smetrics.agilent.com
 som.agis.com
@@ -1433,7 +1422,6 @@ metrics.armstrongceilings.com
 smetrics.armstrongflooring.com
 srepdata.armytimes.com
 img2.arrow.com
-tr.communication.arthur-bonnet.com
 metrics.artistsnetwork.com
 somniture.artschool.com
 sstats.artvan.com
@@ -1452,7 +1440,6 @@ smetrics.ask.com
 analytics.asml.com
 metric.asos.com
 metrics.asos.com
-tr.mail.asptt.com
 sstats.assaabloy.com
 metrics.assuranthealth.com
 smetrics.assuranthealth.com
@@ -1461,7 +1448,6 @@ opo4.assuronline.com
 adobeanalytics.astoncarter.com
 smetrics.astonhotels.com
 tmrpe.astrazeneca.com
-tr.newsletter.astro-mail.com
 eulerian.astro-way.com
 smetrics.astrogaming.com
 smetrics.asumag.com
@@ -1582,7 +1568,6 @@ smetrics.baseballsavings.com
 cdn2.basixloan.com
 smetrics.baskinrobbins.com
 omnis.basspro.com
-tr.batiwebmedia.com
 srepdata.battlecreekenquirer.com
 mdws.battlerivercreditunion.com
 tmfadi.baublebar.com
@@ -1609,7 +1594,6 @@ analytics.beachbound.com
 sswmetrics.bearskinairlines.com
 net.beate-uhse-movie.com
 smetrics.beatsbydre.com
-tr.news.beaugrenelle-paris.com
 mdws.beaumontcu.com
 smetrics.beaumontenterprise.com
 profiling.beaurivage.com
@@ -1805,7 +1789,6 @@ sfajfu.boulanger.com
 compare.bourse-des-vols.com
 c0011.boursorama.com
 tr.newsletter.bouygues-construction.com
-tr.info.bouygues.com
 a.bowl.com
 mdws.bowvalleycu.com
 sanalytics.boxlunch.com
@@ -1930,7 +1913,6 @@ somni.cancertherapyadvisor.com
 secure.analytics.candlewoodsuites.com
 content.canyon.com
 smetrics.canyonranch.com
-tr.info.capfun.com
 tr.news.capfun.com
 cgwebmetrics.capgroup.com
 ea.capitaine-matelas.com
@@ -1942,7 +1924,6 @@ data.capitaloneinvesting.com
 sdata.capitaloneinvesting.com
 fdn.capitalotbbet.com
 smetric.cappex.com
-tr.mail.car-n-cash.com
 www2s.car-stuff.com
 strack.car2go.com
 metrics.caracoltv.com
@@ -2018,10 +1999,7 @@ a.cbslocal.com
 stat-ssl.cc-rashinban.com
 sc.cc.com
 ssc.cc.com
-tr.news.cci-puydedome.com
 mdws.cdcu.com
-tr.em.cdiscount-pro.com
-tr.news.cdiscount-pro.com
 gyvcwd.cdiscount.com
 metrics.cdiscount.com
 tr.news.cdiscount.com
@@ -2029,7 +2007,6 @@ tr.news5.cdiscount.com
 tr.news6.cdiscount.com
 tr.notification.cdiscount.com
 smetrics.cdiscount.com
-tr.em.cdiscountpro.com
 imagesmx.cdiscountpro.com
 tr.news.cdiscountpro.com
 fuvtxd.cdkeys.com
@@ -2049,7 +2026,6 @@ smetrics.centrum.com
 metrics.centurylink.com
 smetrics.centurylink.com
 content.certifid.com
-tr.program.certinergy.com
 sanalytics.ceu.com
 smetrics.cfcrimewatchdaily.com
 metrics.cfgonline.com
@@ -2092,7 +2068,6 @@ strk.chegg.com
 sdata.chelseafc.com
 strack.chelseamegastore.com
 2efj.economies.cheque-dejeuner.com
-tr.news.chezmonveto.com
 smetrics.chghealthcare.com
 smetrics.chicagobusiness.com
 smetrics.chicagorealestatedaily.com
@@ -2174,7 +2149,6 @@ somni.clinicaladvisor.com
 somni.clinicalpainadvisor.com
 trst.closingstream.com
 tr.news.club-commerce-connecte.com
-tr.news.clubeasyvoyage.com
 smetrics.clubindustry.com
 smetrics.clubindustryshow.com
 metrics.clubmonaco.com
@@ -2208,7 +2182,6 @@ iycifx.coldwatercreek.com
 strack.collegeboard.com
 srepdata.coloradoan.com
 a.coloserve.com
-tr.campaign.colossusbets.com
 tr.colossusbetsmail.com
 metrics.columbia.com
 smetrics.columbia.com
@@ -2374,7 +2347,6 @@ fr.criteois.com
 iittransfer001.criteois.com
 jssdp02frdc.criteois.com
 mx1.criteois.com
-mx2.criteois.com
 criteolabs.com
 criteonlts.com
 smetrics.crocs.com
@@ -2386,7 +2358,6 @@ hwqdvz.cruises.com
 stat.cruisingpower.com
 stats.cruisingpower.com
 stereos2s.crutchfield.com
-tr.news.crystal-mobility.com
 tr.news.crystal-partenaires.com
 metrics.crystalcruises.com
 somni.csc.com
@@ -2400,8 +2371,6 @@ mdws.cua.com
 smetrics.curel.com
 srepdata.currentargus.com
 ap101.curves.com
-tr.email.custom-campaign.com
-tr.hp-privilege.custom-campaign.com
 smetrics.customersvc.com
 liwxfq.customink.com
 sc.cvent.com
@@ -2443,7 +2412,7 @@ cdn.datasecureprocess.com
 d2u.dauphinquebec.com
 metrics.daveandbusters.com
 a.davidsbridal.com
-tr.news.davidson-distribution.com
+a.davidweekleyhomes.com
 smetrics.daysinn.com
 smetrics.dazadi.com
 tags.dazn.com
@@ -2509,7 +2478,6 @@ somni.dermatologyadvisor.com
 mpqvrm.dermstore.com
 smetrics.deseretbook.com
 srepdata.desertsun.com
-tr.news.deshotelsetdesiles.com
 smetrics.designmine.com
 repdata.desmoinesregister.com
 srepdata.desmoinesregister.com
@@ -2524,26 +2492,18 @@ fp.devicescore.com
 tr.devis-companeo.com
 tr.actiflip.devisdirect.com
 tr.bodet.devisdirect.com
-tr.leyravaud.devisdirect.com
 tr.news.devisdirect.com
 tr.offre.devisdirect.com
-tr.oxatis.devisdirect.com
 tr.devisminute-affranchissement.com
-tr.devisminute-alarme.com
-tr.devisminute-caisseenregistreuse.com
 tr.devisminute-creche.com
-tr.devisminute-fontainereseau.com
 tr.devisminute-geolocalisation.com
 tr.devisminute-gestiondepatrimoine.com
 tr.devisminute-gestiondutemps.com
 tr.devisminute-gestionpaie.com
 tr.devisminute-materieldestockage.com
 tr.devisminute-mutuelle.com
-tr.devisminute-operateur.com
 tr.devisminute-operateurpro.com
-tr.devisminute-securiteb2b.com
 tr.devisminute-siteecommerce.com
-tr.devisminute-weber.com
 ea.devred.com
 somni.dexknows.com
 ltecrf.dhgate.com
@@ -2626,7 +2586,6 @@ sw88.disneyrewards.com
 sw88.disneyvacations.com
 somni.dispatch.com
 wt.distrelec.com
-tr.email.distributor-expo.com
 metrics.divosta.com
 smetrics.divosta.com
 smetrics.diy.com
@@ -2887,7 +2846,6 @@ w88.espn.com
 a.espncricinfo.com
 sw88.espnqa.com
 smetrics.espnshop.com
-tr.email.esprit-de-france.com
 securetags.esri.com
 tags.esri.com
 securetags.esriuk.com
@@ -2914,7 +2872,6 @@ smetrics.etihadsecurelogistics.com
 tr.newsletter.etoiledevenus.com
 tr.etravaux.com
 tr.camara.eu.com
-tr.contact.lead.eu.com
 tr.eulerhermes.com
 aim.eurelian.com
 im.eurelian.com
@@ -3094,7 +3051,6 @@ srepdata.firstcoastnews.com
 clovergo.june-testing.firstdata.com
 omnis.firstdata.com
 content.firstglobalmoney.com
-content.firstinterstatebank.com
 sanalytics.firstnational.com
 mdws.firstontariocu.com
 somni.firsttechfed.com
@@ -3168,7 +3124,6 @@ sanalytics.fnsouthwest.com
 smetrics.folgers.com
 smetrics.folgerscoffee.com
 1mvs.fonestarz.com
-tr.infos.fongecifcentre.com
 smetrics.food-management.com
 ssa.food.com
 smetrics.foodinsiderjournal.com
@@ -3359,7 +3314,6 @@ cdn-s.dev.globalpoker.com
 smetrics.globalpurchasing.com
 tmxapi.globalsources.com
 str.globaltv.com
-tr.read.glose.com
 smetrics.m.glucerna.com
 smetrics.glucerna.com
 som.gmacinsurance.com
@@ -3415,7 +3369,6 @@ metrics.gracobaby.com
 smetrics.grainger.com
 sadbmetrics.granadablogs.com
 smetrics.grandandtoy.com
-tr.news.grandsmoulinsdeparis.com
 ouk7.grantalexander.com
 tr.emailing.grassavoye.com
 sslsa.greatamericancountry.com
@@ -4350,7 +4303,6 @@ omniture.kennametal.com
 smetrics.kennethcole.com
 srepdata.kens5.com
 smetrics.kenwood.com
-tr.news.kep-nuclear.com
 lm.keria.com
 tr.mailing.keringprive.com
 tmams.key.com
@@ -4406,7 +4358,6 @@ smetrics.kone.com
 b.koodomobile.com
 st.koodomobile.com
 ssec.koolaburra.com
-tr.mail.koregraf.com
 tm.kotak.com
 metrics.kpmg.com
 smetrics.kpmgifrsinstitute.com
@@ -4521,13 +4472,11 @@ ls.lenergiemoinscher.com
 o.lenovo.com
 s.lenovo.com
 smetrics.lenscrafters.com
-tr.news.lentillesmoinscheres.com
 sadbmetrics.leonoticias.com
 ea.lepape-info.com
 ea.lepape.com
 tr.actu.leretro.com
 metrics.lesjoforsab.com
-tr.news.lespepitesduvignoble.com
 ea.letanneur.com
 tr.infos.lettre-resiliation.com
 metrics.levi-site.com
@@ -4626,7 +4575,6 @@ ssrlot.lotoquebec.com
 smetrics.louandgrey.com
 smetrics.louisianahealthconnect.com
 smetrics.louismartini.com
-tr.louisvuittonmalletier.com
 tr.louvre-boites.com
 ea.lov-organic.com
 metrics.lovefilm.com
@@ -4733,7 +4681,6 @@ srepdata.marionstar.com
 smetrics.markandgraham.com
 wsgc.markandgraham.com
 incs.marketdistrict.com
-tr.newsletter.marketplaceformeetingplanner.com
 sstats.marketsmith.com
 metrics.marksandspencer.com
 smetrics.marksandspencer.com
@@ -4843,7 +4790,6 @@ ea.merci-merci.com
 tr.info.mercialys.com
 smetrics.mercola.com
 somni.merehotel.com
-tr.merit-summit.com
 smetrics.metlife.com
 verify.metlife.com
 nsc.metrics-shell.com
@@ -4904,7 +4850,6 @@ swa.millesima-usa.com
 swa.millesima.com
 ea.millet-mountain.com
 tlp5.mimale.com
-mimitsubishiauto.com
 smetrics.mindjet.com
 metrics.mindshareworld.com
 compare.minube.com
@@ -4964,8 +4909,6 @@ tr.win.moethennessy.com
 swa.monabanq.com
 eniobs.moncler.com
 ea.moncornerdeco.com
-tr.mail.moncoupdepouce.com
-tr.welcome.moncoupdepouce.com
 tr.mondevis-b2b.com
 tr.mondevis-pro.com
 smetrics.mondex.com
@@ -5087,7 +5030,6 @@ srepdata.mydesert.com
 tr.bonplan.mydesign.com
 tr.news.mydesign.com
 srepdata.mydestinate.com
-tr.mydevisentreprise.com
 smetrics.mydish.com
 src0.mydoterra.com
 sitehelper.myengageft.com
@@ -5242,7 +5184,6 @@ repdata.news-press.com
 srepdata.news-press.com
 metrics.newscorpaustralia.com
 srepdata.newsleader.com
-tr.newsletter-habitat.com
 tr.newsletter-mdh.com
 tr.newsletter-stressless.com
 tr.newsletter-wonderbox.com
@@ -5398,9 +5339,7 @@ a.ocregister.com
 metrics.octanner.com
 ea.odalys-vacances.com
 tr.infos.odalys-vacances.com
-tr.newsletters.odalys-vacances.com
 tr.pro.odalys-vacances.com
-tr.welcome.odalys-vacances.com
 ea.odalys-vacation-rental.com
 securestats.odysseygolf.com
 sadbmetrics.oferplan.com
@@ -5659,7 +5598,6 @@ dccfog.petco.com
 smetrics.petco.com
 uqiuoi.petfinder.com
 metrics.petinsurance.com
-tr.christmas.petit-bateau.com
 compare.petitfute.com
 smetrics.petparents.com
 smetrics.petsmart.com
@@ -5740,7 +5678,6 @@ srepdata.pnj.com
 fahmta.pocket-lint.com
 ea.poeleaboismaison.com
 som.points.com
-tr.news.poivrerouge.com
 datawi.pokerstars.com
 tr.pole-emploi-services.com
 smetrics.politico.com
@@ -5878,7 +5815,6 @@ mtc.qantas.com
 smtc.qantas.com
 metrics.qatarairways.com
 smetrics.qatarairways.com
-tr.qualitaetsumfrage.com
 l2i.qualityinnlevis.com
 tr.qualityvehiclesurvey.com
 d2bj.quebec-cite.com
@@ -6102,7 +6038,6 @@ trackingssl.royalparkinvestments.com
 mdws.rpcul.com
 hermes.rr.com
 tr-ssl.rr.com
-tr.email.rs-fr.com
 sstats.rssc.com
 secure.rtrcdn.com
 smetrics.rubbernews.com
@@ -6357,10 +6292,7 @@ ea.smallable.com
 xy33.smallable.com
 smetrics.smartauctionlogin.com
 ea.smartbox.com
-tr.information.smartdeals-transavia-fr.com
 tr.news.smartdeals-transavia-fr.com
-tr.welcome.smartdeals-transavia-fr.com
-tr.news.smartdealstransavia-fr.com
 statss.smartdestinations.com
 sstats.smartertravel.com
 stats.smartertravel.com
@@ -6471,7 +6403,6 @@ smetrics.ssga.com
 mobile-tmx.ssisurveys.com
 busrol.st-eustachenissan.com
 swa.st.com
-tr.nl.stadefrance.com
 metrics.stamps.com
 smetrics.stamps.com
 a.standardandpoors.com
@@ -6901,7 +6832,6 @@ smetrics.tmz.com
 t-s.tnkase.com
 sanalytics.tntdrama.com
 lp.to-lipton.com
-metricssecure.todaysales.com
 sgwqoz.toddsnyder.com
 sstats.tohmatsu.com
 smetric.tokka.com
@@ -6911,7 +6841,6 @@ barnacle.tommybahama.com
 smetrics.tommybahama.com
 metrics.toms.com
 smetrics.toms.com
-tr.news.toocampmail.com
 metrics.toofab.com
 smetrics.toofab.com
 ea.tool-fitness.com
@@ -6963,12 +6892,9 @@ ea.travelski.com
 ooqjaq.travelzoo.com
 m.trb.com
 sm.trb.com
-tr.info.trdlb001.com
-tr.mail.trdlb001.com
 tr.news.trdlb001.com
 tr.info.trdlb002.com
 tr.mail.trdlb002.com
-tr.news.trdlb002.com
 cgqkhc.trendyol.com
 bonus.trialpay.com
 sanalytics.tributarycapital.com
@@ -7056,13 +6982,11 @@ web.ulta.com
 metrics.ultraholistic.com
 tr.preferenza.unaoffertaalgiorno.com
 tr.unaoffertaalgiorno.com
-tr.welcome.unaoffertaalgiorno.com
 et.unclejeans.com
 siewmi.uncommongoods.com
 analytics.underarmour.com
 smetric.unfranchise.com
 azxhnt.uniformadvantage.com
-tr.unimy-beyond.com
 lpo.unionbank.com
 virl.unionbank.com
 keyade.uniqlo.com
@@ -7196,7 +7120,6 @@ pxlprof.virginmobileusa.com
 sanalytics.virginmobileusa.com
 smetrics.virginmobileusa.com
 mtrs.virtainc.com
-tr.email.virtual-expo.com
 metrics.virtualservers.com
 smetrics.virtualservers.com
 sstats.virtualtourist.com
@@ -7232,7 +7155,6 @@ sstats.vizergy.com
 al-smetrics.vizio.com
 sc.vmware.com
 ssc.vmware.com
-tr.mail.vo3000.com
 sadbmetrics.vocento.com
 webstat.vodafone.com
 webstats.vodafone.com
@@ -7256,7 +7178,6 @@ stats.voyages-sncf.com
 t.voyages-sncf.com
 ea.voyagesleclerc.com
 tr.email.voyagesleclerc.com
-tr.news.voyagesleclerc.com
 tr.news.vraaguwofferte.com
 som.vrbo.com
 services.vrp.com
@@ -7573,7 +7494,6 @@ smetrics.wolterskluwer.com
 smetrics.womansday.com
 smetrics.woodfordfunds.com
 smetrics.wordandbrown.com
-tr.wa.wordappeal.com
 otracks.workday.com
 smetrics.workforce.com
 smetrics.workfront.com
@@ -7673,14 +7593,10 @@ tr.clientes.younited-credit.com
 tr.clienti.younited-credit.com
 tr.comunicacao.younited-credit.com
 tr.comunicazione.younited-credit.com
-tr.invest.younited-credit.com
-tr.kontakt.younited-credit.com
 tr.marketing.younited-credit.com
 tr.news.younited-credit.com
 tr.newsletter.younited-credit.com
 tr.recouvrement.younited-credit.com
-tr.serviceclient.younited-credit.com
-tr.servicoaocliente.younited-credit.com
 yoc.younited-credit.com
 metrix.youravon.com
 smetrix.youravon.com
@@ -8730,15 +8646,12 @@ ac.acadomia.fr
 tr.acd-comexpert.fr
 tr.mp.aconclue-business.fr
 tr.mp.aconclue-entreprise.fr
-tr.mp.aconclue-pro.fr
 tr.acq-pjms.fr
 tr.newsletter.actalians.fr
-tr.enquetes.actionlogement.fr
 tr.info.actionlogement.fr
 tr.formation.adria-formation.fr
 barp3.bordeaux.aeroport.fr
 ea.nice.aeroport.fr
-tr.info.rouen.aeroport.fr
 tr.donateur.afm-telethon.fr
 tr.infos.afpa.fr
 tr.newsletter.afpa.fr
@@ -8801,13 +8714,10 @@ tr.offrevip.banque-casino.fr
 tr.souscription.banque-casino.fr
 vtf2f.banque-casino.fr
 sms.gestion.banque-revillon.fr
-tr.gestion.banque-revillon.fr
 tr.notification.banque-revillon.fr
 emailing.casden.banquepopulaire.fr
 news.banquepopulaire.fr
 tr.clients.base-plus.fr
-tr.newsletter.bassins-a-flot.fr
-tr.newsletter.bauermedia.fr
 ea.bcassurance.fr
 eulerian.belambra.fr
 smetrics.benefitcosmetics.fr
@@ -8821,7 +8731,6 @@ tr.notification-gdpr.bnpparibas-personalfinance.fr
 sadobemarketing.boden.fr
 tr.email.bon-placement-immobilier.fr
 zmpvij.bonprix.fr
-tr.cj.bordeaux-metropole.fr
 tr.ville.bordeaux.fr
 boucou.fr
 tag.boulanger.fr
@@ -8845,12 +8754,9 @@ tr.emailing.c8.fr
 ly8c.caci-online.fr
 tr.contact.cadenas.fr
 tr.information.caf-yvelines.fr
-tr.gestion.cafineo.fr
-tr.notification-gdpr.cafineo.fr
 tr.notification.cafineo.fr
 www.tr.bfc-mp.caisse-epargne.fr
 www.bfc-mp.caisse-epargne.fr
-tr.news.calculeo.fr
 ea.camif.fr
 tr.emailing.detours.canal.fr
 six9e.canal.fr
@@ -8880,26 +8786,20 @@ swa.castorama.fr
 net.catawiki.fr
 paiement.cb4x.fr
 tr.nl.ardennes.cci.fr
-tr.marketing.bordeauxgironde.cci.fr
-tr.mailperformance.dordogne.cci.fr
 tr.info.lettre.cci.fr
 tr.news.normandie.cci.fr
 tr.courriel.ouestnormandie.cci.fr
 tr.news.ouestnormandie.cci.fr
 tr.info.rouen.cci.fr
 tr.news.seine-estuaire.cci.fr
-tr.nl.troyes.cci.fr
 tr.n.info.cdgp.fr
 swa.cdgp.fr
-tr.news.cenpac.fr
-tr.contact.cereps.fr
 tr.info.certypro.fr
 tr.3ou4xcb.cetelem.fr
 sms.gestion.cetelem.fr
 tr.gestion.cetelem.fr
 tr.notification.cetelem.fr
 smetrics.cezigue.fr
-tr.communication.cgaaer.fr
 tr.courrier.charentelibre.fr
 jo2f.cheque-cadhoc.fr
 pqn7.cheque-dejeuner.fr
@@ -8907,12 +8807,9 @@ pol3.cheque-domicile.fr
 gf7t.cheques-cadeaux-culturels.fr
 tr.cimaxonline.fr
 tr.prog.cinemanivel.fr
-tr.info.classe-de-demain.fr
-tr.clients-mediametrie.fr
 tr.emailing.cnam-paysdelaloire.fr
 tr.info.cnch.fr
 tr.newsletters.coedition-contact.fr
-tr.notification-gdpr.cofica.fr
 tr.gestion.coficabail.fr
 cdna.paiement.cofidis.fr
 cdna.paymentncb.cofidis.fr
@@ -8923,10 +8820,7 @@ cdna.tst-paiement.cofidis.fr
 tr.3xcb.cofinoga.fr
 data.cofinoga.fr
 tr.n.info.cofinoga.fr
-tr.notification-gdpr.cofinoga.fr
-tr.ra.cofinoga.fr
 swa.cofinoga.fr
-tr.combca.fr
 tr.communautes-mediametrie.fr
 tr.communication-comptable.fr
 tr.jaguar.compte-financial-services.fr
@@ -8941,7 +8835,6 @@ tr.email.contact-landrover.fr
 cor4.corsair.fr
 ea.corsair.fr
 om-ssl.cortalconsors.fr
-tr.news.cotemaison.fr
 tr.gestion.credit-moderne.fr
 tr.notification-gdpr.credit-moderne.fr
 tr.notification.credit-moderne.fr
@@ -8980,7 +8873,6 @@ sstats.dorothyperkins.fr
 alp1.drimki.fr
 tr.info.drivemedia.fr
 ls.e-cartecadeauleclerc.fr
-tr.contact.e-turf.fr
 tr.news.easybook.fr
 compare.easyvols.fr
 tdf1.easyvols.fr
@@ -8994,19 +8886,15 @@ ea.eden-park.fr
 tr.news.editions-lva.fr
 os.efax.fr
 fxa0.ekosport.fr
-tr.actuentreprises.elior.fr
 ea.boutique.elle.fr
 res.elle.fr
-tr.smtp1.email-mediapost.fr
 tr.emailatia.fr
 tr.emailium.fr
 tr.nouvelles.emday.fr
 sstats.emilialay.fr
 tr.enedis-infos.fr
-tr.offresbtoc.engie.fr
 tk.engie.fr
 tr.e.entreprise-pm.fr
-tr.mail.enviedebienmanger.fr
 kie.enviedefraise.fr
 tr.newsletter.erenumerique.fr
 fpb8.esce.fr
@@ -9031,7 +8919,6 @@ ea.fleurancenature.fr
 tr.info.flexico.fr
 www.fodgfip.fr
 img.foodspring.fr
-tr.mp.form-langues.fr
 ftn.fortuneo.fr
 tr.newsletter.fpifrance.fr
 tr.news.frame.fr
@@ -9039,30 +8926,23 @@ res.francedimanche.fr
 tr.news.franceloc.fr
 tr.news.franprix.fr
 tr.news.futuramedia.fr
-tr.info.galian.fr
 tr.courriel.ganassurances.fr
 tr.news.geantcasino.fr
 contentservice.glassdoor.fr
 tr.informations.dila.gouv.fr
-tr.email.securite-routiere.gouv.fr
 tr.infolettre.securite-routiere.gouv.fr
 tr.strategie.gouv.fr
 tr.courriel.gpm.fr
 tr.groupama-gne.fr
 ea.habitat.fr
 smetrics.habitat.fr
-tr.mail.hagerservices.fr
-tr.news.happyview.fr
 tr.communication.harmonie-mutuelle.fr
 tr.dirigeants.harmonie-mutuelle.fr
 tr.email.harmonie-mutuelle.fr
 tr.info.harmonie-mutuelle.fr
-tr.informations.harmonie-mutuelle.fr
 tr.prevention.harmonie-mutuelle.fr
 tr.secteurentreprises.harmonie-mutuelle.fr
 tr.tns.harmonie-mutuelle.fr
-tr.tpe.harmonie-mutuelle.fr
-tr.voixduclient.harmonie-mutuelle.fr
 dxe2.heip.fr
 tr.lettre.helianthal.fr
 ea.helline.fr
@@ -9097,7 +8977,6 @@ www91.intel.fr
 ea.interflora.fr
 simg.interhome.fr
 tr.interviews-mediametrie.fr
-tr.email.investissement-residence-service.fr
 tr.invitation-mesdessous.fr
 metrics.ionos.fr
 ea.izac.fr
@@ -9105,7 +8984,6 @@ k.jacadi.fr
 tr.email.jaguar-approved.fr
 ogb2.jardinbio.fr
 tr.communication.jardindacclimatation.fr
-tr.news.jeuxdujardin.fr
 tr.jevoteenligne.fr
 tr.email.jlr-mondial.fr
 tr.email.jlrfrance.fr
@@ -9129,13 +9007,11 @@ ressources.lacentrale.fr
 tr.information.lacollection-airfrance.fr
 tr.news.lacollection-airfrance.fr
 tr.welcome.lacollection-airfrance.fr
-tr.news.lacollectionair-france.fr
 tr.news.lacollectionairfrance.fr
 ea.lafrancedunordausud.fr
 sstat.lamaisondevalerie.fr
 tr.email.landrover-approved.fr
 tr.news.lanostress.fr
-tr.services.lanostress.fr
 tr.laredoute-voyages.fr
 ea.laredoute.fr
 k.laredoute.fr
@@ -9160,12 +9036,10 @@ leo1.leon-de-bruxelles.fr
 6ddc.lequipe.fr
 tr.infos.lesartisansdemenageurs.fr
 smetrics.lesbonnesbouilles.fr
-tr.contact.lesescapades-corsair.fr
 tr.information.lesescapades-corsair.fr
 tr.news.lesescapades-corsair.fr
 tr.welcome.lesescapades-corsair.fr
 ea.leskidunordausud.fr
-tr.lesmarquesenviedebienmanger.fr
 tr.news.lesmediums.fr
 ea.lespagnedunordausud.fr
 tr.communication.lesquais.fr
@@ -9173,14 +9047,12 @@ sa.lesselectionsskoda.fr
 strack.boutique.letour.fr
 tr.abo.letudiant.fr
 tr.communique.letudiant.fr
-tr.courriel.letudiant.fr
 tr.gestion.letudiant.fr
 tr.news.letudiant.fr
 tr.offres.letudiant.fr
 tr.premium1.letudiant.fr
 tr.premium2.letudiant.fr
 tr.premium3.letudiant.fr
-tr.promo.letudiant.fr
 tr.animation.lexpress.fr
 tr.gestion.lexpress.fr
 tr.news.lentreprise.lexpress.fr
@@ -9198,7 +9070,6 @@ ea.linvosges.fr
 t.locasun-vp.fr
 ea.locasun.fr
 t.locasun.fr
-tr.notification-gdpr.loisirs-finance.fr
 tr.commande.lokeo.fr
 tr.contrat.lokeo.fr
 tr.newsletter.lokeo.fr
@@ -9211,8 +9082,6 @@ tr.contact.lvmh.fr
 tr.drh-holding.lvmh.fr
 tr.group-appointments.lvmh.fr
 tr.group-hr.lvmh.fr
-tr.lvmhappening.lvmh.fr
-tr.think.lvmh.fr
 tr.e.m-entreprise.fr
 tr.avisecheance.maaf.fr
 tr.dossier-assurance.maaf.fr
@@ -9260,7 +9129,6 @@ eulerian.monoprix.fr
 xuc.monteleone.fr
 tr.news.monvoyant.fr
 tr.moving.fr
-tr.news.mperformance.fr
 tr.observatoire.musee-orangerie.fr
 tr.observatoire.musee-orsay.fr
 my-wb.fr
@@ -9271,15 +9139,11 @@ smetrics.nestle.fr
 tr.e.news-bilansgratuits.fr
 tr.mp.news-manageo.fr
 tr.news-professionnels.fr
-tr.news2pjms.fr
-tr.newsletterpagesjaunes.fr
 ssc.nickelodeon.fr
 metric.nissan.fr
 data.nocibe.fr
 ncb.nocibe.fr
 ea.norauto.fr
-tr.gestion.norrsken.fr
-tr.notification-gdpr.norrsken.fr
 tr.notification.norrsken.fr
 eulerian.nouvelles-frontieres.fr
 tr.info.np6.fr
@@ -9288,7 +9152,6 @@ tr.promo.np6.fr
 tr.sportperf.np6.fr
 tr.np6.fr
 dt.nrjmobile.fr
-tr.communication.numericable.fr
 tr.n.nutella.fr
 tr.news.ocs.fr
 ea.officedepot.fr
@@ -9302,17 +9165,14 @@ f0nn.oney.fr
 img.oney.fr
 oor.ooreka.fr
 ea.opodo.fr
-tr.orange-lease.fr
 ea.astrocenter.orange.fr
 tr.np6.orange.fr
 ea.orchestra.fr
-tr.email.oubliezvotrebrosseadents.fr
 buauph.ouest-france.fr
 outsourcing.fr
 at.pagesjaunes.fr
 tr.panels-mediametrie.fr
 tr.info.parlons-incontinence.fr
-tr.email.partenaire-pour-investir.fr
 pv.partenaires-verisure.fr
 a.perfumesclub.fr
 tr.info.perl.fr
@@ -9354,13 +9214,11 @@ tr.mailing.r2e-humanis.fr
 smetrics.ralphlauren.fr
 sanalytics.rbsbank.fr
 nrg.red-by-sfr.fr
-tr.relation-mediametrie.fr
 ea.rentacar.fr
 tr.reservation-pagesjaunes.fr
 tr.newsletter.reserverunbar.fr
 rilem.fr
 s.rosettastone.fr
-tr.route-solutiondata.fr
 ea.rueducommerce.fr
 k.rueducommerce.fr
 compare-im.rumbo.fr
@@ -9379,7 +9237,6 @@ smetrics.sephora.fr
 tr.com-clients.sfr.fr
 tr.com-parc.sfr.fr
 tr.com-red.sfr.fr
-tr.com-web.sfr.fr
 tr.com.sfr.fr
 dw0c.sfr.fr
 elr.sfr.fr
@@ -9413,7 +9270,6 @@ ea.sport2000.fr
 tr.news.sport2000.fr
 tr.stanford-news.fr
 tr.contact.stof.fr
-tr.courrier.sudouest.fr
 tdep.suncamp.fr
 rqz4.supdigital.fr
 tr.news.supercasino.fr
@@ -9428,7 +9284,6 @@ tr.traingastronomie.temporium.fr
 wbtrkk.teufelaudio.fr
 tr.email.thelem-assurances.fr
 tr.contact.thelist-emirates.fr
-tr.information.thelist-emirates.fr
 tr.news.thelist-emirates.fr
 tr.welcome.thelist-emirates.fr
 sstats.thermoscientific.fr
@@ -9444,9 +9299,7 @@ xay5o.toscane-boutique.fr
 ea.total.fr
 k.total.fr
 ea.trigger-leads.fr
-tr.news.triskalia.fr
 er.tui.fr
-tr.emailing.uda.fr
 gfn1.ugap.fr
 uhn9.up-france.fr
 cm.vacances-campings.fr
@@ -9456,7 +9309,6 @@ k.veepee.fr
 vs.verisure.fr
 ea.vertbaudet.fr
 tr.reactivation.vertbaudet.fr
-tr.email.verygoodlead.fr
 tr.news.vetharmonie.fr
 tr.forum.veuveclicquot.fr
 tr.email.videofutur.fr
@@ -9468,7 +9320,6 @@ tr.nl.vipmag.fr
 tr.welcome.vipmag.fr
 tr.info.visa.fr
 tdf1.vivabox.fr
-tr.votre-ereleve.fr
 k.voyageursdumonde.fr
 sstats.wallismode.fr
 ea.warnerbros.fr
@@ -9512,7 +9363,6 @@ smetrics.kone.gr
 sstats.libresse.gr
 wttd.madeleine.gr
 tr.news-companeo.gr
-tr.news.prosfora-mou.gr
 tr.prosfores-companeo.gr
 tr.prosfores-etairias.gr
 smetrics.sony.gr
@@ -9659,12 +9509,9 @@ smetrics.kone.in
 smetrics.payback.in
 smetrics.snapfish.in
 smetrics.vodafone.in
-tr.activeprospects.info
 tr.batirenover.info
 asd.bauhaus.info
 tr.clients.boursorama.info
-tr.communication.boursorama.info
-tr.membres.boursorama.info
 tr.cyberarchi.info
 tr.devianne.info
 tr.dkomaison.info
@@ -9676,10 +9523,8 @@ tr.helloartisan.info
 tr.julieguerlande.info
 tr.magvet.info
 tr.contact.makemelead.info
-tr.news.mon-horoscope.info
 tr.mail.perial.info
 tr.policyexpert.info
-tr.scienceshumaines.info
 securetags.sigsa.info
 tr.emailing.coe.int
 compare.alojamiento.io
@@ -10137,6 +9982,7 @@ thm.www.v.me
 tk.airfrance.mg
 smetrics.sony.com.mk
 smetrics.kone.mk
+tk.airfrance.ml
 smetrics.brandsworld.com.mm
 net.shop.com.mm
 oscs.sands.com.mo
@@ -10323,7 +10169,6 @@ metrics.canter.net
 cdb.cbtrk.net
 cdn.cbtrk.net
 tr.info.ccld-recrutement.net
-tr.contact.cerel.net
 ea.ciblo.net
 smetrics.clickbank.net
 ca.clubavantages.net
@@ -10346,7 +10191,6 @@ metrics.el-mundo.net
 smetrics.el-mundo.net
 net.elogia.net
 swebanalytics.eniro.net
-tr.e.entreprise-pm.net
 tr.aasi.espmp-agfr.net
 tr.alex.espmp-agfr.net
 tr.arena.espmp-agfr.net
@@ -10720,6 +10564,7 @@ h-apruvd.online-metrix.net
 h-aquasana.online-metrix.net
 h-arrow.online-metrix.net
 h-astrazeneca.online-metrix.net
+h-australiannationaluniversity.online-metrix.net
 h-autozone.online-metrix.net
 h-avant.online-metrix.net
 h-avant-pnc.online-metrix.net
@@ -11272,7 +11117,6 @@ img.foodspring.nl
 secmetrics.friendscout24.nl
 tdep.garmundo.nl
 contentservice.glassdoor.nl
-tr.news.hallobanden.nl
 te.heine-shop.nl
 tp.heine-shop.nl
 zfzhwz.hema.nl
@@ -11759,7 +11603,6 @@ dii2.zooplus.pl
 tr.buenasofertas.pro
 tr.fidal.pro
 tr.fidalformation.pro
-tr.scienceshumaines.pro
 smetrics.seat.ps
 tk.airfrance.pt
 smetrics.airngo.pt
@@ -11767,7 +11610,6 @@ at.alltricks.pt
 smetrics.amway-qas.pt
 smetrics.amway.pt
 secureanalytics.avis.com.pt
-tr.boletim.companeo.pt
 cc.conforama.pt
 compare.deferias.pt
 wqs4.destinia.pt
@@ -12123,7 +11965,6 @@ tr.news.ecoradio.tv
 adv4.givemefive.tv
 tr.news.hrdradio.tv
 wpb2.humanity.tv
-tr.news.invinoradio.tv
 sc.nick.tv
 ssc.nick.tv
 metrics.pivot.tv
@@ -12269,7 +12110,6 @@ ume0.ekosport.co.uk
 web.elephant.co.uk
 tmx.elephantinsurance.co.uk
 tmxmo.elephantinsurance.co.uk
-tr.email-myoffers.co.uk
 kie.enviedefraise.co.uk
 sw88.espn.co.uk
 abc.esprit.co.uk
@@ -12341,7 +12181,6 @@ som.kodak.co.uk
 smetrics.kone.co.uk
 tr.information.lacollection-airfrance.co.uk
 tr.news.lacollection-airfrance.co.uk
-tr.welcome.lacollection-airfrance.co.uk
 tr.news.lacollectionairfrance.co.uk
 scnd.landsend.co.uk
 tagcommander.laredoute.co.uk
@@ -12514,7 +12353,6 @@ smetrics.vanquis.co.uk
 vgo.vegaoo.co.uk
 smetrics.viagraconnect.co.uk
 tr.info.vip-mag.co.uk
-tr.mail.vip-mag.co.uk
 tr.news.vip-mag.co.uk
 smetrics.buytickets.virgintrains.co.uk
 vnlvxi.vivastreet.co.uk
