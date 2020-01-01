@@ -14,12 +14,12 @@
 ##             NextDNS     : https://github.com/nextdns/cname-cloaking-blocklist/blob/master/domains
 ##
 ##
-## Generated : 2019-12-29
+## Generated : 2020-01-01
 
 
 ########## Blacklist from https://hostfiles.frogeye.fr/firstparty-trackers.txt ##########
 
-# Ignored duplicates: 26481
+# Ignored duplicates: 26887
 
 metrics.abbott
 smetrics.abbott
@@ -13701,6 +13701,7 @@ counter.nn.ru
 infostroy.nnov.ru
 cnt.nov.ru
 wstat.ozon.ru
+counter.pr-cy.ru
 track.price.ru
 cnt.cerber.rambler.ru
 cnt.rambler.ru
@@ -13821,4 +13822,5 @@ partner.intentmedia.net
 
 
 ########## Blacklist from file:domains-blacklist-local-additions.txt ##########
+
 
