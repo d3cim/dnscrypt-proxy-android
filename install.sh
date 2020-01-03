@@ -181,8 +181,6 @@ CONFIG_FILE="/data/media/0/dnscrypt-proxy/dnscrypt-proxy.toml"
     abort "Config file is missing!"
   fi
 
-  . $TMPDIR/option.sh
-
 }
 
 # Only some special files require specific permissions
