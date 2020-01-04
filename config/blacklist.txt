@@ -14,12 +14,12 @@
 ##             NextDNS     : https://github.com/nextdns/cname-cloaking-blocklist/blob/master/domains
 ##
 ##
-## Generated : 2020-01-01
+## Generated : 2020-01-05
 
 
 ########## Blacklist from https://hostfiles.frogeye.fr/firstparty-trackers.txt ##########
 
-# Ignored duplicates: 26887
+# Ignored duplicates: 26957
 
 metrics.abbott
 smetrics.abbott
@@ -1158,7 +1158,6 @@ content22.accountonline.com
 cdnfp.accurint.com
 a.accuweather.com
 smetrics.accuweather.com
-ubxvdx.accuweather.com
 xbh.acdsee.com
 smetrics.acehardware.com
 content.aceticket.com
@@ -1796,9 +1795,7 @@ s.boydgaming.com
 fpcn.bpsgameserver.com
 xdbchs.bradfordexchange.com
 analytics-ssl.bradyid.com
-braincommando.com
 compare-im.bravofly.com
-ijaabm.bravotv.com
 analytics.breathlessresorts.com
 smetrics.breezeforcats.com
 smetrics.brelyse.com
@@ -1968,7 +1965,6 @@ tkvxdj.cars.com
 compare.carsearchdirect.com
 sadbmetrics.carteleraasturias.com
 smetrics.carters.com
-vpnuyy.carters.com
 sstats.cartoonnetwork.com
 stats.cartoonnetwork.com
 wfd7.carventura.com
@@ -3974,7 +3970,6 @@ bwj4.hrhibiza.com
 sosc.hrs.com
 im2.personalloanapply.us.hsbc.com
 tmx.hsn.com
-xljqqe.hsn.com
 smetrics.htc.com
 srepdata.htrnews.com
 smetrics.hubert.com
@@ -4292,7 +4287,6 @@ sanalytics.kbdesignlondon.com
 strack.kbstyle.com
 srepdata.kcentv.com
 biz1.kddi.com
-keepcontrol.com
 smetrics.keepmomming.com
 smetrics.kegerator.com
 somniture.kegerator.com
@@ -4602,7 +4596,6 @@ tr.mailing.lvmhappening.com
 metrics.lww.com
 smetrics.lww.com
 tm.lynda.com
-iazwzp.lyst.com
 t-s.lyticportfolio.com
 m10.m1029.com
 swa.m6boutique.com
@@ -5129,7 +5122,6 @@ smetrics.nba.com
 metrics.watch.nba.com
 smetrics.watch.nba.com
 w3.nbarizona.com
-ijaabm.nbcsports.com
 oimg.nbcsports.com
 oimg.nbcuni.com
 osimg.nbcuni.com
@@ -5235,7 +5227,6 @@ smetric.m.nissan-global.com
 metrics.nissan-uefa-champions-league.com
 vekekc.nissanblainville.com
 smetrics.nissancommercialvehicles.com
-metrics.nissanusa.com
 smetrics.nissanusa.com
 sytuzk.nissanvimontlaval.com
 r.niwepa.com
@@ -5729,7 +5720,6 @@ smetrics.adult.prevnar13.com
 smetrics.prevnar13adulto.com
 smetrics.pricedigests.com
 app-install.priceline.com
-ifnyop.priceline.com
 stat-ssl.priceprice.com
 tr.news.prima-mail.com
 mdws.primecu.com
@@ -6025,7 +6015,6 @@ a.rosettastone.com
 s.rosettastone.com
 smetrics.rotelvelveeta.com
 caknmq.rotita.com
-ijaabm.rotoworld.com
 compare.routard.com
 smetrics.rovia.com
 omn.roxul.com
@@ -7944,7 +7933,6 @@ image.kfw-entwicklungsbank.de
 image.kfw-formularsammlung.de
 image.kfw-ipex-bank.de
 image.kfw.de
-jdgtgb.kicker.de
 ue.kicker.de
 ues.kicker.de
 knigge.de
@@ -9000,6 +8988,7 @@ tr.news.kpmg.fr
 tr.news.kpmgacademy.fr
 tr.news.kpmgnet.fr
 tr.contact.krug.fr
+l065.ksrv.fr
 tr.news.la-collectionairfrance.fr
 fzb5.laboratoire-giphar.fr
 tr.info.lacentrale.fr
@@ -9848,6 +9837,7 @@ sstats.mora.jp
 smetrics.mtlabs.jp
 smetrics.benesse.ne.jp
 stat-ssl.e-map.ne.jp
+taj1.ebis.ne.jp
 smetrics.kanebo-cosmetics.ne.jp
 sec.login.ocn.ne.jp
 sec.mypage.ocn.ne.jp
@@ -10523,7 +10513,6 @@ smetrics.mspmentor.net
 ssc.muji.net
 smetrics.nike.net
 smetrics.nomorerules.net
-np6.net
 aa.online-metrix.net
 h-content.secure.veda.com.au.online-metrix.net
 h-ynap.biz.online-metrix.net
@@ -11150,7 +11139,6 @@ app1.maatwerkonline.nl
 wttd.madeleine-fashion.nl
 analytics.makro.nl
 sanalytics.makro.nl
-mjnpya.marktplaats.nl
 thaqyl.mediamarkt.nl
 tdep.medilead.nl
 2mhn.michelin.nl
@@ -11697,7 +11685,6 @@ sw88.disney.ru
 st.edadeal.ru
 content.ezaem.ru
 img.foodspring.ru
-rnybul.gismeteo.ru
 somni.holidaycheck.ru
 starget.intel.ru
 www91.intel.ru
@@ -13822,5 +13809,4 @@ partner.intentmedia.net
 
 
 ########## Blacklist from file:domains-blacklist-local-additions.txt ##########
-
 
