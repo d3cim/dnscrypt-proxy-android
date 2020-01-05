@@ -18,7 +18,7 @@
     BINARY_PATH=$TMPDIR/binary/dnscrypt-proxy-x86_64
   fi
 
-  CONFIG_PATH=$TMPDIR/config
+CONFIG_PATH=$TMPDIR/config
 
   unzip -o "$ZIPFILE" 'config/*' 'binary/*' -d $TMPDIR
 
@@ -29,7 +29,7 @@
   mkdir -p /data/media/0/dnscrypt-proxy
 
   if [ -f "$BINARY_PATH" ]; then
-    ui_print "* Copying binary for $ARCH"
+  ui_print "* Copying binary for $ARCH"
     cp -afv $BINARY_PATH $MODPATH/system/bin/dnscrypt-proxy
   else
     abort "Binary file for $ARCH is missing!"
@@ -41,21 +41,17 @@
 CONFIG_FILE="/data/media/0/dnscrypt-proxy/dnscrypt-proxy.toml"
 
   if [ -f "$CONFIG_FILE" ]; then
-    ui_print "* Backing up config file"
+  ui_print "* Backing up config file"
     cp -afv  $CONFIG_FILE ${CONFIG_FILE}-`date +%Y%m%d%H%M`.bak
   fi
 
   if [ -d "$CONFIG_PATH" ]; then
-    ui_print "* Copying config, example and license files"
+  ui_print "* Copying config, example and license files"
     cp -af $CONFIG_PATH/* /data/media/0/dnscrypt-proxy/
   else
     abort "Config file is missing!"
   fi
 
-
-# Only some special files require specific permissions
-# This function will be called after on_install is done
-# The default permissions should be good enough for most cases
 
   set_perm_recursive $MODPATH 0 0 0755 0755
   set_perm $MODPATH/system/bin/dnscrypt-proxy 0 0 0755
