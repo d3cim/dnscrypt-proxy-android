@@ -8,7 +8,6 @@ MODDIR=${0%/*}
 
 # This script will be executed in post-fs-data mode
 
-# Let dnscrypt-proxy do its job only.
 # iptables -t nat -A OUTPUT -p tcp ! -d 91.239.100.100 --dport 53 -j DNAT --to-destination 127.0.0.1:53
 # iptables -t nat -A OUTPUT -p udp ! -d 91.239.100.100 --dport 53 -j DNAT --to-destination 127.0.0.1:53
 # ip6tables -t nat -A OUTPUT -p tcp ! -d 91.239.100.100 --dport 53 -j DNAT --to-destination [::1]:53
