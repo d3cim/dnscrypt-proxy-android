@@ -30,7 +30,7 @@ CONFIG_PATH=$TMPDIR/config
 
   if [ -f "$BINARY_PATH" ]; then
   ui_print "* Copying binary for $ARCH"
-    cp -afv $BINARY_PATH $MODPATH/system/bin/dnscrypt-proxy
+    cp -af $BINARY_PATH $MODPATH/system/bin/dnscrypt-proxy
   else
     abort "Binary file for $ARCH is missing!"
   fi
@@ -42,7 +42,7 @@ CONFIG_FILE="/data/media/0/dnscrypt-proxy/dnscrypt-proxy.toml"
 
   if [ -f "$CONFIG_FILE" ]; then
   ui_print "* Backing up config file"
-    cp -afv  $CONFIG_FILE ${CONFIG_FILE}-`date +%Y%m%d%H%M`.bak
+    cp -af  $CONFIG_FILE ${CONFIG_FILE}-`date +%Y%m%d%H%M`.bak
   fi
 
   if [ -d "$CONFIG_PATH" ]; then
