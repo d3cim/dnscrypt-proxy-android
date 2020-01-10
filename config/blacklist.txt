@@ -14,12 +14,12 @@
 ##             NextDNS     : https://github.com/nextdns/cname-cloaking-blocklist/blob/master/domains
 ##
 ##
-## Generated : 2020-01-08
+## Generated : 2020-01-10
 
 
 ########## Blacklist from https://hostfiles.frogeye.fr/firstparty-trackers.txt ##########
 
-# Ignored duplicates: 23561
+# Ignored duplicates: 23566
 
 metrics.abbott
 smetrics.abbott
@@ -8403,6 +8403,7 @@ kie.enviedefraise.es
 abc.esprit.es
 sadbmetrics.estiloydecoracion.es
 ea.etam.es
+jxy6.evobanco.es
 sadbmetrics.festimag.es
 sstats.fishersci.es
 w3.flatex.es
@@ -14533,5 +14534,4 @@ partner.intentmedia.net
 
 
 ########## Blacklist from file:domains-blacklist-local-additions.txt ##########
-
 
