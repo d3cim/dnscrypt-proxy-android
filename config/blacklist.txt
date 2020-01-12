@@ -14,12 +14,12 @@
 ##             NextDNS     : https://github.com/nextdns/cname-cloaking-blocklist/blob/master/domains
 ##
 ##
-## Generated : 2020-01-10
+## Generated : 2020-01-12
 
 
 ########## Blacklist from https://hostfiles.frogeye.fr/firstparty-trackers.txt ##########
 
-# Ignored duplicates: 23566
+# Ignored duplicates: 23572
 
 metrics.abbott
 smetrics.abbott
@@ -192,6 +192,7 @@ sadobemarketing.bodenclothing.com.au
 metrics.bodyandsoul.com.au
 content.bookmaker.com.au
 smetrics.boq.com.au
+compare-im.bravofly.com.au
 infos.budgetdirect.com.au
 smetrics.bupa.com.au
 smetrics.businessinteriors.com.au
@@ -522,6 +523,7 @@ tracks.www.zazzle.be
 dii2.zooplus.be
 tk.airfrance.bf
 tk.airfrance.bg
+smetrics.amway.bg
 sw88.disney.bg
 smetrics.kone.bg
 analytics.metro.bg
@@ -891,7 +893,9 @@ scout.berg-freunde.ch
 dii2.bitiba.ch
 metrics.bkb.ch
 secmetrics.bkb.ch
+somni.blick.ch
 geygin.bonprix.ch
+compare-im.bravofly.ch
 img.buch.ch
 tr.emailing.canalplus.ch
 tr.emailing.canalsat.ch
@@ -1074,6 +1078,7 @@ tr.newsletter.1001dj.com
 tr.newsletter.1001salles.com
 tr.newsletter.1001traiteurs.com
 srepdata.11alive.com
+smetrics.11main.com
 sstat.123credit.com
 smetrics.123inkjets.com
 srepdata.12news.com
@@ -1166,6 +1171,7 @@ w88.abc.com
 srepdata.abc10.com
 metrics.abercrombie.com
 smetrics.abercrombie.com
+smetrics.abercrombiekids.com
 smetrics.abestweb.com
 metrics.abos.com
 smetrics.abos.com
@@ -1364,6 +1370,7 @@ smetrics.americanmachinist.com
 metrics.americansignaturefurniture.com
 ocs.ameriprise.com
 s.ameriprisestats.com
+metric.amerock.com
 metrics.amfam.com
 smetrics.amfam.com
 smetrics.amg.com
@@ -1717,6 +1724,7 @@ smetrics.biglots.com
 a.bigtennetwork.com
 acv.bigup-sohikari.com
 a8clk.biken-mall.com
+qrkwme.biletall.com
 content.billdomain.com
 cont.eupay.billingpartner.com
 content.billsupport.com
@@ -2172,6 +2180,7 @@ cdn-s.chumbacasino.com
 cdn-s.dev.chumbacasino.com
 smetrics.churchill.com
 analytics.cibc.com
+yikrmn.ciceksepeti.com
 smetrics.ciena.com
 tr.emailing.cifea-mkg.com
 smetrics.cigar.com
@@ -2750,6 +2759,7 @@ omniture.dunnedwards.com
 odcs.training.dupont.com
 omniture.dupontregistry.com
 tr.lettre.durbanparticipations.com
+sw88.dvcmember.com
 omniture.dws-investments.com
 somni.dxc.com
 a8cv.e-3shop.com
@@ -2891,6 +2901,7 @@ track.emeza.com
 smetrics.emirates.com
 tags.emirates.com
 fpp.emiratesnbd.com
+omjtca.emlakjet.com
 metricssecure.empiretoday-commercial.com
 metricssecure.empiretoday.com
 wiz.empowerhearing.com
@@ -4226,6 +4237,7 @@ ssec.koolaburra.com
 tr.mail.koregraf.com
 tm.kotak.com
 a8.kotei-denwa.com
+cenmxn.koton.com
 metrics.kpmg.com
 smetrics.kpmgifrsinstitute.com
 nomsc.kpn.com
@@ -4595,6 +4607,7 @@ smetrics.mastercardbrandcenter.com
 smetrics.mastercardbusiness.com
 smetrics.mastercardeasysavings.com
 smetrics.mastercardintl.com
+smetrics.mastercardmoments.com
 webtraffic.mastercontrol.com
 sadbmetrics.masterelcorreo.com
 metrics.masters.com
@@ -4657,6 +4670,7 @@ t.wiz.meilleurtaux.com
 metrics.meine-dertouristik.com
 a8clk.meister-coating.com
 www5.meister-coating.com
+pk1u.melanielyne.com
 mm.melia.com
 ea.melijoe.com
 smetrics.memberdeals.com
@@ -4836,6 +4850,8 @@ sc.morethan.com
 metrics.morganshotelgroup.com
 metrics.morganstanley.com
 smetrics.morganstanley.com
+starget.morganstanley.com
+srnzdl.morhipo.com
 smetrics.morningstar.com
 oms.mortgageloan.com
 csvtr05.mosaikbusiness.com
@@ -4901,6 +4917,7 @@ so.musicnotes.com
 c.musicradio.com
 s.musicradio.com
 srepdata.muskego-newberlinnow.com
+a8cv.mustachejapan.com
 t1.musthird.com
 smetrics.mwrf.com
 cv.my-lancul.com
@@ -5025,6 +5042,7 @@ oimg.nbcuni.com
 osimg.nbcuni.com
 smetrics.nbi-sems.com
 smetrics.nbjsummit.com
+img4.nbpa.com
 analytics.ncaa.com
 sanalytics.ncaa.com
 sstat.ncl.com
@@ -5228,6 +5246,7 @@ fdn.oaklawnanywhere.com
 yhwntm.oakley.com
 rdqqga.oakleysi.com
 ot.obi.com
+hwvqdp.obilet.com
 ssuperstats.observepoint.com
 pafms.ocbc.com
 uafms.ocbc.com
@@ -5248,6 +5267,7 @@ sadbmetrics.oferplanstore.com
 tr.offerta-companeo.com
 smetrics.officeaccessoryexperts.com
 smetrics.officechairs.com
+smetrics.officedeal.com
 fh.officedepot.com
 sstats.officedesigns.com
 smetrics.officefurniture.com
@@ -5361,6 +5381,7 @@ stat-ssl.osorezone.com
 www5.osoujihonpo-fc.com
 www5.osoujihonpo.com
 a8cv.otakudathough.com
+so.otrestaurant.com
 images.otrprocard.com
 data.ouigo.com
 smetrics.ourmidland.com
@@ -5793,6 +5814,7 @@ smetrics.reaxys.com
 tmx.reaxys.com
 smetrics.rebif.com
 a8cv.rebirthlab.com
+static-content.rebtel.com
 secure.reciperehab.com
 somni.reconditionedtools.com
 smetrics.recycler.com
@@ -6562,6 +6584,7 @@ sanalytics.ten-x.com
 tr.marketing.tennaxia.com
 srepdata.tennessean.com
 a8cv.tenshokusekkei.com
+smetrics.teradata.com
 k.terdav.com
 bdj5.terrassesmontecarlosbm.com
 metrics.tesco.com
@@ -6798,6 +6821,7 @@ ea.tool-fitness.com
 smetrics.toolbox.com
 tr.email.top-dealsnow.com
 tr.communication.top-office.com
+cpiibb.top-office.com
 sadbmetrics.topcomparativas.com
 metrics.toptenreviews.com
 smetrics.toptenreviews.com
@@ -6813,6 +6837,7 @@ ebis.touhan-navi.com
 stat-ssl.tour-list.com
 a8.tour-sys.com
 hk2d.tourismemauricie.com
+a8cv.toybox-mnr.com
 metrics.toyota.com
 smetrics.toyota.com
 s.toyotafinancial.com
@@ -7505,6 +7530,7 @@ sodc.wunderground.com
 repdata.wusa9.com
 srepdata.wusa9.com
 smetrics.wwd.com
+smetrics.wweshop.com
 srepdata.wwltv.com
 smetrics.wyndham.com
 smetrics.wyndhamfun.com
@@ -7660,6 +7686,7 @@ smetrics.kone.com.cy
 smon.activate.cz
 smetrics.airbank.cz
 tk.airfrance.cz
+smetrics.amway-qas.cz
 smetrics.amway.cz
 secureanalytics.avis.cz
 smetrics.beneplus.cz
@@ -9933,6 +9960,7 @@ a8clk.cocoro-happy.co.jp
 a8cv.covermark.co.jp
 a8cv.crear-ac.co.jp
 ebis.crede.co.jp
+smetrics.crocs.co.jp
 smetrics.dhc.co.jp
 smetrics.diners.co.jp
 tm.store.disney.co.jp
@@ -10114,6 +10142,7 @@ cv.denkichoice.jp
 a8.denwa-kaisen.jp
 zrw1.destinia.jp
 a8.diakaimasu.jp
+a8clk.digicafe.jp
 a8cv.direct-teleshop.jp
 adebis.direct-teleshop.jp
 cv.diverk.jp
@@ -10514,6 +10543,7 @@ adebis-keiji.vbest.jp
 adebis-rikon.vbest.jp
 adebis-roudoumondai.vbest.jp
 adebis-saimu.vbest.jp
+adebis-souzoku.vbest.jp
 a8.vector-net.jp
 a8.vector-park.jp
 a8.vege-pet.jp
@@ -11745,6 +11775,7 @@ somni.superonline.net
 smetrics.susquehanna.net
 a8clk.t-tree.net
 car-a8.tabirai.net
+check.tamobi.net
 ebis-tracking.tcb-beauty.net
 tags.theboapi.net
 metrics.timeinc.net
@@ -11810,6 +11841,7 @@ ssc.budgetair.nl
 tdep.bunzlonline.nl
 net.cadeautjes.nl
 net.catawiki.nl
+ea.centerparcs.nl
 s4.centrumparkeren.nl
 ba.brandalley.co.nl
 k.brandalley.co.nl
@@ -11911,6 +11943,7 @@ metrics.rtl.nl
 smetrics.rtl.nl
 bsna.saks-off-5th.nl
 secmetrics.schaefer-shop.nl
+tdep.sdim.nl
 smetrics.siblu.nl
 beta.simpel.nl
 sslanalytics.sixt.nl
@@ -12657,12 +12690,15 @@ smetrics.amway.com.tr
 bvz5.destinia.com.tr
 sw88.disneyturkiye.com.tr
 securetags.esriturkey.com.tr
+ihmnnz.flo.com.tr
 webstat.garanti.com.tr
 webstats.garanti.com.tr
+kqaasz.instreet.com.tr
 starget.intel.com.tr
 www91.intel.com.tr
 tr2.kaspersky.com.tr
 smetrics.kone.com.tr
+gvsivx.multinet.com.tr
 tmx.paratika.com.tr
 stats.seat.com.tr
 smetrics.sony.com.tr
@@ -12740,6 +12776,7 @@ tk.airfrance.co.uk
 sw88.aladdinthemusical.co.uk
 waaf1.aldiphotos.co.uk
 scout.alpinetrek.co.uk
+smetrics.amway-qas.co.uk
 smetrics.amway.co.uk
 metrics.ancestry.co.uk
 smetrics.ancestry.co.uk
@@ -13114,6 +13151,7 @@ smetrics.calvinklein.us
 sitehelper.caremoney.us
 wph2.destinia.us
 smetrics.eversource.us
+a8clk.famm.us
 adebis.famm.us
 sstats.holcim.us
 www.smetrics.imedeen.us
