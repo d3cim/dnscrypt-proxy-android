@@ -14,12 +14,12 @@
 ##             NextDNS     : https://github.com/nextdns/cname-cloaking-blocklist/blob/master/domains
 ##
 ##
-## Generated : 2020-01-12
+## Generated : 2020-01-17
 
 
 ########## Blacklist from https://hostfiles.frogeye.fr/firstparty-trackers.txt ##########
 
-# Ignored duplicates: 23572
+# Ignored duplicates: 23663
 
 metrics.abbott
 smetrics.abbott
@@ -155,7 +155,6 @@ yf5.voyage-prive.at
 tdapi.wickey.at
 te.witt-weiden.at
 tp.witt-weiden.at
-tracks.www.zazzle.at
 net.zooroyal.at
 smetrics.10daily.com.au
 smetrics.10play.com.au
@@ -235,7 +234,6 @@ contentservice.glassdoor.com.au
 smtx.godo.com.au
 metrics.goldcoastbulletin.com.au
 smetrics.gomastercard.com.au
-stats.gomastercard.com.au
 metrics.gq.com.au
 static2.gumtree.com.au
 tm.gumtree.com.au
@@ -357,7 +355,6 @@ info.vodafone.com.au
 infos.vodafone.com.au
 metrics.vogue.com.au
 metrics.weeklytimesnow.com.au
-smetrics.westnet.com.au
 smetrics.westpac.com.au
 cdn1.thm.westpac.com.au
 secure.whattoexpect.com.au
@@ -368,7 +365,6 @@ infos.yellow.com.au
 smetrics.yellow.com.au
 infos.yellowpages.com.au
 smetrics.yellowpages.com.au
-tracks.www.zazzle.com.au
 ganalytics.anu.edu.au
 smetrics.csu.edu.au
 omns.murdoch.edu.au
@@ -406,7 +402,6 @@ box.bossdata.be
 ba.brandalley.be
 k.brandalley.be
 tr.btobquotes.be
-ssc.budgetair.be
 simg.bwin.be
 net.catawiki.be
 scookies-adobe.cbc.be
@@ -519,7 +514,6 @@ tr.news.vraaguwofferte.be
 tdapi.wickey.be
 sstats.yaya.be
 trackingssl.yongo.be
-tracks.www.zazzle.be
 dii2.zooplus.be
 tk.airfrance.bf
 tk.airfrance.bg
@@ -592,7 +586,6 @@ metrics.visaluxuryhotelcollection.com.br
 smetrics.visaluxuryhotelcollection.com.br
 net.voopter.com.br
 vzopzb.wearever.com.br
-tracks.www.zazzle.com.br
 smetricas.fgv.br
 sswmetrics.belavia.by
 mdws.1stchoicesavings.ca
@@ -838,7 +831,6 @@ smetrics.thechildrensplace.ca
 metrix.ticketmaster.ca
 sstats.tiffany.ca
 erb.tongalumina.ca
-t0y.toyota.ca
 metrics.toysrus.ca
 smetrics.toysrus.ca
 oms.travelocity.ca
@@ -863,7 +855,6 @@ mdws.weyburncu.ca
 mdws.wfcu.ca
 mdws.wpcu.ca
 logger.yp.ca
-tracks.www.zazzle.ca
 wt.ara.cat
 wt.arabalears.cat
 wnd2.destinia.cat
@@ -901,7 +892,6 @@ tr.emailing.canalplus.ch
 tr.emailing.canalsat.ch
 collect.cap.ch
 target.cap.ch
-ea.centerparcs.ch
 smetrics.corner.ch
 smetrics.cornerbanca.ch
 smetrics.cornercard.ch
@@ -1002,7 +992,6 @@ wt.weltbild.ch
 tdapi.wickey.ch
 te.witt-weiden.ch
 tp.witt-weiden.ch
-tracks.www.zazzle.ch
 samc.zkb.ch
 dii2.zooplus.ch
 ea.corsair.ci
@@ -1029,6 +1018,7 @@ smetrics.keysight.com.cn
 smetrics.rbsmarketplace.com.cn
 a.rohde-schwarz.com.cn
 sw88.shanghaidisneyresort.com.cn
+sc.sonystyle.com.cn
 ssc.sonystyle.com.cn
 sstats.thermofisher.com.cn
 smetrics.visitsingapore.com.cn
@@ -1290,7 +1280,6 @@ smetrics.aircraftbluebook.com
 iop4.aireuropa.com
 sstats.airfarewatchdog.com
 stats.airfarewatchdog.com
-srepdata.airforcetimes.com
 esv.airfrance.com
 tc.airfrance.com
 tk.airfrance.com
@@ -1488,6 +1477,7 @@ metric.asos.com
 metrics.asos.com
 tr.mail.asptt.com
 sstats.assaabloy.com
+a8clk.assecli.com
 metrics.assuranthealth.com
 smetrics.assuranthealth.com
 ljb0.assuronline.com
@@ -2224,6 +2214,7 @@ smetrics.claires.com
 smetrics.clarica.com
 repdata.clarionledger.com
 srepdata.clarionledger.com
+smetrics.claris.com
 ac.claudiastrater.com
 tm.clearcover.com
 smetrics.clickatell.com
@@ -2803,7 +2794,6 @@ tr.info.easyviaggio.com
 tr.news.easyviaggio.com
 tdf1.easyviaggio.com
 tr.welcome.easyviaggio.com
-compare.easyviajar.com
 tr.info.easyviajar.com
 tr.news.easyviajar.com
 tdf1.easyviajar.com
@@ -2874,7 +2864,6 @@ smetrics.electricalmarketing.com
 smetrics.electronicdesign.com
 smetrics.element14.com
 secure.elisabethhasselbeck.com
-secure.elizabethbanks.com
 smetrics.elle.com
 metrics.ellechina.com
 smetrics.elledecor.com
@@ -3080,7 +3069,6 @@ compare.familytraveller.com
 sstats.familyvacationcritic.com
 strack.fanatics-intl.com
 smetrics.fancyfeast.com
-atm.fandango.com
 os.fandango.com
 sanalytics.fandmstatebank.com
 secure.fanniemaemetrics.com
@@ -3131,7 +3119,6 @@ adebis.femmy-c.com
 adebis.femmy-clinic.com
 somniture.customer.ferguson.com
 smetrics.ferguson.com
-smetrics.fergusononline.com
 smetrics.fergusonshowrooms.com
 meds.fetzima.com
 tr.fexemail.com
@@ -3548,7 +3535,6 @@ xya4.groupefsc.com
 smetrics.groupeinvestors.com
 securestats.growthincomeprotection.com
 tdep.growwwdigital.com
-sstats.grubstreet.com
 metrics.grundfos.com
 smetrics.grundfos.com
 vct.mosaicorigin.gs.com
@@ -3787,7 +3773,6 @@ sstats.hostelbookers.com
 sstats.hostels.com
 sstats.hostelworld.com
 oms.hoteis.com
-analytics.hotelclub.com
 fbu8.hoteldeparismontecarlo.com
 oms.hoteles.com
 fbu8.hotelhermitagemontecarlo.com
@@ -3833,7 +3818,6 @@ smetrics.huntington.com
 ddata.huntingtonbank.com
 metrics.huskerharvestdays.com
 smetrics.huskerharvestdays.com
-smetrics.hvac-talk.com
 sstats.hwahomewarranty.com
 so8.hyatt.com
 tr.communication.hybrigenics.com
@@ -4220,7 +4204,6 @@ smetrics.knowledgesummits.com
 smetrics.knowpneumonia.com
 srepdata.knoxnews.com
 jraasj.kobo.com
-som.kodak.com
 cname.kohgendo.kohgendo.com
 kohlermetrics.kohler.com
 kohlermetricssecure.kohler.com
@@ -4495,6 +4478,7 @@ metrics.lvmh.com
 metrics.lww.com
 smetrics.lww.com
 tm.lynda.com
+iazwzp.lyst.com
 t-s.lyticportfolio.com
 m10.m1029.com
 swa.m6boutique.com
@@ -5179,7 +5163,6 @@ metricssecure.northwesternmutual.com
 fpt.norton.com
 oms.norton.com
 somni.norwood-hotel.com
-a8clk.noukikaitori-navi.com
 lem.nouvelobs.com
 svisitor.pharma.us.novartis.com
 smetrics.novartisoncology.com
@@ -5223,6 +5206,7 @@ t-s.nutropin.com
 metrics.nvidia.com
 omniture.nvidia.com
 smetrics.nvidia.com
+stt.nvidia.com
 srepdata.nwcn.com
 tags.nwolb.com
 testtags.nwolb.com
@@ -5346,7 +5330,6 @@ tr.mailing.opinionrelate.com
 mdws.oppacu.com
 securestatsretire.retire.oppenheimerfunds.com
 securestats.oppenheimerfunds.com
-securestats.oppfunds.com
 stats.oppfunds.com
 smetrics.optic2000.com
 def1.optimhome-recrutement.com
@@ -5568,7 +5551,6 @@ ea.pixmania.com
 ea.placedestendances.com
 smetrics.planadviser.com
 compare.planetofhotels.com
-co.planetshoes.com
 metrics.plasticsnews.com
 smetrics.plasticsnews.com
 smetrics.plasticsnewseurope.com
@@ -6563,6 +6545,7 @@ sstats.tedbaker.com
 front.tedemis.com
 sstats.teenvogue.com
 stats2.teenvogue.com
+sabxt.teeoff.com
 smetrics.teeoff.com
 tr.news.teetravel.com
 tr.tekliflerim-companeo.com
@@ -6954,7 +6937,6 @@ smetrics.employer.uhc.com
 smetrics.group.uhc.com
 metrics.uhc.com
 smetrics.uhc.com
-smetrics.uhcmedicarerxforgroups.com
 smetrics.uhcmedicaresolutions.com
 smetrics.uhcrivervalley.com
 smetrix.avon.uk.com
@@ -7491,7 +7473,6 @@ metrics.wnba.com
 smetrics.wnba.com
 smetrics.wolterskluwer.com
 smetrics.womansday.com
-ea.wonderbox.com
 smetrics.woodfordfunds.com
 smetrics.wordandbrown.com
 tr.wa.wordappeal.com
@@ -7646,7 +7627,6 @@ smetrics.zagg.com
 net.zalando.com
 smetrics.zales.com
 srepdata.zanesvilletimesrecorder.com
-tracks.www.zazzle.com
 ea.zebestof.com
 swebmetrics.zebra.com
 ad-a8.www.zeiri4.com
@@ -8219,7 +8199,6 @@ te.yourhome.de
 tp.yourhome.de
 net.zalando-lounge.de
 der2.zalando.de
-tracks.www.zazzle.de
 audev.zeit.de
 iiajtl.zeit.de
 net.zencap.de
@@ -8546,7 +8525,6 @@ ea.wonderbox.es
 sadbmetrics.xn--futuroenespaol-1nb.es
 wcl0.yoigo.es
 net.zaimo.es
-tracks.www.zazzle.es
 dii2.zooplus.es
 net.zooplus.es
 trackingssl.agrealestate.eu
@@ -8597,6 +8575,7 @@ sw88.thewaltdisneycompany.eu
 bi.threatmetrix.eu
 cas.threatmetrix.eu
 portal.threatmetrix.eu
+sso.threatmetrix.eu
 sucmetrics.unicreditgroup.eu
 api.weltevree.eu
 sanalytics.ifsec.events
@@ -8790,6 +8769,7 @@ www.tr.bfc-mp.caisse-epargne.fr
 www.bfc-mp.caisse-epargne.fr
 tr.news.calculeo.fr
 ea.camif.fr
+ir2i.campagne-audition.fr
 tr.emailing.detours.canal.fr
 six9e.canal.fr
 tr.contact.canalplus.fr
@@ -8870,7 +8850,6 @@ tr.communautes-mediametrie.fr
 tr.communication-comptable.fr
 tr.jaguar.compte-financial-services.fr
 tr.landrover.compte-financial-services.fr
-tr.compte-pagesjaunes.fr
 noa0.compteczam.fr
 k.comptoir.fr
 tr.info.conso-expert.fr
@@ -8965,7 +8944,6 @@ res.femina.fr
 tr.n.ferrero.fr
 net.fidor.fr
 filmcine.fr
-ea.fioulmarket.fr
 sstats.fishersci.fr
 ea.fleurancenature.fr
 tr.info.flexico.fr
@@ -8988,6 +8966,7 @@ tr.email.securite-routiere.gouv.fr
 tr.infolettre.securite-routiere.gouv.fr
 tr.strategie.gouv.fr
 tr.courriel.gpm.fr
+rh1a.granions.fr
 tr.groupama-gne.fr
 ea.habitat.fr
 smetrics.habitat.fr
@@ -9005,7 +8984,6 @@ tr.tpe.harmonie-mutuelle.fr
 tr.voixduclient.harmonie-mutuelle.fr
 dxe2.heip.fr
 tr.lettre.helianthal.fr
-ea.helline.fr
 te.helline.fr
 tp.helline.fr
 tr.vous.hellobank.fr
@@ -9338,7 +9316,6 @@ smetrics.siblu.fr
 smetrics.sibluexclusif.fr
 tr.silvera-contact.fr
 sslanalytics.sixt.fr
-ea.skoda.fr
 sa.skoda.fr
 sa.skodafabia.fr
 sa.skodasuperb.fr
@@ -9422,12 +9399,12 @@ ea.wonderbox.fr
 k.yves-rocher.fr
 der2.zalando.fr
 hgf4.zanzicar.fr
-tracks.www.zazzle.fr
 elr.zive.fr
 b6ft.zone-turf.fr
 ea.zone-turf.fr
 dii2.zooplus.fr
 net.zooplus.fr
+tk.airfrance.ga
 tk.airfrance.ge
 tk.airfrance.gf
 net.jumia.com.gh
@@ -9843,6 +9820,7 @@ ebis.aderans.jp
 cname.aganavi.jp
 cname.agaskin-woman.jp
 adebis.ahkah.jp
+a8.air-room.jp
 aa-metrics.airpayment.jp
 aa-metrics.airregi.jp
 aa-metrics.handy.airregi.jp
@@ -9917,6 +9895,7 @@ stat-ssl.career-tasu.jp
 a8.careerpark.jp
 a8clk.casino-academy.jp
 a8clk.chapup.jp
+a8sup.chapup.jp
 a8.chat-lady.jp
 smetrics.chicca.jp
 stat-ssl.chiku-wa.jp
@@ -10120,7 +10099,6 @@ a8.x-house.co.jp
 a8cv.user.xtheta.co.jp
 a8.yayoi-kk.co.jp
 a8clk.lp.yuyu-kenko.co.jp
-tracks.www.zazzle.co.jp
 a8clk1.zkai.co.jp
 smetrics.zurichlife.co.jp
 aa-metrics.cocokarada.jp
@@ -10159,6 +10137,7 @@ adebis-1201.drinco.jp
 jldrs.drs-supple.jp
 sstats.ds-pharma.jp
 a8.dstation.jp
+a8cv.duo.jp
 urerucname.duo.jp
 senior-adebis.duoscene.jp
 a8.dymtech.jp
@@ -10314,7 +10293,6 @@ a8clk.lens-1.jp
 cv.liability.jp
 a8clk.libinc.jp
 a8cv.lienfleur.jp
-smetrics.lissage-miffy.jp
 smetrics.lissage.jp
 a8.liver-rhythm.jp
 a8clk.lolipop.jp
@@ -10407,6 +10385,7 @@ ssmr.nuro.jp
 ebis.odahara.jp
 a8cv.off-site.jp
 adebis.office-com.jp
+cv.oiz-care.jp
 a8cv.omni7.jp
 a8cv.omoiire.jp
 a8clk.onemile.jp
@@ -10494,6 +10473,7 @@ a8clk.www.solar-partners.jp
 smetrics.solaseedair.jp
 cname.soltia.jp
 smetrics.sony.jp
+a8click.souspeak.jp
 a8track.spartabuddy.jp
 a8cv.spartan-english.jp
 a8clk.campaigns.speed-kaitori.jp
@@ -11555,6 +11535,7 @@ h-mosaic.online-metrix.net
 h-my529.online-metrix.net
 h-mycoseva.online-metrix.net
 h-name.online-metrix.net
+h-nbpa.online-metrix.net
 h-nerium.online-metrix.net
 h-neteller.online-metrix.net
 h-netflix.online-metrix.net
@@ -11618,6 +11599,7 @@ h-regionsbank2.online-metrix.net
 h-rei.online-metrix.net
 h-rentalcars.online-metrix.net
 h-rentpath.online-metrix.net
+h-renttherunway.online-metrix.net
 h-retail-sc.online-metrix.net
 h-rewardspay.online-metrix.net
 h-ritani.online-metrix.net
@@ -11879,7 +11861,6 @@ smetricsadobe.hollandandbarrett.nl
 net.home24.nl
 tm.stats.home24.nl
 som.homeaway.nl
-som.homelidays.nl
 da.hornbach.nl
 smetrics.hubert-online.nl
 bsna.hudsonsbay.nl
@@ -11981,7 +11962,6 @@ content-tm.wimdu.nl
 app1.youngcapital.nl
 net.zalando-lounge.nl
 der2.zalando.nl
-tracks.www.zazzle.nl
 dii2.zooplus.nl
 net.zooplus.nl
 tk.airfrance.no
@@ -12346,7 +12326,6 @@ tr.buenasofertas.pro
 tr.fidal.pro
 tr.fidalformation.pro
 tr.scienceshumaines.pro
-tr.news.teklifim.pro
 smetrics.seat.ps
 tk.airfrance.pt
 smetrics.airngo.pt
@@ -12392,7 +12371,6 @@ tdf1.vente-unique.pt
 swa.vodafone.pt
 wa.vodafone.pt
 we.wecanimal.pt
-tracks.www.zazzle.pt
 dii2.zooplus.pt
 cvi6.destinia.qa
 smetrics.vodafone.qa
@@ -12439,7 +12417,6 @@ sw88.marvel.com.ru
 smetrics.da247.ru
 rup5.destinia.ru
 sw88.disney.ru
-st.edadeal.ru
 content.ezaem.ru
 img.foodspring.ru
 somni.holidaycheck.ru
@@ -12596,7 +12573,6 @@ smetrics.vikingline.se
 dtags.vivus.se
 a.weareknitters.se
 tdapi.wickey.se
-tracks.www.zazzle.se
 dii2.zooplus.se
 tr.fr.ar24.services
 smetrics.abercrombie.sg
@@ -13009,7 +12985,6 @@ aqw.princessetamtam.co.uk
 smetrics.promod.co.uk
 tr.quotesforbusiness.co.uk
 smetrics.rac.co.uk
-smetrics.radley.co.uk
 smetrics.ralphlauren.co.uk
 smetrics.ramada.co.uk
 smetrics.iossc.rbs.co.uk
@@ -13082,6 +13057,7 @@ sstats.tiffany.co.uk
 smetrics.timberlandonline.co.uk
 o.toptable.co.uk
 so.toptable.co.uk
+tm.toughmudder.co.uk
 smetrics.trainsfares.co.uk
 smetrics.travelmoneyonline.co.uk
 smetrics.truprint.co.uk
@@ -14209,6 +14185,7 @@ pixel.carambo.la
 hits.top.lv
 log-live.direct.ly
 p.l1v.ly
+apv-launcher.minute.ly
 frontier.musical.ly
 log.musical.ly
 log2.musical.ly
