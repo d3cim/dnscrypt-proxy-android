@@ -14,12 +14,12 @@
 ##             NextDNS     : https://github.com/nextdns/cname-cloaking-blocklist/blob/master/domains
 ##
 ##
-## Generated : 2020-01-17
+## Generated : 2020-01-20
 
 
 ########## Blacklist from https://hostfiles.frogeye.fr/firstparty-trackers.txt ##########
 
-# Ignored duplicates: 23663
+# Ignored duplicates: 23708
 
 metrics.abbott
 smetrics.abbott
@@ -846,6 +846,7 @@ data1.virginmobile.ca
 smetrics.visainfinite.ca
 mdws.visioncu.ca
 smetrics.vonage.ca
+smetrics.vonageforhome.ca
 k.voyageursdumonde.ca
 mdws.wainwrightcu.ca
 omniture.walmart.ca
@@ -993,6 +994,7 @@ tdapi.wickey.ch
 te.witt-weiden.ch
 tp.witt-weiden.ch
 samc.zkb.ch
+samt.zkb.ch
 dii2.zooplus.ch
 ea.corsair.ci
 net.jumia.ci
@@ -1120,6 +1122,7 @@ srepdata.9news.com
 cv.a-cial.com
 cv.a-hikkoshi.com
 sitecatalysts.a-q-f.com
+a8cv.a-satei.com
 tr.news.a2micile.com
 metrics.aa.com
 smetrics.aa.com
@@ -1600,6 +1603,7 @@ metrics.baitoru.com
 sanalytics.bakerfurniture.com
 deltafox0682.bambora.com
 smetrics.banamex.com
+smetrics.bancsabadell.com
 smetc.banfield.com
 lntvby.banggood.com
 svc.bangkokbank.com
@@ -1670,6 +1674,7 @@ sc.bellator.com
 ssc.bellator.com
 a8cv.bellcosme.com
 vnf4.belleetbio.com
+umhyck.belvilla.com
 smetrics.benefitcosmetics.com
 smetrics.beneful.com
 sstats.bentleymotors.com
@@ -2217,6 +2222,7 @@ srepdata.clarionledger.com
 smetrics.claris.com
 ac.claudiastrater.com
 tm.clearcover.com
+a8clk.www.cledepeau-beaute.com
 smetrics.clickatell.com
 smetrics.clickbank.com
 somni.clinicaladvisor.com
@@ -2410,6 +2416,7 @@ metric.crateandbarrel.com
 metrics.crateandbarrel.com
 sanalytics.crawfordcountybank.com
 smetrics.creativity-online.com
+a8netcv.crebiq.com
 cert.credilo.com
 cph.credit-pret-hypothecaire.com
 sdc2.credit-suisse.com
@@ -2705,6 +2712,7 @@ metrics.dockers.com
 smetrics.us.dockers.com
 a8cv.doctor-agent.com
 ad.doctor-agent.com
+a8cv.doctor-bestpartner.com
 cname-doctor.pr.doctor-pr.com
 secure.doctordirectory.com
 metrics.doctoroz.com
@@ -2712,6 +2720,7 @@ smetrics.doctoroz.com
 a8cv.doctoryotsu.com
 smetrics.dog.com
 a8clk.www.doicoffee.com
+testa8wifi.dokoyorimo.com
 a8cv.dokugaku-dx.com
 smetrics.dollar.com
 smetric.dollywood.com
@@ -4718,6 +4727,7 @@ smetrics.microtelinn.com
 smetrics.midnightlounge.com
 wdukge.midwayusa.com
 smetrics.mightydog.com
+a8.migxl.com
 smetrics.mikasa.com
 sal.milanoo.com
 an.milb.com
@@ -4971,6 +4981,7 @@ sstats.nalgene.com
 smetrics.namcogames.com
 content.name.com
 ebis.nameraka.com
+abkdae.namshi.com
 sstats.nana-maghreb.com
 sstats.nana-me.com
 a8clk.nandemo-kimono.com
@@ -5137,6 +5148,7 @@ sytuzk.nissanvimontlaval.com
 nissui-kenkocname.nissui-kenko.com
 a8cv.nittei-group-alliance.com
 a8clk.nittei-hd.com
+a8clk.niwaka.com
 r.niwepa.com
 nizardeniz.com
 mdws.nlcu.com
@@ -5170,6 +5182,7 @@ analytics.nowresorts.com
 smetrics.nowtv.com
 npkakebarai.np-kakebarai.com
 tr.account.np6.com
+tr.communication.np6.com
 cotemaison.np6.com
 tr.customer-solutions.np6.com
 f1.demo.np6.com
@@ -5177,6 +5190,7 @@ tr.demo.np6.com
 tr.info.np6.com
 tr.mktg.np6.com
 tr.news.np6.com
+tr.newsletter.np6.com
 tr.notification.np6.com
 tr.poker.np6.com
 shortener.np6.com
@@ -5203,6 +5217,7 @@ smetrics.nutritionpossible.com
 tr.news.nutrixo.com
 metrics.nutro.com
 t-s.nutropin.com
+trck.nuwlnuwl.com
 metrics.nvidia.com
 omniture.nvidia.com
 smetrics.nvidia.com
@@ -6131,6 +6146,7 @@ smetrics.sharewyndham.com
 srepdata.sheboyganpress.com
 images.sheetzadvantage.com
 mdws.shellcu.com
+a8clk.shikaku-square.com
 adebis.shinagawa.com
 ad.shinjuku-mens-chuoh.com
 a8clk.shinnihon-seminar.com
@@ -6179,6 +6195,7 @@ profiling.signaturemgmgrand.com
 tm.signedpay.com
 imgs.signifyd.com
 cdna.sigue.com
+ehedwd.sikayetvar.com
 smetric.silverdollarcity.com
 somni.silversea.com
 smetrics.m.similac.com
@@ -6786,6 +6803,8 @@ sgwqoz.toddsnyder.com
 sstats.tohmatsu.com
 smetric.tokka.com
 a8cv.cart3.toku-talk.com
+a8cv.tokutoku-battery.com
+a8cv.tokyo-dive.com
 a8.tokyo-hills-clinic.com
 adebis.tokyo-houkyou.com
 cnameadebis.tokyu-vacations.com
@@ -6998,7 +7017,9 @@ content.usforex.com
 myhome.usg.com
 tm.uship.com
 oms.usnews.com
+content.usps.com
 smetrics.utech-polyurethane.com
+xyzznt.uterque.com
 smetrics.utilityanalyticssummit.com
 smetrics.utilityanalyticsweek.com
 compare.uvidpustku.com
@@ -7558,6 +7579,7 @@ t-s.xpansions.com
 watg.xxxlutz.com
 001.ya-man.com
 a8cv.ya-man.com
+a8cv.yac-agency.com
 smetrics.yachtworld.com
 cnameebis.yaku-job.com
 a8cv.yamasa-suppon.com
@@ -7855,6 +7877,7 @@ os.efax.de
 fch0.ekosport.de
 track.emeza.de
 ed.emp.de
+jzayvj.enercity.de
 data.engelhorn.de
 kie.enviedefraise.de
 wt.envivas.de
@@ -8115,6 +8138,7 @@ net.sparhandy.de
 img.sparkasse-koelnbonn.de
 smetrics.sparkassendirekt.de
 sams.spiegel.de
+sats.spiegel.de
 smetrics.sport-thieme.de
 insights.sport1.de
 wa.sportschau.de
@@ -8361,6 +8385,7 @@ sadbmetrics.abc.es
 fma7.aegon.es
 uwy4.aegon.es
 wlp3.aegon.es
+smetrics.aelca.es
 tk.airfrance.es
 tr.news.alloneumaticos.es
 at.alltricks.es
@@ -9219,6 +9244,7 @@ one2.onestep.fr
 f0nn.oney.fr
 img.oney.fr
 oor.ooreka.fr
+tr.newsletter.opcoep.fr
 ea.opodo.fr
 tr.orange-lease.fr
 ea.astrocenter.orange.fr
@@ -9830,6 +9856,8 @@ a8trck.aisatsujo.jp
 a8clk.es.akyrise.jp
 adtrack.alchemy-web.jp
 a8clk.alljewelry.jp
+a8cv.store.alpen-group.jp
+a8.ama-mail.jp
 smetric.amespi.jp
 a8cv.amiami.jp
 ada8.ampleur.jp
@@ -9969,6 +9997,7 @@ a8.h-daiya.co.jp
 a8clk.ec.halmek.co.jp
 a8cv.hatsuratsudo.co.jp
 ebis.hatsuratsudo.co.jp
+a8.hemptouch.co.jp
 ade.hirose-fx.co.jp
 spscas.hitachi-solutions.co.jp
 a8tag.hokenleague.co.jp
@@ -9985,6 +10014,7 @@ smetrics.kanebo-cosmetics.co.jp
 smetrics.kanebo-cosmillion.co.jp
 ebis.kaneka-yhc.co.jp
 smetrics.kao.co.jp
+a8clk.kenkoukazoku.co.jp
 landuse.kentaku.co.jp
 smetrics.keysight.co.jp
 adebis.kintetsu-re.co.jp
@@ -10124,6 +10154,7 @@ a8clk.digicafe.jp
 a8cv.direct-teleshop.jp
 adebis.direct-teleshop.jp
 cv.diverk.jp
+a8cv.diyfactory.jp
 ssl-omtrdc.dmp-support.jp
 acsweb-3dr1.dnp-cdms.jp
 smetrics.dnszone.jp
@@ -10303,6 +10334,7 @@ a8.lulukushel.jp
 smetrics.lululemon.jp
 smetrics.lusc.jp
 adebis.luvlit.jp
+a8cv.lvs.jp
 adebis.machicon.jp
 adebis.macloud.jp
 a8.makeshop.jp
@@ -10457,6 +10489,7 @@ adebis.shiragalabo.jp
 adebis.shopcounter.jp
 a8.shopserve.jp
 a8.skr-labo.jp
+a8clk.sma-ene.jp
 cv.smakon.jp
 ebis.smakon.jp
 a8.smartphone-store.jp
@@ -10484,6 +10517,7 @@ cv.stepbuy.jp
 a8clk.stylestore.jp
 smetric.subaru.jp
 cname.sulforaphane.jp
+a8clk.suncle.jp
 a8clk.pages.supporterz.jp
 jlsuru.surusuru.jp
 a8cv.suzette-shop.jp
@@ -10632,6 +10666,7 @@ content.moneza.lv
 metric.nissan.lv
 tracker-aa.pafbet.lv
 tracker-aa.pafbetscore.lv
+beoofo.pairs.lv
 i.savacard.lv
 smetrics.sony.lv
 i.viacredit.lv
@@ -10715,6 +10750,7 @@ smetrics.isomilplus.com.my
 somtrdc.jobstreet.com.my
 sstats.libresse.com.my
 smetrics.pediasure.com.my
+lyxfra.shopee.com.my
 smetrics.kone.my
 tk.airfrance.nc
 tk.airfrance.ne
@@ -11192,6 +11228,7 @@ a8affiliate.liftup-turban.net
 tr.mailmp.macif.net
 sadbmetrics.madridfusion.net
 strack.manjiro.net
+res.marianne.net
 cmass.massmedian.net
 196380495960676.mateti.net
 273135153003299.mateti.net
@@ -11675,6 +11712,7 @@ h-uptodate.online-metrix.net
 h-uscellular.online-metrix.net
 h-uship.online-metrix.net
 h-ushsbc.online-metrix.net
+h-usps.online-metrix.net
 h-valcontent.online-metrix.net
 h-veda.online-metrix.net
 h-vedacheck.online-metrix.net
@@ -12250,6 +12288,7 @@ smetrics.gowell.com.ph
 somtrdc.jobstreet.com.ph
 smetrics.sunlife.com.ph
 smetrics.kone.ph
+gybles.shopee.ph
 smetrics.group.pictet
 net.daraz.pk
 analytics.metro.pk
@@ -12326,6 +12365,7 @@ tr.buenasofertas.pro
 tr.fidal.pro
 tr.fidalformation.pro
 tr.scienceshumaines.pro
+tr.news.teklifim.pro
 smetrics.seat.ps
 tk.airfrance.pt
 smetrics.airngo.pt
@@ -12601,6 +12641,7 @@ smetrics.kone.sg
 smetrics.seat.sg
 a8cv.17kg.shop
 a8cv.exrg-premium.shop
+a8cv.wakan.shop
 tk.airfrance.si
 smetrics.amway-qas.si
 smetrics.amway.si
@@ -12652,6 +12693,7 @@ tr.news.cdiscount.co.th
 content22.citibank.co.th
 smetrics.kanebo.co.th
 smetrics.kone.co.th
+lrdnuu.shopee.co.th
 ssc.vayama.co.th
 tk.airfrance.tn
 smetrics.seat.tn
@@ -14002,7 +14044,6 @@ stats.wp.com
 stats.wpmucdn.com
 stats1.wpmudev.com
 stats.wwd.com
-click.engage.xbox.com
 cnt.xhamster.com
 collector.xhamster.com
 collector1.xhamster.com
