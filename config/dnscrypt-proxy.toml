@@ -27,7 +27,7 @@
 ## The proxy will automatically pick the fastest, working servers from the list.
 ## Remove the leading # first to enable this; lines starting with # are ignored.
 
-server_names = ['dnscrypt.nl-ns0', 'dnscrypt.eu-dk', 'dnscrypt.eu-nl', 'dnscrypt.uk-ipv4', 'dnswarden-dc1', 'dnswarden-dc2', 'dnswarden-dc3', 'ffmuc.net', 'ibksturm', 'publicarray-au', 'publicarray-au2', 'scaleway-ams', 'scaleway-fr', 'v.dnscrypt.uk-ipv4']
+server_names = ['dnscrypt.nl-ns0', 'dnscrypt.eu-dk', 'dnscrypt.eu-nl', 'dnscrypt.one', 'dnscrypt.uk-ipv4', 'dnswarden-dc1', 'dnswarden-dc2', 'dnswarden-dc3', 'ffmuc.net', 'ibksturm', 'publicarray-au', 'publicarray-au2', 'scaleway-ams', 'scaleway-fr', 'v.dnscrypt.uk-ipv4']
 
 
 ## List of local addresses and ports to listen to. Can be IPv4 and/or IPv6.
@@ -665,6 +665,7 @@ broken_query_padding = ['cisco', 'cisco-ipv6', 'cisco-familyshield']
     { server_name='dnscrypt.nl-ns0', via=['anon-dnscrypt.one', 'anon-scaleway-ams'] },
     { server_name='dnscrypt.eu-dk', via=['anon-dnscrypt.one', 'anon-scaleway-ams'] },
     { server_name='dnscrypt.eu-nl', via=['anon-dnscrypt.one', 'anon-scaleway-ams'] },
+    { server_name='dnscrypt.one', via=['anon-ibksturm', 'anon-scaleway-ams'] },
     { server_name='dnscrypt.uk-ipv4', via=['anon-kama', 'anon-scaleway-ams'] },
     { server_name='dnswarden-dc1', via=['anon-dnscrypt.one', 'anon-ibksturm'] },
     { server_name='dnswarden-dc2', via=['anon-dnscrypt.one', 'anon-ibksturm'] },
