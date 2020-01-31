@@ -1,5 +1,20 @@
 # Changelog
 
+
+## 2.0.39
+
+#### Updated binary files to 2.0.39 | jedisct1
+ - The Firefox Local DoH service didn't properly work in version `2.0.38`;
+this has been fixed. Thanks to Simon Brand for the report!
+
+#### Updated config files to 2.0.39 | quindecim
+
+* ✅ Added `dnswarden-dc3` (DnsCrypt protocol . Non-logging, supports DNSSEC. By https://dnswarden.com).
+* ✅ Updated `Magisk Module Installer template`. It require `Magisk 19+` from now on.
+* ✅ Fixed an issue where `dnscrypt-proxy` doesn't detect the config file.
+* ✅ Updated `blacklist.txt` to `2020-01-30`.
+
+
 ## 2.0.38
 
 #### Updated binary files to 2.0.38 | jedisct1
@@ -15,8 +30,8 @@ new `fallback_resolvers` option. Note that `fallback_resolver` is
 still supported for backward compatibility).
  - Windows: the service can be installed with a configuration file
 stored separately from the application.
- - Security (affecting DoH): precompiled binaries of dnscrypt-proxy 2.0.37 are
-built using Go 1.13.7 that fixes a TLS certificate parsing issue present in
+ - Security (affecting DoH): precompiled binaries of `dnscrypt-proxy 2.0.37` are
+built using `Go 1.13.7` that fixes a TLS certificate parsing issue present in
 previous versions of the compiler.
 
 #### Updated config files to 2.0.38 | quindecim
