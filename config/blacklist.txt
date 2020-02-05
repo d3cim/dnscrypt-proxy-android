@@ -14,12 +14,12 @@
 ##             NextDNS     : https://github.com/nextdns/cname-cloaking-blocklist/blob/master/domains
 ##
 ##
-## Generated : 2020-01-30
+## Generated : 2020-02-05
 
 
 ########## Blacklist from https://hostfiles.frogeye.fr/firstparty-trackers.txt ##########
 
-# Ignored duplicates: 23149
+# Ignored duplicates: 23171
 
 metrics.abbott
 smetrics.abbott
@@ -14417,6 +14417,7 @@ dc8xl0ndzn2cb.cloudfront.net
 dd6zx4ibq538k.cloudfront.net
 detwzgl8cvciv.cloudfront.net
 djtflbt20bdde.cloudfront.net
+dkhywqapojyk7.cloudfront.net
 dnn506yrbagrg.cloudfront.net
 dp1fzft1fdb84.cloudfront.net
 dtxtngytz5im1.cloudfront.net
