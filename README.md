@@ -25,13 +25,13 @@ Up-to-date, pre-built binaries are available for:
 - ✅ `DNSSEC` required
 - ✅ Enabled `dnscrypt_ephemeral_keys` feature *(create a new, unique key for every single DNS query)*
 - ✅ Enabled `anonymized_dns` feature *(each resolver has 2 relays)*
-- ✅ Enabled `blacklist` file to prevent `CNAME Cloaking` tracking feature
+- ✅ Enabled `blacklist.txt` file to prevent `CNAMEs` trackers and many others via wildcards (see my [block](https://git.nixnet.xyz/quindecim/block) repository)
 - ⛔️ `DoH` disabled
 - ⛔️ `IPv6` disabled
 - ℹ️ Set`refused` response to blocked queries
 - ℹ️ Set DNS query max. response time from `5000` to `1500`, in ms.
 - ℹ️ Use [UncensoredDNS](https://blog.uncensoreddns.org/) as fallback resolver instead CloudFlare
-- ℹ️ Use `dnscrypt.nl-ns0` (NL), `dnscrypt.eu-dk` (DK), `dnscrypt.eu-nl` (NL), `dnscrypt.one` (DE), `dnscrypt.uk-ipv4` (UK), `dnswarden-dc1` (DE), `dnswarden-dc2` (DE), `dnswarden-dc3` (DE), `ffmuc.net` (DE), `ibksturm` (CH), `publicarray-au` (AUS), `publicarray-au2` (AUS), `scaleway-ams` (NL), `scaleway-fr` (FR) and `v.dnscrypt.uk-ipv4` (UK)
+- ℹ️ Use `dnscrypt.nl-ns0` (NL), `dnscrypt.eu-dk` (DK), `dnscrypt.eu-nl` (NL), `dnscrypt.one` (DE), `dnscrypt.uk-ipv4` (UK), `dnswarden-dc1` (DE), `dnswarden-dc2` (DE), `dnswarden-dc3` (DE), `ffmuc.net` (DE), `publicarray-au` (AUS), `publicarray-au2` (AUS), `scaleway-ams` (NL), `scaleway-fr` (FR) and `v.dnscrypt.uk-ipv4` (UK)
 
 
 ## Installation
