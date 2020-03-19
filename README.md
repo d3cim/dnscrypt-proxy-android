@@ -25,7 +25,7 @@ Up-to-date, pre-built binaries are available for:
 - ✅ `DNSSEC` required
 - ✅ Enabled `dnscrypt_ephemeral_keys` feature *(create a new, unique key for every single DNS query)*
 - ✅ Enabled `anonymized_dns` feature *(each resolver has 2 relays)*
-- ✅ Enabled `blacklist.txt` file to prevent `CNAMEs` trackers and many others via wildcards (see my [block](https://git.nixnet.xyz/quindecim/block) repository)
+- ✅ Enabled `blacklist.txt` file to block ads, trackers, `CNAMEs` and prevent many others via substrings and wildcards (see my [block](https://git.nixnet.xyz/quindecim/block) repository)
 - ⛔️ `DoH` disabled
 - ⛔️ `IPv6` disabled
 - ℹ️ Set`refused` response to blocked queries
@@ -35,21 +35,12 @@ Up-to-date, pre-built binaries are available for:
 
 
 ## Installation
-1. Download latest `.zip` file from here or from [dnscrypt-proxy-android | CHANNEL](https://t.me/dnscrypt_proxy) on Telegram and flash it with Magisk Manager App or with your Recovery.
-2. Reboot.
-3. Open AFWall+ and set custom script:
 
-**ENTER SCRIPT:**
-```
-iptables -t nat -A OUTPUT -p tcp ! -d 91.239.100.100 --dport 53 -j DNAT --to-destination 127.0.0.1:53
-iptables -t nat -A OUTPUT -p udp ! -d 91.239.100.100 --dport 53 -j DNAT --to-destination 127.0.0.1:53
-```
-   
-**SHUTDOWN SCRIPT:**
-```
-iptables -t nat -D OUTPUT -p tcp ! -d 91.239.100.100 --dport 53 -j DNAT --to-destination 127.0.0.1:53
-iptables -t nat -D OUTPUT -p udp ! -d 91.239.100.100 --dport 53 -j DNAT --to-destination 127.0.0.1:53
-```
+1. Download latest `.zip` file from [dnscrypt-proxy-android | CHANNEL](https://t.me/dnscrypt_proxy) on Telegram and flash it with Magisk Manager.
+2. Reboot.
+*  There are two variants for each version. The only difference between them is that one use the port `:53` and the other one the port `:5354`.
+The best solution for everyone would be to use the `:5354` port variant because it doesn't break the hotspot feature of the device, but there's someone who has a problem with that port being blind and won't let dnscrypt to get started. In this case I suggest to use the `:53` port variant.
+
 
 ### Configuration (post-installing)
 

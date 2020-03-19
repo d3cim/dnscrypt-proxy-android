@@ -1,14 +1,25 @@
 # Changelog
 
 
+## 2.0.39-1
+
+#### Updated binary files to 2.0.39 | jedisct1
+ - 
+
+#### Updated config files to 2.0.39-1 | quindecim
+* ✅ Implemented automatic redirection. No more third-party apps are required to start it.
+* ✅ Introduced substrings and wildcards into `blacklist.txt` file and updated to `2020-03-19`.
+* ⛔️ Removed `ibksturm` resolver and related relays.
+* ⛔️ Removed `dnswarden-dc1`, `dnswarden-dc2`, `dnswarden-dc3`, resolvers and related relays.
+
+
 ## 2.0.39
 
 #### Updated binary files to 2.0.39 | jedisct1
- - The Firefox Local DoH service didn't properly work in version `2.0.38`;
+ - The Firefox Local DoH service didn't properly work in version 2.0.38; 
 this has been fixed. Thanks to Simon Brand for the report!
 
 #### Updated config files to 2.0.39 | quindecim
-
 * ✅ Added `dnswarden-dc3` (DnsCrypt protocol . Non-logging, supports DNSSEC. By https://dnswarden.com).
 * ✅ Updated `Magisk Module Installer template`. It require `Magisk 19+` from now on.
 * ✅ Fixed an issue where `dnscrypt-proxy` doesn't detect the config file.

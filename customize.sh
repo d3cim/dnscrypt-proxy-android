@@ -1,7 +1,7 @@
   ui_print " "
   ui_print "******************************"
   ui_print "*   dnscrypt-proxy-android   *"
-  ui_print "*           2.0.39           *"
+  ui_print "*          2.0.39-1          *"
   ui_print "******************************"
   ui_print "*         quindecim          *"
   ui_print "******************************"
