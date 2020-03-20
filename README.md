@@ -25,7 +25,6 @@ Up-to-date, pre-built binaries are available for:
 - ✅ `DNSSEC` required
 - ✅ Enabled `dnscrypt_ephemeral_keys` feature *(create a new, unique key for every single DNS query)*
 - ✅ Enabled `anonymized_dns` feature *(each resolver has 2 relays)*
-- ✅ Enabled `blacklist.txt` file to block ads, trackers, `CNAMEs` and prevent many others via substrings and wildcards (see my [block](https://git.nixnet.xyz/quindecim/block) repository)
 - ⛔️ `DoH` disabled
 - ⛔️ `IPv6` disabled
 - ℹ️ Set`refused` response to blocked queries

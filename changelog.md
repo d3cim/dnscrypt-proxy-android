@@ -1,6 +1,15 @@
 # Changelog
 
 
+## 2.0.39-2
+
+#### Updated binary files to 2.0.39 | jedisct1
+ - 
+
+#### Updated config files to 2.0.39-2 | quindecim
+* ⛔️ Removed `blacklist.txt` file *(too many false positives, will be added back in the future, when it reaches a more stable level)*.
+
+
 ## 2.0.39-1
 
 #### Updated binary files to 2.0.39 | jedisct1
