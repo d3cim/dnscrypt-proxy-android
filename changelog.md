@@ -1,6 +1,21 @@
 # Changelog
 
 
+## 2.0.40
+
+#### Updated binary files to 2.0.40 | jedisct1
+ - Servers blocking fragmented queries are now automatically detected.
+ - The server name is now only present in query logs when an actual upstream servers was required to resolve a query.
+ - TLS client authentication has been added for DoH.
+ - The Firefox plugin is now skipped for connections coming from the local DoH server.
+ - DoH RTT computation is now more accurate, especially when CDNs are in the middle.
+ - The forwarding plugin is now more reliable, and handles retries over TCP.
+
+
+#### Updated config files to 2.0.40 | quindecim
+ - 
+
+
 ## 2.0.39-2
 
 #### Updated binary files to 2.0.39 | jedisct1
