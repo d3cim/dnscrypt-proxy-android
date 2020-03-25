@@ -1,6 +1,24 @@
 # Changelog
 
 
+## 2.0.41
+
+#### Updated binary files to 2.0.41 | jedisct1
+ - Precompiled binaries for armv5, armv6 and armv7 are available.
+The default arm builds were not compatible with older CPUs when
+compiled with Go 1.14. mips64 binaries are explicitly compiled with
+softfloat to improve compatibility.
+ - Quad9 seems to be only blocking fragmented queries over UDP for
+some networks. They have been removed from the default list of broken
+resolvers; runtime detection of support for fragments should now do
+the job.
+ - Runtime detection of support for fragments was actually enabled.
+
+
+#### Updated config files to 2.0.41 | quindecim
+ - 
+
+
 ## 2.0.40
 
 #### Updated binary files to 2.0.40 | jedisct1
