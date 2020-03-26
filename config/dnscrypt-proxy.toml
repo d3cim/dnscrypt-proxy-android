@@ -33,6 +33,8 @@ server_names = ['dnscrypt.nl-ns0', 'dnscrypt.eu-dk', 'dnscrypt.eu-nl', 'dnscrypt
 
 
 ## List of local addresses and ports to listen to. Can be IPv4 and/or IPv6.
+## Example with both IPv4 and IPv6:
+## listen_addresses = ['127.0.0.1:53', '[::1]:53']
 
 listen_addresses = ['127.0.0.1:53']
 
@@ -239,8 +241,10 @@ netprobe_address = '91.239.100.100:53'
 ## These strings will be added as TXT records to queries.
 ## Do not use, except on servers explicitly asking for extra data
 ## to be present.
+## encrypted-dns-server can be configured to use this for access control
+## in the [access_control] section
 
-# query_meta = ["key1:value1", "key2:value2", "key3:value3"]
+# query_meta = ["key1:value1", "key2:value2", "token:MySecretToken"]
 
 
 ## Automatic log files rotation
@@ -612,7 +616,6 @@ cache_neg_max_ttl = 600
 
 
 
-
 #########################################
 #        Servers with known bugs        #
 #########################################
@@ -621,12 +624,19 @@ cache_neg_max_ttl = 600
 
 # Cisco servers currently cannot handle queries larger than 1472 bytes, and don't
 # truncate reponses larger than questions as expected by the DNSCrypt protocol.
-# This prevents large responses from being received, and breaks relaying.
+
+# This prevents large responses from being received over UDP, and breaks relaying.
 # A workaround for the first issue will be applied to servers in list below.
-# Quad9 appears to be dropping fragmented UDP queries, but only for some networks.
+# Relaying cannot be reliable until the servers are fixed.
 # Do not change that list until the bugs are fixed server-side.
 
-broken_query_padding = ['cisco', 'cisco-ipv6', 'cisco-familyshield']
+fragments_blocked = ['cisco', 'cisco-ipv6', 'cisco-familyshield', 'quad9-dnscrypt-ip4-filter-alt', 'quad9-dnscrypt-ip4-filter-pri', 'quad9-dnscrypt-ip4-nofilter-alt', 'quad9-dnscrypt-ip4-nofilter-pri', 'quad9-dnscrypt-ip6-filter-alt', 'quad9-dnscrypt-ip6-filter-pri', 'quad9-dnscrypt-ip6-nofilter-alt', 'quad9-dnscrypt-ip6-nofilter-pri']
+
+# Quad9 ignores the query instead of sending a truncated response when the
+# response is larger than the question.
+# Do not change that list until the bugs are fixed server-side.
+
+larger_responses_dropped = ['quad9-dnscrypt-ip4-filter-alt', 'quad9-dnscrypt-ip4-filter-pri', 'quad9-dnscrypt-ip4-nofilter-alt', 'quad9-dnscrypt-ip4-nofilter-pri', 'quad9-dnscrypt-ip6-filter-alt', 'quad9-dnscrypt-ip6-filter-pri', 'quad9-dnscrypt-ip6-nofilter-alt', 'quad9-dnscrypt-ip6-nofilter-pri']
 
 
 
@@ -696,3 +706,4 @@ broken_query_padding = ['cisco', 'cisco-ipv6', 'cisco-familyshield']
 
   # [static.'myserver']
   # stamp = 'sdns:AQcAAAAAAAAAAAAQMi5kbnNjcnlwdC1jZXJ0Lg'
+
