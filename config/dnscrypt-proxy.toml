@@ -698,7 +698,7 @@ fragments_blocked = ['cisco', 'cisco-ipv6', 'cisco-familyshield', 'cisco-familys
 
 # skip resolvers incompatible with anonymization instead of using them directly
 
-skip_incompatible = false
+skip_incompatible = true
 
 
 
