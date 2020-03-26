@@ -624,19 +624,16 @@ cache_neg_max_ttl = 600
 
 # Cisco servers currently cannot handle queries larger than 1472 bytes, and don't
 # truncate reponses larger than questions as expected by the DNSCrypt protocol.
+# This prevents large responses from being received over UDP and over relays.
+#
+# The `dnsdist` server software drops client queries larger than 1500 bytes.
+# They are aware of it and are working on a fix.
+#
+# The list below enables workarounds to make non-relayed usage more reliable
+# until the servers are fixed.
 
-# This prevents large responses from being received over UDP, and breaks relaying.
-# A workaround for the first issue will be applied to servers in list below.
-# Relaying cannot be reliable until the servers are fixed.
-# Do not change that list until the bugs are fixed server-side.
+fragments_blocked = ['cisco', 'cisco-ipv6', 'cisco-familyshield', 'cisco-familyshield-ipv6', 'quad9-dnscrypt-ip4-filter-alt', 'quad9-dnscrypt-ip4-filter-pri', 'quad9-dnscrypt-ip4-nofilter-alt', 'quad9-dnscrypt-ip4-nofilter-pri', 'quad9-dnscrypt-ip6-filter-alt', 'quad9-dnscrypt-ip6-filter-pri', 'quad9-dnscrypt-ip6-nofilter-alt', 'quad9-dnscrypt-ip6-nofilter-pri', 'cleanbrowsing-adult', 'cleanbrowsing-family-ipv6', 'cleanbrowsing-family', 'cleanbrowsing-security']
 
-fragments_blocked = ['cisco', 'cisco-ipv6', 'cisco-familyshield', 'quad9-dnscrypt-ip4-filter-alt', 'quad9-dnscrypt-ip4-filter-pri', 'quad9-dnscrypt-ip4-nofilter-alt', 'quad9-dnscrypt-ip4-nofilter-pri', 'quad9-dnscrypt-ip6-filter-alt', 'quad9-dnscrypt-ip6-filter-pri', 'quad9-dnscrypt-ip6-nofilter-alt', 'quad9-dnscrypt-ip6-nofilter-pri']
-
-# Quad9 ignores the query instead of sending a truncated response when the
-# response is larger than the question.
-# Do not change that list until the bugs are fixed server-side.
-
-larger_responses_dropped = ['quad9-dnscrypt-ip4-filter-alt', 'quad9-dnscrypt-ip4-filter-pri', 'quad9-dnscrypt-ip4-nofilter-alt', 'quad9-dnscrypt-ip4-nofilter-pri', 'quad9-dnscrypt-ip6-filter-alt', 'quad9-dnscrypt-ip6-filter-pri', 'quad9-dnscrypt-ip6-nofilter-alt', 'quad9-dnscrypt-ip6-nofilter-pri']
 
 
 
@@ -697,6 +694,13 @@ larger_responses_dropped = ['quad9-dnscrypt-ip4-filter-alt', 'quad9-dnscrypt-ip4
     { server_name='v.dnscrypt.uk-ipv4', via=['anon-kama', 'anon-scaleway-ams'] }
 #    { server_name='example-server-2', via=['sdns://gRIxMzcuNzQuMjIzLjIzNDo0NDM'] }
  ]
+
+
+# skip resolvers incompatible with anonymization instead of using them directly
+
+skip_incompatible = false
+
+
 
 
 ## Optional, local, static list of additional servers
