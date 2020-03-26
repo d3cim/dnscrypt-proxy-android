@@ -1,6 +1,30 @@
 # Changelog
 
 
+## 2.0.42
+
+#### Updated binary files to 2.0.42 | jedisct1
+ - The current versions of the `dnsdist` load balancer (presumably used
+by quad9, cleanbrowsing, qualityology, freetsa.org, ffmuc.net,
+opennic-bongobow, sth-dnscrypt-se, ams-dnscrypt-nl and more)
+is preventing queries over 1500 bytes from being received over UDP.
+Temporary workarounds have been introduced to improve reliability
+with these resolvers for regular DNSCrypt. Unfortunately, anonymized
+DNS cannot be reliable until the issue is fixed server-side. `dnsdist`
+authors are aware of it and are working on a fix.
+ - New option in the `[anonymized_dns]` section: `skip_incompatible`,
+to ignore resolvers incompatible with Anonymized DNS instead of
+using them without a relay.
+ - The server latency benchmark is faster while being able to perform
+more retries if necessary.
+ - Continuous integration has been moved to GitHub Actions.
+
+
+#### Updated config files to 2.0.42 | quindecim
+* ✅ Enabled `skip_incompatible` option to ignore servers incompatible with anonymization
+
+
+
 ## 2.0.41
 
 #### Updated binary files to 2.0.41 | jedisct1
