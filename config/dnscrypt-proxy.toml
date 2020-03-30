@@ -29,7 +29,7 @@
 ##
 ## Remove the leading # first to enable this; lines starting with # are ignored.
 
-server_names = ['dnscrypt.nl-ns0', 'dnscrypt.eu-dk', 'dnscrypt.eu-nl', 'dnscrypt.one', 'dnscrypt.uk-ipv4', 'ffmuc.net', 'publicarray-au', 'publicarray-au2', 'scaleway-ams', 'scaleway-fr', 'v.dnscrypt.uk-ipv4']
+server_names = ['dnscrypt.eu-dk', 'dnscrypt.eu-nl', 'dnscrypt.one', 'dnscrypt.uk-ipv4', 'edoardo', 'ffmuc.net', 'nixnet-uncensored-luxembourg', 'publicarray-au', 'publicarray-au2', 'scaleway-ams', 'scaleway-fr', 'suami', 'v.dnscrypt.uk-ipv4']
 
 
 ## List of local addresses and ports to listen to. Can be IPv4 and/or IPv6.
@@ -681,17 +681,19 @@ fragments_blocked = ['cisco', 'cisco-ipv6', 'cisco-familyshield', 'cisco-familys
 ## recommended. If you do so, keep "server_names" short and distinct from relays.
 
  routes = [
-    { server_name='dnscrypt.nl-ns0', via=['anon-dnscrypt.one', 'anon-scaleway-ams'] },
-    { server_name='dnscrypt.eu-dk', via=['anon-dnscrypt.one', 'anon-scaleway-ams'] },
-    { server_name='dnscrypt.eu-nl', via=['anon-dnscrypt.one', 'anon-scaleway-ams'] },
-    { server_name='dnscrypt.one', via=['anon-ibksturm', 'anon-scaleway-ams'] },
-    { server_name='dnscrypt.uk-ipv4', via=['anon-kama', 'anon-scaleway-ams'] },
+    { server_name='dnscrypt.eu-dk', via=['anon-edoardo', 'anon-scaleway-ams'] },
+    { server_name='dnscrypt.eu-nl', via=['anon-edoardo', 'anon-scaleway-ams'] },
+    { server_name='dnscrypt.one', via=['anon-edoardo', 'anon-ibksturm'] },
+    { server_name='dnscrypt.uk-ipv4', via=['anon-scaleway', 'anon-suami'] },
+    { server_name='edoardo', via=['anon-scaleway-ams', 'anon-v.dnscrypt.uk-ipv4'] },
     { server_name='ffmuc.net', via=['anon-dnscrypt.one', 'anon-ibksturm'] },
-    { server_name='publicarray-au', via=['anon-scaleway', 'anon-tiarap'] },
-    { server_name='publicarray-au2', via=['anon-scaleway', 'anon-tiarap'] },
-    { server_name='scaleway-ams', via=['anon-dnscrypt.one', 'anon-v.dnscrypt.uk-ipv4'] },
-    { server_name='scaleway-fr', via=['anon-dnscrypt.uk-ipv4', 'anon-ibksturm'] },
-    { server_name='v.dnscrypt.uk-ipv4', via=['anon-kama', 'anon-scaleway-ams'] }
+    { server_name='nixnet-uncensored-luxembourg', via=['anon-scaleway', 'anon-suami'] },
+    { server_name='publicarray-au', via=['anon-ibksturm', 'anon-tiarap'] },
+    { server_name='publicarray-au2', via=['anon-ibksturm', 'anon-tiarap'] },
+    { server_name='scaleway-ams', via=['anon-edoardo', 'anon-v.dnscrypt.uk-ipv4'] },
+    { server_name='scaleway-fr', via=['anon-suami', 'anon-v.dnscrypt.uk-ipv4'] },
+    { server_name='suami', via=['anon-scaleway', 'anon-v.dnscrypt.uk-ipv4'] },
+    { server_name='v.dnscrypt.uk-ipv4', via=['anon-scaleway', 'anon-suami'] }
 #    { server_name='example-server-2', via=['sdns://gRIxMzcuNzQuMjIzLjIzNDo0NDM'] }
  ]
 
@@ -710,4 +712,3 @@ skip_incompatible = true
 
   # [static.'myserver']
   # stamp = 'sdns:AQcAAAAAAAAAAAAQMi5kbnNjcnlwdC1jZXJ0Lg'
-
