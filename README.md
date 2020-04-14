@@ -32,7 +32,7 @@ using them without a relay)*
 - ℹ️ Set`refused` response to blocked queries
 - ℹ️ Set DNS query max. response time from `5000` to `1500`, in ms.
 - ℹ️ Use [UncensoredDNS](https://blog.uncensoreddns.org/) as fallback resolver instead CloudFlare
-- ℹ️ Use `dnscrypt.eu-dk` (DK), `dnscrypt.eu-nl` (NL), `dnscrypt.uk-ipv4` (UK), 'edoardo' (NL), `ffmuc.net` (DE), `publicarray-au` (AUS), `publicarray-au2` (AUS), `scaleway-ams` (NL), `scaleway-fr` (FR), 'suami' (FR) and `v.dnscrypt.uk-ipv4` (UK)
+- ℹ️ Use `dnscrypt.eu-dk` (DK), `dnscrypt.eu-nl` (NL), `dnscrypt.uk-ipv4` (UK), 'edoardo' (NL), `ffmuc.net` (DE), `publicarray-au` (AUS), `scaleway-ams` (NL), `scaleway-fr` (FR), 'suami' (FR) and `v.dnscrypt.uk-ipv4` (UK)
 
 
 ## Installation
