@@ -8,15 +8,5 @@
 ##                           https://git.lelux.fi/quindecim    | MIRROR
 ##
 ##
-## Based on  : quindecim               : https://git.nixnet.xyz/quindecim/block/raw/branch/master/domains-blacklist-local-additions.txt
-##             AdGuard                 : https://github.com/AdguardTeam/AdguardFilters/blob/master/SpywareFilter/sections/tracking_servers_firstparty.txt
-##             dnswarden               : https://github.com/dnswarden/blocklist/blob/master/test/block-3rd-party-cnames.txt
-##             Frogeye                 : https://hostfiles.frogeye.fr/firstparty-trackers-hosts.txt
-##             NextDNS                 : https://github.com/nextdns/cname-cloaking-blocklist/blob/master/domains
-##             Energized: Basic        : https://block.energized.pro/basic/formats/domains.txt
-##             Energized: Regional     : https://block.energized.pro/extensions/regional/formats/domains.txt
-##
-##
-## Generated : 2020-00-00
-
+## This is just a placeholder for who want to use a blacklist file.
 
