@@ -1,0 +1,95 @@
+
+###########################
+#        Whitelist        #
+###########################
+
+## Author    : quindecim   : https://git.nixnet.xyz/quindecim
+##                           https://git.lushka.al/quindecim   | MIRROR
+##                           https://git.lelux.fi/quindecim    | MIRROR
+##
+##
+## Based on  : ngosang     : https://raw.githubusercontent.com/ngosang/trackerslist/master/trackers_all.txt
+##             quindecim   : https://git.nixnet.xyz/quindecim/dnscrypt-proxy-android/raw/branch/master/config/whitelist.txt
+
+########## Torrent trackers ##########
+
+tracker.leechers-paradise.org
+tracker.internetwarriors.net
+tracker.coppersurfer.tk
+tracker.pirateparty.gr
+bt.xxx-tracker.com
+tracker.mg64.net
+tracker.zer0day.to
+ipv4.tracker.harry.lu
+ipv6.tracker.harry.lu
+tracker.port443.xyz
+tracker.moeking.me
+tracker.justseed.it
+tracker.open-internet.nl
+tracker.tfile.co
+tracker.ccc.de
+open.tracker.thepiratebay.org
+tracker.tntvillage.scambioetico.org
+rutracker.org
+rutracker.net
+rutracker.nl
+rutracker.cr
+tracker.openbittorrent.com
+tracker.publicbt.com
+router.bittorrent.com
+tracker.opentrackr.org
+tracker.cyberia.is
+tracker.tiny-vps.com
+tracker.sbsub.com
+retracker.lanta-net.ru
+tracker.torrent.eu.org
+tracker3.itzmx.com
+tracker1.itzmx.com
+tracker.nyap2p.com
+tracker.zerobytes.xyz
+tracker.lelux.fi
+retracker.akado-ural.ru
+opentracker.i2p.rocks
+tracker.kamigami.org
+tracker.ds.is
+tracker.iamhansen.xyz
+tracker.teambelgium.net
+tracker.army
+tracker.bt4g.com
+tracker.uw0.xyz
+tracker-udp.gbitt.info
+retracker.netbynet.ru
+tracker.gbitt.info
+tracker.sloppyta.co
+tracker.nitrix.me
+tracker.nanoha.org
+tracker.parrotlinux.org
+tracker.yoshi210.com
+tracker.swateam.org.uk
+tracker.skyts.net
+tracker.filemail.com
+tracker.dler.org
+retracker.sevstar.net
+tracker.tamersunion.org
+tracker.ygsub.com
+t.nyaatracker.com
+open.acgnxtracker.com
+tracker4.itzmx.com
+tracker2.itzmx.com
+tracker.hama3.net
+tracker.gcvchp.com
+tracker.acgnx.se
+
+
+########## Legit *.biz domains ##########
+
+cyberciti.biz
+lbry.biz
+ibm.biz
+gamesindustry.biz
+safervpn.biz
+anti-blok.biz
+polarsoft.biz
+devtools.biz
+streamplay.biz
+
