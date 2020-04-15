@@ -95,10 +95,22 @@ devtools.biz
 streamplay.biz
 
 
+########## Legit *.app domains ##########
+
+netlify.app
+
+
 ########## Legit (others) domains ##########
 
 s.youtube.com                # youtube history
+edgekey.net                  # alias of legit domains
 kissmanga.com                # read manga online
 nudatasecurity.com           # a mastercard company
+marfeelcdn.com               # alias of legit domains
 gateway.messenger.live.com   # skype incoming calls
 worldometers.info            # real time world statistics
+gstatic.com                  # static content from Google
+api.facebook.com             # minimum requirement for running Facebook
+cdn.facebook.com             # minimum requirement for running Facebook
+connect.facebook.com         # minimum requirement for running Facebook
+star.c10r.facebook.com       # minimum requirement for running Facebook
