@@ -1,6 +1,6 @@
 
 ###########################
-#        Blacklist        #
+#        Whitelist        #
 ###########################
 
 ## Author    : quindecim   : https://git.nixnet.xyz/quindecim
