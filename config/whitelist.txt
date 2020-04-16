@@ -13,85 +13,84 @@
 
 ########## Torrent trackers ##########
 
-tracker.leechers-paradise.org
-tracker.internetwarriors.net
-tracker.coppersurfer.tk
-tracker.pirateparty.gr
 bt.xxx-tracker.com
-tracker.mg64.net
-tracker.zer0day.to
 ipv4.tracker.harry.lu
 ipv6.tracker.harry.lu
-tracker.port443.xyz
-tracker.moeking.me
-tracker.justseed.it
-tracker.open-internet.nl
-tracker.tfile.co
-tracker.ccc.de
+open.acgnxtracker.com
 open.tracker.thepiratebay.org
-tracker.tntvillage.scambioetico.org
-rutracker.org
+opentracker.i2p.rocks
+retracker.akado-ural.ru
+retracker.lanta-net.ru
+retracker.netbynet.ru
+retracker.sevstar.net
+router.bittorrent.com
+rutracker.cr
 rutracker.net
 rutracker.nl
-rutracker.cr
-tracker.openbittorrent.com
-tracker.publicbt.com
-router.bittorrent.com
-tracker.opentrackr.org
-tracker.cyberia.is
-tracker.tiny-vps.com
-tracker.sbsub.com
-retracker.lanta-net.ru
-tracker.torrent.eu.org
-tracker3.itzmx.com
-tracker1.itzmx.com
-tracker.nyap2p.com
-tracker.zerobytes.xyz
-tracker.lelux.fi
-retracker.akado-ural.ru
-opentracker.i2p.rocks
-tracker.kamigami.org
-tracker.ds.is
-tracker.iamhansen.xyz
-tracker.teambelgium.net
+rutracker.org
+t.nyaatracker.com
+tracker-udp.gbitt.info
+tracker.acgnx.se
 tracker.army
 tracker.bt4g.com
-tracker.uw0.xyz
-tracker-udp.gbitt.info
-retracker.netbynet.ru
-tracker.gbitt.info
-tracker.sloppyta.co
-tracker.nitrix.me
-tracker.nanoha.org
-tracker.parrotlinux.org
-tracker.yoshi210.com
-tracker.swateam.org.uk
-tracker.skyts.net
-tracker.filemail.com
+tracker.ccc.de
+tracker.coppersurfer.tk
+tracker.cyberia.is
 tracker.dler.org
-retracker.sevstar.net
-tracker.tamersunion.org
-tracker.ygsub.com
-t.nyaatracker.com
-open.acgnxtracker.com
-tracker4.itzmx.com
-tracker2.itzmx.com
-tracker.hama3.net
+tracker.ds.is
+tracker.filemail.com
+tracker.gbitt.info
 tracker.gcvchp.com
-tracker.acgnx.se
-router.bittorrent.com
+tracker.hama3.net
+tracker.iamhansen.xyz
+tracker.internetwarriors.net
+tracker.justseed.it
+tracker.kamigami.org
+tracker.leechers-paradise.org
+tracker.lelux.fi
+tracker.mg64.net
+tracker.moeking.me
+tracker.nanoha.org
+tracker.nitrix.me
+tracker.nyap2p.com
+tracker.open-internet.nl
+tracker.openbittorrent.com
+tracker.opentrackr.org
+tracker.parrotlinux.org
+tracker.pirateparty.gr
+tracker.port443.xyz
+tracker.publicbt.com
+tracker.sbsub.com
+tracker.skyts.net
+tracker.sloppyta.co
+tracker.swateam.org.uk
+tracker.tamersunion.org
+tracker.teambelgium.net
+tracker.tfile.co
+tracker.tiny-vps.com
+tracker.tntvillage.scambioetico.org
+tracker.torrent.eu.org
+tracker.uw0.xyz
+tracker.ygsub.com
+tracker.yoshi210.com
+tracker.zer0day.to
+tracker.zerobytes.xyz
+tracker1.itzmx.com
+tracker2.itzmx.com
+tracker3.itzmx.com
+tracker4.itzmx.com
 
 
 ########## Legit *.biz domains ##########
 
-cyberciti.biz
-lbry.biz
-ibm.biz
-gamesindustry.biz
-safervpn.biz
 anti-blok.biz
-polarsoft.biz
+cyberciti.biz
 devtools.biz
+gamesindustry.biz
+ibm.biz
+lbry.biz
+polarsoft.biz
+safervpn.biz
 streamplay.biz
 
 
@@ -102,13 +101,9 @@ netlify.app
 
 ########## Legit (others) domains ##########
 
-s.youtube.com                # youtube history
-kissmanga.com                # read manga online
-nudatasecurity.com           # a mastercard company
-gateway.messenger.live.com   # skype incoming calls
-worldometers.info            # real time world statistics
-gstatic.com                  # static content from Google
-api.facebook.com             # minimum requirement for running Facebook
-cdn.facebook.com             # minimum requirement for running Facebook
-connect.facebook.com         # minimum requirement for running Facebook
-star.c10r.facebook.com       # minimum requirement for running Facebook
+gateway.messenger.live.com    # skype incoming calls
+gstatic.com                   # static content from Google
+kissmanga.com                 # read manga online
+nudatasecurity.com            # a mastercard company
+s.youtube.com                 # youtube history
+worldometers.info             # real time world statistics
