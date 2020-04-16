@@ -93,17 +93,3 @@ polarsoft.biz
 safervpn.biz
 streamplay.biz
 
-
-########## Legit *.app domains ##########
-
-netlify.app
-
-
-########## Legit (others) domains ##########
-
-gateway.messenger.live.com    # skype incoming calls
-gstatic.com                   # static content from Google
-kissmanga.com                 # read manga online
-nudatasecurity.com            # a mastercard company
-s.youtube.com                 # youtube history
-worldometers.info             # real time world statistics
