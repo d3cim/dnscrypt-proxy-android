@@ -8,44 +8,50 @@
 ##                           https://git.lelux.fi/quindecim    | MIRROR
 ##
 ##
-## Based on  : ngosang     : https://raw.githubusercontent.com/ngosang/trackerslist/master/trackers_all.txt
+## Based on  : XIU2        : https://raw.githubusercontent.com/XIU2/TrackersListCollection/master/best.txt
 ##             quindecim   : https://git.nixnet.xyz/quindecim/dnscrypt-proxy-android/raw/branch/master/config/whitelist.txt
 
 ########## Torrent trackers ##########
 
+beertracker.ml
 bt.xxx-tracker.com
+cernet-tracker.appspot.com
 ipv4.tracker.harry.lu
 ipv6.tracker.harry.lu
-open.acgnxtracker.com
-open.tracker.thepiratebay.org
+ipv6.tracker.zerobytes.xyz
+opentracker-milanesi.rhcloud.com
 opentracker.i2p.rocks
 retracker.akado-ural.ru
+retracker.bashtel.ru
+retracker.hotplug.ru
+retracker.krs-ix.ru
 retracker.lanta-net.ru
-retracker.netbynet.ru
-retracker.sevstar.net
 router.bittorrent.com
+rstracker.ohys.net
 rutracker.cr
 rutracker.net
 rutracker.nl
 rutracker.org
 t.nyaatracker.com
-tracker-udp.gbitt.info
-tracker.acgnx.se
+thetracker.org
+tracker.0o.is
 tracker.army
+tracker.beeimg.com
+tracker.birkenwald.de
 tracker.bt4g.com
 tracker.ccc.de
 tracker.coppersurfer.tk
 tracker.cyberia.is
-tracker.dler.org
+tracker.doko.moe
 tracker.ds.is
-tracker.filemail.com
-tracker.gbitt.info
-tracker.gcvchp.com
-tracker.hama3.net
+tracker.files.fm
+tracker.fortu.io
 tracker.iamhansen.xyz
 tracker.internetwarriors.net
+tracker.ipv6tracker.ru
 tracker.justseed.it
 tracker.kamigami.org
+tracker.kisssub.org
 tracker.leechers-paradise.org
 tracker.lelux.fi
 tracker.mg64.net
@@ -53,30 +59,28 @@ tracker.moeking.me
 tracker.nanoha.org
 tracker.nitrix.me
 tracker.nyap2p.com
-tracker.open-internet.nl
 tracker.openbittorrent.com
 tracker.opentrackr.org
 tracker.parrotlinux.org
 tracker.pirateparty.gr
 tracker.port443.xyz
+tracker.prq.to
 tracker.publicbt.com
 tracker.sbsub.com
-tracker.skyts.net
 tracker.sloppyta.co
-tracker.swateam.org.uk
 tracker.tamersunion.org
 tracker.teambelgium.net
 tracker.tfile.co
 tracker.tiny-vps.com
 tracker.tntvillage.scambioetico.org
 tracker.torrent.eu.org
-tracker.uw0.xyz
-tracker.ygsub.com
-tracker.yoshi210.com
+tracker.trackerfix.com
 tracker.zer0day.to
 tracker.zerobytes.xyz
 tracker1.itzmx.com
+tracker2.dler.org
 tracker2.itzmx.com
+tracker2.torrentino.com
 tracker3.itzmx.com
 tracker4.itzmx.com
 
