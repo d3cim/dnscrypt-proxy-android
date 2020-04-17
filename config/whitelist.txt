@@ -93,3 +93,7 @@ polarsoft.biz
 safervpn.biz
 streamplay.biz
 
+
+########## Legit (others) domains ##########
+
+mobile.facebook.com    # minimum requirement for using Frost F-Droid (a web wrapper for Facebook)
