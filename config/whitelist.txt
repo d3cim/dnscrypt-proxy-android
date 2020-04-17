@@ -83,17 +83,14 @@ tracker4.itzmx.com
 
 ########## Legit *.biz domains ##########
 
-anti-blok.biz
-cyberciti.biz
-devtools.biz
-gamesindustry.biz
-ibm.biz
-lbry.biz
-polarsoft.biz
-safervpn.biz
-streamplay.biz
+cyberciti.biz        # Linux tips, hacks, tutorials, etc.
+gamesindustry.biz    # resource for people who produce and sell games
+lbry.biz             # open-community digital marketplace
+streamplay.biz       # video hosting
 
 
 ########## Legit (others) domains ##########
 
-mobile.facebook.com    # minimum requirement for using Frost F-Droid (a web wrapper for Facebook)
+edge-chat.facebook.com    # minimum requirement for using Frost F-Droid (a web wrapper for Facebook)
+mobile.facebook.com       # minimum requirement for using Frost F-Droid (a web wrapper for Facebook)
+upload.facebook.com       # minimum requirement for using Frost F-Droid (a web wrapper for Facebook)
