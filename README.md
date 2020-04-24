@@ -25,14 +25,14 @@ Up-to-date, pre-built binaries are available for:
 - ✅ `DNSSEC` required
 - ✅ Enabled `dnscrypt_ephemeral_keys` feature *(create a new, unique key for every single DNS query)*
 - ✅ Enabled `anonymized_dns` feature *(each resolver has 2 relays)*
-- ✅ Enabled `skip_incompatible` option *(ignore resolvers incompatible with Anonymized DNS instead of
-using them without a relay)*
+- ✅ Enabled `skip_incompatible` option *(ignore resolvers incompatible with Anonymized DNS instead of using them without a relay)*
+- ✅ Enabled `blacklist.txt` and `whitelist.txt` file *(as placeholder, use them as you wish)*
 - ⛔️ `DoH` disabled
 - ⛔️ `IPv6` disabled
 - ℹ️ Set`refused` response to blocked queries
 - ℹ️ Set DNS query max. response time from `5000` to `1500`, in ms.
 - ℹ️ Use [UncensoredDNS](https://blog.uncensoreddns.org/) as fallback resolver instead CloudFlare
-- ℹ️ Use `dnscrypt.eu-dk` (DK), `dnscrypt.eu-nl` (NL), `dnscrypt.uk-ipv4` (UK), 'edoardo' (NL), `ffmuc.net` (DE), `publicarray-au` (AUS), `scaleway-ams` (NL), `scaleway-fr` (FR), 'suami' (FR) and `v.dnscrypt.uk-ipv4` (UK)
+- ℹ️ Use `dnscrypt.eu-dk` (DK), `dnscrypt.eu-nl` (NL), `dnscrypt.uk-ipv4` (UK), 'edoardo' (NL), `ffmuc.net` (DE), `meganerd` (NL), `publicarray-au` (AUS), `scaleway-ams` (NL), `scaleway-fr` (FR), 'suami' (FR) and `v.dnscrypt.uk-ipv4` (UK)
 
 
 ## Installation
