@@ -29,7 +29,7 @@
 ##
 ## Remove the leading # first to enable this; lines starting with # are ignored.
 
-server_names = ['dnscrypt.eu-dk', 'dnscrypt.eu-nl', 'dnscrypt.uk-ipv4', 'edoardo', 'ffmuc.net', 'publicarray-au', 'scaleway-ams', 'scaleway-fr', 'suami', 'v.dnscrypt.uk-ipv4']
+server_names = ['dnscrypt.eu-dk', 'dnscrypt.eu-nl', 'dnscrypt.uk-ipv4', 'edoardo', 'ffmuc.net', 'meganerd', 'publicarray-au', 'scaleway-ams', 'scaleway-fr', 'suami', 'v.dnscrypt.uk-ipv4']
 
 
 ## List of local addresses and ports to listen to. Can be IPv4 and/or IPv6.
@@ -686,6 +686,7 @@ fragments_blocked = ['cisco', 'cisco-ipv6', 'cisco-familyshield', 'cisco-familys
     { server_name='dnscrypt.uk-ipv4', via=['anon-scaleway', 'anon-suami'] },
     { server_name='edoardo', via=['anon-scaleway-ams', 'anon-v.dnscrypt.uk-ipv4'] },
     { server_name='ffmuc.net', via=['anon-ibksturm', 'anon-scaleway-ams'] },
+    { server_name='meganerd', via=['anon-edoardo', 'anon-scaleway-ams'] },
     { server_name='publicarray-au', via=['anon-ibksturm', 'anon-tiarap'] },
     { server_name='scaleway-ams', via=['anon-edoardo', 'anon-v.dnscrypt.uk-ipv4'] },
     { server_name='scaleway-fr', via=['anon-suami', 'anon-v.dnscrypt.uk-ipv4'] },
@@ -709,4 +710,3 @@ skip_incompatible = true
 
   # [static.'myserver']
   # stamp = 'sdns:AQcAAAAAAAAAAAAQMi5kbnNjcnlwdC1jZXJ0Lg'
-
