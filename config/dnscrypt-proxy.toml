@@ -684,11 +684,11 @@ fragments_blocked = ['cisco', 'cisco-ipv6', 'cisco-familyshield', 'cisco-familys
     { server_name='dnscrypt.eu-dk', via=['anon-edoardo', 'anon-scaleway-ams'] },
     { server_name='dnscrypt.eu-nl', via=['anon-edoardo', 'anon-scaleway-ams'] },
     { server_name='dnscrypt.uk-ipv4', via=['anon-scaleway', 'anon-suami'] },
-    { server_name='edoardo', via=['anon-scaleway-ams', 'anon-v.dnscrypt.uk-ipv4'] },
+    { server_name='edoardo', via=['anon-meganerd', 'anon-scaleway-ams'] },
     { server_name='ffmuc.net', via=['anon-ibksturm', 'anon-scaleway-ams'] },
     { server_name='meganerd', via=['anon-edoardo', 'anon-scaleway-ams'] },
     { server_name='publicarray-au', via=['anon-ibksturm', 'anon-tiarap'] },
-    { server_name='scaleway-ams', via=['anon-edoardo', 'anon-v.dnscrypt.uk-ipv4'] },
+    { server_name='scaleway-ams', via=['anon-edoardo', 'anon-meganerd'] },
     { server_name='scaleway-fr', via=['anon-suami', 'anon-v.dnscrypt.uk-ipv4'] },
     { server_name='suami', via=['anon-scaleway', 'anon-v.dnscrypt.uk-ipv4'] },
     { server_name='v.dnscrypt.uk-ipv4', via=['anon-scaleway', 'anon-suami'] }
@@ -710,3 +710,4 @@ skip_incompatible = true
 
   # [static.'myserver']
   # stamp = 'sdns:AQcAAAAAAAAAAAAQMi5kbnNjcnlwdC1jZXJ0Lg'
+
