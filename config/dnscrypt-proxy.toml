@@ -29,7 +29,7 @@
 ##
 ## Remove the leading # first to enable this; lines starting with # are ignored.
 
-server_names = ['dnscrypt.eu-dk', 'dnscrypt.eu-nl', 'dnscrypt.uk-ipv4', 'edoardo', 'ffmuc.net', 'meganerd', 'publicarray-au', 'scaleway-ams', 'scaleway-fr', 'suami', 'v.dnscrypt.uk-ipv4']
+server_names = ['dnscrypt.eu-dk', 'dnscrypt.eu-nl', 'dnscrypt.uk-ipv4', 'meganerd', 'publicarray-au', 'scaleway-ams', 'scaleway-fr', 'v.dnscrypt.uk-ipv4']
 
 
 ## List of local addresses and ports to listen to. Can be IPv4 and/or IPv6.
@@ -682,17 +682,14 @@ fragments_blocked = ['cisco', 'cisco-ipv6', 'cisco-familyshield', 'cisco-familys
 ## recommended. If you do so, keep "server_names" short and distinct from relays.
 
  routes = [
-    { server_name='dnscrypt.eu-dk', via=['anon-edoardo', 'anon-scaleway-ams'] },
-    { server_name='dnscrypt.eu-nl', via=['anon-edoardo', 'anon-scaleway-ams'] },
-    { server_name='dnscrypt.uk-ipv4', via=['anon-scaleway', 'anon-suami'] },
-    { server_name='edoardo', via=['anon-meganerd', 'anon-scaleway-ams'] },
-    { server_name='ffmuc.net', via=['anon-ibksturm', 'anon-scaleway-ams'] },
-    { server_name='meganerd', via=['anon-edoardo', 'anon-scaleway-ams'] },
+    { server_name='dnscrypt.eu-dk', via=['anon-meganerd', 'anon-scaleway-ams'] },
+    { server_name='dnscrypt.eu-nl', via=['anon-meganerd', 'anon-scaleway-ams'] },
+    { server_name='dnscrypt.uk-ipv4', via=['anon-kama', 'anon-scaleway'] },
+    { server_name='meganerd', via=['anon-scaleway-ams', 'anon-anon-v.dnscrypt.uk-ipv4'] },
     { server_name='publicarray-au', via=['anon-ibksturm', 'anon-tiarap'] },
-    { server_name='scaleway-ams', via=['anon-edoardo', 'anon-meganerd'] },
-    { server_name='scaleway-fr', via=['anon-suami', 'anon-v.dnscrypt.uk-ipv4'] },
-    { server_name='suami', via=['anon-scaleway', 'anon-v.dnscrypt.uk-ipv4'] },
-    { server_name='v.dnscrypt.uk-ipv4', via=['anon-scaleway', 'anon-suami'] }
+    { server_name='scaleway-ams', via=['anon-meganerd', 'anon-v.dnscrypt.uk-ipv4'] },
+    { server_name='scaleway-fr', via=['anon-dnscrypt.uk-ipv4', 'anon-v.dnscrypt.uk-ipv4'] },
+    { server_name='v.dnscrypt.uk-ipv4', via=['anon-meganerd', 'anon-scaleway'] }
 #    { server_name='example-server-2', via=['sdns://gRIxMzcuNzQuMjIzLjIzNDo0NDM'] }
  ]
 
@@ -711,4 +708,3 @@ skip_incompatible = true
 
   # [static.'myserver']
   # stamp = 'sdns:AQcAAAAAAAAAAAAQMi5kbnNjcnlwdC1jZXJ0Lg'
-
