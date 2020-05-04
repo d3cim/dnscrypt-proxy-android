@@ -685,7 +685,7 @@ fragments_blocked = ['cisco', 'cisco-ipv6', 'cisco-familyshield', 'cisco-familys
     { server_name='dnscrypt.eu-dk', via=['anon-meganerd', 'anon-scaleway-ams'] },
     { server_name='dnscrypt.eu-nl', via=['anon-meganerd', 'anon-scaleway-ams'] },
     { server_name='dnscrypt.uk-ipv4', via=['anon-kama', 'anon-scaleway'] },
-    { server_name='meganerd', via=['anon-scaleway-ams', 'anon-anon-v.dnscrypt.uk-ipv4'] },
+    { server_name='meganerd', via=['anon-scaleway-ams', 'anon-v.dnscrypt.uk-ipv4'] },
     { server_name='publicarray-au', via=['anon-ibksturm', 'anon-tiarap'] },
     { server_name='scaleway-ams', via=['anon-meganerd', 'anon-v.dnscrypt.uk-ipv4'] },
     { server_name='scaleway-fr', via=['anon-dnscrypt.uk-ipv4', 'anon-v.dnscrypt.uk-ipv4'] },
@@ -708,3 +708,4 @@ skip_incompatible = true
 
   # [static.'myserver']
   # stamp = 'sdns:AQcAAAAAAAAAAAAQMi5kbnNjcnlwdC1jZXJ0Lg'
+
