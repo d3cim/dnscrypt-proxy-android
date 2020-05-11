@@ -32,15 +32,14 @@ Up-to-date, pre-built binaries are available for:
 - ℹ️ Set`refused` response to blocked queries
 - ℹ️ Set DNS query max. response time from `5000` to `1500`, in ms.
 - ℹ️ Use [UncensoredDNS](https://blog.uncensoreddns.org/) as fallback resolver instead CloudFlare
-- ℹ️ Use `dnscrypt.eu-dk` (DK), `dnscrypt.eu-nl` (NL), `dnscrypt.uk-ipv4` (UK), 'edoardo' (NL), `ffmuc.net` (DE), `meganerd` (NL), `publicarray-au` (AUS), `scaleway-ams` (NL), `scaleway-fr` (FR), 'suami' (FR) and `v.dnscrypt.uk-ipv4` (UK)
+- ℹ️ Use `dnscrypt.eu-dk` (DK), `dnscrypt.eu-nl` (NL), `dnscrypt.uk-ipv4` (UK), `meganerd` (NL), `publicarray-au` (AUS), `scaleway-ams` (NL), `scaleway-fr` (FR) and `v.dnscrypt.uk-ipv4` (UK)
 
 
 ## Installation
 
 1. Download latest `.zip` file from [dnscrypt-proxy-android | CHANNEL](https://t.me/dnscrypt_proxy) on Telegram and flash it with Magisk Manager.
 2. Reboot.
-*  There are two variants for each version. The only difference between them is that one use the port `:53` and the other one the port `:5354`.
-The best solution for everyone would be to use the `:5354` port variant because it doesn't break the hotspot feature of the device, but there's someone who has a problem with that port being blind and won't let dnscrypt to get started. In this case I suggest to use the `:53` port variant.
+3. Test your DNS: https://dnsleaktest.com/
 
 
 ### Configuration (post-installing)
@@ -48,6 +47,16 @@ The best solution for everyone would be to use the `:5354` port variant because 
 - You can edit `dnscrypt-proxy.toml` as you wish located on `/sdcard/dnscrypt-proxy/dnscrypt-proxy.toml` [or /data/media/0/dnscrypt-proxy/dnscrypt-proxy.toml].
 - For more detailed configuration please refer to [official documentation](https://github.com/jedisct1/dnscrypt-proxy/wiki/Configuration).
 - For more support on a good privacy oriented setup, join with us at [dnscrypt-proxy-android | CHAT](https://t.me/qd_invitation) on Telegram.
+
+
+#### AFWall+ users only
+
+If you experience no connection issue after flashing the module I suggest you to insert these scripts: (in both, enter and shutdown boxes)
+
+```
+iptables -A "afwall" -d 127.0.0.1 -p tcp --dport 5354 -j ACCEPT
+iptables -A "afwall" -d 127.0.0.1 -p udp --dport 5354 -j ACCEPT
+```
 
 
 ## Changelog
