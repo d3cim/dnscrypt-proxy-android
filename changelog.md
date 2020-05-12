@@ -1,6 +1,24 @@
 # Changelog
 
 
+## 2.0.42-1
+
+#### Updated binary files to 2.0.42 | jedisct1
+ - 
+
+
+#### Updated config files to 2.0.42-1 | quindecim
+* ✅ Added `meganerd` resolver (Non-logging, non-filtering, supports DNSSEC by MegaNerd.nl).
+* ✅ Enabled `whitelist.txt` file (as placeholder, once the blacklist goes public).
+* ✅ Optimized relays based on geolocation.
+* ⛔️ Disabled `IPv6` in `post-fs-data.sh` file (to enforce leaks prevention in some cases).
+* ⛔️ Removed `dnscrypt.nl-ns0` resolver and related relays.
+* ⛔️ Removed `dnscrypt.one` resolver and related relays.
+* ⛔️ Removed `ffmuc.net` resolver and related relays.
+* ⛔️ Removed `publicarray-au2` resolver and related relays.
+* ℹ️ Moved all the example documents into `dnscrypt-proxy/example-docs` folder (the remaining example documents must be deleted manually).
+
+
 ## 2.0.42
 
 #### Updated binary files to 2.0.42 | jedisct1
