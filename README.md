@@ -58,6 +58,8 @@ iptables -A "afwall" -d 127.0.0.1 -p tcp --dport 5354 -j ACCEPT
 iptables -A "afwall" -d 127.0.0.1 -p udp --dport 5354 -j ACCEPT
 ```
 
+The issue is related to the use of `AFWall+` and only happens on some devices, it depends on how the DNS configuration is implemented in the device itself.
+
 
 ## Changelog
 
