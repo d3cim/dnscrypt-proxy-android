@@ -1,6 +1,16 @@
 # Changelog
 
 
+## 2.0.42-2
+
+#### Updated binary files to 2.0.42 | jedisct1
+- 
+
+
+#### Updated config files to 2.0.42-2 | quindecim
+- ⛔️ Disabled every `IPv6` queries in `post-fs-data.sh` file: `INPUT`, `FORWARD` and `OUTPUT` (to enforce leaks prevention in some cases).
+
+
 ## 2.0.42-1
 
 #### Updated binary files to 2.0.42 | jedisct1
@@ -388,3 +398,4 @@ but it includes a `SERVFAIL` error code).
 
 - Initial release
 - dnscrypt-proxy v2.0.5
+
