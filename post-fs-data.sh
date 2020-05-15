@@ -10,7 +10,6 @@ MODDIR=${0%/*}
 
 iptables -t nat -A OUTPUT -p tcp ! -d 91.239.100.100 --dport 53 -j DNAT --to-destination 127.0.0.1:5354
 iptables -t nat -A OUTPUT -p udp ! -d 91.239.100.100 --dport 53 -j DNAT --to-destination 127.0.0.1:5354
-ip6tables -P INPUT DROP
-ip6tables -P FORWARD DROP
-ip6tables -P OUTPUT DROP
+ip6tables -A OUTPUT -p tcp -j DROP
+ip6tables -A OUTPUT -p udp -j DROP
 
