@@ -1,6 +1,16 @@
 # Changelog
 
 
+## 2.0.42-3
+
+#### Updated binary files to 2.0.42 | jedisct1
+- 
+
+
+#### Updated config files to 2.0.42-3 | quindecim
+- ⛔️ Disabled properly `IPv6` queries in `post-fs-data.sh` file (no more DNS leaks this time)
+
+
 ## 2.0.42-2
 
 #### Updated binary files to 2.0.42 | jedisct1
