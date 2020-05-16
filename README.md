@@ -5,7 +5,7 @@ A flexible DNS proxy, with support for modern encrypted DNS protocols such as [D
 
 ## Features
 - For all features please refer to the [OFFICIAL PAGE](https://github.com/DNSCrypt/dnscrypt-proxy#features)
-- All binary files are downloaded from the [OFFICIAL RELEASE PAGE](https://github.com/jedisct1/dnscrypt-proxy/releases)
+- All binary files are downloaded from the [OFFICIAL RELEASE PAGE](https://github.com/DNSCrypt/dnscrypt-proxy/releases)
 
 
 ## Pre-built binaries
@@ -45,7 +45,7 @@ Up-to-date, pre-built binaries are available for:
 ### Configuration (post-installing)
 
 - You can edit `dnscrypt-proxy.toml` as you wish located on `/sdcard/dnscrypt-proxy/dnscrypt-proxy.toml` [or /data/media/0/dnscrypt-proxy/dnscrypt-proxy.toml].
-- For more detailed configuration please refer to [official documentation](https://github.com/jedisct1/dnscrypt-proxy/wiki/Configuration).
+- For more detailed configuration please refer to [official documentation](https://github.com/DNSCrypt/dnscrypt-proxy/wiki/Configuration).
 - For more support on a good privacy oriented setup, join with us at [dnscrypt-proxy-android | CHAT](https://t.me/qd_invitation) on Telegram.
 
 
@@ -67,6 +67,6 @@ The issue is related to the use of `AFWall+` and only happens on some devices, i
 
 
 ## Credit
-- DNSCrypt-Proxy2 upstream | [jedisct1](https://github.com/jedisct1/dnscrypt-proxy)
+- DNSCrypt-Proxy2 upstream | [jedisct1](https://github.com/DNSCrypt/dnscrypt-proxy)
 - [bluemeda](https://github.com/bluemeda) for the original module
 - [All contributors](https://github.com/Magisk-Modules-Repo/dnscrypt-proxy/graphs/contributors)
