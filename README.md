@@ -31,7 +31,7 @@ Up-to-date, pre-built binaries are available for:
 - ⛔️ `IPv6` disabled
 - ℹ️ Set`refused` response to blocked queries
 - ℹ️ Set DNS query max. response time from `5000` to `1500`, in ms.
-- ℹ️ Use [UncensoredDNS](https://blog.uncensoreddns.org/) as fallback resolver instead CloudFlare
+- ℹ️ Use [UncensoredDNS](https://blog.uncensoreddns.org/), [Applied Privacy](https://appliedprivacy.net/de/services/dns/) and [NixNet](https://nixnet.xyz/dns/) as fallback resolvers instead [CloudFlare](https://iscloudflaresafeyet.com/)
 - ℹ️ Use `dnscrypt.eu-dk` (DK), `dnscrypt.eu-nl` (NL), `dnscrypt.uk-ipv4` (UK), `meganerd` (NL), `publicarray-au` (AUS), `scaleway-ams` (NL), `scaleway-fr` (FR) and `v.dnscrypt.uk-ipv4` (UK)
 
 
