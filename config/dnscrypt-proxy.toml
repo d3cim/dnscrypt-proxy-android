@@ -201,7 +201,7 @@ dnscrypt_ephemeral_keys = true
 ##
 ## If more than one resolver is specified, they will be tried in sequence.
 
-fallback_resolvers = ['91.239.100.100:53']
+fallback_resolvers = ['91.239.100.100:53', '93.177.65.183:853', '198.251.90.114:53']
 
 
 ## Always use the fallback resolver before the system DNS settings.
