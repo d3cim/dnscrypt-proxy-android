@@ -4,10 +4,26 @@
 ## 2.0.43
 
 ##### Updated binary files to 2.0.43 | jedisct1
-- 
+- Built-in support for DNS64 translation has been implemented. (Contributed by Sergey Smirnov, thanks!)
+- Connections to DoH servers can be authenticated using TLS client certificates (Contributed by Kevin O'Sullivan, thanks!)
+- Multiple stamps are now allowed for a single server in resolvers and relays lists.
+- Android: the time zone for log files is now set to the system time zone.
+- Quite a lot of updates and additions have been made to the example domain block lists. Thanks to `IceCodeNew`!
+- Cached configuration files can now be temporarily used if they are out of date, but bootstraping is impossible. Contributed by
+`lifenjoiner`, thanks!
+- Precompiled macOS binaries are now notarized.
+- `generate-domains-blacklists` now tries to deduplicate entries clobbered by wildcard rules. Thanks to `Huhni`!
+- `generate-domains-blacklists` can now directly write lists to a file with the `-o` command-line option.
+- cache files are now downloaded as the user the daemon will be running as. This fixes permission issues at startup time.
+- Forwarded queries are now subject to global timeouts, and can be
+forced to use TCP.
+- The `ct` parameter has been removed from DoH queries, as Google doesn't require it any more.
+- Service installation is now supported on FreeBSD.
+- When stored into a file, service logs now only contain data from the most recent launch. This can be changed with the new `log_file_latest` option.
 
 ##### Updated config files to 2.0.43 | quindecim
-- 
+- ✅ Added `Applied Privacy DNS` and `NixNet DNS` as additional fallback resolvers.
+- ℹ️ Required `Magisk 20+` from now on.
 
 
 ## 2.0.42-3
@@ -409,3 +425,4 @@ but it includes a `SERVFAIL` error code).
 da
 - Initial release
 - dnscrypt-proxy v2.0.5
+
