@@ -1,6 +1,18 @@
 # Changelog
 
 
+## 2.0.44
+
+##### Updated binary files to 2.0.44 | jedisct1
+- More updates to the set of block lists, thanks again to IceCodeNew.
+- Netprobes and listening sockets are now ignored when the `-list`, `-list-all`, `-show-certs` or `-check` command-line switches are used.
+- `tls_client_auth` was renamed to `doh_client_x509_auth`. A section with the previous name is temporarily ignored if empty, but will error out if not.
+- Unit tests are now working on 32-bit systems. Thanks to Will Elwood and @lifenjoiner.
+
+##### Updated config files to 2.0.44 | quindecim
+- 
+
+
 ## 2.0.43
 
 ##### Updated binary files to 2.0.43 | jedisct1
@@ -30,6 +42,7 @@ forced to use TCP.
 
 ##### Updated binary files to 2.0.42 | jedisct1
 - 
+
 ##### Updated config files to 2.0.42-3 | quindecim
 - ⛔️ Disabled properly `IPv6` queries in `post-fs-data.sh` file (no more DNS leaks this time)
 
@@ -38,6 +51,7 @@ forced to use TCP.
 
 ##### Updated binary files to 2.0.42 | jedisct1
 - 
+
 ##### Updated config files to 2.0.42-2 | quindecim
 - ⛔️ Disabled every `IPv6` queries in `post-fs-data.sh` file: `INPUT`, `FORWARD` and `OUTPUT` (to enforce leaks prevention in some cases).
 
