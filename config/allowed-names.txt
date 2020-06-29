@@ -1,6 +1,6 @@
 
 ###########################
-#        Whitelist        #
+#        Allowlist        #
 ###########################
 
 ## Author    : quindecim   : https://git.nixnet.xyz/quindecim
@@ -8,5 +8,5 @@
 ##                           https://git.lelux.fi/quindecim    | MIRROR
 ##
 ##
-## This is just a placeholder for who want to use a whitelist file.
+## This is just a placeholder for who want to use a allowlist file.
 
