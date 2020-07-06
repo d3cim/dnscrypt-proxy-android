@@ -29,7 +29,7 @@
 ##
 ## Remove the leading # first to enable this; lines starting with # are ignored.
 
-server_names = ['acsacsar-ams-ipv4', 'dnscrypt.eu-dk', 'dnscrypt.eu-nl', 'dnscrypt.uk-ipv4', 'meganerd', 'publicarray-au', 'scaleway-ams', 'scaleway-fr', 'v.dnscrypt.uk-ipv4']
+server_names = ['acsacsar-ams-ipv4', 'dnscrypt.eu-dk', 'dnscrypt.eu-nl', 'dnscrypt.uk-ipv4', 'meganerd', 'publicarray-au', 'scaleway-ams', 'scaleway-fr', 'v.dnscrypt.uk-ipv4', 'yofiji-se-ipv4']
 
 
 ## List of local addresses and ports to listen to. Can be IPv4 and/or IPv6.
@@ -694,14 +694,15 @@ fragments_blocked = ['cisco', 'cisco-ipv6', 'cisco-familyshield', 'cisco-familys
 
  routes = [
     { server_name='acsacsar-ams-ipv4', via=['anon-meganerd', 'anon-scaleway-ams'] },
-    { server_name='dnscrypt.eu-dk', via=['anon-acsacsar-ams-ipv4', 'anon-scaleway-ams'] },
+    { server_name='dnscrypt.eu-dk', via=['anon-scaleway-ams', 'anon-yofiji-se-ipv4'] },
     { server_name='dnscrypt.eu-nl', via=['anon-meganerd', 'anon-scaleway-ams'] },
     { server_name='dnscrypt.uk-ipv4', via=['anon-kama', 'anon-scaleway'] },
     { server_name='meganerd', via=['anon-acsacsar-ams-ipv4', 'anon-scaleway-ams'] },
     { server_name='publicarray-au', via=['anon-ibksturm', 'anon-tiarap'] },
     { server_name='scaleway-ams', via=['anon-acsacsar-ams-ipv4', 'anon-scaleway-ams'] },
     { server_name='scaleway-fr', via=['anon-dnscrypt.uk-ipv4', 'anon-v.dnscrypt.uk-ipv4'] },
-    { server_name='v.dnscrypt.uk-ipv4', via=['anon-meganerd', 'anon-scaleway'] }
+    { server_name='v.dnscrypt.uk-ipv4', via=['anon-meganerd', 'anon-scaleway'] },
+    { server_name='yofiji-se-ipv4', via=['anon-meganerd', 'anon-scaleway-ams'] }
 #    { server_name='example-server-2', via=['sdns://gRIxMzcuNzQuMjIzLjIzNDo0NDM'] }
  ]
 
