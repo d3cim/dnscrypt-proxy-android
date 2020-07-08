@@ -26,7 +26,7 @@ Up-to-date, pre-built binaries are available for:
 - ✅ Enabled `dnscrypt_ephemeral_keys` feature *(create a new, unique key for every single DNS query)*
 - ✅ Enabled `anonymized_dns` feature *(each resolver has 2 relays)*
 - ✅ Enabled `skip_incompatible` option *(ignore resolvers incompatible with Anonymized DNS instead of using them without a relay)*
-- ✅ Enabled `blacklist.txt` and `whitelist.txt` file *(as placeholder, use them as you wish)*
+- ✅ Enabled `blocked-names.txt` and `allowed-names.txt` files *(as placeholder, use them as you wish for filter your content)*
 - ⛔️ Disabled `DoH`
 - ⛔️ Disabled `IPv6`
 - ⛔️ Disabled `direct_cert_fallback` option *(prevent direct connections through the resolvers for failed certificate retrieved via relay*
