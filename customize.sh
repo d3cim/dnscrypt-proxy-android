@@ -53,5 +53,5 @@ CONFIG_FILE="/data/media/0/dnscrypt-proxy/dnscrypt-proxy.toml"
   fi
 
 
-  set_perm_recursive $MODPATH 0 0 0755 0755
-  set_perm $MODPATH/system/bin/dnscrypt-proxy 0 0 0755
+set_perm_recursive $MODPATH 0 0 0755 0755
+set_perm $MODPATH/system/bin/dnscrypt-proxy 0 0 0755
