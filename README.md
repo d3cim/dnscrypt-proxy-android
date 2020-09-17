@@ -64,7 +64,7 @@ The issue is related to the use of `AFWall+` and only happens on some devices, i
 
 ## Changelog
 
-[Full changelog](changelog.md)
+[Full changelog](https://git.nixnet.xyz/quindecim/dnscrypt-proxy-android/src/branch/master/CHANGELOG.md)
 
 
 ## Credit
