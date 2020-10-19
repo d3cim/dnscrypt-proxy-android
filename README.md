@@ -26,7 +26,7 @@ Up-to-date, pre-built binaries are available for:
 - ✅ Enabled `dnscrypt_ephemeral_keys` feature *(create a new, unique key for every single DNS query)*
 - ✅ Enabled `anonymized_dns` feature *(each resolver has 2 relays)*
 - ✅ Enabled `skip_incompatible` option *(ignore resolvers incompatible with Anonymized DNS instead of using them without a relay)*
-- ✅ Enabled `blocked-names.txt` and `allowed-names.txt` files *(as placeholder, use them as you wish for filter your content)*
+- ✅ Enabled `allowed-names.txt`, `blocked-ips.txt` and `blocked-names.txt` files *(as placeholder, use them as you wish for filter your content)*
 - ⛔️ Disabled `DoH`
 - ⛔️ Disabled `IPv6`
 - ⛔️ Disabled `direct_cert_fallback` option *(prevent direct connections through the resolvers for failed certificate retrieved via relay)*
@@ -67,7 +67,7 @@ The issue is related to the use of `AFWall+` and only happens on some devices, i
 [Full changelog](https://git.nixnet.xyz/quindecim/dnscrypt-proxy-android/src/branch/master/CHANGELOG.md)
 
 
-## Credit
+## Credits
 - DNSCrypt-Proxy2 upstream | [jedisct1](https://github.com/DNSCrypt/dnscrypt-proxy)
 - [bluemeda](https://github.com/bluemeda) for the original module
 - [All contributors](https://github.com/Magisk-Modules-Repo/dnscrypt-proxy/graphs/contributors)
