@@ -559,7 +559,7 @@ cache_neg_max_ttl = 600
 
   ## Path to the file of allowed ip rules (absolute, or relative to the same directory as the config file)
 
-  # allowed_ips_file = 'allowed-ips.txt'
+  allowed_ips_file = 'allowed-ips.txt'
 
 
   ## Optional path to a file logging allowed queries
