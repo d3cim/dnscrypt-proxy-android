@@ -22,4 +22,3 @@
 
 ## Forward queries for example.com and *.example.com to 9.9.9.9 and 8.8.8.8
 # example.com     9.9.9.9,8.8.8.8
-
