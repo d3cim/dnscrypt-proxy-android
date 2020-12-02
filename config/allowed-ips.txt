@@ -3,9 +3,9 @@
 #        IP allowlist        #
 ##############################
 
-## Author    : quindecim   : https://git.nixnet.xyz/quindecim
-##                           https://git.lushka.al/quindecim    | MIRROR
-##                           https://git.lelux.fi/quindecim     | MIRROR
+## Author      : quindecim   : https://git.nixnet.services/quindecim   | MAINSTREAM
+##                             https://git.lushka.al/quindecim         | MIRROR
+##                             https://git.lelux.fi/quindecim          | MIRROR
 ##
 ##
 ## This is just a placeholder for who want to use a whitelist file.
