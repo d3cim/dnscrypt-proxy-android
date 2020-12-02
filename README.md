@@ -29,7 +29,7 @@ Up-to-date, pre-built binaries are available for:
 - ⛔️ Disabled `IPv6`
 - ⛔️ Disabled `direct_cert_fallback` option *(prevent direct connections through the resolvers for failed certificate retrieved via relay)*
 - ℹ️ Set`refused` response to blocked queries
-- ℹ️ Set DNS query max. response time from `5000` to `1500`, in ms.
+- ℹ️ Set DNS query max. response time from `5000` to `1500` ms.
 - ℹ️ Use [UncensoredDNS](https://blog.uncensoreddns.org/) as fallback resolver instead [CloudFlare](https://iscloudflaresafeyet.com/)
 - ℹ️ Use `acsacsar-ams-ipv4` (NL), `dnscrypt.be` (BE), `dnscrypt.eu-dk` (DK), `dnscrypt.eu-nl` (NL), `dnscrypt.pl` (PL), `dnscrypt.uk-ipv4` (UK), `meganerd` (NL), `publicarray-au` (AUS), `scaleway-ams` (NL), `scaleway-fr` (FR) and `v.dnscrypt.uk-ipv4` (UK) resolvers.
 
@@ -43,7 +43,7 @@ Up-to-date, pre-built binaries are available for:
 
 ### Configuration (post-installing)
 
-- You can edit `dnscrypt-proxy.toml` as you wish located on `/sdcard/dnscrypt-proxy/dnscrypt-proxy.toml` [or /data/media/0/dnscrypt-proxy/dnscrypt-proxy.toml].
+- You can edit `dnscrypt-proxy.toml` as you wish located on `/sdcard/dnscrypt-proxy/dnscrypt-proxy.toml`, or `/data/media/0/dnscrypt-proxy/dnscrypt-proxy.toml`.
 - For more detailed configuration please refer to [official documentation](https://github.com/DNSCrypt/dnscrypt-proxy/wiki/Configuration).
 - For more support on a good privacy oriented setup, join with us at [dnscrypt-proxy-android | CHAT](https://t.me/qd_invitations) on Telegram.
 
