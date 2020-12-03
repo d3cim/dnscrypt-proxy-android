@@ -29,7 +29,7 @@
 ##
 ## Remove the leading # first to enable this; lines starting with # are ignored.
 
-server_names = ['acsacsar-ams-ipv4', 'dnscrypt.be', 'dnscrypt.eu-dk', 'dnscrypt.eu-nl', 'dnscrypt.pl', 'dnscrypt.uk-ipv4', 'meganerd', 'publicarray-au', 'scaleway-ams', 'scaleway-fr', 'v.dnscrypt.uk-ipv4']
+server_names = ['acsacsar-ams-ipv4', 'arvind-io', 'bcn-dnscrypt', 'd0wn-tz-ns1', 'dnscrypt.be', 'dnscrypt.ca-1', 'dnscrypt.ca-2', 'dnscrypt.eu-dk', 'dnscrypt.eu-nl', 'dnscrypt.one', 'dnscrypt.pl', 'dnscrypt.uk-ipv4', 'ev-to', 'ev-va', 'faelix-ch-ipv4', 'faelix-uk-ipv4', 'ffmuc.net', 'jp.tiar.app', 'meganerd', 'plan9-dns', 'publicarray-au', 'scaleway-ams', 'scaleway-fr', 'v.dnscrypt.uk-ipv4']
 
 
 ## List of local addresses and ports to listen to. Can be IPv4 and/or IPv6.
@@ -733,11 +733,23 @@ fragments_blocked = ['cisco', 'cisco-ipv6', 'cisco-familyshield', 'cisco-familys
 
  routes = [
     { server_name='acsacsar-ams-ipv4', via=['anon-meganerd', 'anon-scaleway-ams'] },
-    { server_name='dnscrypt.be', via=['anon-acsacsar-ams-ipv4', 'anon-kama'] },
+    { server_name='arvind-io', via=['anon-publicarray', 'anon-tiarap'] },
+    { server_name='bcn-dnscrypt', via=['anon-ibksturm', 'anon-kama'] },
+    { server_name='d0wn-tz-ns1', via=['anon-ibksturm', 'anon-dnscrypt.one'] },
+    { server_name='dnscrypt.be', via=['anon-acsacsar-ams-ipv4', 'anon-scaleway'] },
+    { server_name='dnscrypt.ca-1', via=['anon-ev-to', 'anon-plan9-dns'] },
+    { server_name='dnscrypt.ca-2', via=['anon-ev-to', 'anon-plan9-dns'] },
     { server_name='dnscrypt.eu-dk', via=['anon-meganerd', 'anon-scaleway-ams'] },
     { server_name='dnscrypt.eu-nl', via=['anon-meganerd', 'anon-scaleway-ams'] },
+    { server_name='dnscrypt.one', via=['anon-ibksturm', 'anon-meganerd'] },
     { server_name='dnscrypt.pl', via=['anon-dnscrypt.one', 'anon-meganerd'] },
     { server_name='dnscrypt.uk-ipv4', via=['anon-kama', 'anon-scaleway'] },
+    { server_name='ev-to', via=['anon-inconnu', 'anon-plan9-dns'] },
+    { server_name='ev-va', via=['anon-inconnu', 'anon-plan9-dns'] },
+    { server_name='faelix-ch-ipv4', via=['anon-ibksturm', 'anon-kama'] },
+    { server_name='faelix-uk-ipv4', via=['anon-meganerd', 'anon-v.dnscrypt.uk-ipv4'] },
+    { server_name='ffmuc.net', via=['anon-acsacsar-ams-ipv4', 'anon-dnscrypt.one'] },
+    { server_name='jp.tiar.app', via=['anon-publicarray', 'anon-tiarap'] },
     { server_name='meganerd', via=['anon-acsacsar-ams-ipv4', 'anon-scaleway-ams'] },
     { server_name='publicarray-au', via=['anon-ibksturm', 'anon-tiarap'] },
     { server_name='scaleway-ams', via=['anon-acsacsar-ams-ipv4', 'anon-scaleway-ams'] },
