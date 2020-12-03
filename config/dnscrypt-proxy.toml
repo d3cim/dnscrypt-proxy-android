@@ -109,7 +109,7 @@ force_tcp = false
 ## increase this. Startup may be slower if you do so.
 ## Don't increase it too much. 10000 is the highest reasonable value.
 
-timeout = 1500
+timeout = 1000
 
 
 ## Keepalive for HTTP (HTTPS, HTTP/2) queries, in seconds
