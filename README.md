@@ -29,9 +29,9 @@ Up-to-date, pre-built binaries are available for:
 - ⛔️ Disabled `IPv6`
 - ⛔️ Disabled `direct_cert_fallback` option *(prevent direct connections through the resolvers for failed certificate retrieved via relay)*
 - ℹ️ Set`refused` response to blocked queries
-- ℹ️ Set DNS query max. response time from `5000` to `1500` ms.
+- ℹ️ Set DNS query max. response time from `5000` to `1000` ms.
 - ℹ️ Use [UncensoredDNS](https://blog.uncensoreddns.org/) as fallback resolver instead [CloudFlare](https://iscloudflaresafeyet.com/)
-- ℹ️ Use `acsacsar-ams-ipv4` (NL), `dnscrypt.be` (BE), `dnscrypt.eu-dk` (DK), `dnscrypt.eu-nl` (NL), `dnscrypt.pl` (PL), `dnscrypt.uk-ipv4` (UK), `meganerd` (NL), `publicarray-au` (AUS), `scaleway-ams` (NL), `scaleway-fr` (FR) and `v.dnscrypt.uk-ipv4` (UK) resolvers.
+- ℹ️ Use `acsacsar-ams-ipv4` [NLD], `arvind-io` [IND], `bcn-dnscrypt` [ESP], `d0wn-tz-ns1` [TZA], `dnscrypt.be` [BEL], `dnscrypt.ca-1` [CAN], `dnscrypt.ca-2` [CAN], `dnscrypt.eu-dk` [DNK], `dnscrypt.eu-nl` [NLD], `dnscrypt.one` [DEU], `dnscrypt.pl` [POL], `dnscrypt.uk-ipv4` [GBR], `ev-to` [CAN], `ev-va` [CAN], `faelix-ch-ipv4` [CHE], `faelix-uk-ipv4` [GBR], `ffmuc.net` [DEU], `jp.tiar.app` [JPN], `meganerd` [NLD], `plan9-dns` [USA], `publicarray-au` [AUS], `sarpel-dns-istanbul` [TUR], `scaleway-ams` [NLD], `scaleway-fr` [FRA], `serbica` [NLD], `skyfighter-dns` [NLD], `v.dnscrypt.uk-ipv4` [GBR] and `ventricle.us` [USA] resolvers.
 
 
 ## Installation
