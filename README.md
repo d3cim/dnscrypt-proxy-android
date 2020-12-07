@@ -20,18 +20,31 @@ Up-to-date, pre-built binaries are available for:
 
 ## Differences from the main dnscrypt-proxy project
 
-- ✅ `DNSSEC` required
-- ✅ Enabled `dnscrypt_ephemeral_keys` feature *(create a new, unique key for every single DNS query)*
-- ✅ Enabled `anonymized_dns` feature *(each resolver has 2 relays)*
-- ✅ Enabled `skip_incompatible` option *(ignore resolvers incompatible with Anonymized DNS instead of using them without a relay)*
-- ✅ Enabled `allowed-ips.txt`, `allowed-names.txt`, `blocked-ips.txt` and `blocked-names.txt` files *(as placeholder, use them as you wish for filter your content)*
-- ⛔️ Disabled `DoH`
-- ⛔️ Disabled `IPv6`
-- ⛔️ Disabled `direct_cert_fallback` option *(prevent direct connections through the resolvers for failed certificate retrieved via relay)*
-- ℹ️ Set`refused` response to blocked queries
-- ℹ️ Set DNS query max. response time from `5000` to `1000` ms.
-- ℹ️ Use [UncensoredDNS](https://blog.uncensoreddns.org/) as fallback resolver instead [CloudFlare](https://iscloudflaresafeyet.com/)
-- ℹ️ Use `acsacsar-ams-ipv4` [NLD], `arvind-io` [IND], `bcn-dnscrypt` [ESP], `d0wn-tz-ns1` [TZA], `dnscrypt.be` [BEL], `dnscrypt.ca-1` [CAN], `dnscrypt.ca-2` [CAN], `dnscrypt.eu-dk` [DNK], `dnscrypt.eu-nl` [NLD], `dnscrypt.one` [DEU], `dnscrypt.pl` [POL], `dnscrypt.uk-ipv4` [GBR], `ev-to` [CAN], `ev-va` [CAN], `faelix-ch-ipv4` [CHE], `faelix-uk-ipv4` [GBR], `ffmuc.net` [DEU], `jp.tiar.app` [JPN], `meganerd` [NLD], `plan9-dns` [USA], `publicarray-au` [AUS], `sarpel-dns-istanbul` [TUR], `scaleway-ams` [NLD], `scaleway-fr` [FRA], `serbica` [NLD], `skyfighter-dns` [NLD], `v.dnscrypt.uk-ipv4` [GBR] and `ventricle.us` [USA] resolvers.
+- `server_names` = `acsacsar-ams-ipv4` [NLD], `arvind-io` [IND], `bcn-dnscrypt` [ESP], `d0wn-tz-ns1` [TZA], `dnscrypt.be` [BEL], `dnscrypt.ca-1` [CAN], `dnscrypt.ca-2` [CAN], `dnscrypt.eu-dk` [DNK], `dnscrypt.eu-nl` [NLD], `dnscrypt.one` [DEU], `dnscrypt.pl` [POL], `dnscrypt.uk-ipv4` [GBR], `ev-to` [CAN], `ev-va` [CAN], `faelix-ch-ipv4` [CHE], `faelix-uk-ipv4` [GBR], `ffmuc.net` [DEU], `jp.tiar.app` [JPN], `meganerd` [NLD], `plan9-dns` [USA], `publicarray-au` [AUS], `sarpel-dns-istanbul` [TUR], `scaleway-ams` [NLD], `scaleway-fr` [FRA], `serbica` [NLD], `skyfighter-dns` [NLD], `v.dnscrypt.uk-ipv4` [GBR], `ventricle.us` [USA] are the resolvers in use.
+
+- `doh_servers` = `false` (disable servers implementing the `DNS-over-HTTPS` protocol)
+
+- `require_dnssec` = `true` (server must support `DNSSEC` DNS security extensions)
+
+- `timeout` = `1000` (set DNS query max. response time from `5000` to `1000` ms.)
+
+- `blocked_query_response` = `'refused'` (set `refused` response to blocked queries)
+
+- `dnscrypt_ephemeral_keys` = `true` (create a new, unique key for every single DNS query)
+
+- `fallback_resolvers` = `['91.239.100.100:53']` (Use [UncensoredDNS](https://blog.uncensoreddns.org/) as fallback resolver instead [CloudFlare](https://iscloudflaresafeyet.com/))
+
+- `netprobe_address` = `'91.239.100.100:53'` (Use [UncensoredDNS](https://blog.uncensoreddns.org/) as fallback resolver instead [CloudFlare](https://iscloudflaresafeyet.com/))
+
+- `block_ipv6` = `true` (immediately respond to IPv6-related queries with an empty response)
+
+- `blocked_names_file`, `blocked_ips_file`, `allowed_names_file` and `allowed_ips_file` options enabled (use the related files, created in your Internal Memory, if you want to filter your content)
+
+- `anonymized_dns` feature enabled (routes are indirect ways to reach DNSCrypt servers, each resolver has 2 relays assigned)
+
+- `skip_incompatible` = `true` (skip resolvers incompatible with anonymization instead of using them directly)
+
+- `direct_cert_fallback` = `false` (prevent direct connections through the resolvers for failed certificate retrieved via relay)
 
 
 ## Installation
