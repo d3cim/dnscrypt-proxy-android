@@ -26,7 +26,7 @@ Up-to-date, pre-built binaries are available for:
 
 - `require_dnssec` = `true` (server must support `DNSSEC` security extension)
 
-- `timeout` = `1000` (set the max. response time of a DNS query from `5000` to `1000` ms.)
+- `timeout` = `1000` (set the max. response time of a single DNS query from `5000` to `1000` ms.)
 
 - `blocked_query_response` = `'refused'` (set `refused` response to blocked queries)
 
