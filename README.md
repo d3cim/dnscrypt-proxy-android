@@ -24,23 +24,23 @@ Up-to-date, pre-built binaries are available for:
 
 - `doh_servers` = `false` (disable servers implementing the `DNS-over-HTTPS` protocol)
 
-- `require_dnssec` = `true` (server must support `DNSSEC` DNS security extensions)
+- `require_dnssec` = `true` (server must support `DNSSEC` security extension)
 
-- `timeout` = `1000` (set DNS query max. response time from `5000` to `1000` ms.)
+- `timeout` = `1000` (set the max. response time of a DNS query from `5000` to `1000` ms.)
 
 - `blocked_query_response` = `'refused'` (set `refused` response to blocked queries)
 
 - `dnscrypt_ephemeral_keys` = `true` (create a new, unique key for every single DNS query)
 
-- `fallback_resolvers` = `['91.239.100.100:53']` (Use [UncensoredDNS](https://blog.uncensoreddns.org/) as fallback resolver instead [CloudFlare](https://iscloudflaresafeyet.com/))
+- `fallback_resolvers` = `['91.239.100.100:53']` (use [UncensoredDNS](https://blog.uncensoreddns.org/) instead [CloudFlare](https://iscloudflaresafeyet.com/))
 
-- `netprobe_address` = `'91.239.100.100:53'` (Use [UncensoredDNS](https://blog.uncensoreddns.org/) as fallback resolver instead [CloudFlare](https://iscloudflaresafeyet.com/))
+- `netprobe_address` = `'91.239.100.100:53'` (use [UncensoredDNS](https://blog.uncensoreddns.org/) instead [CloudFlare](https://iscloudflaresafeyet.com/))
 
 - `block_ipv6` = `true` (immediately respond to IPv6-related queries with an empty response)
 
-- `blocked_names_file`, `blocked_ips_file`, `allowed_names_file` and `allowed_ips_file` options enabled (use the related files, created in your Internal Memory, if you want to filter your content)
+- `blocked_names_file`, `blocked_ips_file`, `allowed_names_file` and `allowed_ips_file` options enabled. (you can use the related files, created in `/sdcard/dnscrypt-proxy/`, or `/data/media/0/dnscrypt-proxy/` to filter the web content)
 
-- `anonymized_dns` feature enabled (routes are indirect ways to reach DNSCrypt servers, each resolver has 2 relays assigned)
+- `anonymized_dns` feature enabled. (`routes` are indirect ways to reach DNSCrypt servers, each resolver has 2 relays assigned)
 
 - `skip_incompatible` = `true` (skip resolvers incompatible with anonymization instead of using them directly)
 
