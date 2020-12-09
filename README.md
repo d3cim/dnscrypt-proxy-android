@@ -20,7 +20,7 @@ Up-to-date, pre-built binaries are available for:
 
 ## Differences from the main dnscrypt-proxy project
 
-- `server_names` = `acsacsar-ams-ipv4` [NLD], `arvind-io` [IND], `bcn-dnscrypt` [ESP], `d0wn-tz-ns1` [TZA], `dnscrypt.be` [BEL], `dnscrypt.ca-1` [CAN], `dnscrypt.ca-2` [CAN], `dnscrypt.eu-dk` [DNK], `dnscrypt.eu-nl` [NLD], `dnscrypt.one` [DEU], `dnscrypt.pl` [POL], `dnscrypt.uk-ipv4` [GBR], `ev-to` [CAN], `ev-va` [CAN], `faelix-ch-ipv4` [CHE], `faelix-uk-ipv4` [GBR], `ffmuc.net` [DEU], `jp.tiar.app` [JPN], `meganerd` [NLD], `plan9-dns` [USA], `publicarray-au` [AUS], `sarpel-dns-istanbul` [TUR], `scaleway-ams` [NLD], `scaleway-fr` [FRA], `serbica` [NLD], `skyfighter-dns` [NLD], `v.dnscrypt.uk-ipv4` [GBR], `ventricle.us` [USA] are the resolvers in use.
+- `server_names` = `acsacsar-ams-ipv4` [NLD], `arvind-io` [IND], `bcn-dnscrypt` [ESP], `d0wn-tz-ns1` [TZA], `dnscrypt.be` [BEL], `dnscrypt.ca-1` [CAN], `dnscrypt.ca-2` [CAN], `dnscrypt.eu-dk` [DNK], `dnscrypt.eu-nl` [NLD], `dnscrypt.one` [DEU], `dnscrypt.pl` [POL], `dnscrypt.uk-ipv4` [GBR], `ev-canada` [CAN], `faelix-ch-ipv4` [CHE], `faelix-uk-ipv4` [GBR], `ffmuc.net` [DEU], `jp.tiar.app` [JPN], `meganerd` [NLD], `plan9-dns` [USA], `publicarray-au` [AUS], `sarpel-dns-istanbul` [TUR], `scaleway-ams` [NLD], `scaleway-fr` [FRA], `serbica` [NLD], `skyfighter-dns` [NLD], `v.dnscrypt.uk-ipv4` [GBR], `ventricle.us` [USA] are the resolvers in use.
 
 - `doh_servers` = `false` (disable servers implementing the `DNS-over-HTTPS` protocol)
 
