@@ -38,7 +38,7 @@ Up-to-date, pre-built binaries are available for:
 
 - `block_ipv6` = `true` (immediately respond to IPv6-related queries with an empty response)
 
-- `blocked_names_file`, `blocked_ips_file`, `allowed_names_file` and `allowed_ips_file` options enabled. (you can use the related files, created in `/sdcard/dnscrypt-proxy/`, or `/data/media/0/dnscrypt-proxy/` to filter the web content)
+- `blocked_names_file`, `blocked_ips_file`, `allowed_names_file` and `allowed_ips_file` options enabled. (you can now filter your web content, to know how, please refer to the [official documentation](https://github.com/DNSCrypt/dnscrypt-proxy/wiki/Filters) or take a look at my [block repository](https://git.nixnet.services/quindecim/block))
 
 - `anonymized_dns` feature enabled. (`routes` are indirect ways to reach DNSCrypt servers, each resolver has 2 relays assigned)
 
@@ -58,7 +58,7 @@ Up-to-date, pre-built binaries are available for:
 
 - You can edit `dnscrypt-proxy.toml` as you wish located on `/sdcard/dnscrypt-proxy/dnscrypt-proxy.toml`, or `/data/media/0/dnscrypt-proxy/dnscrypt-proxy.toml`.
 - For more detailed configuration please refer to [official documentation](https://github.com/DNSCrypt/dnscrypt-proxy/wiki/Configuration).
-- For more support on a good privacy oriented setup, join with us at [dnscrypt-proxy-android | CHAT](https://t.me/qd_invitations) on Telegram.
+- For more support on a good privacy oriented setup, join our group at [dnscrypt-proxy-android | CHAT](https://t.me/qd_invitations) on Telegram.
 
 
 #### AFWall+ users only
