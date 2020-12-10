@@ -4,6 +4,7 @@ A flexible DNS proxy, with support for modern encrypted DNS protocols such as [D
 
 
 ## Features
+
 - For all features please refer to the [OFFICIAL PAGE](https://github.com/DNSCrypt/dnscrypt-proxy#features)
 - All binary files are downloaded from the [OFFICIAL RELEASE PAGE](https://github.com/DNSCrypt/dnscrypt-proxy/releases)
 
@@ -49,8 +50,14 @@ Up-to-date, pre-built binaries are available for:
 
 ## Installation
 
-1. Download the latest `.zip` file from the [Releases](https://git.nixnet.services/quindecim/dnscrypt-proxy-android/releases) page or from my [dnscrypt-proxy-android | CHANNEL](https://t.me/dnscrypt_proxy) on Telegram and flash it with Magisk Manager.
+1. Download the latest `.zip` file from the [Releases](https://git.nixnet.services/quindecim/dnscrypt-proxy-android/releases) page or from my [dnscrypt-proxy-android | CHANNEL](https://t.me/dnscrypt_proxy) on Telegram and flash it with [Magisk](https://github.com/topjohnwu/Magisk):
+
+```
+Magisk Manager > Modules > + > dnscrypt-proxy-android-v*.zip
+```
+
 2. Reboot your device.
+
 3. Test your DNS: https://dnsleaktest.com/
 
 
