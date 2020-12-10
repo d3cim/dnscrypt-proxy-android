@@ -49,8 +49,8 @@ Up-to-date, pre-built binaries are available for:
 
 ## Installation
 
-1. Download latest `.zip` file from [dnscrypt-proxy-android | CHANNEL](https://t.me/dnscrypt_proxy) on Telegram and flash it with Magisk Manager.
-2. Reboot.
+1. Download the latest `.zip` file from the [Releases](https://git.nixnet.services/quindecim/dnscrypt-proxy-android/releases) page or from my [dnscrypt-proxy-android | CHANNEL](https://t.me/dnscrypt_proxy) on Telegram and flash it with Magisk Manager.
+2. Reboot your device.
 3. Test your DNS: https://dnsleaktest.com/
 
 
