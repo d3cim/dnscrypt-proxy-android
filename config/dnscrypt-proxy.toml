@@ -209,12 +209,16 @@ dnscrypt_ephemeral_keys = true
 ## These are normal, non-encrypted DNS resolvers, that will be only used
 ## for one-shot queries when retrieving the initial resolvers list, and
 ## only if the system DNS configuration doesn't work.
+##
 ## No user application queries will ever be leaked through these resolvers,
 ## and they will not be used after IP addresses of resolvers URLs have been found.
 ## They will never be used if lists have already been cached, and if stamps
 ## don't include host names without IP addresses.
+##
 ## They will not be used if the configured system DNS works.
-## Resolvers supporting DNSSEC are recommended.
+## Resolvers supporting DNSSEC are recommended, and, if you are using
+## DoH, fallback resolvers should ideally be operated by a different entity than
+## the DoH servers you will be using, especially if you have IPv6 enabled.
 ##
 ## People in China may need to use 114.114.114.114:53 here.
 ## Other popular options include 8.8.8.8 and 1.1.1.1.
@@ -744,7 +748,7 @@ fragments_blocked = ['cisco', 'cisco-ipv6', 'cisco-familyshield', 'cisco-familys
     { server_name='dnscrypt.one', via=['anon-ibksturm', 'anon-serbica'] },
     { server_name='dnscrypt.pl', via=['anon-dnscrypt.one', 'anon-meganerd'] },
     { server_name='dnscrypt.uk-ipv4', via=['anon-kama', 'anon-scaleway'] },
-    { server_name='ev-va', via=['anon-inconnu', 'anon-plan9-dns'] },
+    { server_name='ev-canada', via=['anon-inconnu', 'anon-plan9-dns'] },
     { server_name='faelix-ch-ipv4', via=['anon-ibksturm', 'anon-kama'] },
     { server_name='faelix-uk-ipv4', via=['anon-meganerd', 'anon-v.dnscrypt.uk-ipv4'] },
     { server_name='ffmuc.net', via=['anon-acsacsar-ams-ipv4', 'anon-dnscrypt.one'] },
