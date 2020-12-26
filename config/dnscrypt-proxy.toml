@@ -29,7 +29,7 @@
 ##
 ## Remove the leading # first to enable this; lines starting with # are ignored.
 
-server_names = ['acsacsar-ams-ipv4', 'arvind-io', 'bcn-dnscrypt', 'd0wn-tz-ns1', 'dnscrypt.be', 'dnscrypt.ca-1', 'dnscrypt.ca-2', 'dnscrypt.eu-dk', 'dnscrypt.eu-nl', 'dnscrypt.one', 'dnscrypt.pl', 'dnscrypt.uk-ipv4', 'ev-canada', 'faelix-ch-ipv4', 'faelix-uk-ipv4', 'ffmuc.net', 'jp.tiar.app', 'meganerd', 'plan9-dns', 'publicarray-au', 'sarpel-dns-istanbul', 'scaleway-ams', 'scaleway-fr', 'serbica', 'skyfighter-dns', 'v.dnscrypt.uk-ipv4', 'ventricle.us']
+server_names = ['acsacsar-ams-ipv4', 'arvind-io', 'bcn-dnscrypt', 'd0wn-tz-ns1', 'dnscrypt.be', 'dnscrypt.ca-1', 'dnscrypt.ca-2', 'dnscrypt.eu-dk', 'dnscrypt.eu-nl', 'dnscrypt.one', 'dnscrypt.pl', 'dnscrypt.uk-ipv4', 'ev-canada', 'faelix-ch-ipv4', 'faelix-uk-ipv4', 'ffmuc.net', 'jp.tiar.app', 'meganerd', 'moulticast-fr-ipv4', 'plan9-dns', 'publicarray-au', 'pwoss.org-dnscrypt', 'sarpel-dns-istanbul', 'scaleway-ams', 'scaleway-fr', 'serbica', 'skyfighter-dns', 'v.dnscrypt.uk-ipv4', 'ventricle.us']
 
 
 ## List of local addresses and ports to listen to. Can be IPv4 and/or IPv6.
@@ -745,16 +745,18 @@ fragments_blocked = ['cisco', 'cisco-ipv6', 'cisco-familyshield', 'cisco-familys
     { server_name='dnscrypt.ca-2', via=['anon-ev-canada', 'anon-plan9-dns'] },
     { server_name='dnscrypt.eu-dk', via=['anon-meganerd', 'anon-scaleway-ams'] },
     { server_name='dnscrypt.eu-nl', via=['anon-scaleway-ams', 'anon-skyfighter'] },
-    { server_name='dnscrypt.one', via=['anon-ibksturm', 'anon-serbica'] },
-    { server_name='dnscrypt.pl', via=['anon-dnscrypt.one', 'anon-meganerd'] },
+    { server_name='dnscrypt.one', via=['anon-ibksturm', 'anon-pwoss.org'] },
+    { server_name='dnscrypt.pl', via=['anon-dnscrypt.one', 'anon-pwoss.org'] },
     { server_name='dnscrypt.uk-ipv4', via=['anon-kama', 'anon-scaleway'] },
     { server_name='ev-canada', via=['anon-inconnu', 'anon-plan9-dns'] },
     { server_name='faelix-ch-ipv4', via=['anon-ibksturm', 'anon-kama'] },
     { server_name='faelix-uk-ipv4', via=['anon-meganerd', 'anon-v.dnscrypt.uk-ipv4'] },
-    { server_name='ffmuc.net', via=['anon-acsacsar-ams-ipv4', 'anon-dnscrypt.one'] },
+    { server_name='ffmuc.net', via=['anon-dnscrypt.one', 'anon-pwoss.org'] },
     { server_name='jp.tiar.app', via=['anon-publicarray', 'anon-tiarap'] },
     { server_name='meganerd', via=['anon-acsacsar-ams-ipv4', 'anon-scaleway-ams'] },
+    { server_name='moulticast-fr-ipv4', via=['anon-kama', 'anon-scaleway'] },
     { server_name='publicarray-au', via=['anon-ibksturm', 'anon-tiarap'] },
+    { server_name='pwoss.org-dnscrypt', via=['anon-ibksturm', 'anon-tiarap'] },
     { server_name='sarpel-dns-istanbul', via=['anon-bcn', 'anon-ibksturm'] },
     { server_name='scaleway-ams', via=['anon-acsacsar-ams-ipv4', 'anon-skyfighter'] },
     { server_name='scaleway-fr', via=['anon-dnscrypt.uk-ipv4', 'anon-v.dnscrypt.uk-ipv4'] },
