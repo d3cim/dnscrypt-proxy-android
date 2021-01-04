@@ -555,7 +555,7 @@ cache_neg_max_ttl = 600
 
   ## Optional path to a file logging allowed queries
 
-  # log_file = 'allowed_names.log'
+  # log_file = 'allowed-names.log'
 
 
   ## Optional log format: tsv or ltsv (default: tsv)
@@ -707,7 +707,6 @@ fragments_blocked = ['cisco', 'cisco-ipv6', 'cisco-familyshield', 'cisco-familys
 
 
 
-
 #################################################################
 #        Certificate-based client authentication for DoH        #
 #################################################################
@@ -719,6 +718,7 @@ fragments_blocked = ['cisco', 'cisco-ipv6', 'cisco-familyshield', 'cisco-familys
 # property set to the path to a root CRT file can be added to a server entry.
 
 [doh_client_x509_auth]
+
 #
 # creds = [
 #    { server_name='myserver', client_cert='client.crt', client_key='client.key' }
@@ -796,8 +796,6 @@ fragments_blocked = ['cisco', 'cisco-ipv6', 'cisco-familyshield', 'cisco-familys
     { server_name='ventricle.us', via=['anon-inconnu', 'anon-plan9-dns'] }
 #    { server_name='example-server-2', via=['sdns://gRIxMzcuNzQuMjIzLjIzNDo0NDM'] }
  ]
-
-# routes = { server_name='*', via = ['*'] }
 
 
 # Skip resolvers incompatible with anonymization instead of using them directly
