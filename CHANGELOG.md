@@ -1,6 +1,95 @@
 # Changelog
 
 
+## 2.0.45
+
+##### Updated binary files to 2.0.45 | jedisct1
+ - Configuration changes (to be required in versions 2.1.x):
+   * `[blacklist]` has been renamed to `[blocked_names]`
+   * `[ip_blacklist]` has been renamed to `[blocked_ips]`
+   * `[whitelist]` has been renamed to `[allowed_names]`
+   * `generate-domains-blacklist.py` has been renamed to
+     `generate-domains-blocklist.py`, and the configuration files have been
+     renamed as well.
+ - `dnscrypt-proxy -resolve` has been completely revamped, and now requires
+the configuration file to be accessible. It will send a query to an IP address
+of the `dnscrypt-proxy` server by default. Sending queries to arbitrary
+servers is also supported with the new `-resolve name,address` syntax.
+ - Relay lists can be set to `*` for automatic relay selection. When a wildcard
+is used, either for the list of servers or relays, the proxy ensures that
+relays and servers are on distinct networks.
+ - Lying resolvers are detected and reported.
+ - New return code: `NOT_READY` for queries received before the proxy has
+been initialized.
+ - Server lists can't be older than a week any more, even if directory
+permissions are incorrect and cache files cannot be written.
+ - macOS/arm64 is now officially supported.
+ - New feature: `allowed_ips`, to configure a set of IP addresses to
+never block no matter what DNS name resolves to them.
+ - Hard-coded IP addresses can be immediately returned for test queries
+sent by operating systems in order to check for connectivity and captive
+portals. Such responses can be sent even before an interface is considered
+as enabled by the operating system. This can be configured in a new section
+called `[captive_portals]`.
+ - On Linux, OpenBSD and FreeBSD, `listen_addresses` can now include IP
+addresses that haven't been assigned to an interface yet.
+ - The logo has been tweaked to look fine on a dark background.
+ - `generate-domains-blocklist.py`: regular expressions are now ignored in
+time-based entries.
+ - Minor bug fixes and logging improvements.
+ - Cloaking plugin: if an entry has multiple IP addresses for a type,
+all the IP addresses are now returned instead of a random one.
+ - Static entries can now include DNSCrypt relays.
+ - Name blocking: aliases relying on `SVCB` and `HTTPS` records can now
+be blocked in addition to aliases via regular `CNAME` records.
+ - EDNS-Client-Subnet information can be added to outgoing queries.
+Instead of sending the actual client IP, ECS information is user
+configurable, and IP addresses will be randomly chosen for every query.
+ - Initial DoH queries are now checked using random names in order to
+properly measure CDNs such as Tencent that ignore the padding.
+ - DoH: the `max-stale` cache control directive is now present in queries.
+ - Logs can now be sent to `/dev/stdout` instead of actual files.
+ - User switching is now supported on macOS.
+ - New download mirror (https://download.dnscrypt.net) for resolvers,
+relays and parental-control.
+
+##### Updated config files to 2.0.45 | quindecim
+- ✅ Enabled `allowed-ips.txt` and `blocked-ips.txt` files (as placeholder).
+- ✅ Added `acsacsar-ams-ipv4` resolver (Public non-censoring, non-logging, DNSSEC-capable, DNSCrypt-enabled DNS resolver hosted on Scaleway by [acsacsar](https://nitter.net/acsacsar)).
+- ✅ Added `arvind-io` resolver (Public resolver by EnKrypt (https://arvind.io). Hosted in Bangalore, India. Non-logging, non-filtering, supports DNSSEC.).
+- ✅ Added `bcn-dnscrypt` resolver (Resolver in Barcelona, Spain. DNSCrypt protocol. Non-logging, non-filtering, DNSSEC.).
+- ✅ Added `d0wn-tz-ns1` resolver (Server provided by Martin 'd0wn' Albus) Hosted by Aptus Solutions Ltd. in Tanzania.
+- ✅ Added `dnscrypt.be` resolver (Resolver in Leuven, Belgium (UCLL Campus Proximus). Non-logging/DNSSEC/Uncensored. https://dnscrypt.be
+Maintained by Sigfried (https://sigfried.be) hosted by ISW Leuven (https://iswleuven.be)).
+- ✅ Added `dnscrypt.ca-1` resolver (Free, Canadian, uncensored, no-logs, encrypted, and DNSSEC validated. DNS service for your pleasure.).
+- ✅ Added `dnscrypt.ca-2` resolver (Free, Canadian, uncensored, no-logs, encrypted, and DNSSEC validated. DNS service for your pleasure.).
+- ✅ Added `dnscrypt.one` resolver (Non-logging, non-censoring, DNSSEC-capable DNSCrypt resolver hosted in Germany (Nuremberg), https://dnscrypt.one).
+- ✅ Added `dnscrypt.pl` resolver (Free | No filtering | Zero logs | DNSSEC | Poland | https://dnscrypt.pl/).
+- ✅ Added `ev-canada` resolver (Non-logging, uncensored DNS resolver provided by evilvibes.com Location: Vancouver, Canada).
+- ✅ Added `faelix-ch-ipv4` resolver (An open (non-logging, non-filtering, no ECS) DNSCrypt resolver operated by https://faelix.net/ with IPv4 nodes anycast within AS41495 in Switzerland.).
+- ✅ Added `faelix-uk-ipv4` resolver (An open (non-logging, non-filtering, no ECS) DNSCrypt resolver operated by https://faelix.net/ with IPv4 nodes anycast within AS41495 in the UK.).
+- ✅ Added `ffmuc.net` resolver (An open (non-logging, non-filtering, non-censoring) DNSCrypt resolver operated by Freifunk Munich with nodes in DE. https://ffmuc.net/).
+- ✅ Added `jp.tiar.app` resolver (Non-Logging, Non-Filtering DNSCrypt server in Japan. No ECS, Support DNSSEC).
+- ✅ Added `moulticast-ca-ipv4` resolver (Public | Non-filtering | Non-logging | DNSSEC aware | Hosted in Canada | Operated by @herver (Github) | https://moulticast.net/dnscrypt/).
+- ✅ Added `moulticast-de-ipv4` resolver (Public | Non-filtering | Non-logging | DNSSEC aware | Hosted in Germany | Operated by @herver (Github) | https://moulticast.net/dnscrypt/).
+- ✅ Added `moulticast-fr-ipv4` resolver (Public | Non-filtering | Non-logging | DNSSEC aware | Hosted in France | Operated by @herver (Github) | https://moulticast.net/dnscrypt/).
+- ✅ Added `moulticast-sg-ipv4` resolver (Public | Non-filtering | Non-logging | DNSSEC aware | Hosted in Singapore | Operated by @herver (Github) | https://moulticast.net/dnscrypt/).
+- ✅ Added `moulticast-uk-ipv4` resolver (Public | Non-filtering | Non-logging | DNSSEC aware | Hosted in UK | Operated by @herver (Github) | https://moulticast.net/dnscrypt/).
+- ✅ Added `plan9-dns` resolver (Resolver in New Jersey, USA. DNSCrypt protocol. Non-logging, non-filtering, DNSSEC, anonymized. Running the official Docker image on Vultr by @jlongua1).
+- ✅ Added `pwoss.org-dnscrypt` resolver (No filter | No logs | DNSSEC | Nuremberg, Germany (netcup) | Maintained by https://pwoss.org/ (Dan)).
+- ✅ Added `sarpel-dns-istanbul` resolver (No-filter | No-logs | Uncensored | Hosted in Istanbul(Turkey) on Cloudeos).
+- ✅ Added `serbica` resolver (Public DNSCrypt server in the Netherlands by https://litepay.ch).
+- ✅ Added `ventricle.us` resolver (Public DNSCrypt resolver provided by Jacob Henner. Hosted by Digital Ocean, New York).
+- ✅ Added and optimized relays based on geolocation.
+- ⛔️ Removed [Applied Privacy DNS](https://applied-privacy.net/privacy-policy/) and [NixNet DNS](https://nixnet.xyz/dns/) as fallback resolvers.
+- ⛔️ Disabled `direct_cert_fallback` option to prevent direct connections through the resolvers for failed certificate retrieved via relay.
+- ℹ️ Require `Magisk 20.4+` from now on.
+- ℹ️ Stop to drop `IPv6` queries script in `post-fs-data.sh` file.
+- ℹ️ Reduced the max. query waiting time from `1500` to `1000` ms.
+- ℹ️ Renamed `blacklist.txt` into `blocked-names.txt`.
+- ℹ️ Renamed `whitelist.txt` into `allowed-names.txt`.
+
+
 ## 2.0.44
 
 ##### Updated binary files to 2.0.44 | jedisct1
