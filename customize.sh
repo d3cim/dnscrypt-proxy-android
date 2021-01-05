@@ -7,51 +7,57 @@
   ui_print "******************************"
   ui_print " "
 
-
+# Get architecture specific binary file
 if [ "$ARCH" == "arm" ];then
-  BINARY_PATH=$TMPDIR/binary/dnscrypt-proxy-arm
+  BINARY_PATH=$MODPATH/binary/dnscrypt-proxy-arm
 elif [ "$ARCH" == "arm64" ];then
-  BINARY_PATH=$TMPDIR/binary/dnscrypt-proxy-arm64
+  BINARY_PATH=$MODPATH/binary/dnscrypt-proxy-arm64
 elif [ "$ARCH" == "x86" ];then
-  BINARY_PATH=$TMPDIR/binary/dnscrypt-proxy-i386
+  BINARY_PATH=$MODPATH/binary/dnscrypt-proxy-i386
 elif [ "$ARCH" == "x64" ];then
-  BINARY_PATH=$TMPDIR/binary/dnscrypt-proxy-x86_64
+  BINARY_PATH=$MODPATH/binary/dnscrypt-proxy-x86_64
 fi
 
-CONFIG_PATH=$TMPDIR/config
+# Set destination paths
+CONFIG_PATH=$MODPATH/config
 
-unzip -o "$ZIPFILE" 'config/*' 'binary/*' -d $TMPDIR
-
-  ui_print "* Creating binary path"
+# Create the path for the binary file
+ui_print "* Creating the binary path."
 mkdir -p $MODPATH/system/bin
 
-  ui_print "* Creating config path"
+# Create the path for the configuration files
+ui_print "* Creating the config. path."
 mkdir -p /data/media/0/dnscrypt-proxy
 
+# Copy the binary files into the right folder
 if [ -f "$BINARY_PATH" ]; then
-  ui_print "* Copying binary for $ARCH"
+ui_print "* Copying the binary files."
  cp -af $BINARY_PATH $MODPATH/system/bin/dnscrypt-proxy
 else
-  abort "Binary file for $ARCH is missing!"
+  abort "The binary file for your $ARCH device is missing!"
 fi
 
-
-# Backup an existing config file before proceed | quindecim
-
+# Backup an existing config file before proceed
 CONFIG_FILE="/data/media/0/dnscrypt-proxy/dnscrypt-proxy.toml"
 
 if [ -f "$CONFIG_FILE" ]; then
-  ui_print "* Backing up config file"
+ui_print "* Backing up the existing config. file before proceed."
   cp -af  $CONFIG_FILE ${CONFIG_FILE}-`date +%Y%m%d%H%M`.bak
 fi
 
+# Copy the configuration files into the right folder
 if [ -d "$CONFIG_PATH" ]; then
-  ui_print "* Copying config, example and license files"
+ui_print "* Copying config, example and license files."
   cp -af $CONFIG_PATH/* /data/media/0/dnscrypt-proxy/
 else
-  abort "Config file is missing!"
+  abort "Configuration file (.toml) is missing!"
 fi
 
-
+# Set the right permissions to the dnscrypt-proxy binary file
+ui_print "* Setting up the right permissions to the dnscrypt-proxy binary file."
 set_perm_recursive $MODPATH 0 0 0755 0755
 set_perm $MODPATH/system/bin/dnscrypt-proxy 0 0 0755
+
+# Cleanup unneeded binary files
+ui_print "* Cleaning up the unnecessary files."
+rm -r $MODPATH/binary
