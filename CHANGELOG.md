@@ -53,41 +53,42 @@ properly measure CDNs such as Tencent that ignore the padding.
  - New download mirror (https://download.dnscrypt.net) for resolvers,
 relays and parental-control.
 
-##### Updated config files to 2.0.45 | quindecim
-- ✅ Enabled `allowed-ips.txt` and `blocked-ips.txt` files (as placeholder).
-- ✅ Added `acsacsar-ams-ipv4` resolver (Public non-censoring, non-logging, DNSSEC-capable, DNSCrypt-enabled DNS resolver hosted on Scaleway by [acsacsar](https://nitter.net/acsacsar)).
-- ✅ Added `arvind-io` resolver (Public resolver by EnKrypt (https://arvind.io). Hosted in Bangalore, India. Non-logging, non-filtering, supports DNSSEC.).
-- ✅ Added `bcn-dnscrypt` resolver (Resolver in Barcelona, Spain. DNSCrypt protocol. Non-logging, non-filtering, DNSSEC.).
-- ✅ Added `d0wn-tz-ns1` resolver (Server provided by Martin 'd0wn' Albus) Hosted by Aptus Solutions Ltd. in Tanzania.
-- ✅ Added `dnscrypt.be` resolver (Resolver in Leuven, Belgium (UCLL Campus Proximus). Non-logging/DNSSEC/Uncensored. https://dnscrypt.be
+##### Updated module files to 2.0.45 | quindecim
+- Enabled `allowed-ips.txt` and `blocked-ips.txt` files (as placeholder).
+- Added `acsacsar-ams-ipv4` resolver (Public non-censoring, non-logging, DNSSEC-capable, DNSCrypt-enabled DNS resolver hosted on Scaleway by [acsacsar](https://nitter.net/acsacsar)).
+- Added `arvind-io` resolver (Public resolver by EnKrypt (https://arvind.io). Hosted in Bangalore, India. Non-logging, non-filtering, supports DNSSEC.).
+- Added `bcn-dnscrypt` resolver (Resolver in Barcelona, Spain. DNSCrypt protocol. Non-logging, non-filtering, DNSSEC.).
+- Added `d0wn-tz-ns1` resolver (Server provided by Martin 'd0wn' Albus) Hosted by Aptus Solutions Ltd. in Tanzania.
+- Added `dnscrypt.be` resolver (Resolver in Leuven, Belgium (UCLL Campus Proximus). Non-logging/DNSSEC/Uncensored. https://dnscrypt.be
 Maintained by Sigfried (https://sigfried.be) hosted by ISW Leuven (https://iswleuven.be)).
-- ✅ Added `dnscrypt.ca-1` resolver (Free, Canadian, uncensored, no-logs, encrypted, and DNSSEC validated. DNS service for your pleasure.).
-- ✅ Added `dnscrypt.ca-2` resolver (Free, Canadian, uncensored, no-logs, encrypted, and DNSSEC validated. DNS service for your pleasure.).
-- ✅ Added `dnscrypt.one` resolver (Non-logging, non-censoring, DNSSEC-capable DNSCrypt resolver hosted in Germany (Nuremberg), https://dnscrypt.one).
-- ✅ Added `dnscrypt.pl` resolver (Free | No filtering | Zero logs | DNSSEC | Poland | https://dnscrypt.pl/).
-- ✅ Added `ev-canada` resolver (Non-logging, uncensored DNS resolver provided by evilvibes.com Location: Vancouver, Canada).
-- ✅ Added `faelix-ch-ipv4` resolver (An open (non-logging, non-filtering, no ECS) DNSCrypt resolver operated by https://faelix.net/ with IPv4 nodes anycast within AS41495 in Switzerland.).
-- ✅ Added `faelix-uk-ipv4` resolver (An open (non-logging, non-filtering, no ECS) DNSCrypt resolver operated by https://faelix.net/ with IPv4 nodes anycast within AS41495 in the UK.).
-- ✅ Added `ffmuc.net` resolver (An open (non-logging, non-filtering, non-censoring) DNSCrypt resolver operated by Freifunk Munich with nodes in DE. https://ffmuc.net/).
-- ✅ Added `jp.tiar.app` resolver (Non-Logging, Non-Filtering DNSCrypt server in Japan. No ECS, Support DNSSEC).
-- ✅ Added `moulticast-ca-ipv4` resolver (Public | Non-filtering | Non-logging | DNSSEC aware | Hosted in Canada | Operated by @herver (Github) | https://moulticast.net/dnscrypt/).
-- ✅ Added `moulticast-de-ipv4` resolver (Public | Non-filtering | Non-logging | DNSSEC aware | Hosted in Germany | Operated by @herver (Github) | https://moulticast.net/dnscrypt/).
-- ✅ Added `moulticast-fr-ipv4` resolver (Public | Non-filtering | Non-logging | DNSSEC aware | Hosted in France | Operated by @herver (Github) | https://moulticast.net/dnscrypt/).
-- ✅ Added `moulticast-sg-ipv4` resolver (Public | Non-filtering | Non-logging | DNSSEC aware | Hosted in Singapore | Operated by @herver (Github) | https://moulticast.net/dnscrypt/).
-- ✅ Added `moulticast-uk-ipv4` resolver (Public | Non-filtering | Non-logging | DNSSEC aware | Hosted in UK | Operated by @herver (Github) | https://moulticast.net/dnscrypt/).
-- ✅ Added `plan9-dns` resolver (Resolver in New Jersey, USA. DNSCrypt protocol. Non-logging, non-filtering, DNSSEC, anonymized. Running the official Docker image on Vultr by @jlongua1).
-- ✅ Added `pwoss.org-dnscrypt` resolver (No filter | No logs | DNSSEC | Nuremberg, Germany (netcup) | Maintained by https://pwoss.org/ (Dan)).
-- ✅ Added `sarpel-dns-istanbul` resolver (No-filter | No-logs | Uncensored | Hosted in Istanbul(Turkey) on Cloudeos).
-- ✅ Added `serbica` resolver (Public DNSCrypt server in the Netherlands by https://litepay.ch).
-- ✅ Added `ventricle.us` resolver (Public DNSCrypt resolver provided by Jacob Henner. Hosted by Digital Ocean, New York).
-- ✅ Added and optimized relays based on geolocation.
-- ⛔️ Removed [Applied Privacy DNS](https://applied-privacy.net/privacy-policy/) and [NixNet DNS](https://nixnet.xyz/dns/) as fallback resolvers.
-- ⛔️ Disabled `direct_cert_fallback` option to prevent direct connections through the resolvers for failed certificate retrieved via relay.
-- ℹ️ Require `Magisk 20.4+` from now on.
-- ℹ️ Stop to drop `IPv6` queries script in `post-fs-data.sh` file.
-- ℹ️ Reduced the max. query waiting time from `1500` to `1000` ms.
-- ℹ️ Renamed `blacklist.txt` into `blocked-names.txt`.
-- ℹ️ Renamed `whitelist.txt` into `allowed-names.txt`.
+- Added `dnscrypt.ca-1` resolver (Free, Canadian, uncensored, no-logs, encrypted, and DNSSEC validated. DNS service for your pleasure.).
+- Added `dnscrypt.ca-2` resolver (Free, Canadian, uncensored, no-logs, encrypted, and DNSSEC validated. DNS service for your pleasure.).
+- Added `dnscrypt.one` resolver (Non-logging, non-censoring, DNSSEC-capable DNSCrypt resolver hosted in Germany (Nuremberg), https://dnscrypt.one).
+- Added `dnscrypt.pl` resolver (Free | No filtering | Zero logs | DNSSEC | Poland | https://dnscrypt.pl/).
+- Added `ev-canada` resolver (Non-logging, uncensored DNS resolver provided by evilvibes.com Location: Vancouver, Canada).
+- Added `faelix-ch-ipv4` resolver (An open (non-logging, non-filtering, no ECS) DNSCrypt resolver operated by https://faelix.net/ with IPv4 nodes anycast within AS41495 in Switzerland.).
+- Added `faelix-uk-ipv4` resolver (An open (non-logging, non-filtering, no ECS) DNSCrypt resolver operated by https://faelix.net/ with IPv4 nodes anycast within AS41495 in the UK.).
+- Added `ffmuc.net` resolver (An open (non-logging, non-filtering, non-censoring) DNSCrypt resolver operated by Freifunk Munich with nodes in DE. https://ffmuc.net/).
+- Added `jp.tiar.app` resolver (Non-Logging, Non-Filtering DNSCrypt server in Japan. No ECS, Support DNSSEC).
+- Added `moulticast-ca-ipv4` resolver (Public | Non-filtering | Non-logging | DNSSEC aware | Hosted in Canada | Operated by @herver (Github) | https://moulticast.net/dnscrypt/).
+- Added `moulticast-de-ipv4` resolver (Public | Non-filtering | Non-logging | DNSSEC aware | Hosted in Germany | Operated by @herver (Github) | https://moulticast.net/dnscrypt/).
+- Added `moulticast-fr-ipv4` resolver (Public | Non-filtering | Non-logging | DNSSEC aware | Hosted in France | Operated by @herver (Github) | https://moulticast.net/dnscrypt/).
+- Added `moulticast-sg-ipv4` resolver (Public | Non-filtering | Non-logging | DNSSEC aware | Hosted in Singapore | Operated by @herver (Github) | https://moulticast.net/dnscrypt/).
+- Added `moulticast-uk-ipv4` resolver (Public | Non-filtering | Non-logging | DNSSEC aware | Hosted in UK | Operated by @herver (Github) | https://moulticast.net/dnscrypt/).
+- Added `plan9-dns` resolver (Resolver in New Jersey, USA. DNSCrypt protocol. Non-logging, non-filtering, DNSSEC, anonymized. Running the official Docker image on Vultr by @jlongua1).
+- Added `pwoss.org-dnscrypt` resolver (No filter | No logs | DNSSEC | Nuremberg, Germany (netcup) | Maintained by https://pwoss.org/ (Dan)).
+- Added `sarpel-dns-istanbul` resolver (No-filter | No-logs | Uncensored | Hosted in Istanbul(Turkey) on Cloudeos).
+- Added `serbica` resolver (Public DNSCrypt server in the Netherlands by https://litepay.ch).
+- Added `ventricle.us` resolver (Public DNSCrypt resolver provided by Jacob Henner. Hosted by Digital Ocean, New York).
+- Added and optimized relays based on geolocation.
+- Removed [Applied Privacy DNS](https://applied-privacy.net/privacy-policy/) and [NixNet DNS](https://nixnet.xyz/dns/) as fallback resolvers.
+- Disabled `direct_cert_fallback` option to prevent direct connections through the resolvers for failed certificate retrieved via relay.
+- Require `Magisk 20.4+` from now on.
+- Stop to drop `IPv6` queries script in `post-fs-data.sh` file.
+- Cleanup unneeded binary files after the installation.
+- Reduced the max. query waiting time from `1500` to `1000` ms.
+- Renamed `blacklist.txt` into `blocked-names.txt`.
+- Renamed `whitelist.txt` into `allowed-names.txt`.
 
 
 ## 2.0.44
@@ -98,7 +99,7 @@ Maintained by Sigfried (https://sigfried.be) hosted by ISW Leuven (https://iswle
 - `tls_client_auth` was renamed to `doh_client_x509_auth`. A section with the previous name is temporarily ignored if empty, but will error out if not.
 - Unit tests are now working on 32-bit systems. Thanks to Will Elwood and @lifenjoiner.
 
-##### Updated config files to 2.0.44 | quindecim
+##### Updated module files to 2.0.44 | quindecim
 - 
 
 
@@ -122,9 +123,9 @@ forced to use TCP.
 - Service installation is now supported on FreeBSD.
 - When stored into a file, service logs now only contain data from the most recent launch. This can be changed with the new `log_file_latest` option.
 
-##### Updated config files to 2.0.43 | quindecim
-- ✅ Added `Applied Privacy DNS` and `NixNet DNS` as additional fallback resolvers.
-- ℹ️ Required `Magisk 20+` from now on.
+##### Updated module files to 2.0.43 | quindecim
+- Added `Applied Privacy DNS` and `NixNet DNS` as additional fallback resolvers.
+- Required `Magisk 20+` from now on.
 
 
 ## 2.0.42-3
@@ -132,8 +133,8 @@ forced to use TCP.
 ##### Updated binary files to 2.0.42 | jedisct1
 - 
 
-##### Updated config files to 2.0.42-3 | quindecim
-- ⛔️ Disabled properly `IPv6` queries in `post-fs-data.sh` file (no more DNS leaks this time)
+##### Updated module files to 2.0.42-3 | quindecim
+- Disabled properly `IPv6` queries in `post-fs-data.sh` file (no more DNS leaks this time)
 
 
 ## 2.0.42-2
@@ -141,8 +142,8 @@ forced to use TCP.
 ##### Updated binary files to 2.0.42 | jedisct1
 - 
 
-##### Updated config files to 2.0.42-2 | quindecim
-- ⛔️ Disabled every `IPv6` queries in `post-fs-data.sh` file: `INPUT`, `FORWARD` and `OUTPUT` (to enforce leaks prevention in some cases).
+##### Updated module files to 2.0.42-2 | quindecim
+- Disabled every `IPv6` queries in `post-fs-data.sh` file: `INPUT`, `FORWARD` and `OUTPUT` (to enforce leaks prevention in some cases).
 
 
 ## 2.0.42-1
@@ -150,16 +151,16 @@ forced to use TCP.
 ##### Updated binary files to 2.0.42 | jedisct1
 - 
 
-##### Updated config files to 2.0.42-1 | quindecim
-- ✅ Added `meganerd` resolver (Non-logging, non-filtering, supports DNSSEC by MegaNerd.nl).
-- ✅ Enabled `whitelist.txt` file (as placeholder, once the blacklist goes public).
-- ✅ Optimized relays based on geolocation.
-- ⛔️ Disabled `IPv6` in `post-fs-data.sh` file (to enforce leaks prevention in some cases).
-- ⛔️ Removed `dnscrypt.nl-ns0` resolver and related relays.
-- ⛔️ Removed `dnscrypt.one` resolver and related relays.
-- ⛔️ Removed `ffmuc.net` resolver and related relays.
-- ⛔️ Removed `publicarray-au2` resolver and related relays.
-- ℹ️ Moved all the example documents into `dnscrypt-proxy/example-docs` folder (the remaining example documents must be deleted manually).
+##### Updated module files to 2.0.42-1 | quindecim
+- Added `meganerd` resolver (Non-logging, non-filtering, supports DNSSEC by MegaNerd.nl).
+- Enabled `whitelist.txt` file (as placeholder, once the blacklist goes public).
+- Optimized relays based on geolocation.
+- Disabled `IPv6` in `post-fs-data.sh` file (to enforce leaks prevention in some cases).
+- Removed `dnscrypt.nl-ns0` resolver and related relays.
+- Removed `dnscrypt.one` resolver and related relays.
+- Removed `ffmuc.net` resolver and related relays.
+- Removed `publicarray-au2` resolver and related relays.
+- Moved all the example documents into `dnscrypt-proxy/example-docs` folder (the remaining example documents must be deleted manually).
 
 
 ## 2.0.42
@@ -180,8 +181,8 @@ using them without a relay.
 more retries if necessary.
 - Continuous integration has been moved to GitHub Actions.
 
-##### Updated config files to 2.0.42 | quindecim
-- ✅ Enabled `skip_incompatible` option to ignore servers incompatible with anonymization
+##### Updated module files to 2.0.42 | quindecim
+- Enabled `skip_incompatible` option to ignore servers incompatible with anonymization
 
 
 ## 2.0.41
@@ -197,7 +198,7 @@ resolvers; runtime detection of support for fragments should now do
 the job.
 - Runtime detection of support for fragments was actually enabled.
 
-##### Updated config files to 2.0.41 | quindecim
+##### Updated module files to 2.0.41 | quindecim
 - 
 
 
@@ -211,7 +212,7 @@ the job.
 - DoH RTT computation is now more accurate, especially when CDNs are in the middle.
 - The forwarding plugin is now more reliable, and handles retries over TCP.
 
-##### Updated config files to 2.0.40 | quindecim
+##### Updated module files to 2.0.40 | quindecim
 - 
 
 
@@ -220,8 +221,8 @@ the job.
 ##### Updated binary files to 2.0.39 | jedisct1
 - 
 
-##### Updated config files to 2.0.39-2 | quindecim
-- ⛔️ Removed `blacklist.txt` file *(too many false positives, will be added back in the future, when it reaches a more stable level)*.
+##### Updated module files to 2.0.39-2 | quindecim
+- Removed `blacklist.txt` file *(too many false positives, will be added back in the future, when it reaches a more stable level)*.
 
 
 ## 2.0.39-1
@@ -229,11 +230,11 @@ the job.
 ##### Updated binary files to 2.0.39 | jedisct1
 - 
 
-##### Updated config files to 2.0.39-1 | quindecim
-- ✅ Implemented automatic redirection. No more third-party apps are required to start it.
-- ✅ Introduced substrings and wildcards into `blacklist.txt` file and updated to `2020-03-19`.
-- ⛔️ Removed `ibksturm` resolver and related relays.
-- ⛔️ Removed `dnswarden-dc1`, `dnswarden-dc2`, `dnswarden-dc3`, resolvers and related relays.
+##### Updated module files to 2.0.39-1 | quindecim
+- Implemented automatic redirection. No more third-party apps are required to start it.
+- Introduced substrings and wildcards into `blacklist.txt` file and updated to `2020-03-19`.
+- Removed `ibksturm` resolver and related relays.
+- Removed `dnswarden-dc1`, `dnswarden-dc2`, `dnswarden-dc3`, resolvers and related relays.
 
 
 ## 2.0.39
@@ -242,11 +243,11 @@ the job.
 - The Firefox Local DoH service didn't properly work in version 2.0.38; 
 this has been fixed. Thanks to Simon Brand for the report!
 
-##### Updated config files to 2.0.39 | quindecim
-- ✅ Added `dnswarden-dc3` (DnsCrypt protocol . Non-logging, supports DNSSEC. By https://dnswarden.com).
-- ✅ Updated `Magisk Module Installer template`. It require `Magisk 19+` from now on.
-- ✅ Fixed an issue where `dnscrypt-proxy` doesn't detect the config file.
-- ✅ Updated `blacklist.txt` to `2020-01-30`.
+##### Updated module files to 2.0.39 | quindecim
+- Added `dnswarden-dc3` (DnsCrypt protocol . Non-logging, supports DNSSEC. By https://dnswarden.com).
+- Updated `Magisk Module Installer template`. It require `Magisk 19+` from now on.
+- Fixed an issue where `dnscrypt-proxy` doesn't detect the config file.
+- Updated `blacklist.txt` to `2020-01-30`.
 
 
 ## 2.0.38
@@ -268,11 +269,11 @@ stored separately from the application.
 built using `Go 1.13.7` that fixes a TLS certificate parsing issue present in
 previous versions of the compiler.
 
-##### Updated config files to 2.0.38 | quindecim
-- ✅ Added `dnswarden-dc3` (DnsCrypt protocol . Non-logging, supports DNSSEC. By https://dnswarden.com).
-- ✅ Updated `Magisk Module Installer template`. It require `Magisk 19+` from now on.
-- ✅ Fixed an issue where `dnscrypt-proxy` doesn't detect the config file.
-- ✅ Updated `blacklist.txt` to `2020-01-30`.
+##### Updated module files to 2.0.38 | quindecim
+- Added `dnswarden-dc3` (DnsCrypt protocol . Non-logging, supports DNSSEC. By https://dnswarden.com).
+- Updated `Magisk Module Installer template`. It require `Magisk 19+` from now on.
+- Fixed an issue where `dnscrypt-proxy` doesn't detect the config file.
+- Updated `blacklist.txt` to `2020-01-30`.
 
 
 ## 2.0.36
@@ -288,10 +289,10 @@ set in a question, and the `AD` bit is cleared.
 security issue affecting non-encrypted/non-authenticated DNS traffic. In
 `dnscrypt-proxy`, this only affects the forwarding feature.
 
-##### Updated config files to 2.0.36 | quindecim
-- ✅ Added `dnscrypt.one` resolver (DNSSEC / no logs / uncensored, Germany (Nuremberg), https://dnscrypt.one/)
-- ✅ Optimized relays based on geolocation
-- ✅ Updated `blacklist.txt` to `2019-12-22`
+##### Updated module files to 2.0.36 | quindecim
+- Added `dnscrypt.one` resolver (DNSSEC / no logs / uncensored, Germany (Nuremberg), https://dnscrypt.one/)
+- Optimized relays based on geolocation
+- Updated `blacklist.txt` to `2019-12-22`
 
 
 ## 2.0.35
@@ -306,15 +307,15 @@ along with the pointer. This makes it easier to know what the original
 query name, so it can be whitelisted, or what the pointer was, so it
 can be removed from the blacklist.
 
-##### Updated config files to 2.0.35 | quindecim
-- ✅ Added `scaleway-ams` resolver (DNSSEC/Non-logged/Uncensored in Amsterdam- ARM server donated by Scaleway.com)
+##### Updated module files to 2.0.35 | quindecim
+- Added `scaleway-ams` resolver (DNSSEC/Non-logged/Uncensored in Amsterdam- ARM server donated by Scaleway.com)
 Maintained by Frank Denis- https://fr.dnscrypt.info)
-- ✅ Added `ffmuc.net` resolver
+- Added `ffmuc.net` resolver
 (An open DNSCrypt resolver operated by Freifunk Munich with nodes in DE.
 https://ffmuc.net/)
-- ✅ Fixed backup an existing `.toml` file before proceed with the installation
-- ✅ Optimized relays based on geolocation
-- ✅ Updated `blacklist.txt` to `2019-12-09`
+- Fixed backup an existing `.toml` file before proceed with the installation
+- Optimized relays based on geolocation
+- Updated `blacklist.txt` to `2019-12-09`
 
 
 ## 2.0.34
@@ -326,11 +327,11 @@ pointers.
 be configured to use it, so that ESNI can be enabled without bypassing
 your DNS proxy.
 
-##### Updated config files to 2.0.34 | quindecim
-- ✅ Added `ibksturm`- dnscrypt-server (nginx- encrypted-dns- unbound backend), DNSSEC / Non-Logged / Uncensored, OpenNIC and Root DNS-Zone- Hosted in Switzerland by ibksturm, aka Andreas Ziegler)
-- ✅ Enabled `blacklist.txt` file to prevent `CNAME Cloaking` tracking feature
-- ✅ Optimized relays based on geolocation
-- ⛔️ Removed `charis` and `suami` resolvers and their relays
+##### Updated module files to 2.0.34 | quindecim
+- Added `ibksturm`- dnscrypt-server (nginx- encrypted-dns- unbound backend), DNSSEC / Non-Logged / Uncensored, OpenNIC and Root DNS-Zone- Hosted in Switzerland by ibksturm, aka Andreas Ziegler)
+- Enabled `blacklist.txt` file to prevent `CNAME Cloaking` tracking feature
+- Optimized relays based on geolocation
+- Removed `charis` and `suami` resolvers and their relays
 
 
 ## 2.0.33
@@ -360,9 +361,9 @@ work by Alison Winters, thanks!
 but it includes a `SERVFAIL` error code).
 - Responses are now always compressed.
 
-##### Updated config files to 2.0.33 | quindecim
-- ✅ Added `v.dnscrypt.uk-ipv4`- DNSCrypt v2, no logs, uncensored, DNSSEC. Hosted in London UK on Vultr- https://www.dnscrypt.uk
-- ✅ Optimized relays based on geolocation and set to use other providers different from the main one 
+##### Updated module files to 2.0.33 | quindecim
+- Added `v.dnscrypt.uk-ipv4`- DNSCrypt v2, no logs, uncensored, DNSSEC. Hosted in London UK on Vultr- https://www.dnscrypt.uk
+- Optimized relays based on geolocation and set to use other providers different from the main one 
 
 
 ## 2.0.31
@@ -371,8 +372,8 @@ but it includes a `SERVFAIL` error code).
 - This version fixes a startup issue introduced in version 2.0.29, on systems for which the service cannot be automatically installed (such as OpenBSD and FreeBSD). Reported by @5ch17 and Vinícius Zavam, and fixed by Will Elwood, thanks!
 - This version fixes two regressions introduced in version 2.0.29: DoH server couldn't be reached over IPv6 any more, and the proxy couldn't be interrupted while servers were being benchmarked.
 
-##### Updated config files to 2.0.31 | quindecim
-- ℹ️ Changed the way to backup an existing .toml file. The old configuration is now backed up with `year-month-day-hour-minute.bak` suffix (thanks to @lindroidux)
+##### Updated module files to 2.0.31 | quindecim
+- Changed the way to backup an existing .toml file. The old configuration is now backed up with `year-month-day-hour-minute.bak` suffix (thanks to @lindroidux)
 
 
 ## 2.0.29
@@ -390,12 +391,12 @@ but it includes a `SERVFAIL` error code).
 - Ignore non-TXT records in certificate responses (thanks to Vladimir Bauer)
 - A lot of internal cleanups, thanks to Markus Linnala
 
-##### Updated config files to 2.0.29 | quindecim
-- ✅ Enabled `anonymized_dns` feature *(each resolver has 2 relays)*
-- ✅ Added `scaleway-fr` resolver *(DNSSEC/Non-logging/Uncensored- Maintained by Frank Denis- https://fr.dnscrypt.info)*
-- ✅ Added `publicarray-au` resolver Australia, *(DNSSEC/OpenNIC/Non-logging/Uncensored- hosted on vultr.com maintained by publicarray- https://dns.seby.io)*
-- ✅ Added `publicarray-au2` resolver Australia, *(DNSSEC/OpenNIC/Non-logging/Uncensored- hosted on ovh.com.au maintained by publicarray- https://dns.seby.io)*
-- ✅ Optimized relays based on geolocation
+##### Updated module files to 2.0.29 | quindecim
+- Enabled `anonymized_dns` feature *(each resolver has 2 relays)*
+- Added `scaleway-fr` resolver *(DNSSEC/Non-logging/Uncensored- Maintained by Frank Denis- https://fr.dnscrypt.info)*
+- Added `publicarray-au` resolver Australia, *(DNSSEC/OpenNIC/Non-logging/Uncensored- hosted on vultr.com maintained by publicarray- https://dns.seby.io)*
+- Added `publicarray-au2` resolver Australia, *(DNSSEC/OpenNIC/Non-logging/Uncensored- hosted on ovh.com.au maintained by publicarray- https://dns.seby.io)*
+- Optimized relays based on geolocation
 
 
 ## 2.0.29-beta.3
@@ -409,9 +410,9 @@ but it includes a `SERVFAIL` error code).
 - Improved logging
 - Added a workaround for DNS servers using a non-standard provider name.
 
-##### Updated config files to 2.0.29-beta.3 | quindecim
-- ✅ Enabled `anonymized_dns` feature *(each resolver has 2 relays)*
-- ✅ Added `scaleway-fr` resolver *(DNSSEC/Non-logged/Uncensored- Maintained by Frank Denis- https://fr.dnscrypt.info)*
+##### Updated module files to 2.0.29-beta.3 | quindecim
+- Enabled `anonymized_dns` feature *(each resolver has 2 relays)*
+- Added `scaleway-fr` resolver *(DNSSEC/Non-logged/Uncensored- Maintained by Frank Denis- https://fr.dnscrypt.info)*
 
 
 ## 2.0.28
@@ -433,7 +434,7 @@ but it includes a `SERVFAIL` error code).
 ##### New maintainer | quindecim
 
 
-##### Updated config files to 2.0.27 | quindecim
+##### Updated module files to 2.0.27 | quindecim
 
 
 -----
