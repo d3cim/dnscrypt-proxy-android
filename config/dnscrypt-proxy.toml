@@ -29,7 +29,7 @@
 ##
 ## Remove the leading # first to enable this; lines starting with # are ignored.
 
-server_names = ['acsacsar-ams-ipv4', 'arvind-io', 'bcn-dnscrypt', 'd0wn-tz-ns1', 'dnscrypt.be', 'dnscrypt.ca-1', 'dnscrypt.ca-2', 'dnscrypt.eu-dk', 'dnscrypt.eu-nl', 'dnscrypt.one', 'dnscrypt.pl', 'dnscrypt.uk-ipv4', 'ev-canada', 'faelix-ch-ipv4', 'faelix-uk-ipv4', 'ffmuc.net', 'jp.tiar.app', 'meganerd', 'moulticast-ca-ipv4', 'moulticast-de-ipv4', 'moulticast-fr-ipv4', 'moulticast-sg-ipv4', 'moulticast-uk-ipv4', 'plan9-dns', 'publicarray-au', 'pwoss.org-dnscrypt', 'sarpel-dns-istanbul', 'scaleway-ams', 'scaleway-fr', 'serbica', 'v.dnscrypt.uk-ipv4', 'ventricle.us']
+server_names = ['acsacsar-ams-ipv4', 'arvind-io', 'bcn-dnscrypt', 'd0wn-tz-ns1', 'dnscrypt.be', 'dnscrypt.ca-1', 'dnscrypt.ca-2', 'dnscrypt.eu-dk', 'dnscrypt.eu-nl', 'dnscrypt.one', 'dnscrypt.pl', 'dnscrypt.uk-ipv4', 'ev-canada', 'jp.tiar.app', 'meganerd', 'moulticast-ca-ipv4', 'moulticast-de-ipv4', 'moulticast-fr-ipv4', 'moulticast-sg-ipv4', 'moulticast-uk-ipv4', 'plan9-dns', 'publicarray-au', 'pwoss.org-dnscrypt', 'sarpel-dns-istanbul', 'scaleway-ams', 'scaleway-fr', 'serbica', 'v.dnscrypt.uk-ipv4', 'ventricle.us']
 
 
 ## List of local addresses and ports to listen to. Can be IPv4 and/or IPv6.
@@ -494,7 +494,7 @@ cache_neg_max_ttl = 600
 
   ## Path to the file of blocking rules (absolute, or relative to the same directory as the config file)
 
-  blocked_names_file = 'blocked-name.txt'
+  blocked_names_file = 'blocked-names.txt'
 
 
   ## Optional path to a file logging blocked queries
@@ -775,9 +775,6 @@ fragments_blocked = ['cisco', 'cisco-ipv6', 'cisco-familyshield', 'cisco-familys
     { server_name='dnscrypt.pl', via=['anon-dnscrypt.one', 'anon-pwoss.org'] },
     { server_name='dnscrypt.uk-ipv4', via=['anon-kama', 'anon-scaleway'] },
     { server_name='ev-canada', via=['anon-inconnu', 'anon-plan9-dns'] },
-    { server_name='faelix-ch-ipv4', via=['anon-bcn', 'anon-kama'] },
-    { server_name='faelix-uk-ipv4', via=['anon-meganerd', 'anon-v.dnscrypt.uk-ipv4'] },
-    { server_name='ffmuc.net', via=['anon-dnscrypt.one', 'anon-pwoss.org'] },
     { server_name='jp.tiar.app', via=['anon-dnscrypt.one', 'anon-pwoss.org'] },
     { server_name='meganerd', via=['anon-acsacsar-ams-ipv4', 'anon-scaleway-ams'] },
     { server_name='moulticast-ca-ipv4', via=['anon-ev-canada', 'anon-plan9-dns'] },
