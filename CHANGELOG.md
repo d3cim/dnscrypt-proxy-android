@@ -66,9 +66,7 @@ Maintained by Sigfried (https://sigfried.be) hosted by ISW Leuven (https://iswle
 - Added `dnscrypt.one` resolver (Non-logging, non-censoring, DNSSEC-capable DNSCrypt resolver hosted in Germany (Nuremberg), https://dnscrypt.one).
 - Added `dnscrypt.pl` resolver (Free | No filtering | Zero logs | DNSSEC | Poland | https://dnscrypt.pl/).
 - Added `ev-canada` resolver (Non-logging, uncensored DNS resolver provided by evilvibes.com Location: Vancouver, Canada).
-- Added `faelix-ch-ipv4` resolver (An open (non-logging, non-filtering, no ECS) DNSCrypt resolver operated by https://faelix.net/ with IPv4 nodes anycast within AS41495 in Switzerland.).
-- Added `faelix-uk-ipv4` resolver (An open (non-logging, non-filtering, no ECS) DNSCrypt resolver operated by https://faelix.net/ with IPv4 nodes anycast within AS41495 in the UK.).
-- Added `ffmuc.net` resolver (An open (non-logging, non-filtering, non-censoring) DNSCrypt resolver operated by Freifunk Munich with nodes in DE. https://ffmuc.net/).
+- Added `freetsa.org-ipv4` resolver (Non-logged/Uncensored provided by www.freetsa.org. Support for DNS and DNS-over-TLS (DoT)).
 - Added `jp.tiar.app` resolver (Non-Logging, Non-Filtering DNSCrypt server in Japan. No ECS, Support DNSSEC).
 - Added `moulticast-ca-ipv4` resolver (Public | Non-filtering | Non-logging | DNSSEC aware | Hosted in Canada | Operated by @herver (Github) | https://moulticast.net/dnscrypt/).
 - Added `moulticast-de-ipv4` resolver (Public | Non-filtering | Non-logging | DNSSEC aware | Hosted in Germany | Operated by @herver (Github) | https://moulticast.net/dnscrypt/).
