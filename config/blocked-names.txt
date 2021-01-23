@@ -7,5 +7,10 @@
 ##                             https://git.lushka.al/quindecim         | MIRROR
 ##                             https://git.lelux.fi/quindecim          | MIRROR
 ##
+## License     : GPLv3       : https://git.nixnet.services/quindecim/dnscrypt-proxy-android/src/branch/master/LICENSE.md
 ##
-## This is just a placeholder for who want to use a blocklist file.
+##
+## DO NOT DELETE THIS FILE !!
+##
+## This file is intended to be a placeholder, you can use it at your pleasure to filter your content on the web.
+## More info at: https://github.com/DNSCrypt/dnscrypt-proxy/wiki/Filters
