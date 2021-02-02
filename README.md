@@ -1,858 +1,91 @@
+# DNSCrypt Proxy 2 for Android | privacy oriented
 
-##############################################
-#                                            #
-#        dnscrypt-proxy configuration        #
-#                                            #
-##############################################
+A flexible DNS proxy, with support for modern encrypted DNS protocols such as [DNSCrypt v2](https://dnscrypt.info/protocol), [DNS-over-HTTPS](https://www.rfc-editor.org/rfc/rfc8484.txt) and [Anonymized DNSCrypt](https://github.com/DNSCrypt/dnscrypt-protocol/blob/master/ANONYMIZED-DNSCRYPT.txt).
 
-## This is an example configuration file.
-## You should adjust it to your needs, and save it as "dnscrypt-proxy.toml"
-##
-## Online documentation is available here: https://dnscrypt.info/doc
 
+## Features
 
+- For all features please refer to the [OFFICIAL PAGE](https://github.com/DNSCrypt/dnscrypt-proxy#features)
+- All binary files are downloaded from the [OFFICIAL RELEASE PAGE](https://github.com/DNSCrypt/dnscrypt-proxy/releases)
 
-##################################
-#         Global settings        #
-##################################
 
-## List of servers to use
-##
-## Servers from the "public-resolvers" source (see down below) can
-## be viewed here: https://dnscrypt.info/public-servers
-##
-## The proxy will automatically pick working servers from this list.
-## Note that the require_* filters do NOT apply when using this setting.
-##
-## By default, this list is empty and all registered servers matching the
-## require_* filters will be used instead.
-##
-## Remove the leading # first to enable this; lines starting with # are ignored.
+## Pre-built binaries
 
-server_names = ['acsacsar-ams-ipv4', 'arvind-io', 'bcn-dnscrypt', 'd0wn-tz-ns1', 'dnscrypt.be', 'dnscrypt.ca-1', 'dnscrypt.ca-2', 'dnscrypt.eu-dk', 'dnscrypt.eu-nl', 'dnscrypt.one', 'dnscrypt.pl', 'dnscrypt.uk-ipv4', 'ev-canada', 'jp.tiar.app', 'meganerd', 'moulticast-ca-ipv4', 'moulticast-de-ipv4', 'moulticast-fr-ipv4', 'moulticast-sg-ipv4', 'moulticast-uk-ipv4', 'plan9-dns', 'publicarray-au', 'pwoss.org-dnscrypt', 'sarpel-dns-istanbul', 'scaleway-ams', 'scaleway-fr', 'serbica', 'v.dnscrypt.uk-ipv4', 'ventricle.us', 'zackptg5-us-il-ipv4']
+Up-to-date, pre-built binaries are available for:
 
+- Android/arm
+- Android/arm64
+- Android/x86
+- Android/x86_64
 
-## List of local addresses and ports to listen to. Can be IPv4 and/or IPv6.
-## Example with both IPv4 and IPv6:
-## listen_addresses = ['127.0.0.1:53', '[::1]:53']
-##
-## To listen to all IPv4 addresses, use `listen_addresses = ['0.0.0.0:53']`
-## To listen to all IPv4+IPv6 addresses, use `listen_addresses = ['[::]:53']`
 
-listen_addresses = ['127.0.0.1:5354']
+## Differences from the main dnscrypt-proxy project
 
+- `server_names` = `acsacsar-ams-ipv4` [NLD], `arvind-io` [IND], `bcn-dnscrypt` [ESP], `d0wn-tz-ns1` [TZA], `dnscrypt.be` [BEL], `dnscrypt.ca-1` [CAN], `dnscrypt.ca-2` [CAN], `dnscrypt.eu-dk` [DNK], `dnscrypt.eu-nl` [NLD], `dnscrypt.one` [DEU], `dnscrypt.pl` [POL], `dnscrypt.uk-ipv4` [GBR], `ev-canada` [CAN], `jp.tiar.app` [JPN], `meganerd` [NLD], `moulticast-ca-ipv4` [CAN], `moulticast-de-ipv4` [DEU], `moulticast-fr-ipv4` [FRA], `moulticast-sg-ipv4` [SGP], `moulticast-uk-ipv4` [GBR], `plan9-dns` [USA], `publicarray-au` [AUS], `pwoss.org-dnscrypt` [DEU], `sarpel-dns-istanbul` [TUR], `scaleway-ams` [NLD], `scaleway-fr` [FRA], `serbica` [NLD], `v.dnscrypt.uk-ipv4` [GBR], `ventricle.us` [USA], `zackptg5-us-il-ipv4` [USA] are the resolvers in use.
 
-## Maximum number of simultaneous client connections to accept
+- `doh_servers` = `false` (disable servers implementing the `DNS-over-HTTPS` protocol)
 
-max_clients = 250
+- `require_dnssec` = `true` (server must support `DNSSEC` security extension)
 
+- `timeout` = `1000` (set the max. response time of a single DNS query from `5000` to `1000` ms.)
 
-## Switch to a different system user after listening sockets have been created.
-## Note (1): this feature is currently unsupported on Windows.
-## Note (2): this feature is not compatible with systemd socket activation.
-## Note (3): when using -pidfile, the PID file directory must be writable by the new user
+- `blocked_query_response` = `'refused'` (set `refused` response to blocked queries)
 
-# user_name = 'nobody'
+- `dnscrypt_ephemeral_keys` = `true` (create a new, unique key for every single DNS query)
 
+- `fallback_resolvers` = `['91.239.100.100:53']` (use [UncensoredDNS](https://blog.uncensoreddns.org/) instead [CloudFlare](https://iscloudflaresafeyet.com/))
 
-## Require servers (from static + remote sources) to satisfy specific properties
+- `netprobe_address` = `'91.239.100.100:53'` (use [UncensoredDNS](https://blog.uncensoreddns.org/) instead [CloudFlare](https://iscloudflaresafeyet.com/))
 
-# Use servers reachable over IPv4
-ipv4_servers = true
+- `block_ipv6` = `true` (immediately respond to IPv6-related queries with an empty response)
 
-# Use servers reachable over IPv6 -- Do not enable if you don't have IPv6 connectivity
-ipv6_servers = false
+- `blocked_names_file`, `blocked_ips_file`, `allowed_names_file` and `allowed_ips_file` options enabled. (you can now filter your web content, to know how, please refer to the [official documentation](https://github.com/DNSCrypt/dnscrypt-proxy/wiki/Filters) or take a look at my [block repository](https://git.nixnet.services/quindecim/block))
 
-# Use servers implementing the DNSCrypt protocol
-dnscrypt_servers = true
+- `anonymized_dns` feature enabled. (`routes` are indirect ways to reach DNSCrypt servers, each resolver has 2 relays assigned)
 
-# Use servers implementing the DNS-over-HTTPS protocol
-doh_servers = false
+- `skip_incompatible` = `true` (skip resolvers incompatible with anonymization instead of using them directly)
 
+- `direct_cert_fallback` = `false` (prevent direct connections through the resolvers for failed certificate retrieved via relay)
 
-## Require servers defined by remote sources to satisfy specific properties
 
-# Server must support DNS security extensions (DNSSEC)
-require_dnssec = true
+## Installation
 
-# Server must not log user queries (declarative)
-require_nolog = true
+1. Download the latest `.zip` file from the [Releases](https://git.nixnet.services/quindecim/dnscrypt-proxy-android/releases) page or from my [dnscrypt-proxy-android | CHANNEL](https://t.me/dnscrypt_proxy) on Telegram and flash it with [Magisk](https://github.com/topjohnwu/Magisk):
 
-# Server must not enforce its own blocklist (for parental control, ads blocking...)
-require_nofilter = true
+```
+Magisk Manager > Modules > + > dnscrypt-proxy-android-v*.zip
+```
 
-# Server names to avoid even if they match all criteria
-disabled_server_names = []
+2. Reboot your device.
 
+3. Test your DNS: https://dnsleaktest.com/
 
-## Always use TCP to connect to upstream servers.
-## This can be useful if you need to route everything through Tor.
-## Otherwise, leave this to `false`, as it doesn't improve security
-## (dnscrypt-proxy will always encrypt everything even using UDP), and can
-## only increase latency.
 
-force_tcp = false
+### Configuration (post-installing)
 
+- You can edit `dnscrypt-proxy.toml` as you wish located on `/sdcard/dnscrypt-proxy/dnscrypt-proxy.toml`, or `/data/media/0/dnscrypt-proxy/dnscrypt-proxy.toml`.
+- For more detailed configuration please refer to [official documentation](https://github.com/DNSCrypt/dnscrypt-proxy/wiki/Configuration).
+- For more support on a good privacy oriented setup, join our group at [dnscrypt-proxy-android | CHAT](https://t.me/qd_invitations) on Telegram.
 
-## SOCKS proxy
-## Uncomment the following line to route all TCP connections to a local Tor node
-## Tor doesn't support UDP, so set `force_tcp` to `true` as well.
 
-# proxy = 'socks5://127.0.0.1:9050'
+#### AFWall+ users only
 
+If you experience no connection issue after flashing the module I suggest you to insert these scripts: (in both, enter and shutdown boxes)
 
-## HTTP/HTTPS proxy
-## Only for DoH servers
+```
+iptables -A "afwall" -d 127.0.0.1 -p tcp --dport 5354 -j ACCEPT
+iptables -A "afwall" -d 127.0.0.1 -p udp --dport 5354 -j ACCEPT
+```
 
-# http_proxy = 'http://127.0.0.1:8888'
+The issue is related to the use of `AFWall+` and only happens on some devices, it depends on how the DNS configuration is implemented in the device itself.
 
 
-## How long a DNS query will wait for a response, in milliseconds.
-## If you have a network with *a lot* of latency, you may need to
-## increase this. Startup may be slower if you do so.
-## Don't increase it too much. 10000 is the highest reasonable value.
+## Changelog
 
-timeout = 1000
+[Full changelog](https://git.nixnet.services/quindecim/dnscrypt-proxy-android/blob/master/CHANGELOG.md)
 
 
-## Keepalive for HTTP (HTTPS, HTTP/2) queries, in seconds
-
-keepalive = 30
-
-
-## Add EDNS-client-subnet information to outgoing queries
-##
-## Multiple networks can be listed; they will be randomly chosen.
-## These networks don't have to match your actual networks.
-
-# edns_client_subnet = ["0.0.0.0/0", "2001:db8::/32"]
-
-
-## Response for blocked queries. Options are `refused`, `hinfo` (default) or
-## an IP response. To give an IP response, use the format `a:<IPv4>,aaaa:<IPv6>`.
-## Using the `hinfo` option means that some responses will be lies.
-## Unfortunately, the `hinfo` option appears to be required for Android 8+
-
-blocked_query_response = 'refused'
-
-
-## Load-balancing strategy: 'p2' (default), 'ph', 'p<n>', 'first' or 'random'
-## Randomly choose 1 of the fastest 2, half, n, 1 or all live servers by latency.
-## The response quality still depends on the server itself.
-
-# lb_strategy = 'p2'
-
-## Set to `true` to constantly try to estimate the latency of all the resolvers
-## and adjust the load-balancing parameters accordingly, or to `false` to disable.
-## Default is `true` that makes 'p2' `lb_strategy` work well.
-
-# lb_estimator = true
-
-
-## Log level (0-6, default: 2 - 0 is very verbose, 6 only contains fatal errors)
-
-# log_level = 2
-
-
-## Log file for the application, as an alternative to sending logs to
-## the standard system logging service (syslog/Windows event log).
-##
-## This file is different from other log files, and will not be
-## automatically rotated by the application.
-
-# log_file = 'dnscrypt-proxy.log'
-
-
-## When using a log file, only keep logs from the most recent launch.
-
-# log_file_latest = true
-
-
-## Use the system logger (syslog on Unix, Event Log on Windows)
-
-# use_syslog = true
-
-
-## Delay, in minutes, after which certificates are reloaded
-
-cert_refresh_delay = 240
-
-
-## DNSCrypt: Create a new, unique key for every single DNS query
-## This may improve privacy but can also have a significant impact on CPU usage
-## Only enable if you don't have a lot of network load
-
-dnscrypt_ephemeral_keys = true
-
-
-## DoH: Disable TLS session tickets - increases privacy but also latency
-
-# tls_disable_session_tickets = false
-
-
-## DoH: Use a specific cipher suite instead of the server preference
-## 49199 = TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256
-## 49195 = TLS_ECDHE_ECDSA_WITH_AES_128_GCM_SHA256
-## 52392 = TLS_ECDHE_RSA_WITH_CHACHA20_POLY1305
-## 52393 = TLS_ECDHE_ECDSA_WITH_CHACHA20_POLY1305
-##  4865 = TLS_AES_128_GCM_SHA256
-##  4867 = TLS_CHACHA20_POLY1305_SHA256
-##
-## On non-Intel CPUs such as MIPS routers and ARM systems (Android, Raspberry Pi...),
-## the following suite improves performance.
-## This may also help on Intel CPUs running 32-bit operating systems.
-##
-## Keep tls_cipher_suite empty if you have issues fetching sources or
-## connecting to some DoH servers. Google and Cloudflare are fine with it.
-
-# tls_cipher_suite = [52392, 49199]
-
-
-## Fallback resolvers
-## These are normal, non-encrypted DNS resolvers, that will be only used
-## for one-shot queries when retrieving the initial resolvers list, and
-## only if the system DNS configuration doesn't work.
-##
-## No user application queries will ever be leaked through these resolvers,
-## and they will not be used after IP addresses of resolvers URLs have been found.
-## They will never be used if lists have already been cached, and if stamps
-## don't include host names without IP addresses.
-##
-## They will not be used if the configured system DNS works.
-## Resolvers supporting DNSSEC are recommended, and, if you are using
-## DoH, fallback resolvers should ideally be operated by a different entity than
-## the DoH servers you will be using, especially if you have IPv6 enabled.
-##
-## People in China may need to use 114.114.114.114:53 here.
-## Other popular options include 8.8.8.8 and 1.1.1.1.
-##
-## If more than one resolver is specified, they will be tried in sequence.
-
-fallback_resolvers = ['91.239.100.100:53']
-
-
-## Always use the fallback resolver before the system DNS settings.
-
-ignore_system_dns = true
-
-
-## Maximum time (in seconds) to wait for network connectivity before
-## initializing the proxy.
-## Useful if the proxy is automatically started at boot, and network
-## connectivity is not guaranteed to be immediately available.
-## Use 0 to not test for connectivity at all (not recommended),
-## and -1 to wait as much as possible.
-
-netprobe_timeout = -1
-
-## Address and port to try initializing a connection to, just to check
-## if the network is up. It can be any address and any port, even if
-## there is nothing answering these on the other side. Just don't use
-## a local address, as the goal is to check for Internet connectivity.
-## On Windows, a datagram with a single, nul byte will be sent, only
-## when the system starts.
-## On other operating systems, the connection will be initialized
-## but nothing will be sent at all.
-
-netprobe_address = '91.239.100.100:53'
-
-
-## Offline mode - Do not use any remote encrypted servers.
-## The proxy will remain fully functional to respond to queries that
-## plugins can handle directly (forwarding, cloaking, ...)
-
-# offline_mode = false
-
-
-## Additional data to attach to outgoing queries.
-## These strings will be added as TXT records to queries.
-## Do not use, except on servers explicitly asking for extra data
-## to be present.
-## encrypted-dns-server can be configured to use this for access control
-## in the [access_control] section
-
-# query_meta = ['key1:value1', 'key2:value2', 'token:MySecretToken']
-
-
-## Automatic log files rotation
-
-# Maximum log files size in MB - Set to 0 for unlimited.
-log_files_max_size = 10
-
-# How long to keep backup files, in days
-log_files_max_age = 7
-
-# Maximum log files backups to keep (or 0 to keep all backups)
-log_files_max_backups = 1
-
-
-
-#########################
-#        Filters        #
-#########################
-
-## Note: if you are using dnsmasq, disable the `dnssec` option in dnsmasq if you
-## configure dnscrypt-proxy to do any kind of filtering (including the filters
-## below and blocklists).
-## You can still choose resolvers that do DNSSEC validation.
-
-
-## Immediately respond to IPv6-related queries with an empty response
-## This makes things faster when there is no IPv6 connectivity, but can
-## also cause reliability issues with some stub resolvers.
-
-block_ipv6 = true
-
-
-## Immediately respond to A and AAAA queries for host names without a domain name
-
-block_unqualified = true
-
-
-## Immediately respond to queries for local zones instead of leaking them to
-## upstream resolvers (always causing errors or timeouts).
-
-block_undelegated = true
-
-
-## TTL for synthetic responses sent when a request has been blocked (due to
-## IPv6 or blocklists).
-
-reject_ttl = 600
-
-
-
-##################################################################################
-#        Route queries for specific domains to a dedicated set of servers        #
-##################################################################################
-
-## See the `example-forwarding-rules.txt` file for an example
-
-# forwarding_rules = 'forwarding-rules.txt'
-
-
-
-###############################
-#        Cloaking rules       #
-###############################
-
-## Cloaking returns a predefined address for a specific name.
-## In addition to acting as a HOSTS file, it can also return the IP address
-## of a different name. It will also do CNAME flattening.
-##
-## See the `example-cloaking-rules.txt` file for an example
-
-# cloaking_rules = 'cloaking-rules.txt'
-
-## TTL used when serving entries in cloaking-rules.txt
-
-# cloak_ttl = 600
-
-
-
-###########################
-#        DNS cache        #
-###########################
-
-## Enable a DNS cache to reduce latency and outgoing traffic
-
-cache = true
-
-
-## Cache size
-
-cache_size = 4096
-
-
-## Minimum TTL for cached entries
-
-cache_min_ttl = 2400
-
-
-## Maximum TTL for cached entries
-
-cache_max_ttl = 86400
-
-
-## Minimum TTL for negatively cached entries
-
-cache_neg_min_ttl = 60
-
-
-## Maximum TTL for negatively cached entries
-
-cache_neg_max_ttl = 600
-
-
-
-########################################
-#        Captive portal handling       #
-########################################
-
-[captive_portals]
-
-## A file that contains a set of names used by operating systems to
-## check for connectivity and captive portals, along with hard-coded
-## IP addresses to return.
-
-# map_file = 'example-captive-portals.txt'
-
-
-
-##################################
-#        Local DoH server        #
-##################################
-
-[local_doh]
-
-## dnscrypt-proxy can act as a local DoH server. By doing so, web browsers
-## requiring a direct connection to a DoH server in order to enable some
-## features will enable these, without bypassing your DNS proxy.
-
-## Addresses that the local DoH server should listen to
-
-# listen_addresses = ['127.0.0.1:3000']
-
-
-## Path of the DoH URL. This is not a file, but the part after the hostname
-## in the URL. By convention, `/dns-query` is frequently chosen.
-## For each `listen_address` the complete URL to access the server will be:
-## `https://<listen_address><path>` (ex: `https://127.0.0.1/dns-query`)
-
-# path = '/dns-query'
-
-
-## Certificate file and key - Note that the certificate has to be trusted.
-## See the documentation (wiki) for more information.
-
-# cert_file = 'localhost.pem'
-# cert_key_file = 'localhost.pem'
-
-
-
-###############################
-#        Query logging        #
-###############################
-
-## Log client queries to a file
-
-[query_log]
-
-  ## Path to the query log file (absolute, or relative to the same directory as the config file)
-  ## Can be set to /dev/stdout in order to log to the standard output.
-
-  # file = 'query.log'
-
-
-  ## Query log format (currently supported: tsv and ltsv)
-
-  format = 'tsv'
-
-
-  ## Do not log these query types, to reduce verbosity. Keep empty to log everything.
-
-  # ignored_qtypes = ['DNSKEY', 'NS']
-
-
-
-############################################
-#        Suspicious queries logging        #
-############################################
-
-## Log queries for nonexistent zones
-## These queries can reveal the presence of malware, broken/obsolete applications,
-## and devices signaling their presence to 3rd parties.
-
-[nx_log]
-
-  ## Path to the query log file (absolute, or relative to the same directory as the config file)
-
-  # file = 'nx.log'
-
-
-  ## Query log format (currently supported: tsv and ltsv)
-
-  format = 'tsv'
-
-
-
-######################################################
-#        Pattern-based blocking (blocklists)        #
-######################################################
-
-## Blocklists are made of one pattern per line. Example of valid patterns:
-##
-##   example.com
-##   =example.com
-##   *sex*
-##   ads.*
-##   ads*.example.*
-##   ads*.example[0-9]*.com
-##
-## Example blocklist files can be found at https://download.dnscrypt.info/blocklists/
-## A script to build blocklists from public feeds can be found in the
-## `utils/generate-domains-blocklists` directory of the dnscrypt-proxy source code.
-
-[blocked_names]
-
-  ## Path to the file of blocking rules (absolute, or relative to the same directory as the config file)
-
-  blocked_names_file = 'blocked-names.txt'
-
-
-  ## Optional path to a file logging blocked queries
-
-  # log_file = 'blocked-names.log'
-
-
-  ## Optional log format: tsv or ltsv (default: tsv)
-
-  # log_format = 'tsv'
-
-
-
-###########################################################
-#        Pattern-based IP blocking (IP blocklists)        #
-###########################################################
-
-## IP blocklists are made of one pattern per line. Example of valid patterns:
-##
-##   127.*
-##   fe80:abcd:*
-##   192.168.1.4
-
-[blocked_ips]
-
-  ## Path to the file of blocking rules (absolute, or relative to the same directory as the config file)
-
-  blocked_ips_file = 'blocked-ips.txt'
-
-
-  ## Optional path to a file logging blocked queries
-
-  # log_file = 'blocked-ips.log'
-
-
-  ## Optional log format: tsv or ltsv (default: tsv)
-
-  # log_format = 'tsv'
-
-
-
-######################################################
-#   Pattern-based allow lists (blocklists bypass)   #
-######################################################
-
-## Allowlists support the same patterns as blocklists
-## If a name matches an allowlist entry, the corresponding session
-## will bypass names and IP filters.
-##
-## Time-based rules are also supported to make some websites only accessible at specific times of the day.
-
-[allowed_names]
-
-  ## Path to the file of allow list rules (absolute, or relative to the same directory as the config file)
-
-  allowed_names_file = 'allowed-names.txt'
-
-
-  ## Optional path to a file logging allowed queries
-
-  # log_file = 'allowed-names.log'
-
-
-  ## Optional log format: tsv or ltsv (default: tsv)
-
-  # log_format = 'tsv'
-
-
-
-#########################################################
-#   Pattern-based allowed IPs lists (blocklists bypass) #
-#########################################################
-
-## Allowed IP lists support the same patterns as IP blocklists
-## If an IP response matches an allow ip entry, the corresponding session
-## will bypass IP filters.
-##
-## Time-based rules are also supported to make some websites only accessible at specific times of the day.
-
-[allowed_ips]
-
-  ## Path to the file of allowed ip rules (absolute, or relative to the same directory as the config file)
-
-  allowed_ips_file = 'allowed-ips.txt'
-
-
-  ## Optional path to a file logging allowed queries
-
-  # log_file = 'allowed-ips.log'
-
-  ## Optional log format: tsv or ltsv (default: tsv)
-
-  # log_format = 'tsv'
-
-
-
-##########################################
-#        Time access restrictions        #
-##########################################
-
-## One or more weekly schedules can be defined here.
-## Patterns in the name-based blocked_names file can optionally be followed with @schedule_name
-## to apply the pattern 'schedule_name' only when it matches a time range of that schedule.
-##
-## For example, the following rule in a blocklist file:
-## *.youtube.* @time-to-sleep
-## would block access to YouTube during the times defined by the 'time-to-sleep' schedule.
-##
-## {after='21:00', before= '7:00'} matches 0:00-7:00 and 21:00-0:00
-## {after= '9:00', before='18:00'} matches 9:00-18:00
-
-[schedules]
-
-  # [schedules.'time-to-sleep']
-  # mon = [{after='21:00', before='7:00'}]
-  # tue = [{after='21:00', before='7:00'}]
-  # wed = [{after='21:00', before='7:00'}]
-  # thu = [{after='21:00', before='7:00'}]
-  # fri = [{after='23:00', before='7:00'}]
-  # sat = [{after='23:00', before='7:00'}]
-  # sun = [{after='21:00', before='7:00'}]
-
-  # [schedules.'work']
-  # mon = [{after='9:00', before='18:00'}]
-  # tue = [{after='9:00', before='18:00'}]
-  # wed = [{after='9:00', before='18:00'}]
-  # thu = [{after='9:00', before='18:00'}]
-  # fri = [{after='9:00', before='17:00'}]
-
-
-
-#########################
-#        Servers        #
-#########################
-
-## Remote lists of available servers
-## Multiple sources can be used simultaneously, but every source
-## requires a dedicated cache file.
-##
-## Refer to the documentation for URLs of public sources.
-##
-## A prefix can be prepended to server names in order to
-## avoid collisions if different sources share the same for
-## different servers. In that case, names listed in `server_names`
-## must include the prefixes.
-##
-## If the `urls` property is missing, cache files and valid signatures
-## must already be present. This doesn't prevent these cache files from
-## expiring after `refresh_delay` hours.
-## Cache freshness is checked every 24 hours, so values for 'refresh_delay'
-## of less than 24 hours will have no effect.
-## A maximum delay of 168 hours (1 week) is imposed to ensure cache freshness.
-
-[sources]
-
-  ## An example of a remote source from https://github.com/DNSCrypt/dnscrypt-resolvers
-
-  [sources.'public-resolvers']
-  urls = ['https://raw.githubusercontent.com/DNSCrypt/dnscrypt-resolvers/master/v3/public-resolvers.md', 'https://download.dnscrypt.info/resolvers-list/v3/public-resolvers.md', 'https://ipv6.download.dnscrypt.info/resolvers-list/v3/public-resolvers.md', 'https://download.dnscrypt.net/resolvers-list/v3/public-resolvers.md']
-  cache_file = 'public-resolvers.md'
-  minisign_key = 'RWQf6LRCGA9i53mlYecO4IzT51TGPpvWucNSCh1CBM0QTaLn73Y7GFO3'
-  refresh_delay = 72
-  prefix = ''
-
-  ## Anonymized DNS relays
-
-  [sources.'relays']
-  urls = ['https://raw.githubusercontent.com/DNSCrypt/dnscrypt-resolvers/master/v3/relays.md', 'https://download.dnscrypt.info/resolvers-list/v3/relays.md', 'https://ipv6.download.dnscrypt.info/resolvers-list/v3/relays.md', 'https://download.dnscrypt.net/resolvers-list/v3/relays.md']
-  cache_file = 'relays.md'
-  minisign_key = 'RWQf6LRCGA9i53mlYecO4IzT51TGPpvWucNSCh1CBM0QTaLn73Y7GFO3'
-  refresh_delay = 72
-  prefix = ''
-
-  ## Quad9 over DNSCrypt - https://quad9.net/
-
-  # [sources.quad9-resolvers]
-  # urls = ['https://www.quad9.net/quad9-resolvers.md']
-  # minisign_key = 'RWQBphd2+f6eiAqBsvDZEBXBGHQBJfeG6G+wJPPKxCZMoEQYpmoysKUN'
-  # cache_file = 'quad9-resolvers.md'
-  # prefix = 'quad9-'
-
-  ## Another example source, with resolvers censoring some websites not appropriate for children
-  ## This is a subset of the `public-resolvers` list, so enabling both is useless
-
-  #  [sources.'parental-control']
-  #  urls = ['https://raw.githubusercontent.com/DNSCrypt/dnscrypt-resolvers/master/v3/parental-control.md', 'https://download.dnscrypt.info/resolvers-list/v3/parental-control.md', 'https://ipv6.download.dnscrypt.info/resolvers-list/v3/parental-control.md', 'https://download.dnscrypt.net/resolvers-list/v3/parental-control.md']
-  #  cache_file = 'parental-control.md'
-  #  minisign_key = 'RWQf6LRCGA9i53mlYecO4IzT51TGPpvWucNSCh1CBM0QTaLn73Y7GFO3'
-
-
-
-#########################################
-#        Servers with known bugs        #
-#########################################
-
-[broken_implementations]
-
-# Cisco servers currently cannot handle queries larger than 1472 bytes, and don't
-# truncate reponses larger than questions as expected by the DNSCrypt protocol.
-# This prevents large responses from being received over UDP and over relays.
-#
-# Older versions of the `dnsdist` server software had a bug with queries larger
-# than 1500 bytes. This is fixed since `dnsdist` version 1.5.0, but
-# some server may still run an outdated version.
-#
-# The list below enables workarounds to make non-relayed usage more reliable
-# until the servers are fixed.
-
-fragments_blocked = ['cisco', 'cisco-ipv6', 'cisco-familyshield', 'cisco-familyshield-ipv6', 'cleanbrowsing-adult', 'cleanbrowsing-adult-ipv6', 'cleanbrowsing-family', 'cleanbrowsing-family-ipv6', 'cleanbrowsing-security', 'cleanbrowsing-security-ipv6']
-
-
-
-#################################################################
-#        Certificate-based client authentication for DoH        #
-#################################################################
-
-# Use a X509 certificate to authenticate yourself when connecting to DoH servers.
-# This is only useful if you are operating your own, private DoH server(s).
-# 'creds' maps servers to certificates, and supports multiple entries.
-# If you are not using the standard root CA, an optional "root_ca"
-# property set to the path to a root CRT file can be added to a server entry.
-
-[doh_client_x509_auth]
-
-#
-# creds = [
-#    { server_name='myserver', client_cert='client.crt', client_key='client.key' }
-# ]
-
-
-
-################################
-#        Anonymized DNS        #
-################################
-
-[anonymized_dns]
-
-## Routes are indirect ways to reach DNSCrypt servers.
-##
-## A route maps a server name ("server_name") to one or more relays that will be
-## used to connect to that server.
-##
-## A relay can be specified as a DNS Stamp (either a relay stamp, or a
-## DNSCrypt stamp) or a server name.
-##
-## The following example routes "example-server-1" via `anon-example-1` or `anon-example-2`,
-## and "example-server-2" via the relay whose relay DNS stamp is
-## "sdns://gRIxMzcuNzQuMjIzLjIzNDo0NDM".
-##
-## !!! THESE ARE JUST EXAMPLES !!!
-##
-## Review the list of available relays from the "relays.md" file, and, for each
-## server you want to use, define the relays you want connections to go through.
-##
-## Carefully choose relays and servers so that they are run by different entities.
-##
-## "server_name" can also be set to "*" to define a default route, for all servers:
-## { server_name='*', via=['anon-example-1', 'anon-example-2'] }
-##
-## If a route is ["*"], the proxy automatically picks a relay on a distinct network.
-## { server_name='*', via=['*'] } is also an option, but is likely to be suboptimal.
-##
-## Manual selection is always recommended over automatic selection, so that you can
-## select (relay,server) pairs that work well and fit your own criteria (close by or
-## in different countries, operated by different entities, on distinct ISPs...)
-
- routes = [
-    { server_name='acsacsar-ams-ipv4', via=['anon-meganerd', 'anon-scaleway-ams'] },
-    { server_name='arvind-io', via=['anon-arapurayil-in-ipv4', 'anon-tiarap'] },
-    { server_name='bcn-dnscrypt', via=['anon-kama', 'anon-scaleway'] },
-    { server_name='d0wn-tz-ns1', via=['anon-arapurayil-in-ipv4', 'anon-pwoss.org'] },
-    { server_name='dnscrypt.be', via=['anon-acsacsar-ams-ipv4', 'anon-scaleway'] },
-    { server_name='dnscrypt.ca-1', via=['anon-ev-canada', 'anon-zackptg5-us-il-ipv4'] },
-    { server_name='dnscrypt.ca-2', via=['anon-ev-canada', 'anon-zackptg5-us-il-ipv4'] },
-    { server_name='dnscrypt.eu-dk', via=['anon-meganerd', 'anon-scaleway-ams'] },
-    { server_name='dnscrypt.eu-nl', via=['anon-meganerd', 'anon-scaleway-ams'] },
-    { server_name='dnscrypt.one', via=['anon-pwoss.org', 'anon-serbica'] },
-    { server_name='dnscrypt.pl', via=['anon-dnscrypt.one', 'anon-pwoss.org'] },
-    { server_name='dnscrypt.uk-ipv4', via=['anon-kama', 'anon-scaleway'] },
-    { server_name='ev-canada', via=['anon-inconnu', 'anon-plan9-dns'] },
-    { server_name='jp.tiar.app', via=['anon-pwoss.org', 'anon-yepdns-sg-ipv4'] },
-    { server_name='meganerd', via=['anon-acsacsar-ams-ipv4', 'anon-scaleway-ams'] },
-    { server_name='moulticast-ca-ipv4', via=['anon-ev-canada', 'anon-zackptg5-us-il-ipv4'] },
-    { server_name='moulticast-de-ipv4', via=['anon-dnscrypt.one', 'anon-pwoss.org'] },
-    { server_name='moulticast-fr-ipv4', via=['anon-kama', 'anon-scaleway'] },
-    { server_name='moulticast-sg-ipv4', via=['anon-tiarap', 'anon-yepdns-sg-ipv4'] },
-    { server_name='moulticast-uk-ipv4', via=['anon-dnscrypt.uk-ipv4', 'anon-v.dnscrypt.uk-ipv4'] },
-    { server_name='plan9-dns', via=['anon-ev-canada', 'anon-zackptg5-us-il-ipv4'] },
-    { server_name='publicarray-au', via=['anon-arapurayil-in-ipv4', 'anon-tiarap'] },
-    { server_name='pwoss.org-dnscrypt', via=['anon-dnscrypt.one', 'anon-serbica'] },
-    { server_name='sarpel-dns-istanbul', via=['anon-bcn', 'anon-kama'] },
-    { server_name='scaleway-ams', via=['anon-acsacsar-ams-ipv4', 'anon-serbica'] },
-    { server_name='scaleway-fr', via=['anon-dnscrypt.uk-ipv4', 'anon-v.dnscrypt.uk-ipv4'] },
-    { server_name='serbica', via=['anon-acsacsar-ams-ipv4', 'anon-scaleway-ams'] },
-    { server_name='v.dnscrypt.uk-ipv4', via=['anon-meganerd', 'anon-scaleway'] },
-    { server_name='ventricle.us', via=['anon-inconnu', 'anon-zackptg5-us-il-ipv4'] },
-    { server_name='zackptg5-us-il-ipv4', via=['anon-inconnu', 'anon-plan9-dns'] }
-#    { server_name='example-server-2', via=['sdns://gRIxMzcuNzQuMjIzLjIzNDo0NDM'] }
- ]
-
-
-# Skip resolvers incompatible with anonymization instead of using them directly
-
-skip_incompatible = true
-
-
-# If public server certificates for a non-conformant server cannot be
-# retrieved via a relay, try getting them directly. Actual queries
-# will then always go through relays.
-
-direct_cert_fallback = false
-
-
-
-###############################
-#            DNS64            #
-###############################
-
-## DNS64 is a mechanism for synthesizing AAAA records from A records.
-## It is used with an IPv6/IPv4 translator to enable client-server
-## communication between an IPv6-only client and an IPv4-only server,
-## without requiring any changes to either the IPv6 or the IPv4 node,
-## for the class of applications that work through NATs.
-##
-## There are two options to synthesize such records:
-## Option 1: Using a set of static IPv6 prefixes;
-## Option 2: By discovering the IPv6 prefix from DNS64-enabled resolver.
-##
-## If both options are configured - only static prefixes are used.
-## (Ref. RFC6147, RFC6052, RFC7050)
-##
-## Do not enable unless you know what DNS64 is and why you need it, or else
-## you won't be able to connect to anything at all.
-
-[dns64]
-
-## (Option 1) Static prefix(es) as Pref64::/n CIDRs.
-# prefix = ['64:ff9b::/96']
-
-## (Option 2) DNS64-enabled resolver(s) to discover Pref64::/n CIDRs.
-## These resolvers are used to query for Well-Known IPv4-only Name (WKN) "ipv4only.arpa." to discover only.
-## Set with your ISP's resolvers in case of custom prefixes (other than Well-Known Prefix 64:ff9b::/96).
-## IMPORTANT: Default resolvers listed below support Well-Known Prefix 64:ff9b::/96 only.
-# resolver = ['[2606:4700:4700::64]:53', '[2001:4860:4860::64]:53']
-
-
-
-########################################
-#            Static entries            #
-########################################
-
-## Optional, local, static list of additional servers
-## Mostly useful for testing your own servers.
-
-[static]
-
-  # [static.'myserver']
-  # stamp = 'sdns://AQcAAAAAAAAAAAAQMi5kbnNjcnlwdC1jZXJ0Lg'
+## Credits
+- DNSCrypt-Proxy2 upstream | [jedisct1](https://github.com/DNSCrypt/dnscrypt-proxy)
+- [bluemeda](https://github.com/bluemeda) for the original module
+- [All contributors](https://github.com/Magisk-Modules-Repo/dnscrypt-proxy/graphs/contributors)
