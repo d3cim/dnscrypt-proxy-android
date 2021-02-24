@@ -10,7 +10,7 @@
 ## License     : GPLv3       : https://git.nixnet.services/quindecim/dnscrypt-proxy-android/src/branch/master/LICENSE.md
 
 
-########## Blocklist from https://github.com/DNSCrypt/dnscrypt-proxy/wiki/Filters#dns-rebind-protection ##########
+########## Blocklist from https://github.com/DNSCrypt/dnscrypt-proxy/wiki/Filters#dns-rebinding-protection ##########
 
 # Localhost rebind protection
 0.0.0.0
