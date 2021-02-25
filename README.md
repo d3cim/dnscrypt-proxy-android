@@ -53,7 +53,7 @@ Up-to-date, pre-built binaries are available for:
 1. Download the latest `.zip` file from the [Releases](https://git.nixnet.services/quindecim/dnscrypt-proxy-android/releases) page or from my [dnscrypt-proxy-android | CHANNEL](https://t.me/dnscrypt_proxy) on Telegram and flash it with [Magisk](https://github.com/topjohnwu/Magisk):
 
 ```
-Magisk Manager > Modules > + > dnscrypt-proxy-android-v*.zip
+Magisk > Modules > + > dnscrypt-proxy-android-v2.*.zip
 ```
 
 2. Reboot your device.
@@ -68,24 +68,13 @@ Magisk Manager > Modules > + > dnscrypt-proxy-android-v*.zip
 - For more support on a good privacy oriented setup, join our group at [dnscrypt-proxy-android | CHAT](https://t.me/qd_invitations) on Telegram.
 
 
-#### AFWall+ users only
-
-If you experience no connection issue after flashing the module I suggest you to insert these scripts: (in both, enter and shutdown boxes)
-
-```
-iptables -A "afwall" -d 127.0.0.1 -p tcp --dport 5354 -j ACCEPT
-iptables -A "afwall" -d 127.0.0.1 -p udp --dport 5354 -j ACCEPT
-```
-
-The issue is related to the use of `AFWall+` and only happens on some devices, it depends on how the DNS configuration is implemented in the device itself.
-
-
 ## Changelog
 
 [Full changelog](https://git.nixnet.services/quindecim/dnscrypt-proxy-android/blob/master/CHANGELOG.md)
 
 
 ## Credits
+
 - DNSCrypt-Proxy2 upstream | [jedisct1](https://github.com/DNSCrypt/dnscrypt-proxy)
 - [bluemeda](https://github.com/bluemeda) for the original module
 - [All contributors](https://github.com/Magisk-Modules-Repo/dnscrypt-proxy/graphs/contributors)
