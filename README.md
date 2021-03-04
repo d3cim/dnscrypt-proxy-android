@@ -39,7 +39,7 @@ Up-to-date, pre-built binaries are available for:
 
 - `block_ipv6` = `true` (immediately respond to IPv6-related queries with an empty response)
 
-- `blocked_names_file`, `blocked_ips_file`, `allowed_names_file` and `allowed_ips_file` options enabled. (you can now filter your web content, to know how, please refer to the [official documentation](https://github.com/DNSCrypt/dnscrypt-proxy/wiki/Filters) or take a look at my [block repository](https://git.nixnet.services/quindecim/block))
+- `blocked_names_file`, `blocked_ips_file`, `allowed_names_file` and `allowed_ips_file` options enabled. (you can now filter your web content, to know how, please refer to the [official documentation](https://github.com/DNSCrypt/dnscrypt-proxy/wiki/Filters) or take a look at my [block repository](https://codeberg.org/quindecim/block))
 
 - `anonymized_dns` feature enabled. (`routes` are indirect ways to reach DNSCrypt servers, each resolver has 2 relays assigned)
 
@@ -50,7 +50,7 @@ Up-to-date, pre-built binaries are available for:
 
 ## Installation
 
-1. Download the latest `.zip` file from the [Releases](https://git.nixnet.services/quindecim/dnscrypt-proxy-android/releases) page or from my [dnscrypt-proxy-android | CHANNEL](https://t.me/dnscrypt_proxy) on Telegram and flash it with [Magisk](https://github.com/topjohnwu/Magisk):
+1. Download the latest `.zip` file from the [Releases](https://codeberg.org/quindecim/dnscrypt-proxy-android/releases) page or from my [dnscrypt-proxy-android | CHANNEL](https://t.me/dnscrypt_proxy) on Telegram and flash it with [Magisk](https://github.com/topjohnwu/Magisk):
 
 ```
 Magisk > Modules > + > dnscrypt-proxy-android-v2.*.zip
@@ -70,7 +70,7 @@ Magisk > Modules > + > dnscrypt-proxy-android-v2.*.zip
 
 ## Changelog
 
-[Full changelog](https://git.nixnet.services/quindecim/dnscrypt-proxy-android/blob/master/CHANGELOG.md)
+[Full changelog](https://codeberg.org/quindecim/dnscrypt-proxy-android/blob/master/CHANGELOG.md)
 
 
 ## Credits
