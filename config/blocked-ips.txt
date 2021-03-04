@@ -3,11 +3,12 @@
 #        IP blocklist        #
 ##############################
 
-## Author      : quindecim   : https://git.nixnet.services/quindecim
+## Author    : quindecim   : https://codeberg.org/quindecim
+##                           https://git.nixnet.services/quindecim
 ##
 ## Based on    : DNSCrypt    : Rebind Protection   : https://github.com/DNSCrypt/dnscrypt-proxy/wiki/Filters#dns-rebind-protection
 ##
-## License     : GPLv3       : https://git.nixnet.services/quindecim/dnscrypt-proxy-android/src/branch/master/LICENSE.md
+## License     : GPLv3       : https://codeberg.org/quindecim/dnscrypt-proxy-android/src/branch/master/LICENSE.md
 
 
 ########## Blocklist from https://github.com/DNSCrypt/dnscrypt-proxy/wiki/Filters#dns-rebinding-protection ##########
