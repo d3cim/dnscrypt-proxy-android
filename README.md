@@ -19,7 +19,7 @@ Up-to-date, pre-built binaries are available for:
 - Android/x86_64
 
 
-## Differences from the main dnscrypt-proxy project
+## Differences from the main project
 
 - `server_names` = `acsacsar-ams-ipv4` [NLD], `ams-dnscrypt-nl` [NLD], `arvind-io` [IND], `bcn-dnscrypt` [ESP], `d0wn-tz-ns1` [TZA], `dnscrypt.be` [BEL], `dnscrypt.ca-1` [CAN], `dnscrypt.ca-2` [CAN], `dnscrypt.eu-dk` [DNK], `dnscrypt.eu-nl` [NLD], `dnscrypt.one` [DEU], `dnscrypt.pl` [POL], `dnscrypt.uk-ipv4` [GBR], `jp.tiar.app` [JPN], `meganerd` [NLD], `moulticast-ca-ipv4` [CAN], `moulticast-de-ipv4` [DEU], `moulticast-fr-ipv4` [FRA], `moulticast-sg-ipv4` [SGP], `moulticast-uk-ipv4` [GBR], `plan9-dns` [USA], `publicarray-au` [AUS], `pwoss.org-dnscrypt` [DEU], `sarpel-dns-istanbul` [TUR], `scaleway-ams` [NLD], `scaleway-fr` [FRA], `serbica` [NLD], `v.dnscrypt.uk-ipv4` [GBR], `ventricle.us` [USA], `zackptg5-us-il-ipv4` [USA] are the resolvers in use.
 
@@ -53,7 +53,7 @@ Up-to-date, pre-built binaries are available for:
 1. Download the latest `.zip` file from the [Releases](https://codeberg.org/quindecim/dnscrypt-proxy-android/releases) page or from my [dnscrypt-proxy-android | CHANNEL](https://t.me/dnscrypt_proxy) on Telegram and flash it with [Magisk](https://github.com/topjohnwu/Magisk):
 
 ```
-Magisk > Modules > + > dnscrypt-proxy-android-v2.*.zip
+Magisk > Modules > Install from storage > dnscrypt-proxy-android-v2.*.zip
 ```
 
 2. Reboot your device.
