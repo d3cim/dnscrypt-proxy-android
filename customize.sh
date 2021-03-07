@@ -47,7 +47,7 @@ fi
 
 # Copy the configuration files into the right folder
 if [ -d "$CONFIG_PATH" ]; then
-ui_print "* Copying config, example and license files."
+ui_print "* Copying the configuration files into the dnscrypt-proxy folder."
   cp -af $CONFIG_PATH/* /data/media/0/dnscrypt-proxy/
 else
   abort "Configuration file (.toml) is missing!"
