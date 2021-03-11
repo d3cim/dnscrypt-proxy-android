@@ -70,11 +70,11 @@ Magisk > Modules > Install from storage > dnscrypt-proxy-android-v2.*.zip
 
 ## Changelog
 
-[Full changelog](https://codeberg.org/quindecim/dnscrypt-proxy-android/blob/master/CHANGELOG.md)
+[Full changelog](https://codeberg.org/quindecim/dnscrypt-proxy-android/src/branch/master/CHANGELOG.md)
 
 
 ## Credits
 
-- DNSCrypt-Proxy2 upstream | [jedisct1](https://github.com/DNSCrypt/dnscrypt-proxy)
-- [bluemeda](https://github.com/bluemeda) for the original module
-- [All contributors](https://github.com/Magisk-Modules-Repo/dnscrypt-proxy/graphs/contributors)
+- [Frank Denis](https://github.com/jedisct1) and his [contributors](https://github.com/DNSCrypt/dnscrypt-proxy/graphs/contributors) for the upstream code.
+- [Affif Mukhlashin](https://github.com/bluemeda) and his [contributors](https://github.com/bluemeda/dnscrypt-proxy-magisk/graphs/contributors) for the very first module.
+- [John Wu](https://github.com/topjohnwu) and his [contributors](https://github.com/topjohnwu/Magisk/graphs/contributors) for Magisk.
