@@ -27,7 +27,7 @@ mkdir -p $MODPATH/system/bin
 
 # Create the path for the configuration files
 ui_print "* Creating the config. path."
-mkdir -p /data/media/0/dnscrypt-proxy
+mkdir -p /storage/emulated/0/dnscrypt-proxy
 
 # Copy the binary files into the right folder
 if [ -f "$BINARY_PATH" ]; then
@@ -38,7 +38,7 @@ else
 fi
 
 # Backup an existing config file before proceed
-CONFIG_FILE="/data/media/0/dnscrypt-proxy/dnscrypt-proxy.toml"
+CONFIG_FILE="/storage/emulated/0/dnscrypt-proxy/dnscrypt-proxy.toml"
 
 if [ -f "$CONFIG_FILE" ]; then
 ui_print "* Backing up the existing config. file before proceed."
@@ -48,7 +48,7 @@ fi
 # Copy the configuration files into the right folder
 if [ -d "$CONFIG_PATH" ]; then
 ui_print "* Copying the configuration files into the dnscrypt-proxy folder."
-  cp -af $CONFIG_PATH/* /data/media/0/dnscrypt-proxy/
+  cp -af $CONFIG_PATH/* /storage/emulated/0/dnscrypt-proxy/
 else
   abort "Configuration file (.toml) is missing!"
 fi
