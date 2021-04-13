@@ -61,11 +61,11 @@ Magisk > Modules > Install from storage > dnscrypt-proxy-android-v2.*.zip
 3. Test your DNS: https://dnsleaktest.com/
 
 
-### Configuration (post-installing)
+### Configuration (post-installation)
 
-- You can edit `dnscrypt-proxy.toml` as you wish located on `/sdcard/dnscrypt-proxy/dnscrypt-proxy.toml`, or `/data/media/0/dnscrypt-proxy/dnscrypt-proxy.toml`.
-- For more detailed configuration please refer to [official documentation](https://github.com/DNSCrypt/dnscrypt-proxy/wiki/Configuration).
-- For more support on a good privacy oriented setup, join our group at [dnscrypt-proxy-android | CHAT](https://t.me/qd_invitations) on Telegram.
+- You can edit the `dnscrypt-proxy.toml` file as you wish located on `storage/emulated/0/dnscrypt-proxy` path.
+- For a more detailed configuration please refer to the official documentation [HERE](https://github.com/DNSCrypt/dnscrypt-proxy/wiki/Configuration).
+- For more support join our group at [dnscrypt-proxy-android | CHAT](https://t.me/qd_invitations) on Telegram.
 
 
 ## Changelog
