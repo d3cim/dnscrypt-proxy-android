@@ -31,6 +31,8 @@ Up-to-date, pre-built binaries are available for:
 
 - `blocked_query_response` = `'refused'` (set `refused` response to blocked queries)
 
+- `log_level` = `0` (set the log level of the `dnscrypt-proxy.log` file to very verbose, but still keeps it disabled by default)
+
 - `dnscrypt_ephemeral_keys` = `true` (create a new, unique key for every single DNS query)
 
 - `bootstrap_resolvers` = `['91.239.100.100:53']` (use [UncensoredDNS](https://blog.uncensoreddns.org/) instead [CloudFlare](https://iscloudflaresafeyet.com/))
