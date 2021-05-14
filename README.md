@@ -1,4 +1,4 @@
-# DNSCrypt Proxy 2 for Android | privacy oriented
+# DNSCrypt Proxy 2 for Android
 
 A flexible DNS proxy, with support for modern encrypted DNS protocols such as [DNSCrypt v2](https://dnscrypt.info/protocol), [DNS-over-HTTPS](https://www.rfc-editor.org/rfc/rfc8484.txt) and [Anonymized DNSCrypt](https://github.com/DNSCrypt/dnscrypt-protocol/blob/master/ANONYMIZED-DNSCRYPT.txt).
 
@@ -6,7 +6,6 @@ A flexible DNS proxy, with support for modern encrypted DNS protocols such as [D
 ## Features
 
 - For all features please refer to the [OFFICIAL PAGE](https://github.com/DNSCrypt/dnscrypt-proxy#features)
-- All binary files are downloaded from the [OFFICIAL RELEASE PAGE](https://github.com/DNSCrypt/dnscrypt-proxy/releases)
 
 
 ## Pre-built binaries
@@ -17,6 +16,8 @@ Up-to-date, pre-built binaries are available for:
 - Android/arm64
 - Android/x86
 - Android/x86_64
+
+- All binary files are downloaded from the [OFFICIAL RELEASE PAGE](https://github.com/DNSCrypt/dnscrypt-proxy/releases)
 
 
 ## Differences from the main project
@@ -31,7 +32,7 @@ Up-to-date, pre-built binaries are available for:
 
 - `blocked_query_response` = `'refused'` (set `refused` response to blocked queries)
 
-- `log_level` = `0` (set the log level of the `dnscrypt-proxy.log` file to very verbose, but still keeps it disabled by default)
+- `log_level` = `0` (set the log level of the `dnscrypt-proxy.log` file to very verbose, but still keep it disabled by default)
 
 - `dnscrypt_ephemeral_keys` = `true` (create a new, unique key for every single DNS query)
 
