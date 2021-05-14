@@ -17,7 +17,7 @@ Up-to-date, pre-built binaries are available for:
 - Android/x86
 - Android/x86_64
 
-- All binary files are downloaded from the [OFFICIAL RELEASE PAGE](https://github.com/DNSCrypt/dnscrypt-proxy/releases)
+All these binary files are downloaded from the [OFFICIAL RELEASE PAGE](https://github.com/DNSCrypt/dnscrypt-proxy/releases)
 
 
 ## Differences from the main project
