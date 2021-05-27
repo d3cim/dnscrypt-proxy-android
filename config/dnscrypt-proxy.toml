@@ -29,7 +29,7 @@
 ##
 ## Remove the leading # first to enable this; lines starting with # are ignored.
 
-server_names = ['acsacsar-ams-ipv4', 'ams-dnscrypt-nl', 'arvind-io', 'bcn-dnscrypt', 'd0wn-tz-ns1', 'dama.no sa-a80', 'dct-ru1', 'dct-ru2', 'dnscrypt.be', 'dnscrypt.ca-1', 'dnscrypt.ca-2', 'dnscrypt.eu-dk', 'dnscrypt.eu-nl', 'dnscrypt.pl', 'dnscrypt.uk-ipv4', 'jp.tiar.app', 'meganerd', 'moulticast-ca-ipv4', 'moulticast-de-ipv4', 'moulticast-fr-ipv4', 'moulticast-sg-ipv4', 'moulticast-uk-ipv4', 'pf-dnscrypt', 'plan9-dns', 'plan9-ns2', 'pryv8boi', 'publicarray-au', 'pwoss.org-dnscrypt', 'scaleway-ams', 'scaleway-fr', 'serbica', 'v.dnscrypt.uk-ipv4', 'zackptg5-us-il-ipv4', 'zackptg5-us-pit-ipv4']
+server_names = ['acsacsar-ams-ipv4', 'ams-dnscrypt-nl', 'bcn-dnscrypt', 'd0wn-tz-ns1', 'dama.no sa-a80', 'dct-ru1', 'dct-ru2', 'dnscrypt.be', 'dnscrypt.ca-1', 'dnscrypt.ca-2', 'dnscrypt.eu-dk', 'dnscrypt.eu-nl', 'dnscrypt.pl', 'dnscrypt.uk-ipv4', 'jp.tiar.app', 'meganerd', 'moulticast-ca-ipv4', 'moulticast-de-ipv4', 'moulticast-fr-ipv4', 'moulticast-sg-ipv4', 'moulticast-uk-ipv4', 'pf-dnscrypt', 'plan9-dns', 'plan9-ns2', 'pryv8boi', 'publicarray-au', 'pwoss.org-dnscrypt', 'scaleway-ams', 'scaleway-fr', 'serbica', 'v.dnscrypt.uk-ipv4', 'zackptg5-us-il-ipv4', 'zackptg5-us-pit-ipv4']
 
 
 ## List of local addresses and ports to listen to. Can be IPv4 and/or IPv6.
@@ -777,7 +777,6 @@ fragments_blocked = ['cisco', 'cisco-ipv6', 'cisco-familyshield', 'cisco-familys
  routes = [
     { server_name='acsacsar-ams-ipv4', via=['anon-meganerd', 'anon-scaleway-ams'] },
     { server_name='ams-dnscrypt-nl', via=['anon-meganerd', 'anon-scaleway-ams'] },
-    { server_name='arvind-io', via=['anon-arapurayil-in-ipv4', 'anon-tiarap'] },
     { server_name='bcn-dnscrypt', via=['anon-pf', 'anon-scaleway'] },
     { server_name='d0wn-tz-ns1', via=['anon-arapurayil-in-ipv4', 'anon-pwoss.org'] },
     { server_name='dama.no sa-a80', via=['anon-meganerd', 'anon-serbica'] },
@@ -797,12 +796,12 @@ fragments_blocked = ['cisco', 'cisco-ipv6', 'cisco-familyshield', 'cisco-familys
     { server_name='moulticast-fr-ipv4', via=['anon-pf', 'anon-kama'] },
     { server_name='moulticast-sg-ipv4', via=['anon-saldnssg01-conoha-ipv4', 'anon-yepdns-sg-ipv4'] },
     { server_name='moulticast-uk-ipv4', via=['anon-dnscrypt.uk-ipv4', 'anon-v.dnscrypt.uk-ipv4'] },
-    { server_name='pf-dnscrypt', via=['anon-bcn', 'anon-scaleway'] },
+    { server_name='pf-dnscrypt', via=['anon-ibksturm', 'anon-scaleway'] },
     { server_name='plan9-dns', via=['anon-zackptg5-us-il-ipv4', 'anon-zackptg5-us-pit-ipv4'] },
     { server_name='plan9-ns2', via=['anon-zackptg5-us-il-ipv4', 'anon-zackptg5-us-pit-ipv4'] },
     { server_name='pryv8boi', via=['anon-dnscrypt.one', 'anon-pwoss.org'] },
     { server_name='publicarray-au', via=['anon-saldnssg01-conoha-ipv4', 'anon-tiarap'] },
-    { server_name='pwoss.org-dnscrypt', via=['anon-pf', 'anon-dnscrypt.one'] },
+    { server_name='pwoss.org-dnscrypt', via=['anon-ibksturm', 'anon-dnscrypt.one'] },
     { server_name='scaleway-ams', via=['anon-acsacsar-ams-ipv4', 'anon-serbica'] },
     { server_name='scaleway-fr', via=['anon-pf', 'anon-v.dnscrypt.uk-ipv4'] },
     { server_name='serbica', via=['anon-acsacsar-ams-ipv4', 'anon-scaleway-ams'] },
