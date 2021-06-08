@@ -5,7 +5,7 @@ A flexible DNS proxy, with support for modern encrypted DNS protocols such as [D
 
 ## Features
 
-- For all features please refer to the [OFFICIAL PAGE](https://github.com/DNSCrypt/dnscrypt-proxy#features)
+- For all features please refer to the [OFFICIAL PAGE](https://github.com/DNSCrypt/dnscrypt-proxy#features).
 
 
 ## Pre-built binaries
@@ -17,7 +17,7 @@ Up-to-date, pre-built binaries are available for:
 - Android/x86
 - Android/x86_64
 
-All these binary files are downloaded from the [OFFICIAL RELEASE PAGE](https://github.com/DNSCrypt/dnscrypt-proxy/releases)
+All these binary files are downloaded from the [OFFICIAL RELEASE PAGE](https://github.com/DNSCrypt/dnscrypt-proxy/releases).
 
 
 ## Differences from the main project
@@ -73,7 +73,7 @@ Magisk > Modules > Install from storage > dnscrypt-proxy-android-v2.*.zip
 
 ## Changelog
 
-[Full changelog](https://codeberg.org/quindecim/dnscrypt-proxy-android/src/branch/master/CHANGELOG.md)
+[FULL CHANGELOG](https://codeberg.org/quindecim/dnscrypt-proxy-android/src/branch/master/CHANGELOG.md).
 
 
 ## Contributors
