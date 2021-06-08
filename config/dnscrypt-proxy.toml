@@ -244,7 +244,7 @@ dnscrypt_ephemeral_keys = true
 bootstrap_resolvers = ['91.239.100.100:53']
 
 
-## Always use the fallback resolver before the system DNS settings.
+## Always use the bootstrap resolver before the system DNS settings.
 
 ignore_system_dns = true
 
