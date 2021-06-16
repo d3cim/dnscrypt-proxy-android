@@ -799,7 +799,7 @@ fragments_blocked = ['cisco', 'cisco-ipv6', 'cisco-familyshield', 'cisco-familys
     { server_name='dnscrypt.be', via=['anon-acsacsar-ams-ipv4', 'anon-scaleway'] },
     { server_name='dnscrypt.ca-1', via=['anon-plan9-dns', 'anon-zackptg5-us-il-ipv4'] },
     { server_name='dnscrypt.ca-2', via=['anon-plan9-dns', 'anon-zackptg5-us-il-ipv4'] },
-    { server_name='dnscrypt.eu-dk', via=['dama.no osl-s04 Relay', 'anon-scaleway-ams'] },
+    { server_name='dnscrypt.eu-dk', via=['anon-dama.no', 'anon-scaleway-ams'] },
     { server_name='dnscrypt.eu-nl', via=['anon-meganerd', 'anon-scaleway-ams'] },
     { server_name='dnscrypt.pl', via=['anon-dnscrypt.one', 'anon-pwoss.org'] },
     { server_name='dnscrypt.uk-ipv4', via=['anon-kama', 'anon-scaleway'] },
