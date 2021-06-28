@@ -29,7 +29,7 @@
 ##
 ## Remove the leading # first to enable this; lines starting with # are ignored.
 
-server_names = ['acsacsar-ams-ipv4', 'altername', 'ams-dnscrypt-nl', 'bcn-dnscrypt', 'd0wn-tz-ns1', 'dama.no osl-s04', 'dama.no sa-a80', 'dct-ru1', 'dct-ru2', 'dnscrypt.be', 'dnscrypt.ca-1', 'dnscrypt.ca-2', 'dnscrypt.eu-dk', 'dnscrypt.eu-nl', 'dnscrypt.pl', 'dnscrypt.uk-ipv4', 'jp.tiar.app', 'meganerd', 'moulticast-ca-ipv4', 'moulticast-de-ipv4', 'moulticast-fr-ipv4', 'moulticast-sg-ipv4', 'moulticast-uk-ipv4', 'pf-dnscrypt', 'plan9-dns', 'plan9-ns2', 'pryv8boi', 'publicarray-au', 'pwoss.org-dnscrypt', 'scaleway-ams', 'scaleway-fr', 'serbica', 'zackptg5-us-il-ipv4', 'zackptg5-us-pit-ipv4']
+server_names = ['acsacsar-ams-ipv4', 'altername', 'ams-dnscrypt-nl', 'bcn-dnscrypt', 'd0wn-tz-ns1', 'dama.no-osl-s04', 'dama.no-sa-a80', 'dct-ru1', 'dct-ru2', 'dnscrypt.be', 'dnscrypt.ca-1', 'dnscrypt.ca-2', 'dnscrypt.eu-dk', 'dnscrypt.eu-nl', 'dnscrypt.pl', 'dnscrypt.uk-ipv4', 'jp.tiar.app', 'meganerd', 'moulticast-ca-ipv4', 'moulticast-de-ipv4', 'moulticast-fr-ipv4', 'moulticast-sg-ipv4', 'moulticast-uk-ipv4', 'pf-dnscrypt', 'plan9-dns', 'plan9-ns2', 'pryv8boi', 'publicarray-au', 'pwoss.org-dnscrypt', 'scaleway-ams', 'scaleway-fr', 'serbica', 'zackptg5-us-il-ipv4', 'zackptg5-us-pit-ipv4']
 
 
 ## List of local addresses and ports to listen to. Can be IPv4 and/or IPv6.
@@ -792,8 +792,8 @@ fragments_blocked = ['cisco', 'cisco-ipv6', 'cisco-familyshield', 'cisco-familys
     { server_name='ams-dnscrypt-nl', via=['anon-meganerd', 'anon-scaleway-ams'] },
     { server_name='bcn-dnscrypt', via=['anon-pf', 'anon-scaleway'] },
     { server_name='d0wn-tz-ns1', via=['anon-arapurayil-in-ipv4', 'anon-pwoss.org'] },
-    { server_name='dama.no osl-s04', via=['anon-meganerd', 'anon-serbica'] },
-    { server_name='dama.no sa-a80', via=['anon-meganerd', 'anon-serbica'] },
+    { server_name='dama.no-osl-s04', via=['anon-meganerd', 'anon-serbica'] },
+    { server_name='dama.no-sa-a80', via=['anon-meganerd', 'anon-serbica'] },
     { server_name='dct-ru1', via=['anon-pwoss.org', 'anon-sth-se'] },
     { server_name='dct-ru2', via=['anon-pwoss.org', 'anon-sth-se'] },
     { server_name='dnscrypt.be', via=['anon-acsacsar-ams-ipv4', 'anon-scaleway'] },
