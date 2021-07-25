@@ -36,9 +36,9 @@ All these binary files are downloaded from the [OFFICIAL RELEASE PAGE](https://g
 
 - `dnscrypt_ephemeral_keys` = `true` (create a new, unique key for every single DNS query)
 
-- `bootstrap_resolvers` = `['91.239.100.100:53']` (use [UncensoredDNS](https://blog.uncensoreddns.org/) instead [CloudFlare](https://iscloudflaresafeyet.com/))
+- `bootstrap_resolvers` = `['91.239.100.100:53', '89.233.43.71:53']` (use [UncensoredDNS (Anycast & Unicast)](https://blog.uncensoreddns.org/) instead [CloudFlare](https://iscloudflaresafeyet.com/))
 
-- `netprobe_address` = `'91.239.100.100:53'` (use [UncensoredDNS](https://blog.uncensoreddns.org/) instead [CloudFlare](https://iscloudflaresafeyet.com/))
+- `netprobe_address` = `'91.239.100.100:53'` (use [UncensoredDNS (Anycast)](https://blog.uncensoreddns.org/) instead [CloudFlare](https://iscloudflaresafeyet.com/))
 
 - `block_ipv6` = `true` (immediately respond to IPv6-related queries with an empty response)
 
