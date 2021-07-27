@@ -11,7 +11,7 @@
 ##
 ## DO NOT DELETE THIS FILE !!
 ##
-## This file is required by dnscrypt-proxy to work properly, you can use it to filter your content on the web, or simply forget it.
+## This file is required by dnscrypt-proxy to work properly, you can use it to filter your content on the web, otherwise forget about it.
 ##
 ## More info at: https://github.com/DNSCrypt/dnscrypt-proxy/wiki/Filters
 ##               https://codeberg.org/quindecim/block
