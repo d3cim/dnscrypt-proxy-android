@@ -29,7 +29,7 @@
 ##
 ## Remove the leading # first to enable this; lines starting with # are ignored.
 
-server_names = ['acsacsar-ams-ipv4', 'altername', 'ams-dnscrypt-nl', 'bcn-dnscrypt', 'd0wn-tz-ns1', 'dama.no-osl-s04', 'dama.no-sa-a80', 'dct-ru1', 'dct-ru2', 'dns.watch', 'dnscrypt.be', 'dnscrypt.ca-1', 'dnscrypt.ca-2', 'dnscrypt.eu-nl', 'dnscrypt.pl', 'dnscrypt.uk-ipv4', 'gombadi-syd', 'meganerd', 'moulticast-ca-ipv4', 'moulticast-de-ipv4', 'moulticast-fr-ipv4', 'moulticast-sg-ipv4', 'moulticast-uk-ipv4', 'pf-dnscrypt', 'plan9-dns', 'plan9-ns2', 'pryv8boi', 'pwoss.org-dnscrypt', 'resolver4.dns.openinternet.io', 'scaleway-ams', 'scaleway-fr', 'serbica', 'v.dnscrypt.uk-ipv4', 'zackptg5-us-il-ipv4', 'zackptg5-us-pit-ipv4']
+server_names = ['acsacsar-ams-ipv4', 'altername', 'ams-dnscrypt-nl', 'bcn-dnscrypt', 'd0wn-tz-ns1', 'dama.no-osl-s04', 'dama.no-sa-a80', 'dct-ru1', 'dct-ru2', 'dns.watch', 'dnscrypt.be', 'dnscrypt.ca-1', 'dnscrypt.ca-2', 'dnscrypt.eu-nl', 'dnscrypt.pl', 'dnscrypt.uk-ipv4', 'gombadi-syd', 'kenshiro', 'meganerd', 'moulticast-ca-ipv4', 'moulticast-de-ipv4', 'moulticast-fr-ipv4', 'moulticast-sg-ipv4', 'moulticast-uk-ipv4', 'pf-dnscrypt', 'plan9-dns', 'plan9-ns2', 'pryv8boi', 'pwoss.org-dnscrypt', 'resolver4.dns.openinternet.io', 'scaleway-ams', 'scaleway-fr', 'serbica', 'suami', 'v.dnscrypt.uk-ipv4', 'zackptg5-us-il-ipv4', 'zackptg5-us-pit-ipv4']
 
 
 ## List of local addresses and ports to listen to. Can be IPv4 and/or IPv6.
@@ -669,45 +669,51 @@ cache_neg_max_ttl = 600
   ## An example of a remote source from https://github.com/DNSCrypt/dnscrypt-resolvers
 
   [sources.'public-resolvers']
-  urls = ['https://raw.githubusercontent.com/DNSCrypt/dnscrypt-resolvers/master/v3/public-resolvers.md', 'https://download.dnscrypt.info/resolvers-list/v3/public-resolvers.md', 'https://ipv6.download.dnscrypt.info/resolvers-list/v3/public-resolvers.md', 'https://download.dnscrypt.net/resolvers-list/v3/public-resolvers.md']
-  cache_file = 'public-resolvers.md'
-  minisign_key = 'RWQf6LRCGA9i53mlYecO4IzT51TGPpvWucNSCh1CBM0QTaLn73Y7GFO3'
-  refresh_delay = 72
-  prefix = ''
+    urls = ['https://raw.githubusercontent.com/DNSCrypt/dnscrypt-resolvers/master/v3/public-resolvers.md', 'https://download.dnscrypt.info/resolvers-list/v3/public-resolvers.md', 'https://ipv6.download.dnscrypt.info/resolvers-list/v3/public-resolvers.md', 'https://download.dnscrypt.net/resolvers-list/v3/public-resolvers.md']
+    cache_file = 'public-resolvers.md'
+    minisign_key = 'RWQf6LRCGA9i53mlYecO4IzT51TGPpvWucNSCh1CBM0QTaLn73Y7GFO3'
+    refresh_delay = 72
+    prefix = ''
 
   ## Anonymized DNS relays
 
   [sources.'relays']
-  urls = ['https://raw.githubusercontent.com/DNSCrypt/dnscrypt-resolvers/master/v3/relays.md', 'https://download.dnscrypt.info/resolvers-list/v3/relays.md', 'https://ipv6.download.dnscrypt.info/resolvers-list/v3/relays.md', 'https://download.dnscrypt.net/resolvers-list/v3/relays.md']
-  cache_file = 'relays.md'
-  minisign_key = 'RWQf6LRCGA9i53mlYecO4IzT51TGPpvWucNSCh1CBM0QTaLn73Y7GFO3'
-  refresh_delay = 72
-  prefix = ''
+    urls = ['https://raw.githubusercontent.com/DNSCrypt/dnscrypt-resolvers/master/v3/relays.md', 'https://download.dnscrypt.info/resolvers-list/v3/relays.md', 'https://ipv6.download.dnscrypt.info/resolvers-list/v3/relays.md', 'https://download.dnscrypt.net/resolvers-list/v3/relays.md']
+    cache_file = 'relays.md'
+    minisign_key = 'RWQf6LRCGA9i53mlYecO4IzT51TGPpvWucNSCh1CBM0QTaLn73Y7GFO3'
+    refresh_delay = 72
+    prefix = ''
 
   ## ODoH (Oblivious DoH) servers and relays
 
-  # [sources.'odoh']
-  # urls = ['https://raw.githubusercontent.com/DNSCrypt/dnscrypt-resolvers/master/v3/odoh.md', 'https://download.dnscrypt.info/resolvers-list/v3/odoh.md', 'https://ipv6.download.dnscrypt.info/resolvers-list/v3/odoh.md', 'https://download.dnscrypt.net/resolvers-list/v3/odoh.md']
-  # cache_file = 'odoh.md'
-  # minisign_key = 'RWQf6LRCGA9i53mlYecO4IzT51TGPpvWucNSCh1CBM0QTaLn73Y7GFO3'
-  # refresh_delay = 24
-  # prefix = ''
+  # [sources.'odoh-servers']
+  #   urls = ['https://raw.githubusercontent.com/DNSCrypt/dnscrypt-resolvers/master/v3/odoh-servers.md', 'https://download.dnscrypt.info/resolvers-list/v3/odoh-servers.md', 'https://ipv6.download.dnscrypt.info/resolvers-list/v3/odoh-servers.md', 'https://download.dnscrypt.net/resolvers-list/v3/odoh-servers.md']
+  #   cache_file = 'odoh-servers.md'
+  #   minisign_key = 'RWQf6LRCGA9i53mlYecO4IzT51TGPpvWucNSCh1CBM0QTaLn73Y7GFO3'
+  #   refresh_delay = 24
+  #   prefix = ''
+  # [sources.'odoh-relays']
+  #   urls = ['https://raw.githubusercontent.com/DNSCrypt/dnscrypt-resolvers/master/v3/odoh-relays.md', 'https://download.dnscrypt.info/resolvers-list/v3/odoh-relays.md', 'https://ipv6.download.dnscrypt.info/resolvers-list/v3/odoh-relays.md', 'https://download.dnscrypt.net/resolvers-list/v3/odoh-relays.md']
+  #   cache_file = 'odoh-relays.md'
+  #   minisign_key = 'RWQf6LRCGA9i53mlYecO4IzT51TGPpvWucNSCh1CBM0QTaLn73Y7GFO3'
+  #   refresh_delay = 24
+  #   prefix = ''
 
-  ## Quad9 over DNSCrypt - https://quad9.net/
+  ## Quad9
 
   # [sources.quad9-resolvers]
-  # urls = ['https://www.quad9.net/quad9-resolvers.md']
-  # minisign_key = 'RWQBphd2+f6eiAqBsvDZEBXBGHQBJfeG6G+wJPPKxCZMoEQYpmoysKUN'
-  # cache_file = 'quad9-resolvers.md'
-  # prefix = 'quad9-'
+  #   urls = ['https://www.quad9.net/quad9-resolvers.md']
+  #   minisign_key = 'RWQBphd2+f6eiAqBsvDZEBXBGHQBJfeG6G+wJPPKxCZMoEQYpmoysKUN'
+  #   cache_file = 'quad9-resolvers.md'
+  #   prefix = 'quad9-'
 
   ## Another example source, with resolvers censoring some websites not appropriate for children
   ## This is a subset of the `public-resolvers` list, so enabling both is useless
 
   #  [sources.'parental-control']
-  #  urls = ['https://raw.githubusercontent.com/DNSCrypt/dnscrypt-resolvers/master/v3/parental-control.md', 'https://download.dnscrypt.info/resolvers-list/v3/parental-control.md', 'https://ipv6.download.dnscrypt.info/resolvers-list/v3/parental-control.md', 'https://download.dnscrypt.net/resolvers-list/v3/parental-control.md']
-  #  cache_file = 'parental-control.md'
-  #  minisign_key = 'RWQf6LRCGA9i53mlYecO4IzT51TGPpvWucNSCh1CBM0QTaLn73Y7GFO3'
+  #    urls = ['https://raw.githubusercontent.com/DNSCrypt/dnscrypt-resolvers/master/v3/parental-control.md', 'https://download.dnscrypt.info/resolvers-list/v3/parental-control.md', 'https://ipv6.download.dnscrypt.info/resolvers-list/v3/parental-control.md', 'https://download.dnscrypt.net/resolvers-list/v3/parental-control.md']
+  #    cache_file = 'parental-control.md'
+  #    minisign_key = 'RWQf6LRCGA9i53mlYecO4IzT51TGPpvWucNSCh1CBM0QTaLn73Y7GFO3'
 
 
 
@@ -796,29 +802,31 @@ fragments_blocked = ['cisco', 'cisco-ipv6', 'cisco-familyshield', 'cisco-familys
     { server_name='dama.no-sa-a80', via=['anon-meganerd', 'anon-serbica'] },
     { server_name='dct-ru1', via=['anon-pwoss.org', 'anon-sth-se'] },
     { server_name='dct-ru2', via=['anon-pwoss.org', 'anon-sth-se'] },
-    { server_name='dns.watch', via=['anon-dnscrypt.one', 'anon-pwoss.org'] },
+    { server_name='dns.watch', via=['anon-pwoss.org', 'anon-suami'] },
     { server_name='dnscrypt.be', via=['anon-acsacsar-ams-ipv4', 'anon-scaleway'] },
     { server_name='dnscrypt.ca-1', via=['anon-plan9-dns', 'anon-zackptg5-us-il-ipv4'] },
     { server_name='dnscrypt.ca-2', via=['anon-plan9-dns', 'anon-zackptg5-us-il-ipv4'] },
-    { server_name='dnscrypt.eu-nl', via=['anon-meganerd', 'anon-scaleway-ams'] },
-    { server_name='dnscrypt.pl', via=['anon-dnscrypt.one', 'anon-pwoss.org'] },
+    { server_name='dnscrypt.eu-nl', via=['anon-kenshiro', 'anon-meganerd'] },
+    { server_name='dnscrypt.pl', via=['anon-pwoss.org', 'anon-suami'] },
     { server_name='dnscrypt.uk-ipv4', via=['anon-kama', 'anon-scaleway'] },
     { server_name='gombadi-syd', via=['anon-saldnssg01-conoha-ipv4', 'anon-tiarap'] },
+    { server_name='kenshiro', via=['anon-serbica', 'anon-scaleway-ams'] },
     { server_name='meganerd', via=['anon-acsacsar-ams-ipv4', 'anon-scaleway-ams'] },
     { server_name='moulticast-ca-ipv4', via=['anon-plan9-dns', 'anon-zackptg5-us-il-ipv4'] },
-    { server_name='moulticast-de-ipv4', via=['anon-dnscrypt.one', 'anon-pwoss.org'] },
+    { server_name='moulticast-de-ipv4', via=['anon-pwoss.org', 'anon-suami'] },
     { server_name='moulticast-fr-ipv4', via=['anon-pf', 'anon-kama'] },
     { server_name='moulticast-sg-ipv4', via=['anon-saldnssg01-conoha-ipv4', 'anon-tiarap'] },
     { server_name='moulticast-uk-ipv4', via=['anon-dnscrypt.uk-ipv4', 'anon-v.dnscrypt.uk-ipv4'] },
     { server_name='pf-dnscrypt', via=['anon-ibksturm', 'anon-scaleway'] },
     { server_name='plan9-dns', via=['anon-inconnu', 'anon-zackptg5-us-il-ipv4'] },
     { server_name='plan9-ns2', via=['anon-inconnu', 'anon-zackptg5-us-il-ipv4'] },
-    { server_name='pryv8boi', via=['anon-dnscrypt.one', 'anon-pwoss.org'] },
-    { server_name='pwoss.org-dnscrypt', via=['anon-ibksturm', 'anon-dnscrypt.one'] },
+    { server_name='pryv8boi', via=['anon-pwoss.org', 'anon-suami'] },
+    { server_name='pwoss.org-dnscrypt', via=['anon-ibksturm', 'anon-suami'] },
     { server_name='resolver4.dns.openinternet.io', via=['anon-inconnu', 'anon-plan9-ns2'] },
-    { server_name='scaleway-ams', via=['anon-acsacsar-ams-ipv4', 'anon-serbica'] },
+    { server_name='scaleway-ams', via=['anon-kenshiro', 'anon-serbica'] },
     { server_name='scaleway-fr', via=['anon-pf', 'anon-v.dnscrypt.uk-ipv4'] },
     { server_name='serbica', via=['anon-acsacsar-ams-ipv4', 'anon-scaleway-ams'] },
+    { server_name='suami', via=['anon-ibksturm', 'anon-pwoss.org'] },
     { server_name='v.dnscrypt.uk-ipv4', via=['anon-kama', 'anon-scaleway'] },
     { server_name='zackptg5-us-il-ipv4', via=['anon-inconnu', 'anon-plan9-ns2'] },
     { server_name='zackptg5-us-pit-ipv4', via=['anon-inconnu', 'anon-plan9-ns2'] }
