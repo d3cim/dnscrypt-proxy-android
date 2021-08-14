@@ -1,6 +1,53 @@
 # Changelog
 
 
+## 2.1.0
+
+##### Updated binary files to 2.1.0 | jedisct1
+ - `dnscrypt-proxy` now includes support for Oblivious DoH.
+ - If the proxy is overloaded, cached and synthetic queries now keep being
+served, while non-cached queries are delayed.
+ - A deprecation warning was added for `fallback_resolvers`.
+ - Source URLs are now randomized.
+ - On some platforms, redirecting the application log to a file was not
+compatible with user switching; this has been fixed.
+ - `fallback_resolvers` was renamed to `bootstrap_resolvers` for
+clarity. Please update your configuration file accordingly.
+
+##### Updated module files to 2.1.0 | quindecim
+- Added `ams-dnscrypt-nl` resolver (Resolver in Amsterdam. Dnscrypt protocol. Non-logging, non-filtering, DNSSEC).
+- Added `altername` resolver (Protocol: DNSCrypt IPv4 | Features: Non-logging, Non-filtering, DNSSEC, EmerDNS | Location: Moscow, Russia).
+- Added `dama.no-osl-s04` resolver (DNSCrypt server located in Oslo/Norway. Link-speed 100 Mbit/s. Non-censoring, non-logging, DNSSEC-capable.).
+- Added `dama.no-sa-a80` resolver (DNSCrypt Server located in Sandefjord/Norway. non-censoring, non-logging, DNSSEC-capable).
+- Added `dct-ru1` resolver (DNSCrypt | IPv4 only | Non-logging | Non-filtering | DNSSEC | Saint Petersburg, Russia.).
+- Added `dct-ru2` resolver (DNSCrypt | IPv4 only | Non-logging | Non-filtering | DNSSEC | Moscow, Russia.).
+- Added `dns.watch` resolver (Free, uncensored, non-logging server in Germany. https://dns.watch).
+- Added `gombadi-syd` resolver (Protocol: DNSCrypt IPv4 | Features: Non-logging, Non-filtering, DNSSEC, Unbound | Location: Sydney, AU).
+- Added `kenshiro` resolver (dnscrypt-server. No logging, No filtering, support DNSSEC, located in Amsterdam. by lucenera).
+- Added `pf-dnscrypt` resolver (by post-factum | Zürich, Switzerland | Non-logging | Non-filtering | DNSSEC | https://dns.post-factum.tk).
+- Added `plan9-ns2` resolver (DNSCrypt server in Florida, USA. Non-logging, non-filtering, DNSSEC, anonymized. info - https://jlongua.github.io/plan9-dns/).
+- Added `pryv8boi` resolver (By pryv8, non Logging, uncensored, DNSSEC - hosted on contabo servers).
+- Added `resolver4.dns.openinternet.io` resolver (DNSCrypt resolver on dedicated hardware, colocated at Sonic.net in Santa Rosa, CA in the United States. No log, no filter, DNSSEC. Uses Sonic's recusrive DNS servers as upstream resolvers (but is not affiliated with Sonic in any way). Provided by https://openinternet.io).
+- Added `suami` resolver (dnscrypt-server. No logging, No filtering, support DNSSEC, located in Frankfurt. by lucenera).
+- Added `zackptg5-us-il-ipv4` resolver (DNSSEC/unfiltered/non-logged. Hosted on Vultr in Chicago, IL. Running the official Docker image by @zackptg5).
+- Added `zackptg5-us-pit-ipv4` resolver (DNSSEC/unfiltered/non-logged. Hosted on TeraSwitch in Pittsburgh, PA. Running the official Docker image by @zackptg5).
+- Implement UncensoredDNS (Unicast) in addition to UncensoredDNS (Anycast) as `bootstrap_resolvers`.
+- Removed `arvind-io` resolver (unresponsive resolver).
+- Removed `ev-canada` resolver.
+- Removed `dnscrypt.eu-dk` resolver (unresponsive resolver).
+- Removed `dnscrypt.one` resolver and its relay.
+- Removed `freetsa.org-ipv4` resolver (unresponsive resolver).
+- Removed `jp.tiar.app` resolver (cached via Cloudflare).
+- Removed `publicarray-au` resolver (unresponsive resolver).
+- Removed `sarpel-dns-istanbul` (unresponsive resolver).
+- Removed `ventricle.us` resolver (unresponsive resolver).
+- Removed `example-docs` folder (check the upstream repository for the example files).
+- Implemented DNS Rebind Protection with the `blocked-ips.txt` file by default.
+- Changed the path of the config. files from `/data/media/0/dnscrypt-proxy` to `/storage/emulated/0/dnscrypt-proxy` (fix for log issues on `A11` and an issue on `A6-` where the config. files could not be modified).
+- Set `dnscrypt-proxy.log` level from `2` to `0` (but still keeps it disabled by default)
+- Added and optimized relays based on geolocation.
+
+
 ## 2.0.45
 
 ##### Updated binary files to 2.0.45 | jedisct1
