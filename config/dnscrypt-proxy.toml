@@ -214,7 +214,7 @@ dnscrypt_ephemeral_keys = true
 ## Bootstrap resolvers
 ##
 ## These are normal, non-encrypted DNS resolvers, that will be only used
-## for one-shot queries when retrieving the initial resolvers list and the
+## for one-shot queries when retrieving the initial resolvers list and if
 ## the system DNS configuration doesn't work.
 ##
 ## No user queries will ever be leaked through these resolvers, and they will
@@ -830,6 +830,7 @@ fragments_blocked = ['cisco', 'cisco-ipv6', 'cisco-familyshield', 'cisco-familys
     { server_name='v.dnscrypt.uk-ipv4', via=['anon-kama', 'anon-scaleway'] },
     { server_name='zackptg5-us-il-ipv4', via=['anon-inconnu', 'anon-plan9-ns2'] },
     { server_name='zackptg5-us-pit-ipv4', via=['anon-inconnu', 'anon-plan9-ns2'] }
+#    { server_name='example-server-1', via=['anon-example-1', 'anon-example-2'] },
 #    { server_name='example-server-2', via=['sdns://gRIxMzcuNzQuMjIzLjIzNDo0NDM'] }
  ]
 
