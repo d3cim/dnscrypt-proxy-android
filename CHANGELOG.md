@@ -1,6 +1,31 @@
 # Changelog
 
 
+## 2.1.1
+
+##### Updated binary files to 2.1.1 | jedisct1
+This is a bugfix only release, addressing regressions introduced in
+version 2.1.0:
+- When using DoH, cached responses were not served any more when
+experiencing connectivity issues. This has been fixed.
+- Time attributes in allow/block lists were ignored. This has been
+fixed.
+- The TTL as served to clients is now rounded and starts decreasing
+before the first query is received.
+- Time-based rules are properly handled again in
+generate-domains-blocklist.
+- DoH/ODoH: entries with an IP address and using a non-standard port
+used to require help from a bootstrap resolver. This is not the case
+any more.
+
+##### Updated module files to 2.1.1 | quindecim
+- Removed `dama.no-osl-s04` resolver (unresponsive resolver).
+- Removed `dama.no-sa-a80` resolver (unresponsive resolver).
+- Removed `kenshiro` resolver (unresponsive resolver, no more lucenera resolvers).
+- Removed `suami` resolver (unresponsive resolver, no more lucenera resolvers).
+- Added and optimized relays based on geolocation.
+
+
 ## 2.1.0
 
 ##### Updated binary files to 2.1.0 | jedisct1
