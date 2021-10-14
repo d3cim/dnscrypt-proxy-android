@@ -64,11 +64,22 @@ Magisk > Modules > Install from storage > dnscrypt-proxy-android-v2.*.zip
 3. Test your DNS: https://dnsleaktest.com/
 
 
-### Configuration (post-installation)
+### Configuration (optional)
 
-- You can edit the `dnscrypt-proxy.toml` file as you wish located on `storage/emulated/0/dnscrypt-proxy` path.
-- For a more detailed configuration please refer to the official documentation [HERE](https://github.com/DNSCrypt/dnscrypt-proxy/wiki/Configuration).
-- For more support join our group at [dnscrypt-proxy-android | CHAT](https://t.me/qd_invitations) on Telegram.
+You can edit the `dnscrypt-proxy.toml` file as you wish located on `storage/emulated/0/dnscrypt-proxy` path.
+
+For a more detailed configuration you can refer to the official documentation [HERE](https://github.com/DNSCrypt/dnscrypt-proxy/wiki/Configuration) or simply join our group on [Telegram](https://telegram.org/), at [dnscrypt-proxy-android | CHAT](https://t.me/qd_invitations).
+
+
+### Filters (optional)
+
+Filters are a powerful set of built-in features, that let you control exactly what domain names and IP addresses your device are allowed to connect to. This can be used to block ads, trackers, malware, or anything you don't want your device to load.
+
+The module is shipped by default with these features enabled, that's why you can find some files, needed for this operation, inside the `/storage/emulated/0/dnscrypt-proxy` path. To know more about it you can consult the official documentation [HERE](https://github.com/DNSCrypt/dnscrypt-proxy/wiki/Filters), or in a simpler way through my repository [HERE](https://codeberg.org/quindecim/block).
+
+I'm providing the `allowed-names.txt` and `blocked-names.txt` files regularly updated at [dnscrypt-proxy-android | CHAT](https://t.me/qd_invitations). The [SOURCES](https://codeberg.org/quindecim/block#sources) used for this merge are among the hardest on the web.
+
+Any kind of feedback about this is really appreciated.
 
 
 ## Changelog
