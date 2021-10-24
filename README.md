@@ -53,15 +53,15 @@ All these binary files are downloaded from the [OFFICIAL RELEASE PAGE](https://g
 
 ## Installation
 
-1. Download the latest `.zip` file from the [Releases](https://codeberg.org/quindecim/dnscrypt-proxy-android/releases) page or from my [dnscrypt-proxy-android | CHANNEL](https://t.me/dnscrypt_proxy) on Telegram and flash it with [Magisk](https://github.com/topjohnwu/Magisk):
+**1.** Download the latest `dnscrypt-proxy-android-*.zip` file from the [Releases](https://codeberg.org/quindecim/dnscrypt-proxy-android/releases/latest) page or from my [dnscrypt-proxy-android | CHANNEL](https://t.me/dnscrypt_proxy) on Telegram and flash it with [Magisk](https://github.com/topjohnwu/Magisk):
 
 ```
-Magisk > Modules > Install from storage > dnscrypt-proxy-android-v2.*.zip
+Magisk > Modules > Install from storage > dnscrypt-proxy-android-*.zip
 ```
 
-2. Reboot your device.
+**2.** Reboot your device.
 
-3. Test your DNS: https://dnsleaktest.com/
+**3.** Test your DNS at https://dnsleaktest.com/
 
 
 ### Configuration (optional)
