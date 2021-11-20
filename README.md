@@ -73,13 +73,13 @@ For a more detailed configuration you can refer to the official documentation [H
 
 ### Filters (optional)
 
-Filters are a powerful set of built-in features, that let you control exactly what domain names and IP addresses your device are allowed to connect to. This can be used to block ads, trackers, malware, or anything you don't want your device to load.
+The [MODULE](https://t.me/dnscrypt_proxy) comes with its [FILTERING](https://github.com/DNSCrypt/dnscrypt-proxy/wiki/Filters) feature enabled by default, that's why you can see some files, needed for this operation, inside the `/storage/emulated/0/dnscrypt-proxy` path.
 
-The module is shipped by default with these features enabled, that's why you can find some files, needed for this operation, inside the `/storage/emulated/0/dnscrypt-proxy` path. To know more about it you can consult the official documentation [HERE](https://github.com/DNSCrypt/dnscrypt-proxy/wiki/Filters), or in a simpler way through my repository [HERE](https://codeberg.org/quindecim/block).
+I'm providing the `allowed-names.txt` and `blocked-names.txt` files regularly updated in [HERE](https://t.me/dnscrypt_proxy_filters).
 
-I'm providing the `allowed-names.txt` and `blocked-names.txt` files regularly updated at [dnscrypt-proxy-android | CHAT](https://t.me/qd_invitations). The [SOURCES](https://codeberg.org/quindecim/block#sources) used for this merge are among the hardest on the web.
+The [SOURCES](https://codeberg.org/quindecim/block/src/branch/master/README.md#blocked-names-txt) used for this merge are among the hardest on the web.
 
-Any kind of feedback about this is really appreciated.
+If you want to report or discuss something related to this project, join [dnscrypt-proxy-filters | CHAT](https://t.me/qd_invitations) on [Telegram](https://telegram.org/).
 
 
 ## Changelog
