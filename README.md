@@ -22,7 +22,7 @@ All these binary files are downloaded from the [OFFICIAL RELEASE PAGE](https://g
 
 ## Differences from the main project
 
-- `server_names` = `acsacsar-ams-ipv4` [NLD], `altername` [RUS], `ams-dnscrypt-nl` [NLD], `bcn-dnscrypt` [ESP], `d0wn-tz-ns1` [TZA], `dct-de1` [DEU], `dct-ru1` [RUS], `dct-ru2` [RUS], `dns.watch` [DEU], `dnscrypt.be` [BEL], `dnscrypt.ca-1` [CAN], `dnscrypt.ca-2` [CAN], `dnscrypt.eu-nl` [NLD], `dnscrypt.pl` [POL], `dnscrypt.uk-ipv4` [GBR], `dnswarden-asia-uncensor-dcv4` [SGP], `dnswarden-eu-uncensor-dcv4` [DEU], `dnswarden-us-uncensor-dcv4` [USA], `gombadi-syd` [AUS], `meganerd` [NLD], `moulticast-ca-ipv4` [CAN], `moulticast-de-ipv4` [DEU], `moulticast-fr-ipv4` [FRA], `moulticast-sg-ipv4` [SGP], `moulticast-uk-ipv4` [GBR], `pf-dnscrypt` [CHE], `plan9-dns` [USA], `plan9-ns2` [USA], `pryv8boi` [DEU], `pwoss.org-dnscrypt` [DEU], `resolver4.dns.openinternet.io` [USA], `scaleway-ams` [NLD], `scaleway-fr` [FRA], `serbica` [NLD], `v.dnscrypt.uk-ipv4` [GBR], `zackptg5-us-il-ipv4` [USA], `zackptg5-us-pit-ipv4` [USA] are the resolvers in use.
+- `server_names` = `acsacsar-ams-ipv4` [NLD], `altername` [RUS], `ams-dnscrypt-nl` [NLD], `bcn-dnscrypt` [ESP], `d0wn-tz-ns1` [TZA], `dct-at1` [AUS], `dct-ru1` [RUS], `dct-ru2` [RUS], `dns.watch` [DEU], `dnscrypt.be` [BEL], `dnscrypt.ca-1` [CAN], `dnscrypt.ca-2` [CAN], `dnscrypt.eu-nl` [NLD], `dnscrypt.pl` [POL], `dnscrypt.uk-ipv4` [GBR], `dnswarden-asia-uncensor-dcv4` [SGP], `dnswarden-eu-uncensor-dcv4` [DEU], `dnswarden-us-uncensor-dcv4` [USA], `gombadi-syd` [AUS], `meganerd` [NLD], `moulticast-ca-ipv4` [CAN], `moulticast-de-ipv4` [DEU], `moulticast-fr-ipv4` [FRA], `moulticast-sg-ipv4` [SGP], `moulticast-uk-ipv4` [GBR], `pf-dnscrypt` [CHE], `plan9-dns` [USA], `plan9-ns2` [USA], `pryv8boi` [DEU], `pwoss.org-dnscrypt` [DEU], `resolver4.dns.openinternet.io` [USA], `scaleway-ams` [NLD], `scaleway-fr` [FRA], `serbica` [NLD], `v.dnscrypt.uk-ipv4` [GBR], `zackptg5-us-il-ipv4` [USA], `zackptg5-us-pit-ipv4` [USA] are the resolvers in use.
 
 - `doh_servers` = `false` (disable servers implementing the `DNS-over-HTTPS` protocol)
 
@@ -73,13 +73,13 @@ For a more detailed configuration you can refer to the official documentation [H
 
 ### Filters (optional)
 
-The [MODULE](https://t.me/dnscrypt_proxy) comes with its [FILTERING](https://github.com/DNSCrypt/dnscrypt-proxy/wiki/Filters) feature enabled by default, that's why you can see some files, needed for this operation, inside the `/storage/emulated/0/dnscrypt-proxy` path.
+Filters are a powerful set of built-in features, that let you control exactly what domain names and IP addresses your device are allowed to connect to. This can be used to block ads, trackers, malware, or anything you don't want your device to load.
 
-I'm providing the `allowed-names.txt` and `blocked-names.txt` files regularly updated in [HERE](https://t.me/dnscrypt_proxy_filters).
+The module is shipped by default with these features enabled, that's why you can find some files, needed for this operation, inside the `/storage/emulated/0/dnscrypt-proxy` path. To know more about it you can consult the official documentation [HERE](https://github.com/DNSCrypt/dnscrypt-proxy/wiki/Filters), or in a simpler way through my repository [HERE](https://codeberg.org/quindecim/block).
 
-The [SOURCES](https://codeberg.org/quindecim/block/src/branch/master/README.md#blocked-names-txt) used for this merge are among the hardest on the web.
+I'm providing the `allowed-names.txt` and `blocked-names.txt` files regularly updated at [dnscrypt-proxy-android | CHAT](https://t.me/qd_invitations). The [SOURCES](https://codeberg.org/quindecim/block#sources) used for this merge are among the hardest on the web.
 
-If you want to report or discuss something related to this project, join [dnscrypt-proxy-filters | CHAT](https://t.me/qd_invitations) on [Telegram](https://telegram.org/).
+Any kind of feedback about this is really appreciated.
 
 
 ## Changelog
