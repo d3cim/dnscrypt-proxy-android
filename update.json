@@ -1,6 +1,6 @@
 {
-  "versionCode": 21200,
-  "version": "2.1.2",
+  "versionCode": 21100,
+  "version": "2.1.1",
   "zipUrl": "https://codeberg.org/attachments/34c572f0-1d81-4cd2-ad31-5fd588209fec",
   "changelog": "https://codeberg.org/quindecim/dnscrypt-proxy-android/src/branch/master/CHANGELOG.md#2-1-1"
 }
