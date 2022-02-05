@@ -1,6 +1,6 @@
 {
-    "version": "2.1.1",
-    "versionCode": 21100,
-    "zipUrl": "https://codeberg.org/attachments/34c572f0-1d81-4cd2-ad31-5fd588209fec",
-    "changelog": "https://codeberg.org/quindecim/dnscrypt-proxy-android/src/branch/master/CHANGELOG.md#2-1-1"
+    "version": "2.2.1",
+    "versionCode": 22100,
+    "zipUrl": "https://github.com/quindecim/dnscrypt-proxy-android/releases/download/2.1.1/dnscrypt-proxy-android-v2.1.1.zip",
+    "changelog": "https://github.com/quindecim/dnscrypt-proxy-android/blob/master/CHANGELOG.md"
 }
