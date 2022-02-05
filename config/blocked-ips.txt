@@ -3,12 +3,13 @@
 #        IP blocklist        #
 ##############################
 
-## Author      : quindecim   : https://codeberg.org/quindecim
+## Author      : quindecim   : https://github.com/quindecim
+##                             https://codeberg.org/quindecim
 ##                             https://git.nixnet.services/quindecim
 ##
 ## Based on    : DNSCrypt    : Rebind Protection   : https://github.com/DNSCrypt/dnscrypt-proxy/wiki/Filters#dns-rebind-protection
 ##
-## License     : GPLv3       : https://codeberg.org/quindecim/dnscrypt-proxy-android/src/branch/master/LICENSE.md
+## License     : GPLv3       : https://github.com/quindecim/block/blob/master/LICENSE.md
 ##
 ##
 ## DO NOT DELETE THIS FILE !!
@@ -16,15 +17,13 @@
 ## This file is required by dnscrypt-proxy to work properly, you can use it to filter your content on the web, otherwise forget about it.
 ##
 ## More info at: https://github.com/DNSCrypt/dnscrypt-proxy/wiki/Filters
-##               https://codeberg.org/quindecim/block
+##               https://github.com/quindecim/block
 
 
-########## Blocklist from https://github.com/DNSCrypt/dnscrypt-proxy/wiki/Filters#dns-rebinding-protection ##########
-
+# Blocklist from [https://github.com/DNSCrypt/dnscrypt-proxy/wiki/Filters#dns-rebinding-protection]
 # Localhost rebind protection
 0.0.0.0
 127.0.0.*
-
 # RFC1918 rebind protection
 10.*
 172.16.*
