@@ -19,7 +19,6 @@
 ## More info at: https://github.com/DNSCrypt/dnscrypt-proxy/wiki/Filters
 ##               https://github.com/quindecim/block
 
-
 # Blocklist from [https://github.com/DNSCrypt/dnscrypt-proxy/wiki/Filters#dns-rebinding-protection]
 # Localhost rebind protection
 0.0.0.0
