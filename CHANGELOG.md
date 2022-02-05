@@ -1,9 +1,27 @@
 # Changelog
 
 
+## 2.1.1-1
+
+##### Updated binary files to 2.1.1-1 | jedisct1
+- 
+
+##### Updated module files to 2.1.1-1 | quindecim
+- Migrated to GitHub.
+- Implemented `uninstall.sh` file for `dnscrypt-proxy` folder removal after module uninstallation (Android 7 and below at the moment).
+- Implemented `update.json` file for enable the new auto-update feature from `Magisk v24+`.
+- Added `dct-at1` resolver (DNSCrypt | IPv4 only | Non-logging | Non-filtering | DNSSEC | Vienna, Austria.).
+- Added `dct-de1` resolver (DNSCrypt | IPv4 only | Non-logging | Non-filtering | DNSSEC | Düsseldorf, Germany.).
+- Added `dns.digitalsize.net` resolver (A public, non-tracking, non-filtering DNS resolver with DNSSEC enabled and hosted in Germany (https://dns.digitalsize.net)).
+- Added `dnswarden-asia-uncensor-dcv4` resolver (dnscrypt-server. No logging, No filtering, support DNSSEC, located in Singapore. by Bhanu Pratap).
+- Added `dnswarden-eu-uncensor-dcv4` resolver (dnscrypt-server. No logging, No filtering, support DNSSEC, located in Germany. by Bhanu Pratap).
+- Added `dnswarden-us-uncensor-dcv4` resolver (dnscrypt-server. No logging, No filtering, support DNSSEC, located in USA (Dallas). by Bhanu Pratap).
+- Removed `zackptg5-us-pit-ipv4` resolver (unresponsive resolver).
+- Added and optimized relays based on geolocation.
+
 ## 2.1.1
 
-##### Updated binary files to 2.1.1 | jedisct1
+##### Updated binary files to 2.1.x | jedisct1
 This is a bugfix only release, addressing regressions introduced in
 version 2.1.0:
 - When using DoH, cached responses were not served any more when
