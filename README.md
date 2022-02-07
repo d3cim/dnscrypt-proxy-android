@@ -1,11 +1,12 @@
 # DNSCrypt Proxy 2 for Android
 
-A flexible DNS proxy, with support for modern encrypted DNS protocols such as [DNSCrypt v2](https://dnscrypt.info/protocol), [DNS-over-HTTPS](https://www.rfc-editor.org/rfc/rfc8484.txt), [Anonymized DNSCrypt](https://github.com/DNSCrypt/dnscrypt-protocol/blob/master/ANONYMIZED-DNSCRYPT.txt) and [ODoH (Oblivious DoH)](https://github.com/DNSCrypt/dnscrypt-resolvers/blob/master/v3/odoh.md).
-
 <p align="left">
 <a href="https://github.com/quindecim/dnscrypt-proxy-android/releases" alt="GitHub release"><img src="https://img.shields.io/github/release/quindecim/dnscrypt-proxy-android.svg" ></a>
 <a href="https://github.com/quindecim/dnscrypt-proxy-android/releases" alt="GitHub downloads"><img src="https://img.shields.io/github/downloads/quindecim/dnscrypt-proxy-android/total.svg" ></a>
 </p>
+
+A flexible DNS proxy, with support for modern encrypted DNS protocols such as [DNSCrypt v2](https://dnscrypt.info/protocol), [DNS-over-HTTPS](https://www.rfc-editor.org/rfc/rfc8484.txt), [Anonymized DNSCrypt](https://github.com/DNSCrypt/dnscrypt-protocol/blob/master/ANONYMIZED-DNSCRYPT.txt) and [ODoH (Oblivious DoH)](https://github.com/DNSCrypt/dnscrypt-resolvers/blob/master/v3/odoh.md).
+
 
 ## Features
 
@@ -21,7 +22,7 @@ Up-to-date, pre-built binaries are available for:
 - Android/x86
 - Android/x86_64
 
-All these binary files are downloaded from the [official release page](https://github.com/DNSCrypt/dnscrypt-proxy/releases).
+All the binary files are downloaded from the [official release page](https://github.com/DNSCrypt/dnscrypt-proxy/releases).
 
 
 ## Differences from the main project
@@ -81,7 +82,7 @@ Filters are a powerful set of built-in features, that let you control exactly wh
 
 The module is shipped by default with this feature enabled, that's why you can see some files, needed for this operation, inside the `/storage/emulated/0/dnscrypt-proxy` folder. The files are empty, out of the box they work as a placeholder, but they can be used to use `dnscrypt-proxy` as a blocking tool. To know more about it you can consult the [official documentation](https://github.com/DNSCrypt/dnscrypt-proxy/wiki/Filters), or in a simpler way through my repository [HERE](https://github.com/quindecim/block).
 
-I'm also providing the `allowed-names.txt` and `blocked-names.txt` files regularly updated at [dnscrypt-proxy-filters | CHANNEL](https://t.me/dnscrypt_proxy_filters). The [SOURCES](https://github.com/quindecim/block#sources) used for this merge are among the hardest on the web.
+I'm also providing the `allowed-names.txt` and `blocked-names.txt` files regularly updated at [dnscrypt-proxy-filters | CHANNEL](https://t.me/dnscrypt_proxy_filters). The [sources](https://github.com/quindecim/block#sources) used for this merge are among the hardest on the web.
 
 You can contribute to this blocklist at anytime, opening an [Issue](https://github.com/quindecim/dnscrypt-proxy-android/issues/new) here or simply reporting the issue at [dnscrypt-proxy-filters | CHAT](https://t.me/qd_invitations) on [Telegram](https://telegram.org/).
 
@@ -91,11 +92,6 @@ Any kind of feedback about this is really appreciated.
 ## Changelog
 
 [FULL CHANGELOG](https://github.com/quindecim/dnscrypt-proxy-android/blob/master/CHANGELOG.md).
-
-
-## Contributors
-
-- [@sapoetra.dee](https://codeberg.org/sapoetra.dee)
 
 
 ## Credits
