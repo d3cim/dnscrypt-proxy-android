@@ -1,5 +1,5 @@
 ---
-name: ''
+name: 'Bug Report'
 about: Create a dnscrypt-proxy-android bug report
 title: ''
 labels: ''
