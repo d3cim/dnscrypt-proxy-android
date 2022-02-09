@@ -33,6 +33,8 @@ All the binary files are downloaded from the [official release page](https://git
 
 - `require_dnssec` = `true` (server must support `DNSSEC` security extension)
 
+- `force_tcp` = `true` (fix for modile data connections if `routes` have been set and `skip_incompatible` = `true`, see [#2020](https://github.com/DNSCrypt/dnscrypt-proxy/discussions/2020))
+
 - `timeout` = `1000` (set the max. response time of a single DNS query from `5000` to `1000` ms.)
 
 - `blocked_query_response` = `'refused'` (set `refused` response to blocked queries)
