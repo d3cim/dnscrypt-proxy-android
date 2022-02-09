@@ -81,14 +81,11 @@ For a more detailed configuration you can refer to the [official documentation](
 ### Filters (optional)
 
 Filters are a powerful set of built-in features, that let you control exactly what domain names and IP addresses your device are allowed to connect to. This can be used to block ads, trackers, malware, or anything you don't want your device to load.
-
-The module is shipped by default with this feature enabled, that's why you can see some files, needed for this operation, inside the `/storage/emulated/0/dnscrypt-proxy` folder. The files are empty, out of the box they work as a placeholder, but they can be used to use `dnscrypt-proxy` as a blocking tool. To know more about it you can consult the [official documentation](https://github.com/DNSCrypt/dnscrypt-proxy/wiki/Filters), or in a simpler way through my repository [HERE](https://github.com/quindecim/block).
+The module (https://t.me/dnscrypt_proxy) comes with the filtering (https://github.com/DNSCrypt/dnscrypt-proxy/wiki/Filters) feature enabled by default, that's why you can see some files, needed for this operation, inside the `/storage/emulated/0/dnscrypt-proxy` folder. The files are empty, out of the box they work as a placeholder, but they can be used to use dnscrypt-proxy as a blocking tool. To know more about it you can consult the official documentation (https://github.com/DNSCrypt/dnscrypt-proxy/wiki/Filters), or in a simpler way through my repository (https://github.com/quindecim/block).
 
 I'm also providing the `allowed-names.txt` and `blocked-names.txt` files regularly updated at [dnscrypt-proxy-filters | CHANNEL](https://t.me/dnscrypt_proxy_filters). The [sources](https://github.com/quindecim/block#sources) used for this merge are among the hardest on the web.
 
-You can contribute to this blocklist at anytime, opening an [Issue](https://github.com/quindecim/dnscrypt-proxy-android/issues/new) here or simply reporting the issue at [dnscrypt-proxy-filters | CHAT](https://t.me/qd_invitations) on [Telegram](https://telegram.org/).
-
-Any kind of feedback about this is really appreciated.
+You can contribute to this blocklist at anytime, opening an [Issue](https://github.com/quindecim/dnscrypt-proxy-android/issues) here or simply reporting the issue at [dnscrypt-proxy-filters | CHAT](https://t.me/qd_invitations) on [Telegram](https://telegram.org/).
 
 
 ## Changelog
