@@ -33,7 +33,7 @@ All the binary files are downloaded from the [official release page](https://git
 
 - `require_dnssec = true` (server must support `DNSSEC` security extension)
 
-- `force_tcp = true` (fix for mobile data intial connection if `routes` have been set and `skip_incompatible = true`, see [#2020](https://github.com/DNSCrypt/dnscrypt-proxy/discussions/2020))
+- `force_tcp = true` (fix for mobile data intial connection random issues if `routes` have been set and `skip_incompatible = true`, see [DNSCrypt/dnscrypt-proxy/discussions/2020](https://github.com/DNSCrypt/dnscrypt-proxy/discussions/2020))
 
 - `timeout = 1000` (set the max. response time of a single DNS query from `5000` to `1000` ms.)
 
@@ -43,9 +43,9 @@ All the binary files are downloaded from the [official release page](https://git
 
 - `dnscrypt_ephemeral_keys = true` (create a new, unique key for every single DNS query)
 
-- `bootstrap_resolvers = ['91.239.100.100:53', '89.233.43.71:53']` (use [UncensoredDNS (Anycast & Unicast)](https://blog.uncensoreddns.org/) instead [CloudFlare](https://iscloudflaresafeyet.com/))
+- `bootstrap_resolvers = ['91.239.100.100:53', '89.233.43.71:53']` (use [UncensoredDNS (Anycast & Unicast)](https://blog.uncensoreddns.org/) instead [CloudFlare](https://archive.fo/tS1Ln))
 
-- `netprobe_address = '91.239.100.100:53'` (use [UncensoredDNS (Anycast)](https://blog.uncensoreddns.org/) instead [CloudFlare](https://iscloudflaresafeyet.com/))
+- `netprobe_address = '91.239.100.100:53'` (use [UncensoredDNS (Anycast)](https://blog.uncensoreddns.org/) instead [CloudFlare](https://archive.fo/tS1Ln))
 
 - `block_ipv6 = true` (immediately respond to IPv6-related queries with an empty response)
 
