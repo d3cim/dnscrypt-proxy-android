@@ -24,10 +24,10 @@ A clear and concise description of what you expected to happen or what could be 
 If applicable, add screenshots to help explain your problem.
 
 **Device informations:**
-- Android: [version]
-- Magisk: [version]
-- OS/Custom ROM: [e.g. stock, lineageos]
-- Browser [e.g. stock browser, safari]
+- Android: `version`
+- Magisk: `version`
+- OS/Custom ROM: `e.g. stock, lineageos`
+- Browser: `e.g. stock browser, safari`
 
 **Additional context**
 Add any other context about the problem here.
