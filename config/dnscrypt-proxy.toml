@@ -871,26 +871,6 @@ direct_cert_fallback = false
 ## Do not enable unless you know what DNS64 is and why you need it, or else
 ## you won't be able to connect to anything at all.
 
-###############################
-#            DNS64            #
-###############################
-
-## DNS64 is a mechanism for synthesizing AAAA records from A records.
-## It is used with an IPv6/IPv4 translator to enable client-server
-## communication between an IPv6-only client and an IPv4-only server,
-## without requiring any changes to either the IPv6 or the IPv4 node,
-## for the class of applications that work through NATs.
-##
-## There are two options to synthesize such records:
-## Option 1: Using a set of static IPv6 prefixes;
-## Option 2: By discovering the IPv6 prefix from DNS64-enabled resolver.
-##
-## If both options are configured - only static prefixes are used.
-## (Ref. RFC6147, RFC6052, RFC7050)
-##
-## Do not enable unless you know what DNS64 is and why you need it, or else
-## you won't be able to connect to anything at all.
-
 [dns64]
 
 ## Static prefix(es) as Pref64::/n CIDRs
@@ -903,6 +883,10 @@ direct_cert_fallback = false
 ## IMPORTANT: Default resolvers listed below support Well-Known Prefix 64:ff9b::/96 only.
 
 # resolver = ['[2606:4700:4700::64]:53', '[2001:4860:4860::64]:53']
+
+
+
+########################################
 
 
 
