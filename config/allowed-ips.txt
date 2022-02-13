@@ -4,7 +4,6 @@
 ##############################
 
 ## Author      : quindecim   : https://github.com/quindecim
-##                             https://codeberg.org/quindecim
 ##                             https://git.nixnet.services/quindecim
 ##
 ## License     : GPLv3       : https://github.com/quindecim/block/blob/master/LICENSE.md

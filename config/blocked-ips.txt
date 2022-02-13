@@ -4,7 +4,6 @@
 ##############################
 
 ## Author      : quindecim   : https://github.com/quindecim
-##                             https://codeberg.org/quindecim
 ##                             https://git.nixnet.services/quindecim
 ##
 ## Based on    : DNSCrypt    : Rebind Protection   : https://github.com/DNSCrypt/dnscrypt-proxy/wiki/Filters#dns-rebind-protection
