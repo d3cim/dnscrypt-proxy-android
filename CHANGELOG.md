@@ -2,6 +2,8 @@
 
 ## unreleased
 
+## 2.1.1-2
+
 ### Fixed
 - Random connection issues under mobile data. (see [DNSCrypt/dnscrypt-proxy/discussions/2020](https://github.com/DNSCrypt/dnscrypt-proxy/discussions/2020))
 
