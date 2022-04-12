@@ -81,7 +81,7 @@ For a more detailed configuration you can refer to the [official documentation](
 Filters are a powerful set of built-in features, that let you control exactly what domain names and IP addresses your device are allowed to connect to. This can be used to block ads, trackers, malware, or anything you don't want your device to load.
 
 This [module](https://github.com/quindecim/dnscrypt-proxy-android) comes with the [filtering feature](https://github.com/DNSCrypt/dnscrypt-proxy/wiki/Filters) enabled by default, that's why you can see files designed for this operation inside the internal folder. Out of the box these files are empty and are used only to ensure the correct start of `dnscrypt-proxy` service.\
-To know more about it you can consult the official [documentation](https://github.com/DNSCrypt/dnscrypt-proxy/wiki/Filters), or in a simpler way through my [block repository](https://github.com/quindecim/block).
+To know more about it you can consult the [official documentation](https://github.com/DNSCrypt/dnscrypt-proxy/wiki/Filters), or in a simpler way through my [block repository](https://github.com/quindecim/block).
 
 I'm also providing the `allowed-names.txt` and `blocked-names.txt` files regularly updated at [dnscrypt-proxy-filters | CHANNEL](https://t.me/dnscrypt_proxy_filters). The [sources](https://github.com/quindecim/block#sources) used for this merge are among the hardest on the web.
 
