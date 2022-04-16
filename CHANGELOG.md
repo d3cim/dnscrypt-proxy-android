@@ -1,6 +1,8 @@
 # Changelog
 
 ## unreleased
+### Added
+- `techsaviours.org-dnscrypt` resolver (No filter | No logs | DNSSEC | Nuremberg, Germany (netcup) | Maintained by https://techsaviours.org/).
 
 ## 2.1.1-2
 
