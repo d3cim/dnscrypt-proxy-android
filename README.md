@@ -58,7 +58,7 @@ All the binary files are downloaded from the [official release page](https://git
 
 ## Installation
 
-**1.** Download the latest `dnscrypt-proxy-android-*.zip` file from the [Releases](https://github.com/quindecim/dnscrypt-proxy-android/releases/latest) page or from my [dnscrypt-proxy-android | CHANNEL](https://t.me/dnscrypt_proxy) on [Telegram](https://telegram.org/) and flash it with [Magisk](https://github.com/topjohnwu/Magisk):
+**1.** Download the latest `dnscrypt-proxy-android-*.zip` file from the [Releases](https://github.com/quindecim/dnscrypt-proxy-android/releases/latest) page and flash it with [Magisk](https://github.com/topjohnwu/Magisk):
 
 ```
 Magisk > Modules > Install from storage > dnscrypt-proxy-android-*.zip
