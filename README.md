@@ -5,11 +5,9 @@
 
 A flexible DNS proxy, with support for modern encrypted DNS protocols such as [DNSCrypt v2](https://dnscrypt.info/protocol), [DNS-over-HTTPS](https://www.rfc-editor.org/rfc/rfc8484.txt), [Anonymized DNSCrypt](https://github.com/DNSCrypt/dnscrypt-protocol/blob/master/ANONYMIZED-DNSCRYPT.txt) and [ODoH (Oblivious DoH)](https://github.com/DNSCrypt/dnscrypt-resolvers/blob/master/v3/odoh.md).
 
-
 ## Features
 
 - For all features please refer to the [official page](https://github.com/DNSCrypt/dnscrypt-proxy#features).
-
 
 ## Pre-built binaries
 
@@ -21,7 +19,6 @@ Up-to-date, pre-built binaries are available for:
 - Android/x86_64
 
 All the binary files are downloaded from the [official release page](https://github.com/DNSCrypt/dnscrypt-proxy/releases).
-
 
 ## Differences from the main project
 
@@ -55,7 +52,6 @@ All the binary files are downloaded from the [official release page](https://git
 
 - `direct_cert_fallback = false` (prevent direct connections through the resolvers for failed certificate retrieved via relay)
 
-
 ## Installation
 
 **1.** Download the latest `dnscrypt-proxy-android-*.zip` file from the [Releases](https://github.com/quindecim/dnscrypt-proxy-android/releases/latest) page and flash it with [Magisk](https://github.com/topjohnwu/Magisk):
@@ -68,13 +64,11 @@ Magisk > Modules > Install from storage > dnscrypt-proxy-android-*.zip
 
 **3.** Test your DNS at https://dnsleaktest.com/
 
-
 ### Configuration (optional)
 
 You can edit the `dnscrypt-proxy.toml` file as you wish located on `storage/emulated/0/dnscrypt-proxy` path.
 
 For a more detailed configuration you can refer to the [official documentation](https://github.com/DNSCrypt/dnscrypt-proxy/wiki/Configuration) or simply join our group on [Telegram](https://telegram.org/), at [dnscrypt-proxy-android | CHAT](https://t.me/qd_invitations).
-
 
 ### Filters (optional)
 
@@ -87,11 +81,16 @@ I'm also providing the `allowed-names.txt` and `blocked-names.txt` files regular
 
 You can contribute to this blocklist at anytime, opening an [Issue](https://github.com/quindecim/dnscrypt-proxy-android/issues) here or simply reporting the issue at [dnscrypt-proxy-filters | CHAT](https://t.me/qd_invitations) on [Telegram](https://telegram.org/).
 
-
 ## Changelog
 
-[FULL CHANGELOG](https://github.com/quindecim/dnscrypt-proxy-android/blob/master/CHANGELOG.md).
+- See [CHANGELOG](https://github.com/quindecim/dnscrypt-proxy-android/blob/master/CHANGELOG.md).
 
+## Donation
+
+- **ETH** address:
+```
+0x16b917Bb585D2411b9c9C81b03de72471f3f072F
+```
 
 ## Credits
 
