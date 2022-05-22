@@ -4,6 +4,12 @@
 ### Added
 - `techsaviours.org-dnscrypt` resolver (No filter | No logs | DNSSEC | Nuremberg, Germany (netcup) | Maintained by https://techsaviours.org/).
 
+### Fixed
+- Changelog display issues in Magisk app
+
+### Removed
+- `dns.digitalsize.net` resolver (ceased resolver).
+
 ## 2.1.1-2
 
 ### Fixed
