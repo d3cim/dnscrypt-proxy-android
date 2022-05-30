@@ -30,10 +30,10 @@
 - `dnswarden-asia-uncensor-dcv4` resolver (dnscrypt-server. No logging, No filtering, support DNSSEC, located in Singapore. by Bhanu Pratap).
 - `dnswarden-eu-uncensor-dcv4` resolver (dnscrypt-server. No logging, No filtering, support DNSSEC, located in Germany. by Bhanu Pratap).
 - `dnswarden-us-uncensor-dcv4` resolver (dnscrypt-server. No logging, No filtering, support DNSSEC, located in USA (Dallas). by Bhanu Pratap).
-- Optimized relays.
 
 ### Changed
 - Project migrated to GitHub.
+- Optimized relays.
 
 ### Removed
 - `zackptg5-us-pit-ipv4` resolver (unresponsive resolver).
@@ -54,7 +54,7 @@ generate-domains-blocklist.
 used to require help from a bootstrap resolver. This is not the case
 any more.
 
-### Added
+### Changed
 - Optimized relays.
 
 ### Removed
@@ -94,11 +94,11 @@ clarity. Please update your configuration file accordingly.
 - `suami` resolver (dnscrypt-server. No logging, No filtering, support DNSSEC, located in Frankfurt. by lucenera).
 - `zackptg5-us-il-ipv4` resolver (DNSSEC/unfiltered/non-logged. Hosted on Vultr in Chicago, IL. Running the official Docker image by @zackptg5).
 - `zackptg5-us-pit-ipv4` resolver (DNSSEC/unfiltered/non-logged. Hosted on TeraSwitch in Pittsburgh, PA. Running the official Docker image by @zackptg5).
-- Optimized relays.
 
 ### Changed
 - The path of the config. files from `/data/media/0/dnscrypt-proxy` to `/storage/emulated/0/dnscrypt-proxy` (fix for log issues on `A11+` and an issue on `A6-` where the config. files could not be modified).
 - Set `dnscrypt-proxy.log` level from `2` to `0` (but keep it disabled by default).
+- Optimized relays.
 
 ### Removed
 - `dama.no-osl-s04` resolver (unresponsive resolver).
@@ -183,7 +183,6 @@ Maintained by Sigfried (https://sigfried.be) hosted by ISW Leuven (https://iswle
 - `sarpel-dns-istanbul` resolver (No-filter | No-logs | Uncensored | Hosted in Istanbul(Turkey) on Cloudeos).
 - `serbica` resolver (Public DNSCrypt server in the Netherlands by https://litepay.ch).
 - `ventricle.us` resolver (Public DNSCrypt resolver provided by Jacob Henner. Hosted by Digital Ocean, New York).
-- Optimized relays.
 
 ### Changed
 - `Magisk 20.4+` required.
@@ -191,6 +190,7 @@ Maintained by Sigfried (https://sigfried.be) hosted by ISW Leuven (https://iswle
 - Reduced the max. query waiting time from `1500` to `1000` ms.
 - Renamed `blacklist.txt` into `blocked-names.txt`.
 - Renamed `whitelist.txt` into `allowed-names.txt`.
+- Optimized relays.
 
 ### Removed
 - [Applied Privacy DNS](https://applied-privacy.net/privacy-policy/) and [NixNet DNS](https://nixnet.xyz/dns/) as fallback resolvers.
@@ -241,10 +241,10 @@ forced to use TCP.
 - 1st attempt to `DROP` `IPv6` queries in `post-fs-data.sh` file.
 - `whitelist.txt` file (as placeholder, once the blacklist goes public).
 - `meganerd` resolver (Non-logging, non-filtering, supports DNSSEC by MegaNerd.nl).
-- Optimized relays.
 
 ### Changed
 - Moved all the example documents into `dnscrypt-proxy/example-docs` folder (the remaining example documents must be deleted manually).
+- Optimized relays.
 
 ### Removed
 - `dnscrypt.nl-ns0` resolver.
@@ -353,10 +353,10 @@ security issue affecting non-encrypted/non-authenticated DNS traffic. In
 
 ### Added
 - `dnscrypt.one` resolver (DNSSEC / no logs / uncensored, Germany (Nuremberg), https://dnscrypt.one/).
-- Optimized relays.
 
 ### Changed
 - Updated `blacklist.txt` to `2019.12.22`.
+- Optimized relays.
 
 ## 2.0.35
 ### Upstream
@@ -372,10 +372,10 @@ can be removed from the blacklist.
 ### Added
 - `scaleway-ams` resolver (DNSSEC/Non-logged/Uncensored in Amsterdam- ARM server donated by Scaleway.com) Maintained by Frank Denis- https://fr.dnscrypt.info).
 - `ffmuc.net` resolver (An open DNSCrypt resolver operated by Freifunk Munich with nodes in DE. https://ffmuc.net/).
-- Optimized relays.
 
 ### Changed
 - Updated `blacklist.txt` to `2019.12.09`.
+- Optimized relays.
 
 ### Fixed
 - Backup an existing `.toml` file before proceed with the installation.
@@ -391,6 +391,8 @@ your DNS proxy.
 ### Added
 - `ibksturm`- dnscrypt-server (nginx- encrypted-dns- unbound backend), DNSSEC / Non-Logged / Uncensored, OpenNIC and Root DNS-Zone- Hosted in Switzerland by ibksturm, aka Andreas Ziegler).
 - `blacklist.txt` file to prevent `CNAME Cloaking` tracking feature.
+
+### Changed
 - Optimized relays.
 
 ### Removed
@@ -451,6 +453,8 @@ but it includes a `SERVFAIL` error code).
 ### Added
 - `publicarray-au` resolver Australia (DNSSEC/OpenNIC/Non-logging/Uncensored- hosted on vultr.com maintained by publicarray- https://dns.seby.io).
 - `publicarray-au2` resolver Australia (DNSSEC/OpenNIC/Non-logging/Uncensored- hosted on ovh.com.au maintained by publicarray- https://dns.seby.io).
+
+### Changed
 - Optimized relays.
 
 ## 2.0.29-beta.3
