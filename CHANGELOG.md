@@ -4,11 +4,17 @@
 ### Added
 - `techsaviours.org-dnscrypt` resolver (No filter | No logs | DNSSEC | Nuremberg, Germany (netcup) | Maintained by https://techsaviours.org/).
 
+### Changed
+- Optimized relays.
+
 ### Fixed
 - Changelog display issues in Magisk app
 
 ### Removed
+- `dct-at1` resolver (unresponsive resolver).
 - `dns.digitalsize.net` resolver (ceased resolver).
+- `gombadi-syd` resolver (ceased resolver).
+- `moulticast-ca-ipv4` resolver (unresponsive resolver).
 
 ## 2.1.1-2
 
