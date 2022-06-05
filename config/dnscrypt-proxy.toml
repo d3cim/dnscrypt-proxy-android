@@ -29,7 +29,7 @@
 ##
 ## Remove the leading # first to enable this; lines starting with # are ignored.
 
-server_names = ['acsacsar-ams-ipv4', 'altername', 'ams-dnscrypt-nl', 'bcn-dnscrypt', 'd0wn-tz-ns1', 'dct-de1', 'dct-ru1', 'dns.watch', 'dnscrypt.be', 'dnscrypt.ca-1', 'dnscrypt.ca-2', 'dnscrypt.eu-nl', 'dnscrypt.pl', 'dnscrypt.uk-ipv4', 'dnswarden-asia-uncensor-dcv4', 'dnswarden-eu-uncensor-dcv4', 'dnswarden-us-uncensor-dcv4', 'meganerd', 'moulticast-de-ipv4', 'moulticast-fr-ipv4', 'moulticast-sg-ipv4', 'moulticast-uk-ipv4', 'plan9-dns', 'plan9-ns2', 'pryv8boi', 'pwoss.org-dnscrypt', 'resolver4.dns.openinternet.io', 'scaleway-ams', 'scaleway-fr', 'serbica', 'techsaviours.org-dnscrypt', 'v.dnscrypt.uk-ipv4']
+server_names = ['acsacsar-ams-ipv4', 'altername', 'ams-dnscrypt-nl', 'bcn-dnscrypt', 'd0wn-tz-ns1', 'dct-de1', 'dct-ru1', 'dns.watch', 'dnscrypt.be', 'dnscrypt.ca-1', 'dnscrypt.ca-2', 'dnscrypt.eu-nl', 'dnscrypt.pl', 'dnscrypt.uk-ipv4', 'dnswarden-asia-uncensor-dcv4', 'dnswarden-eu-uncensor-dcv4', 'dnswarden-us-uncensor-dcv4', 'meganerd', 'moulticast-de-ipv4', 'moulticast-fr-ipv4', 'moulticast-sg-ipv4', 'moulticast-uk-ipv4', 'plan9-ns2', 'pryv8boi', 'pwoss.org-dnscrypt', 'resolver4.dns.openinternet.io', 'scaleway-ams', 'scaleway-fr', 'serbica', 'techsaviours.org-dnscrypt', 'v.dnscrypt.uk-ipv4']
 
 
 ## List of local addresses and ports to listen to. Can be IPv4 and/or IPv6.
@@ -817,7 +817,6 @@ fragments_blocked = ['cisco', 'cisco-ipv6', 'cisco-familyshield', 'cisco-familys
     { server_name='moulticast-fr-ipv4', via=['anon-cs-fr', 'anon-kama'] },
     { server_name='moulticast-sg-ipv4', via=['anon-saldnssg01-conoha-ipv4', 'anon-tiarap'] },
     { server_name='moulticast-uk-ipv4', via=['anon-cs-london', 'anon-dnscrypt.uk-ipv4'] },
-    { server_name='plan9-dns', via=['anon-cs-nyc1', 'anon-inconnu'] },
     { server_name='plan9-ns2', via=['anon-cs-fl', 'anon-inconnu'] },
     { server_name='pryv8boi', via=['anon-cs-de', 'anon-techsaviours.org'] },
     { server_name='pwoss.org-dnscrypt', via=['anon-cs-de', 'anon-techsaviours.org'] },
