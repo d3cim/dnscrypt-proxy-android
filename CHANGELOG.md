@@ -8,23 +8,23 @@
 - Optimized relays.
 
 ### Fixed
-- Changelog display issues in Magisk app
+- Changelog display issues in Magisk app.
 
 ### Removed
-- `dct-at1` resolver (unresponsive resolver).
-- `dns.digitalsize.net` resolver (ceased resolver).
-- `gombadi-syd` resolver (ceased resolver).
-- `moulticast-ca-ipv4` resolver (unresponsive resolver).
+- `dct-at1` resolver (unresponsive).
+- `dns.digitalsize.net` resolver (ceased).
+- `gombadi-syd` resolver (ceased).
+- `moulticast-ca-ipv4` resolver (unresponsive).
+- `plan9-ns1` resolver (temporarily down).
 
 ## 2.1.1-2
-
 ### Fixed
 - Random connection issues under mobile data. (see [DNSCrypt/dnscrypt-proxy/discussions/2020](https://github.com/DNSCrypt/dnscrypt-proxy/discussions/2020))
 
 ### Removed
-- `dct-ru2` resolver (ceased resolver).
-- `pf-dnscrypt` resolver (unresponsive resolver).
-- `zackptg5-us-il-ipv4` resolver (ceased resolver).
+- `dct-ru2` resolver (ceased).
+- `pf-dnscrypt` resolver (unresponsive).
+- `zackptg5-us-il-ipv4` resolver (ceased).
 
 ## 2.1.1-1
 ### Added
@@ -42,7 +42,7 @@
 - Optimized relays.
 
 ### Removed
-- `zackptg5-us-pit-ipv4` resolver (unresponsive resolver).
+- `zackptg5-us-pit-ipv4` resolver (unresponsive).
 
 ## 2.1.1
 ### Upstream
@@ -64,10 +64,10 @@ any more.
 - Optimized relays.
 
 ### Removed
-- `dama.no-osl-s04` resolver (unresponsive resolver).
-- `dama.no-sa-a80` resolver (unresponsive resolver).
-- `kenshiro` resolver (unresponsive resolver, no more lucenera resolvers).
-- `suami` resolver (unresponsive resolver, no more lucenera resolvers).
+- `dama.no-osl-s04` resolver (unresponsive).
+- `dama.no-sa-a80` resolver (unresponsive).
+- `kenshiro` resolver (unresponsive, no more lucenera resolvers).
+- `suami` resolver (unresponsive, no more lucenera resolvers).
 
 ## 2.1.0
 ### Upstream
@@ -107,10 +107,10 @@ clarity. Please update your configuration file accordingly.
 - Optimized relays.
 
 ### Removed
-- `dama.no-osl-s04` resolver (unresponsive resolver).
-- `dama.no-sa-a80` resolver (unresponsive resolver).
-- `kenshiro` resolver (unresponsive resolver, no more lucenera resolvers).
-- `suami` resolver (unresponsive resolver, no more lucenera resolvers).
+- `dama.no-osl-s04` resolver (unresponsive).
+- `dama.no-sa-a80` resolver (unresponsive).
+- `kenshiro` resolver (unresponsive, no more lucenera resolvers).
+- `suami` resolver (unresponsive, no more lucenera resolvers).
 
 ## 2.0.45
 ### Upstream
@@ -184,7 +184,7 @@ Maintained by Sigfried (https://sigfried.be) hosted by ISW Leuven (https://iswle
 - `moulticast-fr-ipv4` resolver (Public | Non-filtering | Non-logging | DNSSEC aware | Hosted in France | Operated by @herver (Github) | https://moulticast.net/dnscrypt/).
 - `moulticast-sg-ipv4` resolver (Public | Non-filtering | Non-logging | DNSSEC aware | Hosted in Singapore | Operated by @herver (Github) | https://moulticast.net/dnscrypt/).
 - `moulticast-uk-ipv4` resolver (Public | Non-filtering | Non-logging | DNSSEC aware | Hosted in UK | Operated by @herver (Github) | https://moulticast.net/dnscrypt/).
-- `plan9-dns` resolver (Resolver in New Jersey, USA. DNSCrypt protocol. Non-logging, non-filtering, DNSSEC, anonymized. Running the official Docker image on Vultr by @jlongua1).
+- `plan9-ns1` resolver (Resolver in New Jersey, USA. DNSCrypt protocol. Non-logging, non-filtering, DNSSEC, anonymized. Running the official Docker image on Vultr by @jlongua1).
 - `pwoss.org-dnscrypt` resolver (No filter | No logs | DNSSEC | Nuremberg, Germany (netcup) | Maintained by https://pwoss.org/ (Dan)).
 - `sarpel-dns-istanbul` resolver (No-filter | No-logs | Uncensored | Hosted in Istanbul(Turkey) on Cloudeos).
 - `serbica` resolver (Public DNSCrypt server in the Netherlands by https://litepay.ch).
