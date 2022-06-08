@@ -92,12 +92,11 @@ dnscrypt-proxy-android version numbers consist of 4 parts: `MAJOR.MINOR.BUILD-PA
 `MAJOR`, `MINOR` and `BUILD` will be updated according to the main project, these values ​​will always be in sync with it.
 `PATCH` is an optional value that will be set on my side when I release a build before the original project.
 
-## Donation
+## Donations
 
-- **ETH** address:
-```
-0x16b917Bb585D2411b9c9C81b03de72471f3f072F
-```
+- **BTC** address: `126Y2BJQyPq8CHAaFMCyVH5QcbSViQz89e`
+- **ETH** address: `0x16b917Bb585D2411b9c9C81b03de72471f3f072F`
+- **XMR** address: `41jXybL88etPg1nGuPsMZbFSzKzbXYat4Xak3QssPy7LNs4VBWXDxbhjSdtLJDA138cx7cTq8JhFoiTTVLhWrTNAUywgGFD`
 
 ## Credits
 
