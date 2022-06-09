@@ -11,7 +11,6 @@
 - Changelog display issues in Magisk app.
 
 ### Removed
-- `dct-at1` resolver (unresponsive).
 - `dns.digitalsize.net` resolver (ceased).
 - `gombadi-syd` resolver (ceased).
 - `moulticast-ca-ipv4` resolver (unresponsive).
