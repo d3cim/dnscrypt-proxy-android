@@ -22,7 +22,7 @@ All the binary files are downloaded from the [official release page](https://git
 
 ## Differences from the main project
 
-- `server_names` = `acsacsar-ams-ipv4` [NLD], `altername` [RUS], `ams-dnscrypt-nl` [NLD], `bcn-dnscrypt` [ESP], `d0wn-tz-ns1` [TZA], `dct-at1` [AUS], `dct-de1` [DEU], `dct-ru1` [RUS], `dns.watch` [DEU], `dnscrypt.be` [BEL], `dnscrypt.ca-1` [CAN], `dnscrypt.ca-2` [CAN], `dnscrypt.eu-nl` [NLD], `dnscrypt.pl` [POL], `dnscrypt.uk-ipv4` [GBR], `dnswarden-asia-uncensor-dcv4` [SGP], `dnswarden-eu-uncensor-dcv4` [DEU], `dnswarden-us-uncensor-dcv4` [USA], `meganerd` [NLD], `moulticast-de-ipv4` [DEU], `moulticast-fr-ipv4` [FRA], `moulticast-sg-ipv4` [SGP], `moulticast-uk-ipv4` [GBR], `plan9-ns2` [USA], `pryv8boi` [DEU], `pwoss.org-dnscrypt` [DEU], `resolver4.dns.openinternet.io` [USA], `scaleway-ams` [NLD], `scaleway-fr` [FRA], `serbica` [NLD], `techsaviours.org-dnscrypt` [DEU], `v.dnscrypt.uk-ipv4` [GBR] are the resolvers in use.
+- `server_names` = `acsacsar-ams-ipv4` [NLD], `altername` [RUS], `ams-dnscrypt-nl` [NLD], `bcn-dnscrypt` [ESP], `d0wn-tz-ns1` [TZA], `dns.digitalsize.net` [DEU], `dns.watch` [DEU], `dnscrypt.be` [BEL], `dnscrypt.ca-1` [CAN], `dnscrypt.ca-2` [CAN], `dnscrypt.eu-nl` [NLD], `dnscrypt.pl` [POL], `dnscrypt.uk-ipv4` [GBR], `dnswarden-asia-uncensor-dcv4` [SGP], `dnswarden-eu-uncensor-dcv4` [DEU], `dnswarden-us-uncensor-dcv4` [USA], `meganerd` [NLD], `moulticast-fr-ipv4` [FRA], `moulticast-sg-ipv4` [SGP], `moulticast-uk-ipv4` [GBR], `plan9-ns2` [USA], `pryv8boi` [DEU], `pwoss.org-dnscrypt` [DEU], `resolver4.dns.openinternet.io` [USA], `scaleway-ams` [NLD], `scaleway-fr` [FRA], `serbica` [NLD], `techsaviours.org-dnscrypt` [DEU], `v.dnscrypt.uk-ipv4` [GBR] are the resolvers in use.
 
 - `doh_servers = false` (disable servers implementing the `DNS-over-HTTPS` protocol)
 
@@ -79,7 +79,7 @@ To know more about it you can consult the [official documentation](https://githu
 
 I'm also providing the `allowed-names.txt` and `blocked-names.txt` files regularly updated at [dnscrypt-proxy-filters | CHANNEL](https://t.me/dnscrypt_proxy_filters). The [sources](https://github.com/quindecim/block#sources) used for this merge are among the hardest on the web.
 
-You can contribute to this blocklist at anytime, opening an [Issue](https://github.com/quindecim/dnscrypt-proxy-android/issues) here or simply reporting the issue at [dnscrypt-proxy-filters | CHAT](https://t.me/qd_invitations) on [Telegram](https://telegram.org/).
+You can contribute to this blocklist at anytime, opening a [New Issue](https://github.com/quindecim/dnscrypt-proxy-android/issues) here or simply reporting the issue at [dnscrypt-proxy-filters | CHAT](https://t.me/qd_invitations) on [Telegram](https://telegram.org/).
 
 ## Changelog
 
