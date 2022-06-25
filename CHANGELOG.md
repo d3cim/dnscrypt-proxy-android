@@ -11,6 +11,7 @@
 - Changelog display issues in Magisk app.
 
 ### Removed
+- `dns.digitalsize.net` resolver (DoH).
 - `dct-at1` resolver (temporarily down).
 - `dct-de1` resolver (temporarily down).
 - `dct-ru1` resolver (temporarily down).
