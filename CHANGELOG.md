@@ -2,6 +2,9 @@
 
 ## unreleased
 ### Added
+- `plan9dns-fl` resolver (Miami Florida, US No-logs, no-filters, DNSSEC -info https://jlongua.github.io/plan9-dns).
+- `plan9dns-mx` resolver (Mexico City, Mexico No-logs, no-filters, DNSSEC -info https://jlongua.github.io/plan9-dns).
+- `plan9dns-nj` resolver (Piscataway New Jersey, US No-logs, no-filters, DNSSEC -info https://jlongua.github.io/plan9-dnsPiscataway).
 - `techsaviours.org-dnscrypt` resolver (No filter | No logs | DNSSEC | Nuremberg, Germany (netcup) | Maintained by https://techsaviours.org/).
 
 ### Changed
@@ -19,7 +22,8 @@
 - `gombadi-syd` resolver (ceased).
 - `moulticast-ca-ipv4` resolver (unresponsive).
 - `moulticast-de-ipv4` resolver (unresponsive).
-- `plan9-ns1` resolver (temporarily down).
+- `plan9-ns1` resolver (changed).
+- `plan9-ns2` resolver (changed).
 
 ## 2.1.1-2
 ### Fixed
