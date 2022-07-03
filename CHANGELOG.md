@@ -1,6 +1,9 @@
 # Changelog
 
 ## unreleased
+-
+
+## 2.1.1-3
 ### Added
 - `plan9dns-fl` resolver (Miami Florida, US No-logs, no-filters, DNSSEC -info https://jlongua.github.io/plan9-dns).
 - `plan9dns-mx` resolver (Mexico City, Mexico No-logs, no-filters, DNSSEC -info https://jlongua.github.io/plan9-dns).
