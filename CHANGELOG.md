@@ -7,6 +7,9 @@
 - `dnswarden-uncensor-sg1-dc` resolver (Hosted in Singapore. For more information look [here](https://github.com/bhanupratapys/dnswarden) or [here](https://dnswarden.com).).
 - `dnswarden-uncensor-us1-dc` resolver (Hosted in USA (Dallas). For more information look [here](https://github.com/bhanupratapys/dnswarden) or [here](https://dnswarden.com).).
 
+### Changed
+- Optimized relays.
+
 ### Removed
 - `dnswarden-asia-uncensor-dcv4` resolver (changed).
 - `dnswarden-eu-uncensor-dcv4` resolver (changed).
