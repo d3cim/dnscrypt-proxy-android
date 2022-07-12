@@ -1,7 +1,16 @@
 # Changelog
 
 ## unreleased
--
+### Added
+- `dnswarden-uncensor-fr1-dc` resolver (Hosted in France. For more information look [here](https://github.com/bhanupratapys/dnswarden) or [here](https://dnswarden.com).).
+- `dnswarden-uncensor-ind1-dc` resolver (Hosted in India. For more information look [here](https://github.com/bhanupratapys/dnswarden) or [here](https://dnswarden.com).).
+- `dnswarden-uncensor-sg1-dc` resolver (Hosted in Singapore. For more information look [here](https://github.com/bhanupratapys/dnswarden) or [here](https://dnswarden.com).).
+- `dnswarden-uncensor-us1-dc` resolver (Hosted in USA (Dallas). For more information look [here](https://github.com/bhanupratapys/dnswarden) or [here](https://dnswarden.com).).
+
+### Removed
+- `dnswarden-asia-uncensor-dcv4` resolver (changed).
+- `dnswarden-eu-uncensor-dcv4` resolver (changed).
+- `dnswarden-us-uncensor-dcv4` resolver (changed).
 
 ## 2.1.1-3
 ### Added
