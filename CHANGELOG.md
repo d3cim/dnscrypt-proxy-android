@@ -8,6 +8,7 @@
 - `dnswarden-uncensor-us1-dc` resolver (Hosted in USA (Dallas). For more information look [here](https://github.com/bhanupratapys/dnswarden) or [here](https://dnswarden.com).).
 
 ### Changed
+- Adjusted `versionCode` in `module.prop` file (more easy share beta and manage minor dnscrypt-proxy versions with two digits).
 - Optimized relays.
 
 ### Removed
