@@ -24,6 +24,7 @@ supported by the server.
 Ian Bashford, thanks!
 
 ### Added
+- Scripts in `post-fs-data.sh` file for force disable IPv6 connections at OS level, preventing possible leaks.
 - `breddns` resolver (Non-logging DNSCrypt server located in Luxembourg, operated by @tmclo).
 - `dnswarden-uncensor-fr1-dc` resolver (Hosted in France. For more information look [here](https://github.com/bhanupratapys/dnswarden) or [here](https://dnswarden.com).).
 - `dnswarden-uncensor-ind1-dc` resolver (Hosted in India. For more information look [here](https://github.com/bhanupratapys/dnswarden) or [here](https://dnswarden.com).).
@@ -283,15 +284,15 @@ forced to use TCP.
 
 ## 2.0.42-3
 ### Added
-- `DROP` properly `IPv6` queries in `post-fs-data.sh` file (no more DNS leaks this time).
+- `DROP` properly IPv6 queries in `post-fs-data.sh` file (no more DNS leaks this time).
 
 ## 2.0.42-2
 ### Added
-- 2nd attempt to `DROP` `IPv6` queries in `post-fs-data.sh` file.
+- 2nd attempt to `DROP` IPv6 queries in `post-fs-data.sh` file.
 
 ## 2.0.42-1
 ### Added
-- 1st attempt to `DROP` `IPv6` queries in `post-fs-data.sh` file.
+- 1st attempt to `DROP` IPv6 queries in `post-fs-data.sh` file.
 - `whitelist.txt` file (as placeholder, once the blacklist goes public).
 - `meganerd` resolver (Non-logging, non-filtering, supports DNSSEC by MegaNerd.nl).
 
