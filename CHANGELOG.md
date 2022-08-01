@@ -1,6 +1,9 @@
 # Changelog
 
 ## unreleased
+- 
+
+## 2.1.2
 ### Upstream
 - Support for DoH over HTTP/3 (DoH3, HTTP over QUIC) has been added.
 Compatible servers will automatically use it. Note that QUIC uses UDP
