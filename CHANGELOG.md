@@ -3,6 +3,7 @@
 ## unreleased
 
 ### Added
+- `sgp-dn53` resolver (non-censoring, non-logging, DNSSEC-capable Hosted in Singapore (Dnscrypt) https://limotelu.org maintained by poentodewo (https://github.com/poentodewo)).
 - `sby-limotelu` resolver (non-censoring, non-logging, DNSSEC-capable Hosted in Surabaya, Indonesia (Dnscrypt) https://limotelu.org maintained by poentodewo (https://github.com/poentodewo)).
 
 ### Removed
