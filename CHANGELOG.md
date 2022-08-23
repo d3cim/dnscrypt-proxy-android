@@ -1,7 +1,15 @@
 # Changelog
 
 ## unreleased
-- 
+
+### Added
+- `sby-limotelu` resolver (non-censoring, non-logging, DNSSEC-capable Hosted in Surabaya, Indonesia (Dnscrypt) https://limotelu.org maintained by poentodewo (https://github.com/poentodewo)).
+
+### Removed
+- `breddns` resolver (unresponsive).
+- `moulticast-fr-ipv4` resolver (unresponsive).
+- `moulticast-sg-ipv4` resolver (unresponsive).
+- `moulticast-uk-ipv4` resolver (unresponsive).
 
 ## 2.1.2
 ### Upstream
