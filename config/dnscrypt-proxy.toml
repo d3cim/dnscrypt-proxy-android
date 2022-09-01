@@ -817,6 +817,7 @@ fragments_blocked = ['cisco', 'cisco-ipv6', 'cisco-familyshield', 'cisco-familys
     { server_name='dnswarden-uncensor-ind1-dc', via=['anon-cs-bulgaria', 'anon-tiarap'] },
     { server_name='dnswarden-uncensor-sg1-dc', via=['anon-cs-tokyo', 'anon-tiarap'] },
     { server_name='dnswarden-uncensor-us1-dc', via=['anon-cs-tx', 'anon-inconnu'] },
+    { server_name='dotya.ml', via=['anon-cs-de', 'anon-techsaviours.org'] },
     { server_name='meganerd', via=['anon-acsacsar-ams-ipv4', 'anon-scaleway-ams'] },
     { server_name='plan9dns-fl', via=['anon-cs-fl', 'anon-inconnu'] },
     { server_name='plan9dns-mx', via=['anon-cs-tx2', 'anon-inconnu'] },
