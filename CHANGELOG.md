@@ -3,8 +3,8 @@
 ## unreleased
 
 ### Added
-- `dct-at1` resolver (DNSCrypt | IPv4 only | Non-logging | Non-filtering | DNSSEC | Vienna, Austria.).
-- `dotya.ml` resolver (Free, uncensored, DNSSEC-validated, non-logging DNSCrypt server hosted in Nuremberg, Germany on Contabo servers. Operated by dotya.ml, configs live [here](https://git.dotya.ml/dotya.ml/dnscrypt-server).).
+- `dct-at1` resolver (DNSCrypt | IPv4 only | Non-logging | Non-filtering | DNSSEC | Vienna, Austria).
+- `dotya.ml` resolver (Free, uncensored, DNSSEC-validated, non-logging DNSCrypt server hosted in Nuremberg, Germany on Contabo servers. Operated by dotya.ml, configs live [here](https://git.dotya.ml/dotya.ml/dnscrypt-server)).
 - `sgp-dn53` resolver (non-censoring, non-logging, DNSSEC-capable Hosted in Singapore (Dnscrypt) https://limotelu.org maintained by [poentodewo](https://github.com/poentodewo)).
 - `sby-limotelu` resolver (non-censoring, non-logging, DNSSEC-capable Hosted in Surabaya, Indonesia (Dnscrypt) https://limotelu.org maintained by [poentodewo](https://github.com/poentodewo)).
 
@@ -40,10 +40,10 @@ Ian Bashford, thanks!
 ### Added
 - Scripts in `post-fs-data.sh` file for force disable IPv6 connections at OS level, preventing possible leaks.
 - `breddns` resolver (Non-logging DNSCrypt server located in Luxembourg, operated by @tmclo).
-- `dnswarden-uncensor-fr1-dc` resolver (Hosted in France. For more information look [here](https://github.com/bhanupratapys/dnswarden) or [here](https://dnswarden.com).).
-- `dnswarden-uncensor-ind1-dc` resolver (Hosted in India. For more information look [here](https://github.com/bhanupratapys/dnswarden) or [here](https://dnswarden.com).).
-- `dnswarden-uncensor-sg1-dc` resolver (Hosted in Singapore. For more information look [here](https://github.com/bhanupratapys/dnswarden) or [here](https://dnswarden.com).).
-- `dnswarden-uncensor-us1-dc` resolver (Hosted in USA (Dallas). For more information look [here](https://github.com/bhanupratapys/dnswarden) or [here](https://dnswarden.com).).
+- `dnswarden-uncensor-fr1-dc` resolver (Hosted in France. For more information look [here](https://github.com/bhanupratapys/dnswarden) or [here](https://dnswarden.com)).
+- `dnswarden-uncensor-ind1-dc` resolver (Hosted in India. For more information look [here](https://github.com/bhanupratapys/dnswarden) or [here](https://dnswarden.com)).
+- `dnswarden-uncensor-sg1-dc` resolver (Hosted in Singapore. For more information look [here](https://github.com/bhanupratapys/dnswarden) or [here](https://dnswarden.com)).
+- `dnswarden-uncensor-us1-dc` resolver (Hosted in USA (Dallas). For more information look [here](https://github.com/bhanupratapys/dnswarden) or [here](https://dnswarden.com)).
 
 ### Changed
 - Adjusted `versionCode` in `module.prop` file (more easy share beta and manage minor dnscrypt-proxy versions with two digits).
@@ -92,8 +92,8 @@ Ian Bashford, thanks!
 ### Added
 - `uninstall.sh` file for `dnscrypt-proxy` folder removal after module uninstallation (Android 7 and below at the moment).
 - `update.json` file for enable the new auto-update feature from `Magisk v24+`.
-- `dct-at1` resolver (DNSCrypt | IPv4 only | Non-logging | Non-filtering | DNSSEC | Vienna, Austria.).
-- `dct-de1` resolver (DNSCrypt | IPv4 only | Non-logging | Non-filtering | DNSSEC | Düsseldorf, Germany.).
+- `dct-at1` resolver (DNSCrypt | IPv4 only | Non-logging | Non-filtering | DNSSEC | Vienna, Austria).
+- `dct-de1` resolver (DNSCrypt | IPv4 only | Non-logging | Non-filtering | DNSSEC | Düsseldorf, Germany).
 - `dns.digitalsize.net` resolver (A public, non-tracking, non-filtering DNS resolver with DNSSEC enabled and hosted in Germany (https://dns.digitalsize.net)).
 - `dnswarden-asia-uncensor-dcv4` resolver (dnscrypt-server. No logging, No filtering, support DNSSEC, located in Singapore. by Bhanu Pratap).
 - `dnswarden-eu-uncensor-dcv4` resolver (dnscrypt-server. No logging, No filtering, support DNSSEC, located in Germany. by Bhanu Pratap).
@@ -148,10 +148,10 @@ clarity. Please update your configuration file accordingly.
 - UncensoredDNS (Unicast) in addition to UncensoredDNS (Anycast) as `bootstrap_resolvers`.
 - `ams-dnscrypt-nl` resolver (Resolver in Amsterdam. Dnscrypt protocol. Non-logging, non-filtering, DNSSEC).
 - `altername` resolver (Protocol: DNSCrypt IPv4 | Features: Non-logging, Non-filtering, DNSSEC, EmerDNS | Location: Moscow, Russia).
-- `dama.no-osl-s04` resolver (DNSCrypt server located in Oslo/Norway. Link-speed 100 Mbit/s. Non-censoring, non-logging, DNSSEC-capable.).
+- `dama.no-osl-s04` resolver (DNSCrypt server located in Oslo/Norway. Link-speed 100 Mbit/s. Non-censoring, non-logging, DNSSEC-capable).
 - `dama.no-sa-a80` resolver (DNSCrypt Server located in Sandefjord/Norway. non-censoring, non-logging, DNSSEC-capable).
-- `dct-ru1` resolver (DNSCrypt | IPv4 only | Non-logging | Non-filtering | DNSSEC | Saint Petersburg, Russia.).
-- `dct-ru2` resolver (DNSCrypt | IPv4 only | Non-logging | Non-filtering | DNSSEC | Moscow, Russia.).
+- `dct-ru1` resolver (DNSCrypt | IPv4 only | Non-logging | Non-filtering | DNSSEC | Saint Petersburg, Russia).
+- `dct-ru2` resolver (DNSCrypt | IPv4 only | Non-logging | Non-filtering | DNSSEC | Moscow, Russia).
 - `dns.watch` resolver (Free, uncensored, non-logging server in Germany. https://dns.watch).
 - `gombadi-syd` resolver (Protocol: DNSCrypt IPv4 | Features: Non-logging, Non-filtering, DNSSEC, Unbound | Location: Sydney, AU).
 - `kenshiro` resolver (dnscrypt-server. No logging, No filtering, support DNSSEC, located in Amsterdam. by lucenera).
@@ -229,13 +229,13 @@ relays and parental-control.
 - `allowed-ips.txt` and `blocked-ips.txt` files (as placeholder).
 - Cleanup unneeded binary files after the installation.
 - `acsacsar-ams-ipv4` resolver (Public non-censoring, non-logging, DNSSEC-capable, DNSCrypt-enabled DNS resolver hosted on Scaleway by [acsacsar](https://nitter.net/acsacsar)).
-- `arvind-io` resolver (Public resolver by EnKrypt (https://arvind.io). Hosted in Bangalore, India. Non-logging, non-filtering, supports DNSSEC.).
-- `bcn-dnscrypt` resolver (Resolver in Barcelona, Spain. DNSCrypt protocol. Non-logging, non-filtering, DNSSEC.).
+- `arvind-io` resolver (Public resolver by EnKrypt (https://arvind.io). Hosted in Bangalore, India. Non-logging, non-filtering, supports DNSSEC).
+- `bcn-dnscrypt` resolver (Resolver in Barcelona, Spain. DNSCrypt protocol. Non-logging, non-filtering, DNSSEC).
 - `d0wn-tz-ns1` resolver (Server provided by Martin 'd0wn' Albus) Hosted by Aptus Solutions Ltd. in Tanzania.
 - `dnscrypt.be` resolver (Resolver in Leuven, Belgium (UCLL Campus Proximus). Non-logging/DNSSEC/Uncensored. https://dnscrypt.be
 Maintained by Sigfried (https://sigfried.be) hosted by ISW Leuven (https://iswleuven.be)).
-- `dnscrypt.ca-1` resolver (Free, Canadian, uncensored, no-logs, encrypted, and DNSSEC validated. DNS service for your pleasure.).
-- `dnscrypt.ca-2` resolver (Free, Canadian, uncensored, no-logs, encrypted, and DNSSEC validated. DNS service for your pleasure.).
+- `dnscrypt.ca-1` resolver (Free, Canadian, uncensored, no-logs, encrypted, and DNSSEC validated. DNS service for your pleasure).
+- `dnscrypt.ca-2` resolver (Free, Canadian, uncensored, no-logs, encrypted, and DNSSEC validated. DNS service for your pleasure).
 - `dnscrypt.one` resolver (Non-logging, non-censoring, DNSSEC-capable DNSCrypt resolver hosted in Germany (Nuremberg), https://dnscrypt.one).
 - `dnscrypt.pl` resolver (Free | No filtering | Zero logs | DNSSEC | Poland | https://dnscrypt.pl/).
 - `ev-canada` resolver (Non-logging, uncensored DNS resolver provided by evilvibes.com Location: Vancouver, Canada).
