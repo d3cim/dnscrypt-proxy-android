@@ -6,12 +6,20 @@
 - `dct-at1` resolver (DNSCrypt | IPv4 only | Non-logging | Non-filtering | DNSSEC | Vienna, Austria).
 - `dct-de1` resolver (DNSCrypt | IPv4 only | Non-logging | Non-filtering | DNSSEC | Düsseldorf, Germany).
 - `dct-ru1` resolver (DNSCrypt | IPv4 only | Non-logging | Non-filtering | DNSSEC | Moscow, Russia).
+- `dnswarden-uncensor-dc-swiss` resolver (Hosted in Switzerland. For more information look [here](https://github.com/bhanupratapys/dnswarden) or [here](https://dnswarden.com)).
 - `dotya.ml` resolver (Free, uncensored, DNSSEC-validated, non-logging DNSCrypt server hosted in Nuremberg, Germany on Contabo servers. Operated by dotya.ml, configs live [here](https://git.dotya.ml/dotya.ml/dnscrypt-server)).
 - `sgp-dn53` resolver (non-censoring, non-logging, DNSSEC-capable Hosted in Singapore (Dnscrypt) https://limotelu.org maintained by [poentodewo](https://github.com/poentodewo)).
 - `sby-limotelu` resolver (non-censoring, non-logging, DNSSEC-capable Hosted in Surabaya, Indonesia (Dnscrypt) https://limotelu.org maintained by [poentodewo](https://github.com/poentodewo)).
 
+### Changed
+- Optimized relays.
+
 ### Removed
 - `breddns` resolver (unresponsive).
+- `dnswarden-uncensor-fr1-dc` resolver (changed).
+- `dnswarden-uncensor-ind1-dc` resolver (changed).
+- `dnswarden-uncensor-sg1-dc` resolver (changed).
+- `dnswarden-uncensor-us1-dc` resolver (changed).
 - `moulticast-fr-ipv4` resolver (unresponsive).
 - `moulticast-sg-ipv4` resolver (unresponsive).
 - `moulticast-uk-ipv4` resolver (unresponsive).
