@@ -23,6 +23,7 @@
 - `moulticast-fr-ipv4` resolver (unresponsive).
 - `moulticast-sg-ipv4` resolver (unresponsive).
 - `moulticast-uk-ipv4` resolver (unresponsive).
+- `pwoss.org-dnscrypt` resolver (unresponsive).
 
 ## 2.1.2
 ### Upstream
