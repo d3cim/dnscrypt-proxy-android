@@ -14,6 +14,8 @@
 
 ### Changed
 - Optimized relays.
+- Use [dns.watch](https://dns.watch/) `resolver1` and `resolver2` as `bootstrap_resolvers`.
+- Use [dns.watch](https://dns.watch/) `resolver1` as `netprobe_address`.
 
 ### Removed
 - `breddns` resolver (unresponsive).
