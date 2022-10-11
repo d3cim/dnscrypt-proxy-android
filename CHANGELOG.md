@@ -2,8 +2,11 @@
 
 ## unreleased
 
-## 2.1.2.1
+## 2.1.2.2
+### Fixed
+- Forgotten scripts in `post-fs-data` file (it prevent using bootstrap resolvers correctly).
 
+## 2.1.2.1
 ### Added
 - `dct-at1` resolver (DNSCrypt | IPv4 only | Non-logging | Non-filtering | DNSSEC | Vienna, Austria).
 - `dct-de1` resolver (DNSCrypt | IPv4 only | Non-logging | Non-filtering | DNSSEC | Düsseldorf, Germany).
