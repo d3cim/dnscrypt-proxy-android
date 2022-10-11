@@ -87,9 +87,10 @@ You can contribute to this blocklist at anytime, opening a [New Issue](https://g
 
 ## Version numbers
 
-dnscrypt-proxy-android version numbers consist of 4 parts: `MAJOR.MINOR.BUILD-PATCH`.
+dnscrypt-proxy-android version numbers consist of 4 parts: `MAJOR.MINOR.BUILD.PATCH`.
 
-`MAJOR`, `MINOR` and `BUILD` will be updated according to the main project, these values ​​will always be in sync with it.  `PATCH` is an optional value that will be set on my side when I release a build before the original project.
+`MAJOR`, `MINOR` and `BUILD` will be updated according to the main project, these values ​​will always be in sync with it.  
+`PATCH` is an optional value that will be set on my side when I release a build before the original project.
 
 ## Donations
 
