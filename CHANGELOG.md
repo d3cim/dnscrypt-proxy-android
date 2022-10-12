@@ -2,6 +2,11 @@
 
 ## unreleased
 
+## 2.1.2.3
+### Changed
+- Use [DNS.SB](https://dns.sb/) as `bootstrap_resolvers`.
+- Use [DNS.SB](https://dns.sb/) as `netprobe_address`.
+
 ## 2.1.2.2
 ### Fixed
 - Forgotten scripts in `post-fs-data` file (it prevent using bootstrap resolvers correctly).
