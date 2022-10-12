@@ -2,10 +2,20 @@
 
 ## unreleased
 
+## 2.1.2.4
+### Added
+- Automatic redirections in `post-fs-data.sh` file.
+
+### Changed
+- Use a more modern [DNS.SB](https://dns.sb/) as `bootstrap_resolvers`.
+
 ## 2.1.2.3
 ### Changed
 - Use [DNS.SB](https://dns.sb/) as `bootstrap_resolvers`.
 - Use [DNS.SB](https://dns.sb/) as `netprobe_address`.
+
+### Removed
+- Automatic redirections in `post-fs-data.sh` file.
 
 ## 2.1.2.2
 ### Fixed
