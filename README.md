@@ -38,7 +38,7 @@ All the binary files are downloaded from the [official release page](https://git
 
 - `dnscrypt_ephemeral_keys = true` (create a new, unique key for every single DNS query)
 
-- `bootstrap_resolvers = ['45.11.45.11:53', '185.222.222.222:53']` (use [DNS.SB](https://dns.sb/) instead [CloudFlare](https://archive.today/tS1Ln))
+- `bootstrap_resolvers = ['45.11.45.11:53']` (use [DNS.SB](https://dns.sb/) instead [CloudFlare](https://archive.today/tS1Ln))
 
 - `netprobe_address = '45.11.45.11:53'` (use [DNS.SB](https://dns.sb/) instead [CloudFlare](https://archive.today/tS1Ln))
 

@@ -248,7 +248,7 @@ dnscrypt_ephemeral_keys = true
 ## not be sent there. If you're using DNSCrypt or Anonymized DNS and your
 ## lists are up to date, these resolvers will not even be used.
 
-bootstrap_resolvers = ['45.11.45.11:53', '185.222.222.222:53']
+bootstrap_resolvers = ['45.11.45.11:53']
 
 
 ## Always use the bootstrap resolver before the system DNS settings.
