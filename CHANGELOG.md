@@ -4,6 +4,9 @@
 ### Added
 - `uncensored` resolver (Uncensored resolver in Ukraine).
 
+### Fixed
+- Show the correct changelog version in Magisk app.
+
 ## 2.1.2.4
 ### Added
 - Automatic redirections in `post-fs-data.sh` file.
