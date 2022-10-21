@@ -1,6 +1,8 @@
 # Changelog
 
 ## unreleased
+### Added
+- `uncensored` resolver (Uncensored resolver in Ukraine).
 
 ## 2.1.2.4
 ### Added

@@ -29,7 +29,7 @@
 ##
 ## Remove the leading # first to enable this; lines starting with # are ignored.
 
-server_names = ['acsacsar-ams-ipv4', 'altername', 'ams-dnscrypt-nl', 'd0wn-tz-ns1', 'dct-at1', 'dct-de1', 'dct-ru1', 'dns.watch', 'dnscrypt.be', 'dnscrypt.ca-1', 'dnscrypt.ca-2', 'dnscrypt.eu-nl', 'dnscrypt.pl', 'dnscrypt.uk-ipv4', 'dnswarden-uncensor-dc-swiss', 'dotya.ml', 'meganerd', 'plan9dns-fl', 'plan9dns-mx', 'plan9dns-nj', 'pryv8boi', 'resolver4.dns.openinternet.io', 'sby-limotelu', 'scaleway-ams', 'scaleway-fr', 'serbica', 'sgp-dn53', 'starrydns', 'techsaviours.org-dnscrypt', 'v.dnscrypt.uk-ipv4']
+server_names = ['acsacsar-ams-ipv4', 'altername', 'ams-dnscrypt-nl', 'd0wn-tz-ns1', 'dct-at1', 'dct-de1', 'dct-ru1', 'dns.watch', 'dnscrypt.be', 'dnscrypt.ca-1', 'dnscrypt.ca-2', 'dnscrypt.eu-nl', 'dnscrypt.pl', 'dnscrypt.uk-ipv4', 'dnswarden-uncensor-dc-swiss', 'dotya.ml', 'meganerd', 'plan9dns-fl', 'plan9dns-mx', 'plan9dns-nj', 'pryv8boi', 'resolver4.dns.openinternet.io', 'sby-limotelu', 'scaleway-ams', 'scaleway-fr', 'serbica', 'sgp-dn53', 'starrydns', 'techsaviours.org-dnscrypt', 'uncensored', 'v.dnscrypt.uk-ipv4']
 
 
 ## List of local addresses and ports to listen to. Can be IPv4 and/or IPv6.
@@ -831,6 +831,7 @@ fragments_blocked = ['cisco', 'cisco-ipv6', 'cisco-familyshield', 'cisco-familys
     { server_name='sgp-dn53', via=['anon-cs-sydney', 'anon-tiarap'] },
     { server_name='starrydns', via=['anon-cs-sydney', 'anon-tiarap'] },
     { server_name='techsaviours.org-dnscrypt', via=['anon-cs-de', 'anon-dnswarden-swiss'] },
+    { server_name='uncensored', via=['anon-cs-ro', 'anon-dnswarden-swiss'] },
     { server_name='v.dnscrypt.uk-ipv4', via=['anon-cs-london', 'anon-scaleway'] }
 #    { server_name='example-server-1', via=['anon-example-1', 'anon-example-2'] },
 #    { server_name='example-server-2', via=['sdns://gRIxMzcuNzQuMjIzLjIzNDo0NDM'] }
