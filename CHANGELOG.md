@@ -1,8 +1,8 @@
 # Changelog
 
 ## unreleased
-### Added
-- `uncensored` resolver (Uncensored resolver in Ukraine).
+### Removed
+- `sgp-dn53` resolver (unresponsive).
 
 ### Fixed
 - Show the correct changelog version in Magisk app.
