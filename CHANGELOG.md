@@ -5,6 +5,7 @@
 - Script in `customize.sh` file for automatically disable Private DNS feature.
 
 ### Removed
+- `dnscrypt.eu-nl` resolver (ceased).
 - `sgp-dn53` resolver (unresponsive).
 
 ### Fixed
