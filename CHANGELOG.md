@@ -1,6 +1,9 @@
 # Changelog
 
 ## unreleased
+### Added
+- Script in `customize.sh` file for automatically disable Private DNS feature.
+
 ### Removed
 - `sgp-dn53` resolver (unresponsive).
 

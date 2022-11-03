@@ -58,6 +58,10 @@ ui_print "* Setting up the right permissions to the dnscrypt-proxy binary file."
 set_perm_recursive $MODPATH 0 0 0755 0755
 set_perm $MODPATH/system/bin/dnscrypt-proxy 0 0 0755
 
+# Set Private DNS mode off
+ui_print "* Disabling Private DNS mode."
+settings put global private_dns_mode off
+
 # Cleanup unneeded binary files
 ui_print "* Cleaning up the unnecessary files."
 rm -r $MODPATH/binary
