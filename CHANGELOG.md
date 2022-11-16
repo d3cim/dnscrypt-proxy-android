@@ -3,6 +3,7 @@
 ## unreleased
 ### Added
 - Script in `customize.sh` file for automatically disable Private DNS feature.
+- `dct-nl1` resolver (DNSCrypt | IPv4 only | Non-logging | Non-filtering | DNSSEC | Naaldwijk, Netherlands.).
 
 ### Removed
 - `dnscrypt.eu-nl` resolver (ceased).
