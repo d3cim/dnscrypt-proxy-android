@@ -22,7 +22,7 @@ All the binary files are downloaded from the [official release page](https://git
 
 ## Differences from the main project
 
-- `server_names` = `acsacsar-ams-ipv4` [NLD], `altername` [RUS], `ams-dnscrypt-nl` [NLD], `d0wn-tz-ns1` [TZA], `dct-at1` [AUS], `dct-de1` [DEU], `dct-nl1` [NLD], `dct-ru1` [RUS], `dns.watch` [DEU], `dnscrypt.be` [BEL], `dnscrypt.ca-1` [CAN], `dnscrypt.ca-2` [CAN], `dnscrypt.pl` [POL], `dnscrypt.uk-ipv4` [GBR], `dnswarden-uncensor-dc-swiss` [CHE], `dotya.ml` [DEU], `meganerd` [NLD], `plan9dns-fl` [USA], `plan9dns-mx` [MEX], `plan9dns-nj` [USA], `pryv8boi` [DEU], `resolver4.dns.openinternet.io` [USA], `sby-limotelu` [IDN], `scaleway-ams` [NLD], `scaleway-fr` [FRA], `serbica` [NLD], `starrydns` [SGP], `techsaviours.org-dnscrypt` [DEU], `v.dnscrypt.uk-ipv4` [GBR] are the resolvers in use.
+- `server_names` = `acsacsar-ams-ipv4` [NLD], `altername` [RUS], `ams-dnscrypt-nl` [NLD], `d0wn-tz-ns1` [TZA], `dct-at1` [AUS], `dct-de1` [DEU], `dct-nl1` [NLD], `dct-ru1` [RUS], `dns.watch` [DEU], `dnscrypt.be` [BEL], `dnscrypt.ca-1` [CAN], `dnscrypt.ca-2` [CAN], `dnscrypt.pl` [POL], `dnscrypt.uk-ipv4` [GBR], `dnswarden-uncensor-dc-swiss` [CHE], `meganerd` [NLD], `plan9dns-fl` [USA], `plan9dns-mx` [MEX], `plan9dns-nj` [USA], `pryv8boi` [DEU], `resolver4.dns.openinternet.io` [USA], `sby-limotelu` [IDN], `scaleway-ams` [NLD], `scaleway-fr` [FRA], `serbica` [NLD], `starrydns` [SGP], `techsaviours.org-dnscrypt` [DEU], `v.dnscrypt.uk-ipv4` [GBR] are the resolvers in use.
 
 - `doh_servers = false` (disable servers implementing the `DNS-over-HTTPS` protocol)
 
@@ -87,10 +87,10 @@ You can contribute to this blocklist at anytime, opening a [New Issue](https://g
 
 ## Version numbers
 
-dnscrypt-proxy-android version numbers consist of 4 parts: `MAJOR.MINOR.BUILD.PATCH`.
+dnscrypt-proxy-android tags follow the format `{dnscrypt-proxy_version}.{revision}` where
 
-`MAJOR`, `MINOR` and `BUILD` will be updated according to the main project, these values ​​will always be in sync with it.  
-`PATCH` is an optional value that will be set on my side when I release a build before the original project.
+* `dnscrypt-proxy_version` is the version of dnscrypt-proxy used in `x.x.x` format, and
+* `revision` is a number indicating the version of dnscrypt-proxy-android for the corresponding dnscrypt-proxy version.
 
 ## Donations
 
