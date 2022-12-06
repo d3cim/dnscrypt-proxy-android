@@ -4,10 +4,15 @@
 ### Added
 - Script in `customize.sh` file for automatically disable Private DNS feature.
 - `dct-nl1` resolver (DNSCrypt | IPv4 only | Non-logging | Non-filtering | DNSSEC | Naaldwijk, Netherlands).
+- `openinternet` resolver (DNSCrypt resolver colocated at Sonic.net in Santa Rosa, CA in the United States. No log, no filter, DNSSEC. Provided by https://openinternet.io).
+
+### Changed
+- Optimized relays.
 
 ### Removed
 - `dnscrypt.eu-nl` resolver (ceased).
 - `dotya.ml` resolver (unresponsive).
+- `resolver4.dns.openinternet.io` resolver (changed).
 - `sgp-dn53` resolver (unresponsive).
 
 ### Fixed

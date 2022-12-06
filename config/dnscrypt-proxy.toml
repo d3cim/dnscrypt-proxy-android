@@ -29,7 +29,7 @@
 ##
 ## Remove the leading # first to enable this; lines starting with # are ignored.
 
-server_names = ['acsacsar-ams-ipv4', 'altername', 'ams-dnscrypt-nl', 'd0wn-tz-ns1', 'dct-at1', 'dct-de1', 'dct-nl1', 'dct-ru1', 'dns.watch', 'dnscrypt.be', 'dnscrypt.ca-1', 'dnscrypt.ca-2', 'dnscrypt.pl', 'dnscrypt.uk-ipv4', 'dnswarden-uncensor-dc-swiss', 'meganerd', 'plan9dns-fl', 'plan9dns-mx', 'plan9dns-nj', 'pryv8boi', 'resolver4.dns.openinternet.io', 'sby-limotelu', 'scaleway-ams', 'scaleway-fr', 'serbica', 'starrydns', 'techsaviours.org-dnscrypt', 'v.dnscrypt.uk-ipv4']
+server_names = ['acsacsar-ams-ipv4', 'altername', 'ams-dnscrypt-nl', 'd0wn-tz-ns1', 'dct-at1', 'dct-de1', 'dct-nl1', 'dct-ru1', 'dns.watch', 'dnscrypt.be', 'dnscrypt.ca-1', 'dnscrypt.ca-2', 'dnscrypt.pl', 'dnscrypt.uk-ipv4', 'dnswarden-uncensor-dc-swiss', 'meganerd', 'openinternet', 'plan9dns-fl', 'plan9dns-mx', 'plan9dns-nj', 'pryv8boi', 'sby-limotelu', 'scaleway-ams', 'scaleway-fr', 'serbica', 'starrydns', 'techsaviours.org-dnscrypt', 'v.dnscrypt.uk-ipv4']
 
 
 ## List of local addresses and ports to listen to. Can be IPv4 and/or IPv6.
@@ -812,17 +812,17 @@ fragments_blocked = ['cisco', 'cisco-ipv6', 'cisco-familyshield', 'cisco-familys
     { server_name='dct-ru1', via=['anon-cs-czech', 'anon-techsaviours.org'] },
     { server_name='dns.watch', via=['anon-cs-de', 'anon-techsaviours.org'] },
     { server_name='dnscrypt.be', via=['anon-cs-belgium', 'anon-serbica'] },
-    { server_name='dnscrypt.ca-1', via=['anon-cs-montreal2', 'anon-inconnu'] },
-    { server_name='dnscrypt.ca-2', via=['anon-cs-montreal2', 'anon-inconnu'] },
+    { server_name='dnscrypt.ca-1', via=['anon-cs-montreal2', 'anon-openinternet'] },
+    { server_name='dnscrypt.ca-2', via=['anon-cs-montreal2', 'anon-openinternet'] },
     { server_name='dnscrypt.pl', via=['anon-cs-poland', 'anon-techsaviours.org'] },
     { server_name='dnscrypt.uk-ipv4', via=['anon-cs-london', 'anon-scaleway'] },
     { server_name='dnswarden-uncensor-dc-swiss', via=['anon-cs-fr', 'anon-kama'] },
     { server_name='meganerd', via=['anon-acsacsar-ams-ipv4', 'anon-scaleway-ams'] },
-    { server_name='plan9dns-fl', via=['anon-cs-fl', 'anon-inconnu'] },
+    { server_name='openinternet', via=['anon-cs-montreal2', 'anon-inconnu'] },
+    { server_name='plan9dns-fl', via=['anon-cs-tx', 'anon-inconnu'] },
     { server_name='plan9dns-mx', via=['anon-cs-tx2', 'anon-inconnu'] },
     { server_name='plan9dns-nj', via=['anon-cs-nyc1', 'anon-inconnu'] },
     { server_name='pryv8boi', via=['anon-cs-de', 'anon-techsaviours.org'] },
-    { server_name='resolver4.dns.openinternet.io', via=['anon-cs-montreal2', 'anon-inconnu'] },
     { server_name='sby-limotelu', via=['anon-cs-sydney', 'anon-tiarap'] },
     { server_name='scaleway-ams', via=['anon-meganerd', 'anon-serbica'] },
     { server_name='scaleway-fr', via=['anon-cs-fr', 'anon-dnscrypt.uk-ipv4'] },
