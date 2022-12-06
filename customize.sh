@@ -59,7 +59,7 @@ set_perm_recursive $MODPATH 0 0 0755 0755
 set_perm $MODPATH/system/bin/dnscrypt-proxy 0 0 0755
 
 # Set Private DNS mode off
-ui_print "* Disabling Private DNS mode."
+ui_print "* Disabling Android 9+ Private DNS mode."
 settings put global private_dns_mode off
 
 # Cleanup unneeded binary files
