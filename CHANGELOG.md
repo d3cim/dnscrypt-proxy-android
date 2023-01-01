@@ -10,6 +10,7 @@
 - Optimized relays.
 
 ### Removed
+- `acsacsar-ams-ipv4` resolver (unresponsive).
 - `dnscrypt.eu-nl` resolver (ceased).
 - `dotya.ml` resolver (unresponsive).
 - `resolver4.dns.openinternet.io` resolver (changed).
