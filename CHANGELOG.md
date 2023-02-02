@@ -1,6 +1,26 @@
 # Changelog
 
-## unreleased
+## 2.1.3
+### Upstream
+ - DNS-over-HTTP/3 (QUIC) should be more reliable. In particular,
+version 2.1.2 required another (non-QUIC) resolver to be present for
+bootstrapping, or the resolver's IP address to be present in the
+stamp. This is not the case any more.
+ - dnscrypt-proxy is now compatible with Go 1.20+
+ - Commands (-check, -show-certs, -list, -list-all) now ignore log
+files and directly output the result to the standard output.
+ - The `cert_ignore_timestamp` configuration switch is now documented.
+It allows ignoring timestamps for DNSCrypt certificate verification,
+until a first server is available. This should only be used on devices
+that don't have any ways to set the clock before DNS service is up.
+However, a safer alternative remains to use an NTP server with a fixed
+IP address (such as time.google.com), configured in the captive portals
+file.
+ - Cloaking: when a name is cloaked, unsupported record types now
+return a blocked response rather than the actual records.
+ - systemd: report Ready earlier as dnscrypt-proxy can itself manage
+retries for updates/refreshes.
+
 ### Added
 - Script in `customize.sh` file for automatically disable Private DNS feature.
 - `dct-nl1` resolver (DNSCrypt | IPv4 only | Non-logging | Non-filtering | DNSSEC | Naaldwijk, Netherlands).
@@ -11,6 +31,7 @@
 
 ### Removed
 - `acsacsar-ams-ipv4` resolver (unresponsive).
+- `dct-ru1` resolver (unresponsive).
 - `dnscrypt.eu-nl` resolver (ceased).
 - `dotya.ml` resolver (unresponsive).
 - `resolver4.dns.openinternet.io` resolver (changed).
