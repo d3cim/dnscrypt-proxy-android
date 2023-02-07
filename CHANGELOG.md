@@ -1,5 +1,14 @@
 # Changelog
 
+## 2.1.4
+### Upstream
+ - Fixes a regression from version 2.1.3: when cloaking was enabled,
+blocked responses were returned for records that were not A/AAAA/PTR
+even for names that were not in the cloaked list.
+
+### Added
+- `dct-ru1` resolver (DNSCrypt | IPv4 only | Non-logging | Non-filtering | DNSSEC | Moscow, Russia).
+
 ## 2.1.3
 ### Upstream
  - DNS-over-HTTP/3 (QUIC) should be more reliable. In particular,
