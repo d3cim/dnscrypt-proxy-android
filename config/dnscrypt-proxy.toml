@@ -823,7 +823,7 @@ fragments_blocked = ['cisco', 'cisco-ipv6', 'cisco-familyshield', 'cisco-familys
     { server_name='dnscrypt.pl', via=['anon-cs-poland', 'anon-techsaviours.org'] },
     { server_name='dnscrypt.uk-ipv4', via=['anon-cs-london', 'anon-scaleway'] },
     { server_name='dnswarden-uncensor-dc-swiss', via=['anon-cs-fr', 'anon-kama'] },
-    { server_name='meganerd', via=['anon-acsacsar-ams-ipv4', 'anon-scaleway-ams'] },
+    { server_name='meganerd', via=['anon-scaleway-ams', 'anon-serbica'] },
     { server_name='openinternet', via=['anon-cs-sea', 'anon-inconnu'] },
     { server_name='plan9dns-fl', via=['anon-cs-tx', 'anon-inconnu'] },
     { server_name='plan9dns-mx', via=['anon-cs-tx2', 'anon-inconnu'] },
@@ -832,7 +832,7 @@ fragments_blocked = ['cisco', 'cisco-ipv6', 'cisco-familyshield', 'cisco-familys
     { server_name='sby-limotelu', via=['anon-cs-sydney', 'anon-tiarap'] },
     { server_name='scaleway-ams', via=['anon-meganerd', 'anon-serbica'] },
     { server_name='scaleway-fr', via=['anon-cs-fr', 'anon-dnscrypt.uk-ipv4'] },
-    { server_name='serbica', via=['anon-acsacsar-ams-ipv4', 'anon-scaleway-ams'] },
+    { server_name='serbica', via=['anon-cs-nl', 'anon-scaleway-ams'] },
     { server_name='starrydns', via=['anon-cs-sydney', 'anon-tiarap'] },
     { server_name='techsaviours.org-dnscrypt', via=['anon-cs-de', 'anon-dnswarden-swiss'] },
     { server_name='v.dnscrypt.uk-ipv4', via=['anon-cs-london', 'anon-scaleway'] }
