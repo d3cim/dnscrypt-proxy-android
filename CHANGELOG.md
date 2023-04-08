@@ -5,6 +5,9 @@
 ### Changed
 - Optimized relays.
 
+### Removed
+- `dns.watch` resolver (unresponsive).
+
 ## 2.1.4
 ### Upstream
  - Fixes a regression from version 2.1.3: when cloaking was enabled,
