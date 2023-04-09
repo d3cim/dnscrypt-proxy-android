@@ -6,6 +6,7 @@
 - Optimized relays.
 
 ### Removed
+- `dct-de1` resolver (ceased).
 - `dns.watch` resolver (unresponsive).
 
 ## 2.1.4
