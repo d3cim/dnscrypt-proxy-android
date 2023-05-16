@@ -29,7 +29,7 @@
 ##
 ## Remove the leading # first to enable this; lines starting with # are ignored.
 
-server_names = ['altername', 'ams-dnscrypt-nl', 'd0wn-tz-ns1', 'dct-at1', 'dct-nl1', 'dct-ru1', 'dnscrypt.be', 'dnscrypt.ca-1', 'dnscrypt.ca-2', 'dnscrypt.pl', 'dnscrypt.uk-ipv4', 'dnswarden-uncensor-dc-swiss', 'meganerd', 'openinternet', 'plan9dns-fl', 'plan9dns-mx', 'plan9dns-nj', 'pryv8boi', 'sby-limotelu', 'scaleway-ams', 'scaleway-fr', 'serbica', 'starrydns', 'techsaviours.org-dnscrypt', 'v.dnscrypt.uk-ipv4']
+server_names = ['altername', 'ams-dnscrypt-nl', 'd0wn-tz-ns1', 'dct-at1', 'dct-nl1', 'dct-ru1', 'dnscrypt.be', 'dnscrypt.ca-1', 'dnscrypt.ca-2', 'dnscrypt.pl', 'dnscrypt.uk-ipv4', 'dnswarden-uncensor-dc-swiss', 'meganerd', 'openinternet', 'plan9dns-fl', 'plan9dns-mx', 'plan9dns-nj', 'pryv8boi', 'sby-limotelu', 'scaleway-ams', 'scaleway-fr', 'serbica', 'techsaviours.org-dnscrypt', 'v.dnscrypt.uk-ipv4']
 
 
 ## List of local addresses and ports to listen to. Can be IPv4 and/or IPv6.
@@ -842,7 +842,6 @@ fragments_blocked = ['cisco', 'cisco-ipv6', 'cisco-familyshield', 'cisco-familys
     { server_name='scaleway-ams', via=['anon-meganerd', 'anon-serbica'] },
     { server_name='scaleway-fr', via=['anon-cs-fr', 'anon-dnscrypt.uk-ipv4'] },
     { server_name='serbica', via=['anon-cs-nl', 'anon-scaleway-ams'] },
-    { server_name='starrydns', via=['anon-cs-sydney', 'anon-tiarap'] },
     { server_name='techsaviours.org-dnscrypt', via=['anon-cs-de', 'anon-dnswarden-swiss'] },
     { server_name='v.dnscrypt.uk-ipv4', via=['anon-cs-london', 'anon-scaleway'] }
 #    { server_name='example-server-1', via=['anon-example-1', 'anon-example-2'] },

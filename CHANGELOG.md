@@ -8,6 +8,7 @@
 ### Removed
 - `dct-de1` resolver (ceased).
 - `dns.watch` resolver (unresponsive).
+- `starrydns` resolver (ceased).
 
 ## 2.1.4
 ### Upstream
