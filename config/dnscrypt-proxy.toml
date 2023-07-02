@@ -845,12 +845,12 @@ fragments_blocked = ['cisco', 'cisco-ipv6', 'cisco-familyshield', 'cisco-familys
     { server_name='plan9dns-fl', via=['anon-cs-tx', 'anon-inconnu'] },
     { server_name='plan9dns-mx', via=['anon-cs-tx2', 'anon-inconnu'] },
     { server_name='plan9dns-nj', via=['anon-cs-nyc1', 'anon-inconnu'] },
-    { server_name='pryv8boi', via=['anon-cs-de', 'anon-techsaviours.org'] },
-    { server_name='sby-limotelu', via=['anon-cs-sydney', 'anon-tiarap'] },
+    { server_name='pryv8boi', via=['anon-cs-dus1', 'anon-techsaviours.org'] },
+    { server_name='sby-limotelu', via=['anon-cs-sydney', 'anon-saldns01-conoha-ipv4'] },
     { server_name='scaleway-ams', via=['anon-meganerd', 'anon-serbica'] },
     { server_name='scaleway-fr', via=['anon-cs-fr', 'anon-dnscrypt.uk-ipv4'] },
     { server_name='serbica', via=['anon-cs-nl', 'anon-scaleway-ams'] },
-    { server_name='techsaviours.org-dnscrypt', via=['anon-cs-de', 'anon-dnswarden-swiss'] },
+    { server_name='techsaviours.org-dnscrypt', via=['anon-cs-berlin', 'anon-dnswarden-swiss'] },
     { server_name='v.dnscrypt.uk-ipv4', via=['anon-cs-london', 'anon-scaleway'] }
 #    { server_name='example-server-1', via=['anon-example-1', 'anon-example-2'] },
 #    { server_name='example-server-2', via=['sdns://gRIxMzcuNzQuMjIzLjIzNDo0NDM'] }
