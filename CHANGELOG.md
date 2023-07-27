@@ -6,6 +6,7 @@
 - Optimized relays.
 
 ### Removed
+- `altername` resolver (temporarily down).
 - `dct-de1` resolver (ceased).
 - `dns.watch` resolver (unresponsive).
 - `starrydns` resolver (ceased).
