@@ -2,6 +2,15 @@
 
 ## unreleased
 
+## 2.1.5
+### Upstream
+ - dnscrypt-proxy can be compiled with Go 1.21.0+
+ - Responses to blocked queries now include extended error codes
+ - Reliability of connections using HTTP/3 has been improved
+ - New configuration directive: `tls_key_log_file`. When defined, this
+is the path to a file where TLS secret keys will be written to, so
+that DoH traffic can be locally inspected.
+
 ### Changed
 - Optimized relays.
 
