@@ -1,6 +1,8 @@
 # Changelog
 
 ## unreleased
+### Changed
+- Optimized relays.
 
 ## 2.1.5
 ### Upstream
