@@ -2,7 +2,9 @@
 
 ## unreleased
 ### Changed
-- `dct-nl1` name resolver to `dct-n1`.
+- `dct-at1` name resolver to `dct-at`.
+- `dct-nl1` name resolver to `dct-nl`.
+- `dct-ru1` name resolver to `dct-ru`.
 - Optimized relays.
 
 ## 2.1.5
