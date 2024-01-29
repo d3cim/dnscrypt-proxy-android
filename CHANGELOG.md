@@ -2,10 +2,12 @@
 
 ## unreleased
 ### Changed
-- `dct-at1` name resolver to `dct-at`.
 - `dct-nl1` name resolver to `dct-nl`.
 - `dct-ru1` name resolver to `dct-ru`.
 - Optimized relays.
+
+### Removed
+- `dct-at1` resolver (ceased).
 
 ## 2.1.5
 ### Upstream
