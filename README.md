@@ -22,7 +22,7 @@ All the binary files are downloaded from the [official release page](https://git
 
 ## Differences from the main project
 
-- `server_names` = `ams-dnscrypt-nl` [NLD], `d0wn-tz-ns1` [TZA], `dct-nl` [NLD], `dct-ru` [RUS], `dnscrypt.be` [BEL], `dnscrypt.ca-1` [CAN], `dnscrypt.ca-2` [CAN], `dnscrypt.pl` [POL], `dnscrypt.uk-ipv4` [GBR], `dnswarden-uncensor-dc-swiss` [CHE], `meganerd` [NLD], `openinternet` [USA], `plan9dns-fl` [USA], `plan9dns-mx` [MEX], `plan9dns-nj` [USA], `pryv8boi` [DEU], `sby-limotelu` [IDN], `scaleway-ams` [NLD], `scaleway-fr` [FRA], `serbica` [NLD], `techsaviours.org-dnscrypt` [DEU], `v.dnscrypt.uk-ipv4` [GBR] are the resolvers in use.
+- `server_names` = `ams-dnscrypt-nl` [NLD], `d0wn-tz-ns1` [TZA], `dct-nl` [NLD], `dct-ru` [RUS], `dnscrypt.be` [BEL], `dnscrypt.pl` [POL], `dnscrypt.uk-ipv4` [GBR], `dnswarden-uncensor-dc-swiss` [CHE], `meganerd` [NLD], `openinternet` [USA], `plan9dns-fl` [USA], `plan9dns-mx` [MEX], `plan9dns-nj` [USA], `pryv8boi` [DEU], `sby-limotelu` [IDN], `scaleway-ams` [NLD], `scaleway-fr` [FRA], `serbica` [NLD], `techsaviours.org-dnscrypt` [DEU], `v.dnscrypt.uk-ipv4` [GBR] are the resolvers in use.
 
 - `doh_servers = false` (disable servers implementing the `DNS-over-HTTPS` protocol)
 

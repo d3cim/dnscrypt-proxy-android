@@ -8,6 +8,8 @@
 
 ### Removed
 - `dct-at1` resolver (ceased).
+- `dnscrypt.ca-1` resolver (ceased).
+- `dnscrypt.ca-2` resolver (ceased).
 
 ## 2.1.5
 ### Upstream
